@@ -1,0 +1,146 @@
+{
+  "main": {
+    "id": "2fe87bf8907de7a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "130ae152005b7c7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afbb3a7760931dc2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab9c54fcf458d76d",
+    "type": "split",
+    "children": [
+      {
+        "id": "a09442eb1512cf93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c082f66e012077d1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "240c3f98e6c74df5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "97ddbcbc2ef776e3",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "0ef3a5ab5dbd401b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2b01b3a2bb5de4f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53e8921a08b375e8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2e65a26280a93124",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "70cfe4af13e10870",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f7218e95aa0e7b60",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "afbb3a7760931dc2",
+  "lastOpenFiles": [
+    "Einfuehrung in die Informatik.md",
+    "Einfuehrung in die Rechnerarchitekur.md",
+    "Instruction Set Architecture.md",
+    "Hauptspeicher.md",
+    "Das Von-Neumann Konzept.md",
+    "Befehlsverarbeitung.md",
+    "Register.md",
+    "Befehlsausfuehrung.md",
+    "1. Semester.md",
+    "TUM.md"
+  ]
+}
