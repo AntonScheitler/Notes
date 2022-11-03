@@ -11,8 +11,12 @@
             "id": "afbb3a7760931dc2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Einfuehrung in die Rechnerarchitekur.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -83,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Einfuehrung in die Rechnerarchitekur.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Einfuehrung in die Rechnerarchitekur.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Einfuehrung in die Rechnerarchitekur.md"
+              }
             }
           }
         ]
@@ -132,15 +140,15 @@
   },
   "active": "afbb3a7760931dc2",
   "lastOpenFiles": [
+    "TUM.md",
+    "Befehlsverarbeitung.md",
     "Einfuehrung in die Informatik.md",
     "Einfuehrung in die Rechnerarchitekur.md",
     "Instruction Set Architecture.md",
     "Hauptspeicher.md",
     "Das Von-Neumann Konzept.md",
-    "Befehlsverarbeitung.md",
     "Register.md",
     "Befehlsausfuehrung.md",
-    "1. Semester.md",
-    "TUM.md"
+    "1. Semester.md"
   ]
 }
