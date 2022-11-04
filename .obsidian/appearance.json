@@ -3,5 +3,6 @@
   "cssTheme": "Catppuccin",
   "theme": "obsidian",
   "translucency": false,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "showViewHeader": true
 }

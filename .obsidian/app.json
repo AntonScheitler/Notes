@@ -1,4 +1,6 @@
 {
   "vimMode": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "foldIndent": true,
+  "showInlineTitle": false
 }

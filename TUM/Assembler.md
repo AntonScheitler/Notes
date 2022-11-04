@@ -2,6 +2,8 @@
 - Von dem Ablauf eines Programms kann ueber spruenge abgewichen werden
 - Spruenge werden ueber den JMP Befehl, gefolgt von der Adresse ausgefuehrt
 #### Beispiel
+	JMP 0x1234 ; springt zum Befehl an der Adresse 0x1234
+	JMP label1 ; springt zum Befehl, der mit label1 markiert ist
 ## Speicherzugriffe
 - Da die Anzahl der Register beschraenkt ist, muss bei groesseren Datenmengen auf den [[Hauptspeicher]] zugegriffen werden
 - Es kann jeweils separat auf 1, 2 oder 4 Byte zugegriffen werden
@@ -11,26 +13,26 @@
 - Fuer initliaisierten Speicher verwendet man im Data Segment DB, DW, DD oder DQ, gefolgt von dem initialen Wert
 ###### Beispiel
 	.bss
-	syma: RESB 1 ; reserviert einen Byte unter dem Label 'syma'
-	symb: RESW 1
+		syma: RESB 1 ; reserviert einen Byte unter dem Label 'syma'
+		symb: RESW 1
 	
 	.data
-	string: DB 72, 101, 108, 108, 111 ; speichert 'Hello'
+		string: DB 72, 101, 108, 108, 111 ; speichert 'Hello'
 	
 	.text
-	MOV EAX, syma ; laedt die Adresse von syma in EAX
-	PRINT_STRING string ; laedt den Inhalt von string in die Ausgabe
+		MOV EAX, syma ; laedt die Adresse von syma in EAX
+		PRINT_STRING string ; laedt den Inhalt von string in die Ausgabe
 #### Speicheradressierung
 - Bei direkter Adressierung kann direkt auf eine konkrete Adresse zugegriffen werden
 - Bei indirekter Adressierung kann auf eine Adresse, die in einem Register enthalten ist, zugegriffen werden
 ###### Beispiel
 	.data
-	var: DD 123
+		var: DD 123
 	
 	.txt
-	MOV ECX, var ; laedt die Adresse von var in ECX
-	MOV EAX, [10] ; laedt den Inhalt der Adresse '10' in EAX
-	MOV EBX, [ECX] ; laedt den Inhalt der Adresse, die ECX enthaelt
+		MOV ECX, var ; laedt die Adresse von var in ECX
+		MOV EAX, [10] ; laedt den Inhalt der Adresse '10' in EAX
+		MOV EBX, [ECX] ; laedt den Inhalt der Adresse, die ECX enthaelt
 ## Stack
 - Der Stack wird genutzt, um Ruecksprungadressen und Registerinhalte zu speichern
 - Das ESP Register deutet auf das oberste Element im Stack
@@ -40,3 +42,10 @@
 - Durch CALL wird ein Sprung ausgefuehrt und die Ruecksprungadresse auf dem Stack gespeichert
 - Mithilfe von RET kann wieder zurueck an die Ruecksprungadresse gesprungen werden
 ###### Beispiel
+	.text
+		MOV EAX, 0
+		CALL unterprogramm
+
+		unterprogramm:
+			ADD AX, 10
+			RET
