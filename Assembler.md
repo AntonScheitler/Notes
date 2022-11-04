@@ -20,7 +20,14 @@
 	MOV EAX, syma ; laedt die Adresse von syma in EAX
 	PRINT_STRING string ; laedt den Inhalt von string in die Ausgabe
 #### Speicheradressierung
-- Mithilfe direkter Adressierung kann ueber eine konkrete Adresse auf ein Datum zugegriffen werden
-- 
-
+- Bei direkter Adressierung kann direkt auf eine konkrete Adresse zugegriffen werden
+- Bei indirekter Adressierung kann auf eine Adresse, die in einem Register enthalten ist, zugegriffen werden
+###### Beispiel
+	.data
+	var: DD 123
+	
+	.txt
+	MOV ECX, var ; laedt die Adresse von var in ECX
+	MOV EAX, [10] ; laedt den Inhalt der Adresse '10' in EAX
+	MOV EBX, [ECX] ; laedt den Inhalt der Adresse, die ECX enthaelt
 ## Unterprogramme
