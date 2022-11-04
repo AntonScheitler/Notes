@@ -14,8 +14,17 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "b74f57c80b1c839d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -61,13 +70,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -130,9 +137,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "afbb3a7760931dc2",
+  "active": "c082f66e012077d1",
   "lastOpenFiles": [
     "2022-11-04.md",
+    "TUM/2022-11-04.md",
     "Einfuehrung in die Rechnerarchitekur.md",
     "TUM.md",
     "Befehlsverarbeitung.md",
@@ -140,7 +148,6 @@
     "Instruction Set Architecture.md",
     "Hauptspeicher.md",
     "Das Von-Neumann Konzept.md",
-    "Register.md",
-    "Befehlsausfuehrung.md"
+    "Register.md"
   ]
 }
