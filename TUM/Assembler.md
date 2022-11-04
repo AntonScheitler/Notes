@@ -2,7 +2,6 @@
 - Von dem Ablauf eines Programms kann ueber spruenge abgewichen werden
 - Spruenge werden ueber den JMP Befehl, gefolgt von der Adresse ausgefuehrt
 #### Beispiel
-
 ## Speicherzugriffe
 - Da die Anzahl der Register beschraenkt ist, muss bei groesseren Datenmengen auf den [[Hauptspeicher]] zugegriffen werden
 - Es kann jeweils separat auf 1, 2 oder 4 Byte zugegriffen werden
