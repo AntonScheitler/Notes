@@ -2,5 +2,6 @@
   "vimMode": true,
   "promptDelete": false,
   "foldIndent": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showLineNumber": true
 }
