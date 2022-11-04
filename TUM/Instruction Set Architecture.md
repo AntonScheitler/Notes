@@ -1,6 +1,6 @@
 ## Allgemeines
 - Die Instruction Set Architecture bietet die Schnittstelle zwischen dem Programmierer und dem Rechner
-- Die Kommunikation erfolgt mithilfe von Assembler
+- Die Kommunikation erfolgt mithilfe von [[Assembler]]
 - Die ISA umfasst Informationen ueber Ausfuehrungsmodelle, den Prozessor und seine Register, sowie den Befehlssatz
 ## Ausfuehrungsmodelle
 - Das Ausfuehrungsmodell beschreibt die Anzahl der Operanden, die in einem Befehl kodiert sind

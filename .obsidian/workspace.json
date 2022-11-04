@@ -11,20 +11,40 @@
             "id": "afbb3a7760931dc2",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TUM/Einfuehrung in die Rechnerarchitekur.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
-            "id": "b74f57c80b1c839d",
+            "id": "356f0467a8a867b7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TUM/Instruction Set Architecture.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d99411e96703f256",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assembler.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -90,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Assembler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Assembler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Assembler.md"
+              }
             }
           }
         ]
@@ -137,8 +162,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c082f66e012077d1",
+  "active": "d99411e96703f256",
   "lastOpenFiles": [
+    "TUM/Instruction Set Architecture.md",
+    "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "2022-11-04.md",
     "TUM/2022-11-04.md",
     "Einfuehrung in die Rechnerarchitekur.md",
@@ -146,8 +173,6 @@
     "Befehlsverarbeitung.md",
     "Einfuehrung in die Informatik.md",
     "Instruction Set Architecture.md",
-    "Hauptspeicher.md",
-    "Das Von-Neumann Konzept.md",
-    "Register.md"
+    "Hauptspeicher.md"
   ]
 }
