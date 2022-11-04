@@ -1,17 +1,17 @@
 {
   "main": {
-    "id": "3d8b7094920a001b",
+    "id": "2fe87bf8907de7a8",
     "type": "split",
     "children": [
       {
-        "id": "d7b8147b9006320f",
+        "id": "130ae152005b7c7e",
         "type": "tabs",
         "children": [
           {
-            "id": "00b39425f4fbb1a6",
+            "id": "afbb3a7760931dc2",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -21,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e853f41c9b693e8d",
+    "id": "ab9c54fcf458d76d",
     "type": "split",
     "children": [
       {
-        "id": "6d57c0e8f98775f3",
+        "id": "a09442eb1512cf93",
         "type": "tabs",
         "children": [
           {
-            "id": "a2da6d2d3accf374",
+            "id": "c082f66e012077d1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +39,7 @@
             }
           },
           {
-            "id": "cd496d1786252415",
+            "id": "240c3f98e6c74df5",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,29 +54,31 @@
             }
           },
           {
-            "id": "0bc1ad4074206523",
+            "id": "97ddbcbc2ef776e3",
             "type": "leaf",
             "state": {
               "type": "starred",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "f4c2899fd8cce62d",
+    "id": "0ef3a5ab5dbd401b",
     "type": "split",
     "children": [
       {
-        "id": "5b07e3ae01f72bea",
+        "id": "e2b01b3a2bb5de4f",
         "type": "tabs",
         "children": [
           {
-            "id": "9772506b9c60cfb6",
+            "id": "53e8921a08b375e8",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -92,7 +94,7 @@
             }
           },
           {
-            "id": "dbce4e5f7e86322b",
+            "id": "2e65a26280a93124",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -103,7 +105,7 @@
             }
           },
           {
-            "id": "93c3075c21108123",
+            "id": "70cfe4af13e10870",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,7 +116,7 @@
             }
           },
           {
-            "id": "c5ddbccc1643a692",
+            "id": "f7218e95aa0e7b60",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -128,6 +130,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "00b39425f4fbb1a6",
-  "lastOpenFiles": []
+  "active": "afbb3a7760931dc2",
+  "lastOpenFiles": [
+    "2022-11-04.md",
+    "Einfuehrung in die Rechnerarchitekur.md",
+    "TUM.md",
+    "Befehlsverarbeitung.md",
+    "Einfuehrung in die Informatik.md",
+    "Instruction Set Architecture.md",
+    "Hauptspeicher.md",
+    "Das Von-Neumann Konzept.md",
+    "Register.md",
+    "Befehlsausfuehrung.md"
+  ]
 }
