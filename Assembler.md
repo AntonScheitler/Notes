@@ -7,9 +7,8 @@
 - Da die Anzahl der Register beschraenkt ist, muss bei groesseren Datenmengen auf den [[Hauptspeicher]] zugegriffen werden
 - Es kann jeweils separat auf 1, 2 oder 4 Byte zugegriffen werden
 #### Speicherbereiche
-- Speicher kann in Assembler ueber den RES befehl allokiert werden
-- Man unterscheidet bei allokiertem Speicher, initialisierteund nicht initialisierten Speicherbereiche
-- Fuer nicht initialisierten Speicher verwendet man im BSS Segment RESB, RESW, RESD oder RESQ
+- Man unterscheidet bei allokiertem Speicher, initialisierte und nicht initialisierten Speicherbereiche
+- Fuer nicht initialisierten Speicher verwendet man im BSS Segment RESB, RESW, RESD oder RESQ, gefolgt von der Anzahl der Woerter
 - Fuer initliaisierten Speicher verwendet man im Data Segment DB, DW, DD oder DQ, gefolgt von dem initialen Wert
 ###### Beispiel
 	.bss
@@ -39,3 +38,6 @@
 - Daten koennen ueber PUSH und POP auf den Stack gelegt und vom Stack entfernt werden
 #### Unterprogramme
 - Unterprogramme koennen ueber den CALL Befehl ausgefuehrt werden
+- Durch CALL wird ein Sprung ausgefuehrt und die Ruecksprungadresse auf dem Stack gespeichert
+- Mithilfe von RET kann wieder zurueck an die Ruecksprungadresse gesprungen werden
+###### Beispiel
