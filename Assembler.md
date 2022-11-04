@@ -1,5 +1,8 @@
-## Allgemeines
-#### Ein- und Zwei-Operanden Form
+## Spruenge
+- Von dem Ablauf eines Programms kann ueber spruenge abgewichen werden
+- Spruenge werden ueber den JMP Befehl, gefolgt von der Adresse ausgefuehrt
+#### Beispiel
+
 ## Speicherzugriffe
 - Da die Anzahl der Register beschraenkt ist, muss bei groesseren Datenmengen auf den [[Hauptspeicher]] zugegriffen werden
 - Es kann jeweils separat auf 1, 2 oder 4 Byte zugegriffen werden
@@ -30,4 +33,9 @@
 	MOV ECX, var ; laedt die Adresse von var in ECX
 	MOV EAX, [10] ; laedt den Inhalt der Adresse '10' in EAX
 	MOV EBX, [ECX] ; laedt den Inhalt der Adresse, die ECX enthaelt
-## Unterprogramme
+## Stack
+- Der Stack wird genutzt, um Ruecksprungadressen und Registerinhalte zu speichern
+- Das ESP Register deutet auf das oberste Element im Stack
+- Daten koennen ueber PUSH und POP auf den Stack gelegt und vom Stack entfernt werden
+#### Unterprogramme
+- Unterprogramme koennen ueber den CALL Befehl ausgefuehrt werden
