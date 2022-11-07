@@ -41,6 +41,13 @@
 - Unterprogramme koennen ueber den CALL Befehl ausgefuehrt werden
 - Durch CALL wird ein Sprung ausgefuehrt und die Ruecksprungadresse auf dem Stack gespeichert
 - Mithilfe von RET kann wieder zurueck an die Ruecksprungadresse gesprungen werden
+###### Aufrufkonvention
+- Um einen effektiven Aufruf von Unterprogrammen zu garantieren, muss die Aufrufkonvention eingehalten werden
+		- Parameter werden in umgekehrter Reihenfolge durch den Caller auf den Stack gelegt, bevor CALL ausgefuehrt wird
+	- Der Rueckgabewert wird ueber das EAX Register uebergeben
+- Um Registerinhalte vor Aenderungen zu schuetzen, werden Caller- und Callee-Saved Register definiert
+	- Caller-Saved Register werden vom aufrufenden Programm gesichert
+	- Callee-Saved Register werden vom aufgerufenen Programm gesichert
 ###### Beispiel
 	.text
 		MOV EAX, 0

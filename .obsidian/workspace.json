@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ffb1c27276660601",
+        "id": "bdae5e33d8581d12",
         "type": "tabs",
         "children": [
           {
-            "id": "53942552f8dba106",
+            "id": "329d827473391cd4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/Speicherhierarchie.md",
+                "file": "TUM/Assembler.md",
                 "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb88f18065a0d912",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/Das Von-Neumann Konzept.md",
-                "mode": "source",
                 "source": false
               }
             }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/Speicherhierarchie.md",
+                "file": "TUM/Assembler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/Speicherhierarchie.md",
+                "file": "TUM/Assembler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/Speicherhierarchie.md"
+                "file": "TUM/Assembler.md"
               }
             }
           }
@@ -148,10 +137,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c082f66e012077d1",
+  "active": "329d827473391cd4",
   "lastOpenFiles": [
-    "TUM/Assembler.md",
     "TUM/Das Von-Neumann Konzept.md",
+    "TUM/Assembler.md",
     "TUM/Speicherhierarchie.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/Instruction Set Architecture.md",
