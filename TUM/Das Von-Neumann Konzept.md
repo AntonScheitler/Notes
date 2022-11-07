@@ -13,6 +13,6 @@
 
 ## Abweichungen vom Konzept
 - Das Leit- und Rechenwerk werden zum Prozessor zusammengefasst
-- Das Speicherwerk ist hierarchisch unterteilt
+- Das Speicherwerk ist hierarchisch unterteilt ([[Speicherhierarchie]])
 - Auf einem Prozessor befinden sich mehrere Rechenwerke
 - Programme und Daten werden in größtenteils getrennten Speichern verwaltet

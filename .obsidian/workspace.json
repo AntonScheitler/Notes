@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "755f6b923c92b5c6",
+        "id": "ffb1c27276660601",
         "type": "tabs",
         "children": [
           {
-            "id": "f20ae6705238fba8",
+            "id": "53942552f8dba106",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cb88f18065a0d912",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/Das Von-Neumann Konzept.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/Assembler.md",
+                "file": "TUM/Das Von-Neumann Konzept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/Assembler.md",
+                "file": "TUM/Das Von-Neumann Konzept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/Assembler.md"
+                "file": "TUM/Das Von-Neumann Konzept.md"
               }
             }
           }
@@ -137,8 +150,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f20ae6705238fba8",
+  "active": "cb88f18065a0d912",
   "lastOpenFiles": [
+    "TUM/Das Von-Neumann Konzept.md",
+    "Speicherhierarchie.md",
     "TUM/Assembler.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/Instruction Set Architecture.md",
@@ -146,8 +161,6 @@
     "2022-11-04.md",
     "TUM/2022-11-04.md",
     "Einfuehrung in die Rechnerarchitekur.md",
-    "TUM.md",
-    "Befehlsverarbeitung.md",
-    "Einfuehrung in die Informatik.md"
+    "TUM.md"
   ]
 }
