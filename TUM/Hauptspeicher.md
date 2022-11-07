@@ -12,7 +12,7 @@
 - Zugriffe auf Daten werden über das Memory Access Register und das Memory Data Register verwaltet
 - Über das MAR wird die gewünschte Zelle adressiert
 - Über das MDR können Daten gelesen oder überschrieben werden
-- Auch wenn ein Speicher in Zellen mit fester Wortlaenge eingeteilt ist, sind dennoch Lese- und Schreiboperationen auf zellenuebergreifende Daten moeglich
+- Obwohl ein Speicher in Worten organisiert ist, sind Lese- und Schreibzugriffe auf nicht ausgerichtete Daten möglich
 #### Beispiel
 ![[Pasted image 20221024152907.png]]
 

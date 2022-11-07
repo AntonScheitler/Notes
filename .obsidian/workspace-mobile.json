@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/Assembler.md",
-                "mode": "source",
+                "file": "TUM/Hauptspeicher.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "TUM/Assembler.md",
+            "file": "TUM/Hauptspeicher.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "TUM/Assembler.md",
+            "file": "TUM/Hauptspeicher.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "TUM/Assembler.md"
+            "file": "TUM/Hauptspeicher.md"
           }
         }
       }
@@ -122,5 +122,9 @@
     "currentTab": 0
   },
   "active": "4294cc57030a6ab2",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "TUM/Das Von-Neumann Konzept.md",
+    "TUM/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/Assembler.md"
+  ]
 }
