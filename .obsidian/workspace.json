@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/Assembler.md",
+                "file": "TUM/Speicherhierarchie.md",
                 "mode": "preview",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/Das Von-Neumann Konzept.md",
+                "file": "TUM/Speicherhierarchie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/Das Von-Neumann Konzept.md",
+                "file": "TUM/Speicherhierarchie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/Das Von-Neumann Konzept.md"
+                "file": "TUM/Speicherhierarchie.md"
               }
             }
           }
@@ -150,11 +148,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cb88f18065a0d912",
+  "active": "c082f66e012077d1",
   "lastOpenFiles": [
-    "TUM/Das Von-Neumann Konzept.md",
-    "Speicherhierarchie.md",
     "TUM/Assembler.md",
+    "TUM/Das Von-Neumann Konzept.md",
+    "TUM/Speicherhierarchie.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/Instruction Set Architecture.md",
     "TUM/Hauptspeicher.md",
