@@ -4,26 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "4e1a1b18d42c4beb",
+        "id": "a2ee132209c553f0",
         "type": "tabs",
         "children": [
           {
-            "id": "bea29f4c19642e63",
+            "id": "0c0700a97dfbf5db",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/Einfuehrung in die Rechnerarchitekur.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4138e2a00137027",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -94,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/Einfuehrung in die Rechnerarchitekur.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/Einfuehrung in die Rechnerarchitekur.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TUM/Einfuehrung in die Rechnerarchitekur.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,15 +129,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bea29f4c19642e63",
+  "active": "0c0700a97dfbf5db",
   "lastOpenFiles": [
-    "TUM/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/Hauptspeicher.md",
-    "TUM/Systembefehle.md",
     "TUM/Speicherverwaltung.md",
-    "TUM/Einfuehrung in die Informatik.md",
-    "TUM/Assembler.md",
     "TUM/Das Von-Neumann Konzept.md",
+    "TUM/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/Einfuehrung in die Informatik.md",
+    "TUM/Systembefehle.md",
+    "TUM/Hauptspeicher.md",
+    "TUM/Assembler.md",
     "TUM/Speicherhierarchie.md",
     "TUM/Instruction Set Architecture.md",
     "2022-11-04.md"
