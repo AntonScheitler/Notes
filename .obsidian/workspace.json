@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a2ee132209c553f0",
+        "id": "6720261f93e7c337",
         "type": "tabs",
         "children": [
           {
-            "id": "0c0700a97dfbf5db",
+            "id": "fe8a569d536e75a3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -61,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0c0700a97dfbf5db",
+  "active": "fe8a569d536e75a3",
   "lastOpenFiles": [
+    "TUM/Befehlsverarbeitung.md",
+    "TUM/Hauptspeicher.md",
     "TUM/Speicherverwaltung.md",
     "TUM/Das Von-Neumann Konzept.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/Einfuehrung in die Informatik.md",
     "TUM/Systembefehle.md",
-    "TUM/Hauptspeicher.md",
     "TUM/Assembler.md",
     "TUM/Speicherhierarchie.md",
-    "TUM/Instruction Set Architecture.md",
-    "2022-11-04.md"
+    "TUM/Instruction Set Architecture.md"
   ]
 }
