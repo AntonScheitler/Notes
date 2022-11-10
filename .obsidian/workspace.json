@@ -11,8 +11,12 @@
             "id": "fe8a569d536e75a3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TUM/Speicherverwaltung.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TUM/Speicherverwaltung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TUM/Speicherverwaltung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TUM/Speicherverwaltung.md"
+              }
             }
           }
         ]
@@ -130,15 +139,15 @@
   },
   "active": "fe8a569d536e75a3",
   "lastOpenFiles": [
+    "TUM/Systembefehle.md",
+    "TUM/Assembler.md",
+    "TUM/Speicherhierarchie.md",
     "TUM/Befehlsverarbeitung.md",
     "TUM/Hauptspeicher.md",
     "TUM/Speicherverwaltung.md",
     "TUM/Das Von-Neumann Konzept.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/Einfuehrung in die Informatik.md",
-    "TUM/Systembefehle.md",
-    "TUM/Assembler.md",
-    "TUM/Speicherhierarchie.md",
     "TUM/Instruction Set Architecture.md"
   ]
 }

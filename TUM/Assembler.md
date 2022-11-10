@@ -8,7 +8,7 @@
 - Da die Anzahl der Register beschraenkt ist, muss bei groesseren Datenmengen auf den [[Hauptspeicher]] zugegriffen werden
 - Es kann jeweils separat auf 1, 2 oder 4 Byte zugegriffen werden
 #### Speicherbereiche
-- Man unterscheidet bei allokiertem Speicher, initialisierte und nicht initialisierten Speicherbereiche
+- Man unterscheidet bei allokiertem Speicher, initialisierte und nicht initialisierte Speicherbereiche
 - Fuer nicht initialisierten Speicher verwendet man im BSS Segment RESB, RESW, RESD oder RESQ, gefolgt von der Anzahl der Woerter
 - Fuer initliaisierten Speicher verwendet man im Data Segment DB, DW, DD oder DQ, gefolgt von dem initialen Wert
 ###### Beispiel
@@ -34,7 +34,7 @@
 		MOV EAX, [10] ; laedt den Inhalt der Adresse '10' in EAX
 		MOV EBX, [ECX] ; laedt den Inhalt der Adresse, die ECX enthaelt
 ## Stack
-- Der Stack wird genutzt, um Ruecksprungadressen und Registerinhalte zu speichern
+- Der Stack wird genutzt, um Ruecksprungadressen und Registerinhalte zu sichern
 - Das ESP Register deutet auf das oberste Element im Stack
 - Daten koennen ueber PUSH und POP auf den Stack gelegt und vom Stack entfernt werden
 #### Unterprogramme
@@ -43,7 +43,7 @@
 - Mithilfe von RET kann wieder zurueck an die Ruecksprungadresse gesprungen werden
 ###### Aufrufkonvention
 - Um einen effektiven Aufruf von Unterprogrammen zu garantieren, muss die Aufrufkonvention eingehalten werden
-		- Parameter werden in umgekehrter Reihenfolge durch den Caller auf den Stack gelegt, bevor CALL ausgefuehrt wird
+	- Parameter werden in umgekehrter Reihenfolge durch den Caller auf den Stack gelegt, bevor CALL ausgefuehrt wird
 	- Der Rueckgabewert wird ueber das EAX Register uebergeben
 - Um Registerinhalte vor Aenderungen zu schuetzen, werden Caller- und Callee-Saved Register definiert
 	- Caller-Saved Register werden vom aufrufenden Programm gesichert

@@ -15,3 +15,5 @@
 - Ueber ein Page Directory wird auf die Page Tables eines Prozesses verwiesen
 - Ein Spezialregister verweist wiederum auf das Page Directory
 - Bei einem Prozesswechsel wird somit nur dieses Spezialregister veraendert
+###### Swapping
+- Um bei der Ueberschreitung der Speicherkapazitaet einen Absturz zu vermeiden, koennen Pages auf den externen Speicher ausgelagert werden
