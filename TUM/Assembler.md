@@ -1,9 +1,28 @@
 ## Spruenge
 - Von dem Ablauf eines Programms kann ueber spruenge abgewichen werden
-- Spruenge werden ueber den JMP Befehl, gefolgt von der Adresse ausgefuehrt
-#### Beispiel
+#### Unbedingte Spruenge
+- Unbedingte Spruenge werden ueber den JMP Befehl, gefolgt von der Adresse ausgefuehrt
+###### Beispiel
 	JMP 0x1234 ; springt zum Befehl an der Adresse 0x1234
 	JMP label1 ; springt zum Befehl, der mit label1 markiert ist
+#### Bedingte Spruenge
+- Bedingte Spruenge werden ausgehend von Statusregistern ausgefuehrt
+- Statusregister werden durch den CMP Befehl beeinflusst, was einer Subtraktion ohne Aenderung der Operanden entspricht
+- Unterschiedliche Sprungbefehle pruefen unterschiedliche Flags
+###### Auswirkungen von CMP
+![[Pasted image 20221111135009.png]]
+###### Sprungbefehle
+![[Pasted image 20221111135724.png]]
+###### Beispiel
+	.text
+		CMP EAX, 0
+		JE basisfall
+		
+		...
+		
+		basisfall:
+			MOV EAX, 1
+			RET	
 ## Speicherzugriffe
 - Da die Anzahl der Register beschraenkt ist, muss bei groesseren Datenmengen auf den [[Hauptspeicher]] zugegriffen werden
 - Es kann jeweils separat auf 1, 2 oder 4 Byte zugegriffen werden
@@ -36,6 +55,7 @@
 ## Stack
 - Der Stack wird genutzt, um Ruecksprungadressen und Registerinhalte zu sichern
 - Das ESP Register deutet auf das oberste Element im Stack
+- Das EBP Register deutet auf dieselbe Adresse wie ESP zu Beginn des Unterprogramms
 - Daten koennen ueber PUSH und POP auf den Stack gelegt und vom Stack entfernt werden
 #### Unterprogramme
 - Unterprogramme koennen ueber den CALL Befehl ausgefuehrt werden

@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6720261f93e7c337",
+        "id": "af4a2b19db010f18",
         "type": "tabs",
         "children": [
           {
-            "id": "fe8a569d536e75a3",
+            "id": "18ca010326232fd5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/Speicherverwaltung.md",
-                "mode": "preview",
+                "file": "Compilierung und Assemblierung.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/Speicherverwaltung.md",
+                "file": "Compilierung und Assemblierung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/Speicherverwaltung.md",
+                "file": "Compilierung und Assemblierung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/Speicherverwaltung.md"
+                "file": "Compilierung und Assemblierung.md"
               }
             }
           }
@@ -137,14 +137,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fe8a569d536e75a3",
+  "active": "18ca010326232fd5",
   "lastOpenFiles": [
-    "TUM/Systembefehle.md",
     "TUM/Assembler.md",
+    "TUM/Speicherverwaltung.md",
+    "TUM/Systembefehle.md",
     "TUM/Speicherhierarchie.md",
     "TUM/Befehlsverarbeitung.md",
     "TUM/Hauptspeicher.md",
-    "TUM/Speicherverwaltung.md",
     "TUM/Das Von-Neumann Konzept.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/Einfuehrung in die Informatik.md",
