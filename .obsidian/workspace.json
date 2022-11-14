@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Compilierung und Assemblierung.md",
+                "file": "TUM/Compilierung und Assemblierung.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Compilierung und Assemblierung.md",
+                "file": "TUM/Compilierung und Assemblierung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Compilierung und Assemblierung.md",
+                "file": "TUM/Compilierung und Assemblierung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Compilierung und Assemblierung.md"
+                "file": "TUM/Compilierung und Assemblierung.md"
               }
             }
           }
@@ -137,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "18ca010326232fd5",
+  "active": "c082f66e012077d1",
   "lastOpenFiles": [
-    "TUM/Assembler.md",
+    "TUM/Pasted image 20221114120856.png",
+    "TUM/Pasted image 20221111135724.png",
+    "TUM/Pasted image 20221111135009.png",
+    "TUM/Compilierung und Assemblierung.md",
+    "Pasted image 20221111135632.png",
     "TUM/Speicherverwaltung.md",
+    "TUM/Assembler.md",
     "TUM/Systembefehle.md",
     "TUM/Speicherhierarchie.md",
-    "TUM/Befehlsverarbeitung.md",
-    "TUM/Hauptspeicher.md",
-    "TUM/Das Von-Neumann Konzept.md",
-    "TUM/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/Einfuehrung in die Informatik.md",
-    "TUM/Instruction Set Architecture.md"
+    "TUM/Befehlsverarbeitung.md"
   ]
 }
