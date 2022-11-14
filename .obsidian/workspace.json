@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e2ffe5dd34b36835",
+        "id": "0839fab1ef393d42",
         "type": "tabs",
         "children": [
           {
-            "id": "67f72ba59c9a90e7",
+            "id": "26ad17d062593173",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -129,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "67f72ba59c9a90e7",
+  "active": "c082f66e012077d1",
   "lastOpenFiles": [
+    "TUM/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/1. Semester.md",
     "TUM/Compilierung und Assemblierung.md",
+    "TUM/Einfuehrung in die Informatik.md",
     "TUM/Pasted image 20221114120856.png",
     "TUM/Pasted image 20221111135724.png",
     "TUM/Pasted image 20221111135009.png",
     "Pasted image 20221111135632.png",
     "TUM/Speicherverwaltung.md",
-    "TUM/Assembler.md",
-    "TUM/Systembefehle.md",
-    "TUM/Speicherhierarchie.md",
-    "TUM/Befehlsverarbeitung.md"
+    "TUM/Assembler.md"
   ]
 }
