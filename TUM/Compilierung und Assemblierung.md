@@ -15,3 +15,8 @@
 ## Laufzeitumgebung
 - Ein Programm benoetigt eine Laufzeitumgebung, um ausgefuehrt werden zu koennen
 - Die Laufzeitumgebung umfasst [[Speicherverwaltung]], Bibliotheken und Betriebssysteme
+## Interpretierte Sprachen
+- Die Quelldatei in einer Hochsprache wird vom Interpreter schrittweise gelesen und abgearbeitet
+- Kommandos in der Quelldatei loesen hierbei Funktionen im Interpreter aus
+- Der Interpreter ist dynamisch und protabel
+- Interpretierte Sprachen laufen jedoch langsamer
