@@ -1,0 +1,5 @@
+- Originally, wiring was used to connect computers to one another
+- However, in order to send data across large distances, expensive, long-distance connections had to be used
+- Instead of relying on these connections, intermediate computers across smaller distances would store and forward data, one message at a time
+- This resulted in cheaper connections, however, large sets of data could easily block entire networks
+- This problem was solved with the introduction of [[Packets]]
