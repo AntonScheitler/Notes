@@ -38,17 +38,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9507940947120566",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -161,8 +153,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9507940947120566",
+  "active": "c082f66e012077d1",
   "lastOpenFiles": [
+    "Untitled.md",
     "Books/Introduction to Networking.md",
     "Books/Packets.md",
     "Books/Store-and-Forward Networks.md",
@@ -171,7 +164,6 @@
     "TUM/Systembefehle.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/1. Semester.md",
-    "TUM/Einfuehrung in die Informatik.md",
-    "TUM/Pasted image 20221114120856.png"
+    "TUM/Einfuehrung in die Informatik.md"
   ]
 }
