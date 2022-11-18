@@ -9,6 +9,8 @@
 - Bedingte Spruenge werden ausgehend von Statusregistern ausgefuehrt
 - Statusregister werden durch den CMP Befehl beeinflusst, was einer Subtraktion ohne Aenderung der Operanden entspricht
 - Unterschiedliche Sprungbefehle pruefen unterschiedliche Flags
+###### Verhalten von CMP
+![[Pasted image 20221118133821.png]]
 ###### Sprungbefehle
 ![[Pasted image 20221111135724.png]]
 ###### Beispiel

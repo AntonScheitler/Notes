@@ -4,43 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3dcc69ec850cc4ea",
+        "id": "51f372c431c89d5f",
         "type": "tabs",
         "children": [
           {
-            "id": "c9df305c30e961e0",
+            "id": "a214c681df2b53d2",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "5ec7e7f38802dec0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Introduction to Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f1bb0ffdb33e55d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Store-and-Forward Networks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,11 +130,11 @@
   },
   "active": "c082f66e012077d1",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Books/Introduction to Networking.md",
-    "Books/Packets.md",
-    "Books/Store-and-Forward Networks.md",
     "TUM/Assembler.md",
+    "Books/Introduction to Networking.md",
+    "Books/Store-and-Forward Networks.md",
+    "Untitled.md",
+    "Books/Packets.md",
     "TUM/Compilierung und Assemblierung.md",
     "TUM/Systembefehle.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
