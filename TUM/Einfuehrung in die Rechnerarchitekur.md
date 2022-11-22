@@ -7,3 +7,4 @@
 ### [[Speicherhierarchie]]
 ### [[Speicherverwaltung]]
 ### [[Systembefehle]]
+### [[Digitale Schaltungen]]
