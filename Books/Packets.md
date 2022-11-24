@@ -1,5 +1,6 @@
-- In order to prevent larger messages from blocking the entire networks, a message would be split into equally sized packets
+- In order to prevent larger messages from blocking the entire network, a message would be split into packets
 - Those packets could then be sent across the network seperately and more quickly
-- In order to receive the packets at the correct destination, in the correct order, each packets has to contain information about its source and destination adress, as well as its offset
+- In order to reassemble the packets at the correct destination, in the correct order, each packet has to contain information about its source and destination adress, as well as its offset
 - Routers were developed, which are computers, specialized in sending packets along their shortest route
 - Now, computers which were part of a Local-Area-Network, could send data across the Wide-Area-Network by connecting to a router
+- The term "Internet" thus captures the idea of connecting multiple local networks together
