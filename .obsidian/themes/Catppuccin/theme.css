@@ -1,7 +1,7 @@
 @charset "UTF-8";
-.theme-dark pre {
+.markdown-reading-view code[class*="language-"] {
+  overflow-x: scroll;
   white-space: pre;
-  overflow-x: auto;
 }
 body {
   /*
