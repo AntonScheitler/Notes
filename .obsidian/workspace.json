@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fee429bef8048d29",
+        "id": "4ecb307fbd7c3364",
         "type": "tabs",
         "children": [
           {
-            "id": "55d9f09556f79d8d",
+            "id": "3feabf6d19f35fff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Packets.md",
+                "file": "VHDL.md",
                 "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2bd677e064df88f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Packets.md",
-                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Packets.md",
+                "file": "VHDL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Packets.md",
+                "file": "VHDL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Packets.md"
+                "file": "VHDL.md"
               }
             }
           }
@@ -149,13 +137,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "55d9f09556f79d8d",
+  "active": "3feabf6d19f35fff",
   "lastOpenFiles": [
+    "VHDL.md",
+    "TUM/Digitale Schaltungen.md",
+    "Books/Packets.md",
     "Books/Store-and-Forward Networks.md",
     "Books/Introduction to Networking.md",
-    "Books/Packets.md",
-    "TUM/Digitale Schaltungen.md",
-    "VHDL.md",
     "TUM/Einfuehrung in die Rechnerarchitekur.md",
     "2022-11-22.md",
     "Boolesche Algebra.md",
