@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "4ecb307fbd7c3364",
+        "id": "7777a7cfb15c804b",
         "type": "tabs",
         "children": [
           {
-            "id": "3feabf6d19f35fff",
+            "id": "985ad3cad5059fd3",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -128,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c082f66e012077d1",
+  "active": "985ad3cad5059fd3",
   "lastOpenFiles": [
+    "Books/Introduction to Networking.md",
+    "TUM/TUM.md",
+    "TUM/1. Semester/ERA/Assembler.md",
+    "TUM/1. Semester/1. Semester.md",
+    "TUM/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/VHDL.md",
     "VHDL.md",
     "TUM/Digitale Schaltungen.md",
     "Books/Packets.md",
-    "Books/Store-and-Forward Networks.md",
-    "Books/Introduction to Networking.md",
-    "TUM/Einfuehrung in die Rechnerarchitekur.md",
-    "2022-11-22.md",
-    "Boolesche Algebra.md",
-    "TUM/Assembler.md",
-    "TUM/Compilierung und Assemblierung.md"
+    "Books/Store-and-Forward Networks.md"
   ]
 }
