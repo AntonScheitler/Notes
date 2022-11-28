@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "7777a7cfb15c804b",
+        "id": "fdae59d46a489ed5",
         "type": "tabs",
         "children": [
           {
-            "id": "985ad3cad5059fd3",
+            "id": "be8088d9e3998f97",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -129,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "985ad3cad5059fd3",
+  "active": "be8088d9e3998f97",
   "lastOpenFiles": [
+    "TUM/1. Semester/ERA/Digitale Schaltungen.md",
+    "TUM/1. Semester/ERA/VHDL.md",
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/1. Semester/ERA/Assembler.md",
+    "Books/Store-and-Forward Networks.md",
+    "Network Architecture.md",
+    "Link Layer.md",
     "Books/Introduction to Networking.md",
     "TUM/TUM.md",
-    "TUM/1. Semester/ERA/Assembler.md",
-    "TUM/1. Semester/1. Semester.md",
-    "TUM/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/VHDL.md",
-    "VHDL.md",
-    "TUM/Digitale Schaltungen.md",
-    "Books/Packets.md",
-    "Books/Store-and-Forward Networks.md"
+    "TUM/1. Semester/1. Semester.md"
   ]
 }

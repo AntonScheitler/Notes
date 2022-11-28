@@ -19,3 +19,21 @@
 - Fuer die Ueberfuehrung in das Zweierkomplement koennen XOR Gatter und ein eingehendes Carry Bit verwendet werden
 ###### Beispiel
 ![[Pasted image 20221122210342.png]]
+#### Multiplikation
+- Eine Multiplikation mit zwei Bits entspricht einer Verundung
+- Um mehrstellige Binaerzahlen zu Multiplizieren, muss der erste Operand stellenweise mit den Bits des zweiten Operanden verundet werden
+- Die daraus resultierenden Zwischenergebnisse werden zum Produkt addiert
+###### Optimierung ueber Carry-Save Addierer
+- Bei einem Carry-Save Addierer werden Volladdierer nicht mehr ueber die Carry Bits verbunden
+- Stattdessen werden Summen und Carry Bits separat berechnet und am Ende aufsummiert
+- Verwendet man in einem Multiplizierer Carry-Save Addierer, so koennen Zwischenergebnisse mit den Summen und Carry Bits des vorherigen Schritts verrechnet werden
+- Da die Volladdierer in jedem Schritt nun entkoppelt sind, wird die Multiplikation beschleunigt
+###### Beispiel
+![[Pasted image 20221128122641.png]]
+![[Pasted image 20221128125755.png]]
+![[Pasted image 20221128125806.png]]
+## Logische Operationen
+#### Multiplexer
+- Ein Multiplexer waehlt ausgehend von einem Steuersignal eines seiner Eingabesignale aus und leitet es weiter
+###### Beispiel
+![[Pasted image 20221128132144.png]]
