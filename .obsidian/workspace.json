@@ -11,7 +11,7 @@
             "id": "0549e789b2cf813f",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -131,15 +130,15 @@
   },
   "active": "0549e789b2cf813f",
   "lastOpenFiles": [
-    "Speicherbausteine.md",
-    "TUM/1. Semester/ERA/Digitale Schaltungen.md",
-    "TUM/1. Semester/ERA/VHDL.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/1. Semester/ERA/Digitale Schaltungen.md",
+    "TUM/1. Semester/ERA/Arithmetische und Logische Operationen.md",
+    "TUM/1. Semester/ERA/Speicherbausteine.md",
+    "TUM/1. Semester/ERA/VHDL.md",
     "TUM/1. Semester/ERA/Assembler.md",
     "Books/Store-and-Forward Networks.md",
     "Network Architecture.md",
     "Link Layer.md",
-    "Books/Introduction to Networking.md",
-    "TUM/TUM.md"
+    "Books/Introduction to Networking.md"
   ]
 }

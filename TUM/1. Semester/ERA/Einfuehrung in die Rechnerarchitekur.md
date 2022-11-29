@@ -9,3 +9,5 @@
 ### [[Systembefehle]]
 ### [[Digitale Schaltungen]]
 ### [[VHDL]]
+### [[Arithmetische und Logische Operationen]]
+### [[Speicherbausteine]]
