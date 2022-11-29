@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fdae59d46a489ed5",
+        "id": "8b9ea4c2664b4405",
         "type": "tabs",
         "children": [
           {
-            "id": "be8088d9e3998f97",
+            "id": "0ceec83ff03553d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/1. Semester/ERA/Digitale Schaltungen.md",
+                "file": "Speicherbausteine.md",
                 "mode": "preview",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/1. Semester/ERA/Digitale Schaltungen.md",
+                "file": "Speicherbausteine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/1. Semester/ERA/Digitale Schaltungen.md",
+                "file": "Speicherbausteine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/1. Semester/ERA/Digitale Schaltungen.md"
+                "file": "Speicherbausteine.md"
               }
             }
           }
@@ -137,8 +137,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "be8088d9e3998f97",
+  "active": "0ceec83ff03553d2",
   "lastOpenFiles": [
+    "Speicherbausteine.md",
     "TUM/1. Semester/ERA/Digitale Schaltungen.md",
     "TUM/1. Semester/ERA/VHDL.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
@@ -147,7 +148,6 @@
     "Network Architecture.md",
     "Link Layer.md",
     "Books/Introduction to Networking.md",
-    "TUM/TUM.md",
-    "TUM/1. Semester/1. Semester.md"
+    "TUM/TUM.md"
   ]
 }
