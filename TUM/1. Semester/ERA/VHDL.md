@@ -62,8 +62,10 @@ architecture struct of or4 is
 
 end architecture struct;
 ```
-## Ausfuehrungsreihenfolge
+## Parallelitaet und Prozesse
 - Innerhalb einer Architecture werden Signalzuweisungen parallel ausgefuehrt
+- Sequentielle Logik kann in einem Process Block implementiert werden
+- Fuer einen Prozess kann durch eine sensitivity list angegeben werden, bei welchen Signalen der Prozess ausgefuehrt werden soll
 ## Datentypen
 #### std_logic
 - Dieser Datentyp repraesentiert einzelne Bits
@@ -101,6 +103,39 @@ architecture behave of example is
 		c <= (a(3 downto 2), b(3), b(1), a(1), a(0), 2b"01"); -- c = 1001 1001
 
 end architecture behave;
+```
+## Bedingungen und Multiplexer
+- Mithilfe der when und case keywords koennen Bedingungen, sowie Multiplexer realisiert werden
+#### Beispiel
+```vhdl
+TODO
+```
+## Generics
+- Ueber Generics koennen Komponenten mit einer beliebigen Bitbreite definiert werden
+- Die Bitbreite kann mithilfe einer generic map definiert werden
+#### Beispiel
+```vhdl
+architecture behave of mux4 is
+	component mux2_generic is 
+		generic (
+		width : integer
+		);
+
+		port (
+		d0, d1 : in std_logic_vector(width - 1 downto 0);
+		s : in std_logic;
+		y : out std_logic_vector(width - 1 downto 0)
+		);
+	end component mux2_generic;
+
+TODO
+```
+## Speicherbausteine
+- [[Speicherbausteine]] koennen in VHDL mithilfe von Rueckkopplung realisiert werden
+- Die steigende Taktflanke kann ueber die Funktion rising_edge ueberprueft werden
+#### Beispiel
+```vhdl
+TODO
 ```
 ## Testbenches
 - Um die Funktionsweise eines Entitys zu testen, muessen Stimuli angelegt und Ausgabe- mit Sollwerten verglichen werden
