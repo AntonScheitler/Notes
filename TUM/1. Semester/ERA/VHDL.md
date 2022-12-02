@@ -66,6 +66,21 @@ end architecture struct;
 - Innerhalb einer Architecture werden Signalzuweisungen parallel ausgefuehrt
 - Sequentielle Logik kann in einem Process Block implementiert werden
 - Fuer einen Prozess kann durch eine sensitivity list angegeben werden, bei welchen Signalen der Prozess ausgefuehrt werden soll
+#### Beispiel
+```vhdl
+architecture behave of basic is
+	signal and1, and2, and3 : std_logic;
+begin
+	and1 <= (not a) and b and c;
+	and2 <= a and (not b) and c;
+	and3 <= a and b and c;
+
+	process(and1, and2, and3) is
+	begin
+		y <= and1 or and2 or and3;
+	end process;
+end architecture behave;
+```
 ## Datentypen
 #### std_logic
 - Dieser Datentyp repraesentiert einzelne Bits
@@ -108,7 +123,24 @@ end architecture behave;
 - Mithilfe der when und case keywords koennen Bedingungen, sowie Multiplexer realisiert werden
 #### Beispiel
 ```vhdl
-TODO
+architecture behave of mux2 is
+begin
+	y <= d1, when s = '1' else d0;
+end architecture behave;
+
+architecture behave of mux4 is
+begin
+	process is
+	begin
+		case s is
+			when "00" => y <= d0;
+			when "01" => y <= d1;
+			when "10" => y <= d2;
+			when "11" => y <= d3;	
+			when others => y <= d0;
+		end case;
+	end process;
+end architecture behave;
 ```
 ## Generics
 - Ueber Generics koennen Komponenten mit einer beliebigen Bitbreite definiert werden
@@ -116,7 +148,7 @@ TODO
 #### Beispiel
 ```vhdl
 architecture behave of mux4 is
-	component mux2_generic is 
+	component is mux2_generic is 
 		generic (
 		width : integer
 		);
@@ -128,14 +160,37 @@ architecture behave of mux4 is
 		);
 	end component mux2_generic;
 
-TODO
+	signal y0, y1 : std_logic_vector(7 downto 0);
+begin
+	mux2_1 : mux2_generic generic map(width => 8)
+	port map (d0 => d0, d1 => d1, s => s(0), y => y0);
+	mux2_2 : mux2_generic generic map(width => 8)
+	port map (d0 => d2, d1 => d3, s => s(0), y => y1);
+	mux2_3 : mux2_generic generic map(width => 8)
+	port map (d0 => y0, d1 => y1, s => s(1), y => y);
+
+end architecture behave;
 ```
 ## Speicherbausteine
 - [[Speicherbausteine]] koennen in VHDL mithilfe von Rueckkopplung realisiert werden
 - Die steigende Taktflanke kann ueber die Funktion rising_edge ueberprueft werden
 #### Beispiel
 ```vhdl
-TODO
+entity RS_Latch is
+	port (
+	s, r : in std_logic;
+	q, not_q : out std_logic
+	);
+end entity RS_Latch;
+
+architecture behave of RS_Latch is
+begin
+	process is
+	begin
+		q <= r nor not_q;
+		not_q <= s nor q;
+	end process;
+end architecture;
 ```
 ## Testbenches
 - Um die Funktionsweise eines Entitys zu testen, muessen Stimuli angelegt und Ausgabe- mit Sollwerten verglichen werden
