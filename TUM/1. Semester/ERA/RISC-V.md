@@ -1,13 +1,21 @@
 ## Befehle
-- TODO
+- Befehle in RISC-V sind stets 32 Bit gross und decken arithmetische, logische, Sprung- und Speicheroperationen ab
 #### Befehlskodierung
-- TODO
+- Unterschiedliche Befehle verwenden unterschiedliche Operanden, weshalb Befehle, ausgehend vom Opcode in verschiedene Instruktionsformate unterteilt werden
+###### R-Typ
+![[Pasted image 20221206000536.png]]
+###### I-Typ
+![[Pasted image 20221206000612.png]]
 ### Konstanten
-- TODO
+- Immediates in einem RISC-V Befehl koennen nur in 12 Bits kodiert werden
+- Um groessere Konstanten in einem Register zu speichern, werden ueber lui die oberen 20 Bits eines Registers mit Werten gefuellt
+- Die unteren 12 Bits koennen nun regulaer besetzt werden
+###### Beispiel
+![[Pasted image 20221206001128.png]]
 ## Register
 - Einem RISC-V Computer stehen 32 Register zur Verfuegung
 - Jedes Register hat eine Breite von 4 Bytes
-- Diese Register koennen als Speicher als temporaere Register und Ruecksprungadressen
+- Diese Register koennen als Speicher fuer temporaere Werte und Ruecksprungadressen dienen
 #### Beispiel
 ![[Pasted image 20221205124540.png]]
 ## Speicher
@@ -16,7 +24,7 @@
 - Da dieser Speicher nur eine Breite von einem Byte hat, nimmt ein Registerwert 4 Speicherzeilen in Anspruch
 #### Speicherzugriff
 ###### Lesezugriff
-- Von einer Speicheradresse kann ueber den lw gelesen werden
+- Von einer Speicheradresse kann ueber den lw Befehl gelesen werden
 - Hierbei wird als Ziel ein Register und als Quelle eine Adresse mit einem Offset gewaehlt
 - Um einen Speicherzugriff durchzufuehren, muss somit ebenfalls eine Addition erfolgen
 ###### Schreibzugriff
