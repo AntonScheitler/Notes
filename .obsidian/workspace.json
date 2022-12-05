@@ -11,12 +11,8 @@
             "id": "ca40512684295137",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -139,15 +131,15 @@
   },
   "active": "ca40512684295137",
   "lastOpenFiles": [
+    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
+    "TUM/1. Semester/ERA/Assembler.md",
     "TUM/1. Semester/ERA/RISC-V.md",
     "RISC-V.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "Untitled.md",
-    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
     "TUM/1. Semester/ERA/Speicherverwaltung.md",
     "TUM/1. Semester/ERA/VHDL.md",
     "TUM/1. Semester/ERA/Speicherbausteine.md",
-    "spiecher.md",
-    "TUM/1. Semester/ERA/Arithmetische und Logische Operationen.md"
+    "spiecher.md"
   ]
 }
