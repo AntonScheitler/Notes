@@ -11,3 +11,4 @@
 ### [[VHDL]]
 ### [[Arithmetische und Logische Operationen]]
 ### [[Speicherbausteine]]
+### [[RISC-V]]

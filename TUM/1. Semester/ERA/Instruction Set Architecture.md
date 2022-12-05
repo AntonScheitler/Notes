@@ -21,4 +21,4 @@
 #### Reduced Instruction Set Architecture (RISC)
 - Kleiner, elementarer Befehlssatz
 - RISC Rechner werden durch feste Verdrahtung realisiert
-- Die Befehle sind einfach und schnell
+- Die Befehle sind einfach und schnell ([[RISC-V]])
