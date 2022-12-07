@@ -12,3 +12,4 @@
 ### [[Arithmetische und Logische Operationen]]
 ### [[Speicherbausteine]]
 ### [[RISC-V]]
+### [[Aufbau eines Prozessors]]

@@ -11,7 +11,7 @@
             "id": "63f9f06eae36fb05",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "63f9f06eae36fb05",
   "lastOpenFiles": [
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "Aufbau eines Prozessors.md",
     "Pasted image 20221207225613.png",
     "Pasted image 20221206161821.png",
@@ -137,7 +138,6 @@
     "TUM/1. Semester/ERA/Instruction Set Architecture.md",
     "TUM/1. Semester/ERA/Assembler.md",
     "RISC-V.md",
-    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "Untitled.md",
     "TUM/1. Semester/ERA/Speicherverwaltung.md"
   ]
