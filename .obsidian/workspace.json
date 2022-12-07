@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "bbb2607fad7111c3",
+        "id": "28b0a606097b1779",
         "type": "tabs",
         "children": [
           {
-            "id": "ca40512684295137",
+            "id": "63f9f06eae36fb05",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca40512684295137",
+  "active": "63f9f06eae36fb05",
   "lastOpenFiles": [
+    "Aufbau eines Prozessors.md",
+    "Pasted image 20221207225613.png",
+    "Pasted image 20221206161821.png",
+    "TUM/1. Semester/ERA/RISC-V.md",
     "TUM/1. Semester/ERA/Instruction Set Architecture.md",
     "TUM/1. Semester/ERA/Assembler.md",
-    "TUM/1. Semester/ERA/RISC-V.md",
     "RISC-V.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "Untitled.md",
-    "TUM/1. Semester/ERA/Speicherverwaltung.md",
-    "TUM/1. Semester/ERA/VHDL.md",
-    "TUM/1. Semester/ERA/Speicherbausteine.md",
-    "spiecher.md"
+    "TUM/1. Semester/ERA/Speicherverwaltung.md"
   ]
 }
