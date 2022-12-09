@@ -42,6 +42,7 @@
 ![[Pasted image 20221206170720.png]]
 #### S-Typ
 - An den Eingang des Extend Bausteins, werden nun ebenfalls die Immediate Bits des S-Typs angelegt
+- Die Control Unit steuert, welche Immediate Bits erweitert werden
 - Einer der Operanden wird and den Schreibeingang des Datenspeichers angelegt
 ###### Beispiel
 ![[Pasted image 20221206172301.png]]
@@ -51,3 +52,8 @@
 - Die Control Unit steuert, ob dieser Program Counter, oder der regulaer inkrementierte weitergegeben wird
 ###### Beispiel
 ![[Pasted image 20221207230007.png]]
+#### J-Typ
+- Der regulaer inkrementierte Program Counter wird ueber einen Multiplexer mit dem Schreibeingang der Registerbank verknuepft
+- Mit der Control Unit wird gesteuert, ob das Ergebnis der ALU, der Inhalt des Datenspeichers, oder der Program Counter weitergegeben wird
+###### Beispiel
+![[Pasted image 20221209133934.png]]
