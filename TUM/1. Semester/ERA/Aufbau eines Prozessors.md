@@ -18,7 +18,7 @@
 ###### Beispiel
 ![[Pasted image 20221206162000.png]]
 #### Datenspeicher
-- Mithilfe einer Adresse kann ein Datum in den Speicher geladen werden ([[Hauptspeicher]])
+- Mithilfe einer Adresse kann ein Datum aus und in den Speicher geladen werden ([[Hauptspeicher]])
 ###### Beispiel
 ![[Pasted image 20221206162057.png]]
 ## Realisierung eines R-Typ Befehls
@@ -33,7 +33,7 @@
 ## Prozessorerweiterungen
 #### I-Typ
 ###### Immediates
-- Die 12 Bits des Immediates wird mithilfe eines Extend Bausteins in eine 32 Bit Zahl ueberfuehrt
+- Die 12 Bits des Immediates werden mithilfe eines Extend Bausteins in eine 32 Bit Zahl ueberfuehrt
 - Die Control Unit leitet je nach Opcode das Immediate, oder den Registerinhalt weiter
 ###### Load
 - Der Ausgang der ALU wird als Adresse an den Datenspeicher angelegt
@@ -43,7 +43,7 @@
 #### S-Typ
 - An den Eingang des Extend Bausteins, werden nun ebenfalls die Immediate Bits des S-Typs angelegt
 - Die Control Unit steuert, welche Immediate Bits erweitert werden
-- Einer der Operanden wird and den Schreibeingang des Datenspeichers angelegt
+- Einer der Operanden wird an den Schreibeingang des Datenspeichers angelegt
 ###### Beispiel
 ![[Pasted image 20221206172301.png]]
 #### B-Typ

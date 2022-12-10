@@ -2,10 +2,12 @@
 - Befehle in RISC-V sind stets 32 Bit gross und decken arithmetische, logische, Sprung- und Speicheroperationen ab
 #### Befehlskodierung
 - Unterschiedliche Befehle verwenden unterschiedliche Operanden, weshalb Befehle, ausgehend vom Opcode in verschiedene Instruktionsformate unterteilt werden
-###### R-Typ
-![[Pasted image 20221206000536.png]]
-###### I-Typ
-![[Pasted image 20221206000612.png]]
+	- R-Typ (Register-zu-Register Operationen)
+	- I-Typ (Immediate Operationen und Ladebefehle)
+	- U-Typ (Operationen mit Long Immediates)
+	- S-Typ (Speichern von Datenwoerten)
+	- B-Typ (Bedingte Spruenge)
+	- J-Typ (Unbedingte Spruenge und Unterprogrammaufrufe)
 ### Konstanten
 - Immediates in einem RISC-V Befehl koennen nur in 12 Bits kodiert werden
 - Um groessere Konstanten in einem Register zu speichern, werden ueber lui die oberen 20 Bits eines Registers mit Werten gefuellt
