@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "af9188a98352437b",
+        "id": "b84976844a56f3e7",
         "type": "tabs",
         "children": [
           {
-            "id": "ee6fe3a93ce7196f",
+            "id": "264576a084fa7336",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md",
+                "file": "Endliche Automaten.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md",
+                "file": "Endliche Automaten.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md",
+                "file": "Endliche Automaten.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/1. Semester/ERA/RISC-V.md"
+                "file": "Endliche Automaten.md"
               }
             }
           }
@@ -137,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ee6fe3a93ce7196f",
+  "active": "264576a084fa7336",
   "lastOpenFiles": [
     "TUM/1. Semester/ERA/Aufbau eines Prozessors.md",
-    "TUM/1. Semester/ERA/RISC-V.md",
-    "TUM/1. Semester/ERA/Assembler.md",
     "TUM/1. Semester/ERA/VHDL.md",
+    "TUM/1. Semester/ERA/RISC-V.md",
+    "TUM/1. Semester/ERA/Befehlsverarbeitung.md",
+    "TUM/1. Semester/ERA/Assembler.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "Aufbau eines Prozessors.md",
     "Pasted image 20221207225613.png",
     "Pasted image 20221206161821.png",
-    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
-    "RISC-V.md"
+    "TUM/1. Semester/ERA/Instruction Set Architecture.md"
   ]
 }
