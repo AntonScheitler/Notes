@@ -6,6 +6,6 @@
 - Multicycle Prozessoren werden mithilfe von [[Endliche Automaten|endlichen Automaten]] realisiert
 - Je nach auszufuehrendem Befehl, wechselt der Prozessor in unterschiedliche Zustaende
 #### Zustaende
-![[Pasted image 20221216141159.png]]
+![[Pasted image 20221216141452.png]]
 #### Beispiel
 ![[Pasted image 20221213172856.png]]
