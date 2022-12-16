@@ -13,3 +13,5 @@
 ### [[Speicherbausteine]]
 ### [[RISC-V]]
 ### [[Aufbau eines Prozessors]]
+### [[Endliche Automaten]]
+### [[Multicycle Prozessoren]]
