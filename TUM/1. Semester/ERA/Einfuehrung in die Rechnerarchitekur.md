@@ -15,3 +15,5 @@
 ### [[Aufbau eines Prozessors]]
 ### [[Endliche Automaten]]
 ### [[Multicycle Prozessoren]]
+### [[Pipelining]]
+### [[Logiksynthese und - minimierung]]
