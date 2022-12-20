@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/1. Semester/ERA/Pipelining.md",
+                "file": "Logiksynthese und - minimierung.md",
                 "mode": "preview",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/1. Semester/ERA/Pipelining.md",
+                "file": "Logiksynthese und - minimierung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/1. Semester/ERA/Pipelining.md",
+                "file": "Logiksynthese und - minimierung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/1. Semester/ERA/Pipelining.md"
+                "file": "Logiksynthese und - minimierung.md"
               }
             }
           }
@@ -139,6 +139,7 @@
   },
   "active": "78cea392c4380fb2",
   "lastOpenFiles": [
+    "TUM/1. Semester/ERA/Pipelining.md",
     "Pipelining.md",
     "TUM/1. Semester/ERA/Multicycle Prozessoren.md",
     "TUM/1. Semester/ERA/Aufbau eines Prozessors.md",
@@ -147,7 +148,6 @@
     "Multicycle Prozessoren.md",
     "Endliche Automaten.md",
     "TUM/1. Semester/ERA/RISC-V.md",
-    "TUM/1. Semester/ERA/Befehlsverarbeitung.md",
-    "TUM/1. Semester/ERA/Assembler.md"
+    "TUM/1. Semester/ERA/Befehlsverarbeitung.md"
   ]
 }
