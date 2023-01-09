@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "2991d9100e98554c",
+        "id": "ce0c14d3c9cf72b3",
         "type": "tabs",
         "children": [
           {
-            "id": "869cc33fb22a86d5",
+            "id": "ae45182438f9bbd0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b9c52424669b21a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md"
+              }
             }
           }
         ]
@@ -129,17 +150,27 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "869cc33fb22a86d5",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b9c52424669b21a0",
   "lastOpenFiles": [
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "Logiksynthese und - minimierung.md",
+    "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
     "TUM/1. Semester/ERA/Pipelining.md",
-    "Pipelining.md",
-    "TUM/1. Semester/ERA/Multicycle Prozessoren.md",
+    "TUM/1. Semester/ERA/Assembler.md",
+    "TUM/1. Semester/ERA/Hauptspeicher.md",
     "TUM/1. Semester/ERA/Aufbau eines Prozessors.md",
+    "TUM/1. Semester/ERA/Speicherverwaltung.md",
     "TUM/1. Semester/ERA/VHDL.md",
-    "Multicycle Prozessoren.md",
-    "Endliche Automaten.md",
-    "TUM/1. Semester/ERA/RISC-V.md"
+    "Logiksynthese und - minimierung.md",
+    "Pipelining.md"
   ]
 }
