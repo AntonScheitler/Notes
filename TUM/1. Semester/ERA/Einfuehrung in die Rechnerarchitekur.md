@@ -17,3 +17,4 @@
 ### [[Multicycle Prozessoren]]
 ### [[Pipelining]]
 ### [[Logiksynthese und - minimierung]]
+### [[Binaere Entscheidungsdiagramme]]

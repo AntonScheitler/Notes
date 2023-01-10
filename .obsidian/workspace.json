@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ce0c14d3c9cf72b3",
+        "id": "9bb0e59dac78088e",
         "type": "tabs",
         "children": [
           {
-            "id": "ae45182438f9bbd0",
+            "id": "cfe6f8e11ee528a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9c52424669b21a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
+                "file": "Binaere Entscheidungsdiagramme.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
+                "file": "Binaere Entscheidungsdiagramme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
+                "file": "Binaere Entscheidungsdiagramme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md"
+                "file": "Binaere Entscheidungsdiagramme.md"
               }
             }
           }
@@ -160,9 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9c52424669b21a0",
+  "active": "cfe6f8e11ee528a1",
   "lastOpenFiles": [
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "Binaere Entscheidungsdiagramme.md",
     "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
     "TUM/1. Semester/ERA/Pipelining.md",
     "TUM/1. Semester/ERA/Assembler.md",
@@ -170,7 +158,6 @@
     "TUM/1. Semester/ERA/Aufbau eines Prozessors.md",
     "TUM/1. Semester/ERA/Speicherverwaltung.md",
     "TUM/1. Semester/ERA/VHDL.md",
-    "Logiksynthese und - minimierung.md",
-    "Pipelining.md"
+    "Logiksynthese und - minimierung.md"
   ]
 }
