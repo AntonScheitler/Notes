@@ -10,7 +10,8 @@
 - Zwar kann jede beliebige boolsche Funktion in eine Normalform gebracht und so realisiert werden, jedoch koennen durch Optimierungen, Kosten reduziert werden
 #### Generierung von Primimplikanten
 - Implikanten koennen mithilfe des Quine-McCluskey Verfahrens zu Primimplikanten minimiert werden
-- Zwei Implikanten koennen gekuerzt werden, falls sie sich in der Negation von genau einem Literal unterscheiden
+- Hierbei werden die Implikanten anhand der negierten Literale gruppiert
+- Zwei benachbarte Implikanten koennen gekuerzt werden, falls sie sich in der Negation von genau einem Literal unterscheiden
 - Eine boolsche Funktion kann ueber die Disjunktion von Primimplikanten realisiert werden
 ###### Beispiel
 ![[Pasted image 20221220214131.png]]
@@ -24,7 +25,7 @@
 	2. Dominierende Spalten werden entfernt
 	3. Dominierte Zeilen werden entfernt
 - Liefert die Primimplikantentafel kein Ergebnis, so kann das Verfahren von Petrick angewandt werden
-	- Die verbleibenden Primimplikanten werden spaltenweise konjungiert und ausmultipliziert
+	- Die verbleibenden Primimplikanten werden spaltenweise disjugiert, konjugiert und ausmultipliziert
 	- Die minimalen Terme werden ausgewaehlt
 ###### Beispiel
 ![[Pasted image 20230109231022.png]]

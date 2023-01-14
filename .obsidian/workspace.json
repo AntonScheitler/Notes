@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Binaere Entscheidungsdiagramme.md",
-                "mode": "source",
+                "file": "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Binaere Entscheidungsdiagramme.md",
+                "file": "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Binaere Entscheidungsdiagramme.md",
+                "file": "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Binaere Entscheidungsdiagramme.md"
+                "file": "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md"
               }
             }
           }
@@ -149,15 +149,15 @@
   },
   "active": "cfe6f8e11ee528a1",
   "lastOpenFiles": [
-    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/1. Semester/ERA/Binaere Entscheidungsdiagramme.md",
     "Binaere Entscheidungsdiagramme.md",
     "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
+    "TUM/1. Semester/ERA/Multicycle Prozessoren.md",
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/1. Semester/ERA/Pipelining.md",
     "TUM/1. Semester/ERA/Assembler.md",
     "TUM/1. Semester/ERA/Hauptspeicher.md",
     "TUM/1. Semester/ERA/Aufbau eines Prozessors.md",
-    "TUM/1. Semester/ERA/Speicherverwaltung.md",
-    "TUM/1. Semester/ERA/VHDL.md",
-    "Logiksynthese und - minimierung.md"
+    "TUM/1. Semester/ERA/Speicherverwaltung.md"
   ]
 }
