@@ -18,3 +18,4 @@
 ### [[Logiksynthese und - minimierung]]
 ### [[Binaere Entscheidungsdiagramme]]
 ### [[VHDL]]
+### [[Speicheraufbau]]

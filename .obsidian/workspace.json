@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9bb0e59dac78088e",
+        "id": "03522629089cfbbc",
         "type": "tabs",
         "children": [
           {
-            "id": "cfe6f8e11ee528a1",
+            "id": "e35227c5fa5afb1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,17 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cfe6f8e11ee528a1",
+  "active": "e35227c5fa5afb1c",
   "lastOpenFiles": [
-    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
+    "TUM/1. Semester/ERA/Speicheraufbau.md",
+    "Speicheraufbau.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
-    "TUM/1. Semester/ERA/Binaere Entscheidungsdiagramme.md",
-    "Binaere Entscheidungsdiagramme.md",
-    "TUM/1. Semester/ERA/Multicycle Prozessoren.md",
-    "TUM/1. Semester/ERA/Pipelining.md",
+    "TUM/1. Semester/ERA/Speicherhierarchie.md",
+    "TUM/1. Semester/ERA/Speicherbausteine.md",
     "TUM/1. Semester/ERA/Assembler.md",
-    "TUM/1. Semester/ERA/Hauptspeicher.md",
-    "TUM/1. Semester/ERA/Aufbau eines Prozessors.md"
+    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
+    "TUM/1. Semester/ERA/Aufbau eines Prozessors.md",
+    "TUM/1. Semester/ERA/VHDL.md",
+    "TUM/1. Semester/ERA/Befehlsverarbeitung.md"
   ]
 }

@@ -1,5 +1,5 @@
 ## Spruenge
-- Von dem Ablauf eines Programms kann ueber spruenge abgewichen werden
+- Von dem Ablauf eines Programms kann ueber Spruenge abgewichen werden
 #### Unbedingte Spruenge
 - Unbedingte Spruenge werden ueber den JMP Befehl, gefolgt von der Adresse ausgefuehrt
 ###### Beispiel
