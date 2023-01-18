@@ -3,7 +3,7 @@
 - Hierfuer werden Matrizen aus Static RAM Zellen und Dynamic Ram Zellen verwendet
 ## SRAM
 - Eine SRAM Zelle wird mithilfe von zwei Transistoren und zwei NOT Gates realisiert
-- SRAM wird fuer Register und Caches verwendet
+- SRAM wird fuer Register und [[Cache|Caches]] verwendet
 #### Schreiben
 - Das Select Signal wird auf 1 gesetzt und die gewuenschten Bits an den Eingaengen der Zelle angelegt
 - Die Eingaenge werden ueber die Transistoren in einen Zyklys aus NOT Gates geleitet und somit gespeichert
@@ -23,6 +23,7 @@
 - Das Select Signal wird gesetzt und das gewuenschte Bit an den Eingang angelegt
 - Das Bit wird ueber einen Transistor in einen Kondensator geleitet und dort gespeichert
 #### Lesen
+- Es werden immer ganze Zeilen eines DRAM Speichers ausgelesen
 - Das Select Signal wird gesetzt und der Kondensator entlaedt sich, wodurch das Bit ausgelesen werden kann
 - Der Inhalt einer Zelle wird somit durch das Auslesen zerstoert und der Kondensator entlaedt sich mit der Zeit
 - Der Speicher muss somit regelmaessig und bei jedem Auslesen neu beschrieben werden

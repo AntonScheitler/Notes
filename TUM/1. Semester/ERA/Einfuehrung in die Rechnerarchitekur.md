@@ -19,3 +19,4 @@
 ### [[Binaere Entscheidungsdiagramme]]
 ### [[VHDL]]
 ### [[Speicheraufbau]]
+### [[Cache]]

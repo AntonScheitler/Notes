@@ -4,6 +4,8 @@
 - Je naeher ein Speicherkonstrukt am Prozessor ist, desto geringer ist seine Kapazitaet und desto schneller ist seine Zugriffszeit
 #### Speicherkonstrukte
 - Register
-- Caches
+- [[Cache|Caches]]
+	- Es gibt unterschiedliche Level von Caches
+	- Je niedriger das Level, desto geringer die Kapazitaet und die Zugriffszeit
 - [[Hauptspeicher]]
 - Hintergrundspeicher
