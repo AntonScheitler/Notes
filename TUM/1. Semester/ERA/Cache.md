@@ -51,3 +51,5 @@
 #### Software Prefetching
 - Mithilfe expliziter Instruktionen kann ein Prefetch ausgefuehrt werden
 - Prefetch Instruktionen werden in der Regel durch den Compiler ausgefuehrt
+## Berechnung der Ausfuerhungszeit
+![[Pasted image 20230120133849.png]]
