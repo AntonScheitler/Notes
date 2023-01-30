@@ -19,19 +19,7 @@
 - Dies eignet sich besonders fuer Vektoroperationen
 ###### Beispiel
 ![[Pasted image 20230125125524.png]]
-#### Multithreading
-- Ein Hardware-Thread ist eine Ausfuehrungseinheit, welche aus einem Befehlszaehler und Registern besteht
-- Andere Ressourcen, wie Speicher und Rechenwerke werden von Threads geteilt
-- Ein Kern ist die Kombination aus Threads und den geteilten Ressourcen
-- Kerne teilen sich wiederum die Cachehierarchie und arbeiten groesstenteils unabhaengig
-- Multithreading Architekturen unterscheiden sich darin, wie sich Threads, Ressourcen teilen
-###### Architekturen
-- Einfaches Multithreading
-	- Threads wechseln sich zu einem festen Takt ab
- - Simultaneous Multithreading
-	 - Threads laufen echt parallel, falls sie unterschiedliche Teile der Ressourcen benoetigen
-###### Beispiel
-![[Pasted image 20230125155911.png]]
+#### [[Multithreading]]
 ## Speedup
 - Der Speedup eines parallelen Programms ergibt sich aus der Relation der sequentiellen und der parallelen Laufzeit
 - Ein paralleles Programm besteht stets aus sequentiellen und parallelen Abschnitten

@@ -37,7 +37,7 @@
 - Im Falle eines Miss, werden die Daten aus dem Hauptspeicher in den Cache geladen
 - Ist ein Cache voll, so koennen vorhandene Daten verdraengt werden
 ###### Compulsory Miss
-- Auf eine Adresse wird zum ersten Mal zugegriffen
+- Auf eine Cache Zeile wird zum ersten Mal zugegriffen
 ###### Conflict Miss
 - Eine Adresse wurde verdraengt, da das Cache-Set voll war
 ###### Capacity Miss
