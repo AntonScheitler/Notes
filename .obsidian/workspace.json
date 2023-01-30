@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9fb07159a6e00e05",
+        "id": "560cf79bc5bf7c6c",
         "type": "tabs",
         "children": [
           {
-            "id": "735de218640628bf",
+            "id": "07e1cf0a97d7c327",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,17 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "735de218640628bf",
+  "active": "07e1cf0a97d7c327",
   "lastOpenFiles": [
-    "Moderne Prozessoren.md",
+    "TUM/1. Semester/ERA/Moderne Prozessoren.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/1. Semester/ERA/RISC-V.md",
-    "TUM/1. Semester/ERA/Speicherbausteine.md",
-    "TUM/1. Semester/ERA/Arithmetische und Logische Operationen.md",
-    "TUM/1. Semester/ERA/Digitale Schaltungen.md",
-    "TUM/1. Semester/ERA/Pipelining.md",
-    "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
     "TUM/1. Semester/ERA/Cache.md",
-    "TUM/1. Semester/ERA/Speicherhierarchie.md"
+    "TUM/1. Semester/ERA/Speicheraufbau.md",
+    "TUM/1. Semester/ERA/Binaere Entscheidungsdiagramme.md",
+    "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
+    "TUM/1. Semester/ERA/Pipelining.md",
+    "TUM/1. Semester/ERA/Multicycle Prozessoren.md",
+    "TUM/1. Semester/ERA/Endliche Automaten.md",
+    "TUM/1. Semester/ERA/Aufbau eines Prozessors.md"
   ]
 }

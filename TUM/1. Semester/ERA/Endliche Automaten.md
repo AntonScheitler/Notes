@@ -8,9 +8,7 @@
 ## Realisierung
 - Um einen Automaten als [[Digitale Schaltungen|digitale Schaltung]] zu realisieren, muessen die erforderlichen Signale kodiert werden
 - Ein Automat erhaelt am Eingang ein Zustands- und ein Eingabesignal
-- Ein neuer Zustand, sowie ein Ausgabesignal koennen ausgehend von Logikgatter, oder einem Speicher ermittlet werden
-	- Logikgatter sind guenstig, allerdings schlecht erweiterbar
-	- Speicher sind teuerer, koennen jedoch leicht erweitert werden
+- Ein neuer Zustand, sowie ein Ausgabesignal koennen ausgehend von Logikgattern ermittelt werden
 - Dieser neue Zustand wird mithilfe von Flipflops gespeichert und im naechsten Takt als Eingang verwendet
 #### Beispiel
 ![[Pasted image 20221212132121.png]]

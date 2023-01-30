@@ -14,7 +14,7 @@
 ###### Beispiel
 ![[Pasted image 20230114152747.png]]
 #### Shannon Zerlegung
-- Eine boolsche Funktion wird in eine Funktion bestehend aus einem Literal und einer bestehend aus den Restlichen zerlegt
+- Eine boolsche Funktion wird in eine Funktion bestehend aus einem Literal und einer aus den Restlichen zerlegt
 - Im Entscheidungsdiagramm evaluiert das einzelne Literal zu 1, beziehungsweise zu 0
 - Die darauffolgende Funktion ist die aus den restlichen Literalen
 - Dieser Vorgang kann rekursiv wiederholt werden, bis das Entscheidungsdiagramm konstruiert wurde

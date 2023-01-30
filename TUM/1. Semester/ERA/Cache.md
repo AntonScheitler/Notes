@@ -1,9 +1,9 @@
 ## Allgemeines
-- Ein Cache dient als Zwischenspeicher zwischen dem [[Hauptspeicher]] und den Prozessor
+- Ein Cache dient als Zwischenspeicher zwischen dem [[Hauptspeicher]] und dem Prozessor
 - Es kann nicht explizit auf den Inhalt eines Caches zugegriffen werden
 - Stattdessen erfolgen Lese- und Schreiboperationen auf den Cache automatisch
 ## Aufbau
-- Ein Cache ist in Zeilen organisiert, welche mehrere Teile hat
+- Ein Cache ist in Zeilen organisiert, welche mehrere Teile haben
 	- Ein Datenblock, der die eigentlichen Daten haelt
 	- Ein Index, mit welchem die Zeile adressiert werden kann
 	- Ein Tag, welches die Zeile eindeutig identifiziert
@@ -20,7 +20,7 @@
 - Caches speichern Daten auf Grundlage der Lokalitaet
 - Programme koennen optimiert werden, sodass sie das Lokalitaetsverhalten des Caches optimal ausnutzen
 #### Zeitliche Lokalitaet
-- Auf Datum wird in einem Zeitintervall haeufiger zugegriffen
+- Auf ein Datum wird in einem Zeitintervall haeufiger zugegriffen
 #### Raeumliche Lokalitaet
 - Auf benachbarte Daten wird haeufiger zugegriffen
 ## Lesezugriff
@@ -51,5 +51,5 @@
 #### Software Prefetching
 - Mithilfe expliziter Instruktionen kann ein Prefetch ausgefuehrt werden
 - Prefetch Instruktionen werden in der Regel durch den Compiler ausgefuehrt
-## Berechnung der Ausfuerhungszeit
+## Berechnung der Ausfuehrungszeit
 ![[Pasted image 20230120133849.png]]

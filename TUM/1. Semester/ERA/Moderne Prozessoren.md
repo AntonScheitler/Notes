@@ -32,3 +32,18 @@
 	 - Threads laufen echt parallel, falls sie unterschiedliche Teile der Ressourcen benoetigen
 ###### Beispiel
 ![[Pasted image 20230125155911.png]]
+## Speedup
+- Der Speedup eines parallelen Programms ergibt sich aus der Relation der sequentiellen und der parallelen Laufzeit
+- Ein paralleles Programm besteht stets aus sequentiellen und parallelen Abschnitten
+#### Amdahl's law
+- Beschreibt den moeglichen Speedup bei konstanter Problemgroesse
+###### Berechnung
+![[Pasted image 20230127141037.png]]
+![[Pasted image 20230127141139.png]]
+![[Pasted image 20230127141151.png]]
+![[Pasted image 20230127141203.png]]
+#### Gustafson's law
+- Beschreibt den moeglichen Speedup bei proportionaler Problemgroesse
+###### Berechnung
+![[Pasted image 20230127143143.png]]
+![[Pasted image 20230127143154.png]]

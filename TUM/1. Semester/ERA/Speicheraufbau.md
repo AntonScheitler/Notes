@@ -1,6 +1,6 @@
 ## Allgemeines
 - Ein Random Access Memory kann auf verschiedene Arten implementiert werden
-- Hierfuer werden Matrizen aus Static RAM Zellen und Dynamic Ram Zellen verwendet
+- Hierfuer werden Matrizen aus Static RAM Zellen und Dynamic RAM Zellen verwendet
 ## SRAM
 - Eine SRAM Zelle wird mithilfe von zwei Transistoren und zwei NOT Gates realisiert
 - SRAM wird fuer Register und [[Cache|Caches]] verwendet
@@ -24,7 +24,7 @@
 - Das Bit wird ueber einen Transistor in einen Kondensator geleitet und dort gespeichert
 #### Lesen
 - Es werden immer ganze Zeilen eines DRAM Speichers ausgelesen
-- Das Select Signal wird gesetzt und der Kondensator entlaedt sich, wodurch das Bit ausgelesen werden kann
+- Das Select Signal wird gesetzt und eine "0.5" an den Eingang angelegt, wodurch sich der Kondensator laedt, beziehungsweise entlaedt und das Bit ausgelesen wird
 - Der Inhalt einer Zelle wird somit durch das Auslesen zerstoert und der Kondensator entlaedt sich mit der Zeit
 - Der Speicher muss somit regelmaessig und bei jedem Auslesen neu beschrieben werden
 #### Vor- und Nachteile
