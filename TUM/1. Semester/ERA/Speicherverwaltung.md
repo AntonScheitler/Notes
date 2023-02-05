@@ -7,7 +7,7 @@
 - Fuer tatsaechliche Speicherzugriffe werden allerdings die physikalischen Adressen benoetigt
 #### Memory Management Unit
 - Um virtuelle Adressen in Physikalische zu uebersetzen, wird die Memory Management Unit verwendet
-- Der Uebersetzungsprozess erfolgt mithilfe von Pages
+- Der Uebersetzungsprozess erfolgt mithilfe von Page Tables
 - Ein [[Cache]] kann wahlweise vor, oder nach dem Zugriff auf die MMU verwendet werden
 ###### Pages
 - Ein [[Hauptspeicher]] wird in Pages fester Groesse eingeteilt

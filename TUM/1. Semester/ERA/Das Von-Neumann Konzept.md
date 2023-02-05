@@ -16,3 +16,5 @@
 - Das Speicherwerk ist hierarchisch unterteilt ([[Speicherhierarchie]])
 - Auf einem Prozessor befinden sich mehrere Rechenwerke
 - Programme und Daten werden in größtenteils getrennten Speichern verwaltet
+## Beispiel
+![[Pasted image 20230205164416.png]]

@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "560cf79bc5bf7c6c",
+        "id": "550f8216b6d11e50",
         "type": "tabs",
         "children": [
           {
-            "id": "07e1cf0a97d7c327",
+            "id": "644237ccfd42852a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/1. Semester/ERA/Moderne Prozessoren.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc24a8a0cfcd4bcc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Multithreading.md",
+                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Multithreading.md",
+                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Multithreading.md",
+                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Multithreading.md"
+                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md"
               }
             }
           }
@@ -160,17 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cc24a8a0cfcd4bcc",
+  "active": "644237ccfd42852a",
   "lastOpenFiles": [
+    "vond.md",
+    "TUM/1. Semester/ERA/Befehlsverarbeitung.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/1. Semester/ERA/Moderne Prozessoren.md",
-    "Multithreading.md",
-    "TUM/1. Semester/ERA/Cache.md",
-    "TUM/1. Semester/ERA/Speicheraufbau.md",
-    "TUM/1. Semester/ERA/Binaere Entscheidungsdiagramme.md",
-    "TUM/1. Semester/ERA/Logiksynthese und - minimierung.md",
-    "TUM/1. Semester/ERA/Pipelining.md",
-    "TUM/1. Semester/ERA/Multicycle Prozessoren.md",
-    "TUM/1. Semester/ERA/Endliche Automaten.md"
+    "TUM/1. Semester/ERA/Systembefehle.md",
+    "TUM/1. Semester/ERA/Speicherverwaltung.md",
+    "TUM/1. Semester/ERA/Speicherhierarchie.md",
+    "TUM/1. Semester/ERA/Compilierung und Assemblierung.md",
+    "TUM/1. Semester/ERA/Assembler.md",
+    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
+    "TUM/1. Semester/ERA/Moderne Prozessoren.md"
   ]
 }
