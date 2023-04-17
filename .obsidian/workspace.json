@@ -4,22 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "550f8216b6d11e50",
+        "id": "7ee1372dac642b19",
         "type": "tabs",
         "children": [
           {
-            "id": "644237ccfd42852a",
+            "id": "971876aad50b811e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "cbbef8623e09abcf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "24b1a9ef3e69cc28",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "TUM/2. Semester/FPV/Pasted image 20230417211426.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
+                "file": "TUM/2. Semester/FPV/Pasted image 20230417211426.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
+                "file": "TUM/2. Semester/FPV/Pasted image 20230417211426.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md"
+                "file": "TUM/2. Semester/FPV/Pasted image 20230417211426.png"
               }
             }
           }
@@ -147,11 +170,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "644237ccfd42852a",
+  "active": "c082f66e012077d1",
   "lastOpenFiles": [
+    "TUM/2. Semester/FPV/Verification and Assertions.md",
+    "TUM/2. Semester/FPV/Pasted image 20230417212856.png",
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/FPV/Pasted image 20230417211426.png",
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/TUM.md",
+    "TUM/2. Semester/2. Semester.md",
+    "TUM/1. Semester/1. Semester.md",
+    "TUM/2. Semester/FPV",
+    "TUM/2. Semester",
+    "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
+    "TUM/2. Semester/FPV",
+    "TUM/2. Semester/FPV.md",
+    "TUM/2. Semester",
     "vond.md",
     "TUM/1. Semester/ERA/Befehlsverarbeitung.md",
-    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/1. Semester/ERA/Systembefehle.md",
     "TUM/1. Semester/ERA/Speicherverwaltung.md",
     "TUM/1. Semester/ERA/Speicherhierarchie.md",
