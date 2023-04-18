@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "81d28dd04dbb94f6",
+        "id": "3d74dd73e61474a2",
         "type": "tabs",
         "children": [
           {
-            "id": "6ffb3f41f669b8b8",
+            "id": "944a3fe3af7cfaec",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,15 +147,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ffb3f41f669b8b8",
+  "active": "944a3fe3af7cfaec",
   "lastOpenFiles": [
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/2. Semester.md",
     "TUM/TUM.md",
     "TUM/2. Semester/GAD",
     "TUM/2. Semester/LinAlg",
     "TUM/2. Semester/LinAlg/Koerper.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "Pasted image 20230418084007.png",

@@ -19,6 +19,10 @@ $$|z| = \sqrt{a^2 + b^2} = \sqrt{z\overline{z}}$$
 - Sei $q = \frac{z}{w}$ eine komplexe Zahl
 - Fuer das multiplikative Inverse von $q$ gilt:
 $$q^{-1}=q^{-1} \cdot \frac{\overline{w}}{\overline{w}}$$
+#### Dreiecksungleichung
+- Fuer zwei komplexe Zahlen $z$ und $w$ gilt:
+$$|zw| = |z| \cdot |w|$$
+$$|z + w| \leq |z| + |w|$$
 ## Fundamentalsatz der Algebra
 - Jedes Polynom $f = a_nx^n + ... + a_1x + a_0$ mit komplexen Koeffizienten $a_n ... a_0$ kann folgendermassen in Linearfaktoren zerlegt werden:
 $$p = a_n(x - z_n)^{v_n} + ... + (x - z_1)^{v_1}$$
