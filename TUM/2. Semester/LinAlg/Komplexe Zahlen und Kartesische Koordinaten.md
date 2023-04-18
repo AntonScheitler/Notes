@@ -19,7 +19,7 @@ $$|z| = \sqrt{a^2 + b^2} = \sqrt{z\overline{z}}$$
 - Sei $q = \frac{z}{w}$ eine komplexe Zahl
 - Fuer das multiplikative Inverse von $q$ gilt:
 $$q^{-1}=q^{-1} \cdot \frac{\overline{w}}{\overline{w}}$$
-## TODOs
-- Additivitaet und Multiplikativitaet des konjugiert Komplexen
-- Dreiecksungleichung
-- Fundamentalsatz der Algebra
+## Fundamentalsatz der Algebra
+- Jedes Polynom $f = a_nx^n + ... + a_1x + a_0$ mit komplexen Koeffizienten $a_n ... a_0$ kann folgendermassen in Linearfaktoren zerlegt werden:
+$$p = a_n(x - z_n)^{v_n} + ... + (x - z_1)^{v_1}$$
+ Hierbei sind $z_n ... z_1$ Nullstellen von $p$ mit den Vielfachheiten $v_n ... v_1$
