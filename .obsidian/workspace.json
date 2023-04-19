@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3d74dd73e61474a2",
+        "id": "1685afb192559b8c",
         "type": "tabs",
         "children": [
           {
-            "id": "944a3fe3af7cfaec",
+            "id": "196e6f52118e10ec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,21 +138,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "944a3fe3af7cfaec",
+  "active": "196e6f52118e10ec",
   "lastOpenFiles": [
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
+    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
+    "TUM/2. Semester/FPV/Verification and Assertions.md",
+    "TUM/2. Semester/LinAlg/Koerper.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/2. Semester.md",
     "TUM/TUM.md",
     "TUM/2. Semester/GAD",
     "TUM/2. Semester/LinAlg",
-    "TUM/2. Semester/LinAlg/Koerper.md",
-    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "Pasted image 20230418084007.png",
     "TUM/2. Semester/FPV/Pasted image 20230417211426.png",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-    "TUM/2. Semester/FPV/Verification and Assertions.md",
     "TUM/2. Semester/FPV/Pasted image 20230417212856.png",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/1. Semester/1. Semester.md",

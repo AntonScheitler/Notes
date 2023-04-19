@@ -25,5 +25,6 @@ $$|zw| = |z| \cdot |w|$$
 $$|z + w| \leq |z| + |w|$$
 ## Fundamentalsatz der Algebra
 - Jedes Polynom $f = a_nx^n + ... + a_1x + a_0$ mit komplexen Koeffizienten $a_n ... a_0$ kann folgendermassen in Linearfaktoren zerlegt werden:
-$$p = a_n(x - z_n)^{v_n} + ... + (x - z_1)^{v_1}$$
- Hierbei sind $z_n ... z_1$ Nullstellen von $p$ mit den Vielfachheiten $v_n ... v_1$
+$$f = a_n(x - z_n)^{v_n} + ... + (x - z_1)^{v_1}$$
+ - Hierbei sind $z_n ... z_1$ Nullstellen von $p$ mit den Vielfachheiten $v_n ... v_1$
+ - Die Zerlegung kann durch wiederholtes Bestimmen der Nullstellen und Polynomdivision ermittelt werden
