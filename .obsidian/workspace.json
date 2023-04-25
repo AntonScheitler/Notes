@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f2934c4b3a65b33c",
+        "id": "3dae55e54530dd8c",
         "type": "tabs",
         "children": [
           {
-            "id": "8ece4bbcb7fbc513",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9581c459e1e9655d",
+            "id": "2a2d47c828678b46",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,36 +20,48 @@
             }
           },
           {
-            "id": "273374b47755256e",
+            "id": "38b584ff07345285",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3ea870949c0c54aa",
+            "id": "d840c8389df5055c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ef282a538e0f7052",
+            "id": "8b8c36ae6376ef50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Einfuehrung in die Softwaretechnik.md",
+                "file": "Lineare Gleichungssysteme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ab9e687652f6a55c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Einfuehrung in die Softwaretechnik.md",
+                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Einfuehrung in die Softwaretechnik.md",
+                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Einfuehrung in die Softwaretechnik.md"
+                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md"
               }
             }
           }
@@ -195,8 +196,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef282a538e0f7052",
+  "active": "ab9e687652f6a55c",
   "lastOpenFiles": [
+    "Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "Neues Kapitel.md",
+    "Books/Link Layer.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
+    "TUM/2. Semester/Perlen der Informatik/Perlen der Informatik.md",
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/GAD/Pasted image 20230425143802.png",
+    "TUM/2. Semester/Perlen der Informatik",
+    "Einfuehrung in die Softwaretechnik.md",
     "Software Engineering Models.md",
     "TUM/2. Semester/FPV/Pasted image 20230424223104.png",
     "TUM/2. Semester/FPV/Pasted image 20230424223008.png",
@@ -204,15 +218,9 @@
     "TUM/2. Semester/FPV/Pasted image 20230424132008.png",
     "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/FPV/Assertions and Verification.md",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/1. Semester/ERA/Assembler.md",
-    "Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/2. Semester.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
     "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
     "TUM/2. Semester/LinAlg/Koerper.md",
     "TUM/TUM.md",
@@ -230,10 +238,6 @@
     "TUM/2. Semester/FPV.md",
     "TUM/2. Semester",
     "vond.md",
-    "TUM/1. Semester/ERA/Befehlsverarbeitung.md",
-    "TUM/1. Semester/ERA/Systembefehle.md",
-    "TUM/1. Semester/ERA/Speicherverwaltung.md",
-    "TUM/1. Semester/ERA/Speicherhierarchie.md",
-    "TUM/1. Semester/ERA/Compilierung und Assemblierung.md"
+    "TUM/1. Semester/ERA/Befehlsverarbeitung.md"
   ]
 }
