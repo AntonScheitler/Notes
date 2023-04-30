@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3dae55e54530dd8c",
+        "id": "40c182778b2520c7",
         "type": "tabs",
         "children": [
           {
-            "id": "2a2d47c828678b46",
+            "id": "3620c14a3b809712",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,55 +20,17 @@
             }
           },
           {
-            "id": "38b584ff07345285",
+            "id": "d949551dfe60d3dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d840c8389df5055c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b8c36ae6376ef50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lineare Gleichungssysteme.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab9e687652f6a55c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20230427103927.png"
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -135,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+                "file": "Pasted image 20230427103927.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+                "file": "Pasted image 20230427103927.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md"
+                "file": "Pasted image 20230427103927.png"
               }
             }
           }
@@ -196,48 +157,50 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab9e687652f6a55c",
+  "active": "d949551dfe60d3dc",
   "lastOpenFiles": [
-    "Lineare Gleichungssysteme.md",
-    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+    "Pasted image 20230427103800.png",
+    "Pasted image 20230427102601.png",
+    "Pasted image 20230427102621.png",
+    "Pasted image 20230427101506.png",
+    "Pasted image 20230427101221.png",
+    "Pasted image 20230427095917.png",
+    "Pasted image 20230427084006.png",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
+    "lin.md",
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
+    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+    "Pasted image 20230427103927.png",
+    "TUM/2. Semester/LinAlg/Koerper.md",
+    "Cloud Systems.md",
+    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
+    "Cloud Services.md",
+    "TUM/2. Semester/EIST",
+    "Software Engineering Models.md",
+    "TUM/1. Semester/ERA/Assembler.md",
+    "TUM/1. Semester/ERA/Instruction Set Architecture.md",
     "Neues Kapitel.md",
     "Books/Link Layer.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/Perlen der Informatik/Perlen der Informatik.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/GAD/Pasted image 20230425143802.png",
     "TUM/2. Semester/Perlen der Informatik",
-    "Einfuehrung in die Softwaretechnik.md",
-    "Software Engineering Models.md",
     "TUM/2. Semester/FPV/Pasted image 20230424223104.png",
-    "TUM/2. Semester/FPV/Pasted image 20230424223008.png",
-    "TUM/2. Semester/FPV/Pasted image 20230424222851.png",
-    "TUM/2. Semester/FPV/Pasted image 20230424132008.png",
     "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/FPV/Assertions and Verification.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
-    "TUM/1. Semester/ERA/Assembler.md",
-    "TUM/2. Semester/2. Semester.md",
-    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
-    "TUM/2. Semester/LinAlg/Koerper.md",
-    "TUM/TUM.md",
     "TUM/2. Semester/GAD",
     "TUM/2. Semester/LinAlg",
-    "Pasted image 20230418084007.png",
-    "TUM/2. Semester/FPV/Pasted image 20230417211426.png",
-    "TUM/2. Semester/FPV/Pasted image 20230417212856.png",
-    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/1. Semester/1. Semester.md",
     "TUM/2. Semester/FPV",
     "TUM/2. Semester",
-    "TUM/1. Semester/ERA/Das Von-Neumann Konzept.md",
     "TUM/2. Semester/FPV",
-    "TUM/2. Semester/FPV.md",
-    "TUM/2. Semester",
-    "vond.md",
-    "TUM/1. Semester/ERA/Befehlsverarbeitung.md"
+    "TUM/2. Semester"
   ]
 }

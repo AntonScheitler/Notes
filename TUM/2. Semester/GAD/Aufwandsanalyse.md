@@ -18,6 +18,10 @@ $$O(f(n)) = \{g(n) | \space \exists c > 0 \space \exists n_0 > 0 \space \forall 
 $$\Omega(f(n)) = \{g(n) | \space \exists c > 0 \space \exists n_0 > 0 \space \forall n \geq n_0 : g(n) \geq c \cdot f(n) \}$$
 - Menge an Funktionen, die genauso schnell wachsen wie $f$:
 $$\Theta(f(n)) = \{g(n) | \space \exists c > 0 \space \exists n_0 > 0 \space \forall n \geq n_0 : g(n) = c \cdot f(n) \}$$
+#### Rechenregeln
+- Fuer die Laufzeit zweier Funktionen $f(n)$ und $g(n)$ gilt:
+$$O(f(n)) + O(g(n)) = O(f(n) + g(n))$$
+$$O(f(n)) \cdot O(g(n)) = O(f(n) \cdot g(n))$$
 #### Wachstumsrate von Polynomen
 - Es sei $p(n)$ ein beliebiges Polynom mit $p = \sum_{i=0}^k a_i \cdot n^i$
 - Fuer dieses $p(n)$ gilt $p(n) \in O(n^k)$

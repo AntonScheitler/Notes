@@ -20,7 +20,7 @@ $$\begin{pmatrix}
 \end{pmatrix}
 $$ 
 ## Rang einer Matrix
-- Mithilfe elementarer Zeilenumformungen kann jede beliebige Matrix $A$ auf Zeilenstufenform gebracht werden
+- Mithilfe elementarer Zeilenumformungen kann jede beliebige [[Matrizen|Matrix]] $A$ auf Zeilenstufenform gebracht werden
 - Die Anzahl der Zeilen, die ungleich 0 sind, bezeichnet man als den Rang $rg(A)$ dieser Matrix
 #### Bedeutung fuer LGS
 - Es sei $n$ die Anzahl der Variablen in einem LGS und $A$ seine zugehoerige Koeffizientenmatrix
