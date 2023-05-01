@@ -4,19 +4,17 @@
 - Cloud providers offer the resources needed to deploy software to the cloud
 - This approach offers higher scalability and reliablility
 - Cloud providers can offer different types of [[Cloud Services|services]]
-#### Hardware architectures
-- TODO
-#### Virtualization
-- Virtualization is a method to virtually emulate physical machines
-- Through virtualization a single machine can be used to provide hosting for multiple clients
-###### Compute Virtualization
-- TODO
-###### Network Virtualization
-- TODO
-###### Storage Virtualization
-- TODO
 ## Distributed Software Systems
-- TODO
+- A distributed system is an application, that executes protocols over multiple computers connected via a network
+- An example of a distributed system is a client-server application
+#### Client-Server Applications
+- The client application is  built on data received from a server
+- The client thus has to make request to a server, which provides the appropriate response
+- Client and server can communicate via remote procedure calls 
+###### Remote Procedure Calls
+- The desired procedure, or function on the server is called by the client
+- The client also specifies the necessary arguments to the procedure
+- Since the client and server might be written in different languages, the data passed between them must be serialized
 ## Deployment Models
 - The process of delivering software from a development environment to a production environment is called deployment
 - There are different models for deployment
@@ -28,7 +26,7 @@
 - During deployment, the application is installed and run
 ![[Pasted image 20230427095917.png]]
 #### Virtual Machines
-- Multiple VMs run on a single machine with separate operating systems and shared physical resources
+- Multiple [[Virtualization|VMs]] run on a single machine with separate operating systems and shared physical resources
 - VMs offer higher scalablility than baremetal
 ###### Workflow
 - During provisioning, the virtual machine is created using a VM image

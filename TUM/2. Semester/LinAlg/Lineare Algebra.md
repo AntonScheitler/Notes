@@ -1,4 +1,4 @@
 ### [[Komplexe Zahlen und Kartesische Koordinaten]]
 ### [[Komplexe Zahlen und Polarkoordinaten]]
-### [[Gaussches Eliminationsverfahren]]
+### [[Lineare Gleichungssysteme]]
 ### [[Rechnen mit Matrizen]]

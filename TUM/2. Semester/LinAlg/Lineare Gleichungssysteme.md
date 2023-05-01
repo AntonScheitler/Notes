@@ -5,3 +5,20 @@ $$\vdots$$
 $$a_{m1}x_1 + ... + a_{mn}x_n = b_m$$
 - Eine Loesung eines LGS beschreibt man mithilfe eines Tupels $l = (l_1, ..., l_n)$, welches saemtliche Gleichungen des LGS befriedigt
 - Mithilfe des [[Gaussches Eliminationsverfahren|Gausschen Eliminationsverfahrens]] koennen die Loesungen eines LGS bestimmt werden
+## Rang einer Matrix
+- Mithilfe elementarer Zeilenumformungen kann jede beliebige [[Matrizen|Matrix]] $A$ auf Zeilenstufenform gebracht werden
+- Die Anzahl der Zeilen, die ungleich 0 sind, bezeichnet man als den Rang $rg(A)$ dieser Matrix
+#### Bedeutung fuer LGS
+- Es sei $n$ die Anzahl der Variablen in einem LGS und $A$ seine zugehoerige Koeffizientenmatrix
+- Fuer ein LGS gilt:
+	- Es gibt keine Loesungen, falls $rg(A) \neq rg(A|b)$ ist
+	- Es gibt genau eine Loesung, falls $n = rg(A)$ ist
+	- Es gibt unendlich viele Loesungen, falls $n > rg(A)$
+## Homogene LGS
+- Ein LGS mit $(A|0)$ bezeichnet man als homogenes LGS
+- Jedes LGS mit $(A|b)$ besitzt ein zugehoeriges homogenes LGS mit $(A|0)$ 
+#### Loesungen eines homogenen LGS
+- Jedes homogene LGS besitzt die triviale Loesung $(0, ..., 0)$
+- Sind $(k_1,  ..., k_n)$ und $(l_1, ..., l_n)$ Loesungen eines homogenen LGS, so sind auch $(k_1, ..., k_n) + (l_1, ..., l_n)$, sowie $\lambda \cdot (l_1, ..., l_n)$ Loesungen dieses LGS
+- Ist $(A|b)$ ein loesbares LGS mit der Loesungsmenge $L$ und besitzt (A|0) die Loesungsmenge $L_h$, so gilt fuer eine beliebige Loesung $x$ von $(A|b)$:
+$$L = \{x + y \space | \space y \in L_h \}$$
