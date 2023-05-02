@@ -2,3 +2,4 @@
 ### [[Komplexe Zahlen und Polarkoordinaten]]
 ### [[Lineare Gleichungssysteme]]
 ### [[Rechnen mit Matrizen]]
+### [[Algebraische Strukturen]]

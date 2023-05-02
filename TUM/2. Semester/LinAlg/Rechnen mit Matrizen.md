@@ -12,8 +12,12 @@ $$A = \begin{pmatrix}
 2 & 5 & 8 \\
 3 & 6 & 0
 \end{pmatrix}$$
-
 - Falls $A = A^T$, nennt man $A$ eine symmetrische Matrix
+- Fuer $A, B \in \mathbb{K}^{m \times n}$ und $\lambda \in \mathbb{K}$ gilt:
+$$(A + B)^T = A^T + B^T$$
+$$(\lambda A)^T = \lambda A^T$$
+$$(AB)^T = B^TA^T$$
+
 #### Addition
 - Es seien $A = (a_{ij}), B = (b_{ij}) \in \mathbb{K}^{n \times m}$ beliebige Matrizen
 - $A + B$ beschreibt die Addition dieser Matrizen:
@@ -65,6 +69,8 @@ $$A^0 = E_n$$
 - Das neutrale Element bezueglich der Multiplikation ist die [[Matrizen|Einheitsmatrix]] $E_n$
 ## Invertieren von Matrizen
 - Eine quadratische Matrix $A \in \mathbb{K}^{n \times n}$ hat ein Inverses $A^{-1}$, falls $rg(A) = n$ gilt
+- Fuer zwei Matrizen $A, B \in \mathbb{K}^{n \times n}$ gilt:
+$$(AB)^{-1} = B^{-1}A^{-1}$$
 #### Bestimmen des Inversen
 - Das Inverse einer Matrix $A$ kann mithilfe eines [[Lineare Gleichungssysteme|LGS]] ermittelt werden
 	- Die erweiterte Koeffizientenmatrix $(A|E_n)$ wird notiert

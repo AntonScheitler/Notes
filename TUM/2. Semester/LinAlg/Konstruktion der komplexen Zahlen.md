@@ -5,7 +5,7 @@
 - Befinden sich Elemente auf der reellen Achse, so entsprechen Addition und Multiplikation dieser Elemente in $\mathbb{R}^2$ den Operationen in $\mathbb{R}$
 #### Definition von Operationen
 - Fuer $\mathbb{R}^2$ werden Addition und Multiplikation definiert
-- $\mathbb{R^2}$ bildet somit einen [[Koerper]]
+- $\mathbb{R^2}$ bildet somit einen [[Algebraische Strukturen|Koerper]]
 ###### Addition
 - Die Addition von $(a, b)$ und $(c, d)$ wird ueber $(a, b) + (c, d) = (a+c, b+d)$ definiert
 - Das neutrale Element bezueglich der Addition ist $(0, 0)$

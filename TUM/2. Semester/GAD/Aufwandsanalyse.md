@@ -25,3 +25,12 @@ $$O(f(n)) \cdot O(g(n)) = O(f(n) \cdot g(n))$$
 #### Wachstumsrate von Polynomen
 - Es sei $p(n)$ ein beliebiges Polynom mit $p = \sum_{i=0}^k a_i \cdot n^i$
 - Fuer dieses $p(n)$ gilt $p(n) \in O(n^k)$
+## Laufzeitanalyse
+- Unterschiedlichen Operationen werden verschiedene Laufzeiten zugewiesen
+#### Laufzeitzuweisung
+- Einfachen Operationen wie Zuweisungen und return statements wird die Laufzeit $O(1)$ zugewiesen
+- If statements statements uebernehmen die Laufzeit des laengeren Rumpfs zuzueglich zu der Zeit, die zur Evaluation der Bedingung benoetigt wird
+- Loops wird eine Laufzeit von $O(n)$ zugewiesen, wobei n die Anzahl der Elemente ist, ueber die iteriert wird
+- TODO latex fuer zuweisung, if und loops
+#### Durchschnittliche Laufzeit
+- Anstelle einer worst-case analyse kann die durchschnittliche Laufzeit eines Programms bestimmt werden

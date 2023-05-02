@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1d9de5bdbdf45d2f",
+        "id": "b545a5e58f4232ff",
         "type": "tabs",
         "children": [
           {
-            "id": "f8a2982b7db8dfb3",
+            "id": "dc7de5404d5d9b7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b9a3500aec08561",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "00240c44653b7b0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "efee84ff62609f43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96f277192ae653d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/EIST/Cloud Systems.md",
-                "mode": "source",
+                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -135,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/EIST/Cloud Systems.md",
+                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/EIST/Cloud Systems.md",
+                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/EIST/Cloud Systems.md"
+                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md"
               }
             }
           }
@@ -196,12 +146,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96f277192ae653d5",
+  "active": "dc7de5404d5d9b7b",
   "lastOpenFiles": [
-    "TUM/2. Semester/EIST/Virtualization.md",
-    "TUM/2. Semester/EIST/Cloud Systems.md",
-    "TUM/2. Semester/EIST/Cloud Services.md",
+    "K-Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "Pasted image 20230502143047.png",
+    "TUM/2. Semester/LinAlg/Koerper.md",
+    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
+    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+    "TUM/2. Semester/EIST/Cloud Systems.md",
+    "TUM/2. Semester/EIST/Virtualization.md",
+    "TUM/2. Semester/EIST/Cloud Services.md",
     "TUM/2. Semester/EIST/Pasted image 20230427101221.png",
     "TUM/2. Semester/EIST/Pasted image 20230427102621.png",
     "TUM/2. Semester/EIST/Pasted image 20230427102601.png",
@@ -210,30 +172,18 @@
     "TUM/2. Semester/EIST/Pasted image 20230501110814.png",
     "TUM/2. Semester/EIST/Pasted image 20230501110620.png",
     "TUM/2. Semester/EIST/Pasted image 20230501110055.png",
-    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/TUM.md",
     "TUM/2. Semester/2. Semester.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/EIST/Pasted image 20230427103927.png",
-    "TUM/2. Semester/EIST/Pasted image 20230427103800.png",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
     "lin.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
-    "TUM/2. Semester/LinAlg/Koerper.md",
-    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/2. Semester/EIST",
     "Software Engineering Models.md",
     "TUM/1. Semester/ERA/Assembler.md",
     "TUM/1. Semester/ERA/Instruction Set Architecture.md",
     "Neues Kapitel.md",
-    "Books/Link Layer.md",
-    "TUM/2. Semester/Perlen der Informatik/Perlen der Informatik.md",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
     "TUM/2. Semester/LinAlg",
