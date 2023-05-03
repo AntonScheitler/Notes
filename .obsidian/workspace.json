@@ -4,22 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "b545a5e58f4232ff",
+        "id": "eb84f21bb4a57e2b",
         "type": "tabs",
         "children": [
           {
-            "id": "dc7de5404d5d9b7b",
+            "id": "5e92d04655c947e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c367999238668bb0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "0a613ac14d48caf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "374a365d20d77914",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/GAD/Aufwandsanalyse.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -64,12 +97,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "1555525362d33631",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -85,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+                "file": "TUM/2. Semester/GAD/Aufwandsanalyse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+                "file": "TUM/2. Semester/GAD/Aufwandsanalyse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Algebraische Strukturen.md"
+                "file": "TUM/2. Semester/GAD/Aufwandsanalyse.md"
               }
             }
           }
@@ -146,17 +188,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc7de5404d5d9b7b",
+  "active": "374a365d20d77914",
   "lastOpenFiles": [
-    "K-Vektorraeume.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "Saetze.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
+    "K-Vektorraeume.md",
     "Pasted image 20230502143047.png",
     "TUM/2. Semester/LinAlg/Koerper.md",
-    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
     "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
-    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",

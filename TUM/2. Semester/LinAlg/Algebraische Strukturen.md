@@ -32,7 +32,7 @@ $$\langle a \rangle = \{a^k \space | \space k \in \mathbb{Z}\} \subseteq \mathbb
 ###### Ordnung eines Elements
 - Es sei $\langle a \rangle$ die durch $a$ erzeugte Untergruppe
 - Die Ordunung $ord(a)$ von $a$ wird definiert durch:
-$$ord(a) = \langle a \rangle = \begin{cases}
+$$ord(a) = |\langle a \rangle| = \begin{cases}
 n \\
 \infty
 \end{cases}$$
@@ -42,13 +42,19 @@ $$a^{ord(a)} = e$$
 - Es sei $\mathbb{G}$ eine Gruppe mit den beiden Verknuepfungen $+$ und $\cdot$
 - Man bezeichnet $(\mathbb{G}, +, \cdot)$ als Ring, falls folgende Kriterien erfuellt sind:
 	- $(\mathbb{G}, +)$ bildet eine abelsche Gruppe
-	- $(\mathbb{G}, \cdot)$ bildet eine Gruppe, wobei $\cdot$ nicht kommutativ ist
+	- $\cdot$ ist assoziativ
 	 - Es gelten die Distributivgesetze:
 	$$\forall \space a, b, c \in \mathbb{G}: a \cdot (b + c) = (a \cdot b) + (a \cdot c)$$
+#### Kommutativer Ring
+- Ein Ring $(\mathbb{G}, +, \cdot)$ ist kommutativ, falls gilt:
+$$\forall \space a, b \in \mathbb{G}: a \cdot b = b \cdot a$$
+#### Ring mit Einselement
+- Ein Ring $(\mathbb{G}, +, \cdot)$ besitzt ein Einselement, falls gilt:
+$$\exists \space e \in \mathbb{G}: \forall \space a \in \mathbb{G}: a \cdot e = a$$
 ## Koerper
 - Es sei $\mathbb{G}$ eine Menge mit den Verknuepfungen $+$ und $\cdot$
 - Man bezeichnet $(\mathbb{G}, +, \cdot)$ als Koerper, falls folgende Kriterien erfuellt sind:
 	- $(\mathbb{G}, +)$ bildet eine abelsche Gruppe
-	- $(\mathbb{G}, \cdot)$ bildet eine abelsche Gruppe
+	- $(\mathbb{G} \setminus \{0\}, \cdot)$ bildet eine abelsche Gruppe
 	 - Es gelten die Distributivgesetze:
 	$$\forall \space a, b, c \in \mathbb{G}: a \cdot (b + c) = (a \cdot b) + (a \cdot c)$$

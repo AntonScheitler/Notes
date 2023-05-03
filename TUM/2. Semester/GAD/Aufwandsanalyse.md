@@ -28,9 +28,16 @@ $$O(f(n)) \cdot O(g(n)) = O(f(n) \cdot g(n))$$
 ## Laufzeitanalyse
 - Unterschiedlichen Operationen werden verschiedene Laufzeiten zugewiesen
 #### Laufzeitzuweisung
-- Einfachen Operationen wie Zuweisungen und return statements wird die Laufzeit $O(1)$ zugewiesen
-- If statements statements uebernehmen die Laufzeit des laengeren Rumpfs zuzueglich zu der Zeit, die zur Evaluation der Bedingung benoetigt wird
-- Loops wird eine Laufzeit von $O(n)$ zugewiesen, wobei n die Anzahl der Elemente ist, ueber die iteriert wird
-- TODO latex fuer zuweisung, if und loops
+- Elementare Zuweisungen und Vergleiche:
+$$T(\text{int i = 0;}) = O(1)$$
+$$T(\text{x > y}) = O(1)$$
+- Hintereinanderausfuerhrung von Befehlen:
+$$T(l_1 \space \text{;} \space l_2) = T(l_1) + T(l_2)$$
+- Bedingungen:
+$$T(\text{if (cond) then }l_1 \text{else }l_2 = O(T(\text{cond}) + max\{T(l_1), T(l_2)\})$$
+- Schleifen:
+$$T(\text{for (int i = a; i < n; i++)} \space l) = O(\sum_{i = a}^{b - 1}(1 + T(l)))$$
+#### Worst-case Laufzeit
+- Zu jedem Programmschritt wird der zeitintensivste, moegliche Fall betrachtet
 #### Durchschnittliche Laufzeit
 - Anstelle einer worst-case analyse kann die durchschnittliche Laufzeit eines Programms bestimmt werden
