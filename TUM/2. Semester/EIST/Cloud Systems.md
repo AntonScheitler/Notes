@@ -9,7 +9,7 @@
 - An example of a distributed system is a client-server application
 #### Client-Server Applications
 - The client application is  built on data received from a server
-- The client thus has to make request to a server, which provides the appropriate response
+- The client thus has to make requests to a server, which provides the appropriate response
 - Client and server can communicate via remote procedure calls 
 ###### Remote Procedure Calls
 - The desired procedure, or function on the server is called by the client

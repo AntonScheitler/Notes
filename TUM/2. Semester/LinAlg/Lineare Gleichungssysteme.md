@@ -7,7 +7,7 @@ $$a_{m1}x_1 + ... + a_{mn}x_n = b_m$$
 - Mithilfe des [[Gaussches Eliminationsverfahren|Gausschen Eliminationsverfahrens]] koennen die Loesungen eines LGS bestimmt werden
 ## Rang einer Matrix
 - Mithilfe elementarer Zeilenumformungen kann jede beliebige [[Matrizen|Matrix]] $A$ auf Zeilenstufenform gebracht werden
-- Die Anzahl der Zeilen, die ungleich 0 sind, bezeichnet man als den Rang $rg(A)$ dieser Matrix
+- Die Anzahl der Zeilen, die nach Umformung ungleich 0 sind, bezeichnet man als den Rang $rg(A)$ dieser Matrix
 #### Bedeutung fuer LGS
 - Es sei $n$ die Anzahl der Variablen in einem LGS und $A$ seine zugehoerige Koeffizientenmatrix
 - Fuer ein LGS gilt:
