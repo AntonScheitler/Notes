@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e26b5b599259d66d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/LinAlg/Saetze.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Saetze.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Saetze.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md"
+                "file": "TUM/2. Semester/LinAlg/Saetze.md"
               }
             }
           }
@@ -155,11 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "82e352b96c8ae696",
+  "active": "e26b5b599259d66d",
   "lastOpenFiles": [
     "Restklassengruppen.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "Einheitengruppe.md",
     "Restgruppen modulo n.md",
     "TUM/2. Semester/LinAlg/Saetze.md",

@@ -27,3 +27,11 @@ $$\overline{k} + \overline{l} = \overline{k + l}$$
 $$\overline{k} \cdot \overline{l} = \overline{k \cdot l}$$
 - Diese Operation besitzt ein Nullelement und ist kommutativ
 - $(\mathbb{Z}_n, +, \cdot)$ ist somit ein kommutativer Ring mit Einselement
+## Prime Restklassengruppen
+- Es wird ueber ein beliebiges $n \in \mathbb{N}$ die Restklassengruppe modulo $n$ definiert, wobei jedes Element invertierbar ist:
+$$\mathbb{Z}^{\star}_n = \{a \in \mathbb{Z}_n \space | \space ggT(a, n) = 1\}$$
+#### Eulersche Phi-Funktion:
+- Die eulersche Phi-Funktion $\varphi$ wird mit einem beliebigen $n \in \mathbb{N}$ definiert durch:
+$$\varphi(n) = |\mathbb{Z}^{\star}_n|$$
+- Falls $p \in \mathbb{N}$ prim ist, so gilt:
+$$\varphi(p) = p-1$$
