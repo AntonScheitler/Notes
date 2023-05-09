@@ -3,4 +3,4 @@
 ### [[Lineare Gleichungssysteme]]
 ### [[Rechnen mit Matrizen]]
 ### [[Algebraische Strukturen]]
-### [[Saetze]]
+### [[Restklassengruppen]]

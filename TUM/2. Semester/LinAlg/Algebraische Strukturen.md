@@ -38,6 +38,8 @@ n \\
 \end{cases}$$
 - Falls $ord(a)$ endlich ist, so ist $ord(a)$ ist zudem die kleinste natuerliche Zahl, fuer die gilt:
 $$a^{ord(a)} = e$$
+- Somit gilt fuer $s \in \mathbb{N}$:
+$$a^s = e \Leftrightarrow n | s$$
 ## Ringe
 - Es sei $\mathbb{G}$ eine Gruppe mit den beiden Verknuepfungen $+$ und $\cdot$
 - Man bezeichnet $(\mathbb{G}, +, \cdot)$ als Ring, falls folgende Kriterien erfuellt sind:
