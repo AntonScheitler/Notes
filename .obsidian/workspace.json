@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "4230be853d725327",
+        "id": "7eb9855bbc0b3b99",
         "type": "tabs",
         "children": [
           {
-            "id": "82e352b96c8ae696",
+            "id": "c8fbd38d92f24ead",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e26b5b599259d66d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Saetze.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -107,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Saetze.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Saetze.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Saetze.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -168,14 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e26b5b599259d66d",
+  "active": "c8fbd38d92f24ead",
   "lastOpenFiles": [
-    "Restklassengruppen.md",
-    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+    "TUM/2. Semester/GAD/Pasted image 20230510133347.png",
+    "TUM/2. Semester/GAD/Pasted image 20230510132900.png",
+    "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
+    "TUM/2. Semester/EIST/System Design Requirements.md",
+    "TUM/2. Semester/LinAlg/Restklassengruppen.md",
+    "TUM/2. Semester/FPV/Correctness.md",
+    "TUM/2. Semester/LinAlg/Saetze.md",
     "Einheitengruppe.md",
     "Restgruppen modulo n.md",
-    "TUM/2. Semester/LinAlg/Saetze.md",
     "TUM/2. Semester/EIST/Pasted image 20230504094624.png",
     "TUM/2. Semester/EIST/Pasted image 20230504094652.png",
     "TUM/2. Semester/EIST/Pasted image 20230504095154.png",
@@ -183,7 +170,6 @@
     "TUM/2. Semester/EIST/Pasted image 20230504100116.png",
     "TUM/2. Semester/FPV/Pasted image 20230508123523.png",
     "TUM/2. Semester/FPV/Pasted image 20230508133734.png",
-    "TUM/2. Semester/EIST/System Design Requirements.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/FPV/Termination.md",
     "Pasted image 20230508130847.png",
@@ -194,18 +180,9 @@
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/FPV/Assertions and Verification.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-    "Pasted image 20230504095629.png",
     "System Requirement Engineering.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/GAD/Aufwandsanalyse.md",
-    "K-Vektorraeume.md",
-    "Pasted image 20230502143047.png",
-    "TUM/2. Semester/LinAlg/Koerper.md",
-    "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

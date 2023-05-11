@@ -1,1 +1,2 @@
 ### [[Aufwandsanalyse]]
+### [[Datenstrukturen fuer Sequenzen]]
