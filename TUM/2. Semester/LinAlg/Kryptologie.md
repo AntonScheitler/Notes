@@ -2,7 +2,7 @@
 - Es sei $S$ der Sender einer Nachricht $N \in \mathbb{Z}^{\star}_p$ und $R$ ihr Empfaenger, wobei $p$ eine beliebige, aber grosse Primzahl ist
 #### Verschluesselung
 - Es wird ein $e$ gewaehlt, sodass $ggT(e, p-1) = 1$ ist
-- Somit ist $e \in \mathbb{Z}^{\star}_p-1$ und besitzt ein Inverses
+- Somit ist $e \in \mathbb{Z}^{\star}_{p-1}$ und besitzt ein Inverses
 - $N$ wird ueber $e$ zu $N^e$ verschluesselt
 #### Entschluesselung
 - Da $e$ ein Inverses besitzt, kann ueber den euklidischen Algorithmus ein $d$ bestimmt werden, sodass gilt:

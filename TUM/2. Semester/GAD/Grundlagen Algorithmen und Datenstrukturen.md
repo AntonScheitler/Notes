@@ -1,2 +1,3 @@
-### [[Aufwandsanalyse]]
+### [[Effizienzmetrik]]
+### [[Laufzeitanalyse]]
 ### [[Datenstrukturen fuer Sequenzen]]
