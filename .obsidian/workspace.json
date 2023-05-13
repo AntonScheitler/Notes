@@ -4,31 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7eb9855bbc0b3b99",
+        "id": "4b25099dda2b11a8",
         "type": "tabs",
         "children": [
           {
-            "id": "c8fbd38d92f24ead",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "e93083bb93ea813e",
+            "id": "7d7f88e611090a1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Kryptologie.md",
+                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -103,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Kryptologie.md",
+                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Kryptologie.md",
+                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Kryptologie.md"
+                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md"
               }
             }
           }
@@ -164,9 +155,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e93083bb93ea813e",
+  "active": "7d7f88e611090a1b",
   "lastOpenFiles": [
+    "Pasted image 20230513192742.png",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+    "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Pasted image 20230513181015.png",
@@ -176,7 +169,6 @@
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/FPV/Assertions and Verification.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
-    "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/GAD/Pasted image 20230510133347.png",
     "TUM/2. Semester/GAD/Pasted image 20230510132900.png",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
@@ -201,7 +193,6 @@
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
