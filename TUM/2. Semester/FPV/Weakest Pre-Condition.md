@@ -19,4 +19,6 @@ $$WP[b] (B_0, B_1) = (\neg b \land B_0) \lor (b \land B_1)$$
 - The loop invariant $B$ is a condition at the end, or start of the loop, which holds for every iteration
 - The loop invariant is valid, if it implies the weakest pre-condition of the loop
 ###### Construction of the loop invariant
-- TODO
+- Every variable inside the loop must be contained in the loop invariant
+- The break condition for the loop might be a good starting point for forming the invariant
+- Since most loops contain a counter, defining variables in relation to that counter makes for a good invariant

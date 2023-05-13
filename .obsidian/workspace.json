@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "295364f45c6139f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/FPV/Termination.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+                "file": "TUM/2. Semester/FPV/Termination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+                "file": "TUM/2. Semester/FPV/Termination.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md"
+                "file": "TUM/2. Semester/FPV/Termination.md"
               }
             }
           }
@@ -155,8 +168,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d7f88e611090a1b",
+  "active": "295364f45c6139f5",
   "lastOpenFiles": [
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/FPV/Correctness.md",
+    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "Pasted image 20230513192742.png",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
@@ -166,9 +183,7 @@
     "TUM/2. Semester/GAD/Pasted image 20230513180947.png",
     "TUM/2. Semester/GAD/Pasted image 20230513180843.png",
     "TUM/2. Semester/GAD/Pasted image 20230513180744.png",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/FPV/Assertions and Verification.md",
-    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Pasted image 20230510133347.png",
     "TUM/2. Semester/GAD/Pasted image 20230510132900.png",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
@@ -177,15 +192,12 @@
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/EIST/System Design Requirements.md",
     "TUM/2. Semester/LinAlg/Restklassengruppen.md",
-    "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/LinAlg/Saetze.md",
     "Einheitengruppe.md",
     "Restgruppen modulo n.md",
     "TUM/2. Semester/EIST/Pasted image 20230504094624.png",
     "TUM/2. Semester/EIST/Pasted image 20230504094652.png",
     "TUM/2. Semester/EIST/Pasted image 20230504095154.png",
-    "TUM/2. Semester/EIST/Pasted image 20230504095824.png",
-    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/EIST/Cloud Systems.md",
     "TUM/2. Semester/EIST/Virtualization.md",
