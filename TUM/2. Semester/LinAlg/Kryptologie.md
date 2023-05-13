@@ -11,7 +11,7 @@ $$ed = 1 \mod p-1$$
 $$(N^e)^d = N^{ed} = N^{1 + r(p-1)} = N * N^{r(p-1)} = N * (N^{p-1})^r = N * 1^r = N$$
 ## RSA Verfahren
 - Es sei $S$ der Sender einer Nachricht $N \in \mathbb{Z}^{\star}_n$ und R ihr Empfaenger
-- Zudem stellt $S$ einen public Key $(n, e)$ zur Verfuegung
+- Zudem stellt $R$ einen public Key $(n, e)$ zur Verfuegung
 #### Public Key
 - $n$ setzt sich folgendermassen aus dem beiden Primzahlen $p$ und $q$ zusammen:
 $$n = pq$$
