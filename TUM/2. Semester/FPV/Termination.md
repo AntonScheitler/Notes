@@ -6,6 +6,10 @@
 - If $r$ fulfills all necessary criteria, a given loop will terminate:
 	- $r > 0$ needs to hold, whenever the loop is entered
 	- $r$ is decreased on every iteration
-- A program might need to be adjusted, in order to create the indicator value $r$
 ###### Example
 ![[Pasted image 20230508133734.png]]
+- An $r$ is determined using a combination of local variables $(x + y)$ 
+- A pre-condition is formed using this r $(r > x + y)$
+- Using this pre-condtion, the other weakest pre-conditions inside the loop are constructed
+- The weakest pre-condition at the start of the loop needs to be implied by $r$ $(r = x + y)$ and the loop-condition $(x \neq y)$
+- The implying condition can be strengthened in order for the implication to succeed

@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "4b25099dda2b11a8",
+        "id": "0e74aeea8a06b279",
         "type": "tabs",
         "children": [
           {
-            "id": "7d7f88e611090a1b",
+            "id": "73bcb1f3b365fea5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "295364f45c6139f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -168,14 +147,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "295364f45c6139f5",
+  "active": "73bcb1f3b365fea5",
   "lastOpenFiles": [
+    "Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-    "TUM/2. Semester/FPV/Correctness.md",
+    "TUM/2. Semester/LinAlg/Restklassengruppen.md",
+    "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+    "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "Pasted image 20230513192742.png",
-    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
@@ -186,25 +171,20 @@
     "TUM/2. Semester/FPV/Assertions and Verification.md",
     "TUM/2. Semester/GAD/Pasted image 20230510133347.png",
     "TUM/2. Semester/GAD/Pasted image 20230510132900.png",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/EIST/System Design Requirements.md",
-    "TUM/2. Semester/LinAlg/Restklassengruppen.md",
     "TUM/2. Semester/LinAlg/Saetze.md",
     "Einheitengruppe.md",
     "Restgruppen modulo n.md",
     "TUM/2. Semester/EIST/Pasted image 20230504094624.png",
     "TUM/2. Semester/EIST/Pasted image 20230504094652.png",
     "TUM/2. Semester/EIST/Pasted image 20230504095154.png",
-    "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/EIST/Cloud Systems.md",
     "TUM/2. Semester/EIST/Virtualization.md",
     "TUM/2. Semester/EIST/Cloud Services.md",
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
