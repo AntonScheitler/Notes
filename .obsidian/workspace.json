@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "0e74aeea8a06b279",
+        "id": "df1cda6161c702b4",
         "type": "tabs",
         "children": [
           {
-            "id": "73bcb1f3b365fea5",
+            "id": "f574a5713ba87528",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Lineare Codes.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lineare Codes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Lineare Codes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Lineare Codes.md"
+              }
             }
           }
         ]
@@ -147,21 +155,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "73bcb1f3b365fea5",
+  "active": "f574a5713ba87528",
   "lastOpenFiles": [
     "Vektorraeume.md",
+    "Basen von Vektorraeumen.md",
+    "Lineare Codes.md",
+    "bas.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "Erzeugendensysteme.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
+    "TUM/2. Semester/LinAlg/Restklassengruppen.md",
+    "TUM/2. Semester/LinAlg/Kryptologie.md",
+    "TUM/2. Semester/LinAlg/Saetze.md",
     "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-    "TUM/2. Semester/LinAlg/Restklassengruppen.md",
     "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "Pasted image 20230513192742.png",
-    "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Pasted image 20230513181015.png",
@@ -171,20 +187,12 @@
     "TUM/2. Semester/FPV/Assertions and Verification.md",
     "TUM/2. Semester/GAD/Pasted image 20230510133347.png",
     "TUM/2. Semester/GAD/Pasted image 20230510132900.png",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/EIST/System Design Requirements.md",
-    "TUM/2. Semester/LinAlg/Saetze.md",
     "Einheitengruppe.md",
-    "Restgruppen modulo n.md",
     "TUM/2. Semester/EIST/Pasted image 20230504094624.png",
     "TUM/2. Semester/EIST/Pasted image 20230504094652.png",
     "TUM/2. Semester/EIST/Pasted image 20230504095154.png",
-    "TUM/2. Semester/EIST/Cloud Systems.md",
-    "TUM/2. Semester/EIST/Virtualization.md",
-    "TUM/2. Semester/EIST/Cloud Services.md",
-    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

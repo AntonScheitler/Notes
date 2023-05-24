@@ -10,6 +10,13 @@ $$1 \cdot u = u$$
 $$0 \in U$$
 $$\forall \space u, v \in U: u + v \in U$$
 $$\forall \space u \in U, \lambda \in \mathbb{K}: \lambda u \in U$$
+#### Dimension
+- Es sei $V$ ein $\mathbb{K}$-Vektorraum und $B$ eine [[Basen von Vektorraeumen|Basis]] von $V$
+- Die Dimension von $V$ wird definiert durch:
+$$dim(V) = |B| = \begin{cases}
+n \\
+\infty \\
+\end{cases}$$
 ## Beispiele
 - Die Menge aller Spaltenvektoren $\mathbb{K}^n$, sowie die Menge aller $n \times m$ Matrizen $\mathbb{K}^{n \times m}$ bilden Vektorraeume
 - Die Menge aller Polynome $\mathbb{K}[X]$ ist ebenfalls ein Vektorraum

@@ -6,5 +6,7 @@
   "showLineNumber": true,
   "readableLineLength": true,
   "strictLineBreaks": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheck": false,
+  "autoPairMarkdown": false
 }
