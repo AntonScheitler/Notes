@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lineare Codes.md",
-                "mode": "preview",
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "13cd7fe7fcf0864b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hashing.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lineare Codes.md",
+                "file": "Hashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lineare Codes.md",
+                "file": "Hashing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lineare Codes.md"
+                "file": "Hashing.md"
               }
             }
           }
@@ -155,11 +168,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f574a5713ba87528",
+  "active": "13cd7fe7fcf0864b",
   "lastOpenFiles": [
+    "Pasted image 20230524153935.png",
+    "Pasted image 20230524130208.png",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "Hashing.md",
+    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
+    "Lineare Codes.md",
     "Vektorraeume.md",
     "Basen von Vektorraeumen.md",
-    "Lineare Codes.md",
     "bas.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
@@ -169,7 +187,6 @@
     "TUM/2. Semester/LinAlg/Restklassengruppen.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/LinAlg/Saetze.md",
-    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/FPV/Termination.md",
@@ -178,7 +195,6 @@
     "TUM/2. Semester/FPV/Correctness.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "Pasted image 20230513192742.png",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Pasted image 20230513181015.png",
     "TUM/2. Semester/GAD/Pasted image 20230513180947.png",
@@ -188,11 +204,8 @@
     "TUM/2. Semester/GAD/Pasted image 20230510133347.png",
     "TUM/2. Semester/GAD/Pasted image 20230510132900.png",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
-    "TUM/2. Semester/EIST/System Design Requirements.md",
-    "Einheitengruppe.md",
     "TUM/2. Semester/EIST/Pasted image 20230504094624.png",
     "TUM/2. Semester/EIST/Pasted image 20230504094652.png",
-    "TUM/2. Semester/EIST/Pasted image 20230504095154.png",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
