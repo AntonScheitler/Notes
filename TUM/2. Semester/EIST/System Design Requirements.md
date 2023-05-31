@@ -31,7 +31,7 @@
 - In a single-process monoliths, all the components are tightly coupled
 ![[Pasted image 20230504094624.png]]
 ###### Modular Monolith
-- In a modular monolith, the components are modularized but still contained in a single package
+- In a [[Modularity|modular]] monolith, the components are modularized but still contained in a single package
 ![[Pasted image 20230504094652.png]]
 ###### Benefits
 - Monoliths are more performant

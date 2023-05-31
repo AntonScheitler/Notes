@@ -26,5 +26,3 @@ $$z^n = r^n(cos(n\varphi) + isin(n\varphi))$$
 - Fuer jede komplexe Zahl $z$ und jedes $n \in \mathbb{N}$ sind $z_k$ mit $k \in \{0, 1, ..., n-1\}$ genau die $n$-ten Wurzeln von $z$
 - Fuer in $z_k$ gilt:
 $$z_k = \sqrt[n]{r}(cos(\frac{\varphi + 2k\pi}{n}) + isin(\frac{\varphi + 2k\pi}{n}))$$
-## TODO
-- Beweis konjugiert komplexe Nullstellen bei polynom mit reellen koeffizienten
