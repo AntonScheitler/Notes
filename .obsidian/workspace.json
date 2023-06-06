@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d619d2b59bab6799",
+        "id": "e8bfc465de907bd0",
         "type": "tabs",
         "children": [
           {
-            "id": "02fa224742c4e02a",
+            "id": "d3e7fa06dc294a8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "e276addac870408f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "TUM/2. Semester/EIST/Pasted image 20230531220552.png"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -104,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/EIST/Pasted image 20230531220552.png",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/EIST/Pasted image 20230531220552.png",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/EIST/Pasted image 20230531220552.png"
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md"
               }
             }
           }
@@ -165,30 +155,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c082f66e012077d1",
+  "active": "d3e7fa06dc294a8d",
   "lastOpenFiles": [
+    "Determinante.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Lineare Codes.md",
+    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/LinAlg/Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
+    "TUM/2. Semester/EIST/System Design Requirements.md",
+    "TUM/2. Semester/EIST/Cloud Systems.md",
+    "TUM/2. Semester/EIST/Cloud Services.md",
+    "TUM/2. Semester/EIST/Fault Tolerance.md",
+    "TUM/2. Semester/EIST/Pasted image 20230601100909.png",
+    "TUM/2. Semester/EIST/Pasted image 20230601095734.png",
+    "TUM/2. Semester/EIST/Pasted image 20230601095705.png",
+    "TUM/2. Semester/EIST/Pasted image 20230601091613.png",
+    "TUM/2. Semester/EIST/Pasted image 20230601084623.png",
+    "TUM/2. Semester/EIST/Security.md",
+    "Performance.md",
+    "TUM/2. Semester/EIST/Transactions.md",
+    "TUM/2. Semester/EIST/Data Management.md",
+    "TUM/2. Semester/EIST/Layered Architecture.md",
+    "TUM/2. Semester/EIST/Modularity.md",
+    "TUM/2. Semester/EIST/Pasted image 20230531220552.png",
     "TUM/2. Semester/EIST/Pasted image 20230531220231.png",
     "TUM/2. Semester/EIST/Pasted image 20230531215645.png",
-    "TUM/2. Semester/EIST/Layered Architecture.md",
-    "TUM/2. Semester/EIST/Pasted image 20230531220552.png",
-    "TUM/2. Semester/EIST/Data Management.md",
-    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-    "TUM/2. Semester/EIST/Modularity.md",
-    "TUM/2. Semester/EIST/Transactions.md",
     "TUM/2. Semester/EIST/Pasted image 20230531141246.png",
     "TUM/2. Semester/EIST/Pasted image 20230531141017.png",
-    "TUM/2. Semester/EIST/Pasted image 20230525102216.png",
-    "TUM/2. Semester/EIST/Pasted image 20230525101408.png",
-    "TUM/2. Semester/EIST/Pasted image 20230525095446.png",
-    "TUM/2. Semester/EIST/Pasted image 20230525090157.png",
-    "TUM/2. Semester/EIST/Pasted image 20230525084909.png",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/LinAlg/Vektorraeume.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
-    "TUM/2. Semester/LinAlg/Lineare Codes.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/LinAlg/Restklassengruppen.md",
@@ -196,12 +193,6 @@
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/LinAlg/Konstruktion der komplexen Zahlen.md",
-    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
-    "TUM/2. Semester/LinAlg/Saetze.md",
-    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
-    "TUM/2. Semester/EIST/System Design Requirements.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/GAD/Hashing.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
