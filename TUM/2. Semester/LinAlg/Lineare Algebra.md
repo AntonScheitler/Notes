@@ -7,3 +7,4 @@
 ### [[Erzeugendensysteme]]
 ### [[Basen von Vektorraeumen]]
 ### [[Lineare Codes]]
+### [[Determinante]]

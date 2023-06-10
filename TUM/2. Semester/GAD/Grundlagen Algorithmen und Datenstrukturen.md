@@ -2,3 +2,4 @@
 ### [[Laufzeitanalyse]]
 ### [[Datenstrukturen fuer Sequenzen]]
 ### [[Hashing]]
+### [[Sortieren]]

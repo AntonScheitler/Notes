@@ -16,7 +16,7 @@ $$b = sin(\varphi) \cdot r$$
 $$z = cos(\varphi)r + isin(\varphi)r = r(cos(\varphi) + isin(\varphi))$$
 - Letztere Form bezeichnet man als Polardarstellung
 #### Arithmetik in Polardarstellung
-- Es seinen $z_1 = r_1(cos(\varphi_1) + isin(\varphi_1))$ und $z_2 = r_2(cos(\varphi_2) + isin(\varphi_2))$ zwei komplexe Zahlen
+- Es seien $z_1 = r_1(cos(\varphi_1) + isin(\varphi_1))$ und $z_2 = r_2(cos(\varphi_2) + isin(\varphi_2))$ zwei komplexe Zahlen
 ###### Multiplikation
 $$z_1 \cdot z_2 = r_1r_2(cos(\varphi_1 + \varphi_2) + isin(\varphi_1 + \varphi_2))$$
 - Um das Produkt zu bilden, werden somit die Laengen der Zahlen multipliziert und ihre Argumente addiert

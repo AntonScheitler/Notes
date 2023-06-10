@@ -9,3 +9,7 @@ $$a^{|\mathbb{G}|} = e$$
 $$\forall \space a \in \mathbb{Z}: a^{p-1} = 1 \mod p$$
 - Und falls $p \mid a$:
 $$\forall \space a \in \mathbb{Z}: a^p = a \mod p$$
+## Determinanten vom Transponierten
+- Es sei $A \in \mathbb{K}^{n \times n}$ beliebig
+- Fuer $det(A)$ gilt:
+$$det(A) = det(A^T)$$
