@@ -1,6 +1,6 @@
 ## Assertions
 - In order to verify the correctness of a given program, assertions can be used
-- Assertions throw an exception if the given expression evaluates to false
+- Assertions throw an exception if the program state does not imply the assertion
 - In order to verify a program, every program points needs to be annotated with an assertion
 - The assertion before an operation is called a pre-condition
 - The assertion after an operation is called a post-condition

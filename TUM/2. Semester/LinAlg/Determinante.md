@@ -1,5 +1,10 @@
 ## Symmetrische Gruppe
-- TODO
+- Es sei die Menge an Abbildungen $S_n$ definiert durch:
+$$S_n = \{ \sigma : \{1, ..., n\} \rightarrow \{1, ..., n\} \mid \sigma \text{ ist Bijektion} \}$$
+- $\sigma$ sind hierbei Permutationen
+- Fuer die Kardinalitaet von $S_n$ gilt:
+$$|S_n| = n!$$
+- $(S_n, \circ)$ bildet hierbei die symmetrische Gruppe
 #### Fehlstaende
 - $(j, i)$ ist ein Fehlstand der Permutation $\sigma$, falls gilt:
 $$i < j, \space \sigma(i) > \sigma(j)$$
@@ -20,6 +25,6 @@ $$det(A^k) = det(A)^k$$
 - Durch das Addieren des $\lambda$-fachen einer Zeile zu einer anderen Zeilen aendert sich die Determinante nicht
 ###### Laplace Entwicklung
 - Fuer die Entwicklung nach der $i$-ten Zeile gilt:
-$$TODO$$
+$$det(A) = \sum_{j=1}^n(-1)^{i + j} \cdot a_{ij} \cdot det(A_{ij})$$
 - Fuer die Entwicklung nach der $j$-ten Spalte gilt:
-$$TODO$$
+$$det(A) = \sum_{i=1}^n(-1)^{i + j} \cdot a_{ij} \cdot det(A_{ij})$$
