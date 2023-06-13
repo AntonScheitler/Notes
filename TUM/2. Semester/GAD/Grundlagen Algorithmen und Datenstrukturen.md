@@ -3,3 +3,4 @@
 ### [[Datenstrukturen fuer Sequenzen]]
 ### [[Hashing]]
 ### [[Sortieren]]
+### [[Priority Queues]]
