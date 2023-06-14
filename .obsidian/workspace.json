@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/GAD/Priority Queues.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Priority Queues.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Priority Queues.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Priority Queues.md"
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md"
               }
             }
           }
@@ -154,21 +155,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c082f66e012077d1",
+  "active": "f5192fdea2c0f334",
   "lastOpenFiles": [
+    "TUM/2. Semester/GAD/Sortieren.md",
+    "Pasted image 20230614132021.png",
+    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/GAD/Pasted image 20230613204239.png",
     "TUM/2. Semester/GAD/Pasted image 20230613204223.png",
     "TUM/2. Semester/GAD/Pasted image 20230613201002.png",
     "TUM/2. Semester/GAD/Pasted image 20230613200546.png",
     "TUM/2. Semester/GAD/Pasted image 20230613195733.png",
-    "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Pasted image 20230610142936.png",
     "TUM/2. Semester/GAD/Pasted image 20230610141557.png",
     "TUM/2. Semester/GAD/Pasted image 20230610130736.png",
-    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
     "TUM/2. Semester/LinAlg/Determinante.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "Cauchy-Schwarzsche Ungleichung.md",
     "TUM/2. Semester/LinAlg/Vektorraeume.md",
     "TUM/2. Semester/GAD/Hashing.md",
@@ -179,7 +182,6 @@
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/1. Semester/ERA/Multithreading.md",
-    "TUM/2. Semester/GAD/Sortieren.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
@@ -190,7 +192,6 @@
     "TUM/2. Semester/LinAlg/Kryptologie.md",
     "TUM/2. Semester/LinAlg/Lineare Codes.md",
     "TUM/2. Semester/GAD/Pasted image 20230606151259.png",
-    "TUM/2. Semester/GAD/Pasted image 20230606150432.png",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

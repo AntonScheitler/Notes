@@ -46,3 +46,16 @@ $$r(n) = \begin{cases}
 - Wurde das k-kleinste Element als Pivot gewaehlt, so kann es zurueckgegeben werden
 ###### Beispiel
 ![[Pasted image 20230610142936.png]]
+## Externes Sortieren
+- Datenmengen, welche nicht auf einmal in den Hauptspeicher geladen werden koennen, muessen sortiert werden
+#### Vorgehen
+- Der Hauptspeicher besitzt eine Groesse von $M$
+- Die Daten werden stueckweise sortiert und anschliessend verschmolzen
+###### Sortieren
+- Daten der Groesse $M$ werden in den Hauptspeicher geladen, dort in-place sortiert und zurueckgeschrieben
+###### Verschmelzen
+- Es werden drei Puffer im Hauptspeicher angelegt, wobei zwei als Eingabe und einer als Ausgabe dient
+- In die Eingabepuffer werden Ausschnitte von sortierten Teilfeldern geladen
+- Die beiden Eingaben werden sortiert in den Ausgabepuffer uebertragen und dieser zurueckgeschrieben
+#### Beispiel
+![[Pasted image 20230614132021.png]]
