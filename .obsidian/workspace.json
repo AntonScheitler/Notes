@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-                "mode": "source",
+                "file": "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md"
+                "file": "TUM/2. Semester/LinAlg/Orthogonalithaet.md"
               }
             }
           }
@@ -157,10 +157,12 @@
   },
   "active": "f5192fdea2c0f334",
   "lastOpenFiles": [
+    "Skalarprodukt.md",
+    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
+    "Orthogonal- und Orthonormalsystem.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/GAD/Sortieren.md",
     "Pasted image 20230614132021.png",
-    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/GAD/Pasted image 20230613204239.png",
     "TUM/2. Semester/GAD/Pasted image 20230613204223.png",
@@ -190,7 +192,6 @@
     "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
-    "TUM/2. Semester/LinAlg/Lineare Codes.md",
     "TUM/2. Semester/GAD/Pasted image 20230606151259.png",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
