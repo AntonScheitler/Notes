@@ -4,3 +4,5 @@
 ### [[Data Management]]
 ### [[Security]]
 ### [[Fault Tolerance]]
+### [[Performance]]
+### [[Design Patterns]]
