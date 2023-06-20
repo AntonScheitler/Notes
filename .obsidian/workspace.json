@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fc2381971da5381d",
+            "id": "0ab39378fb6db65a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/EIST/Fault Tolerance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5541c105c9609860",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ce0a618ec917808",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Design Patterns.md",
-                "mode": "source",
+                "file": "Performance.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -119,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns.md",
+                "file": "Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns.md",
+                "file": "Performance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns.md"
+                "file": "Performance.md"
               }
             }
           }
@@ -180,44 +154,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ce0a618ec917808",
+  "active": "0ab39378fb6db65a",
   "lastOpenFiles": [
+    "Design Patterns.md",
+    "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+    "TUM/2. Semester/LinAlg/Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
+    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
+    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/EIST/Fault Tolerance.md",
+    "TUM/2. Semester/FPV/Assertions and Verification.md",
+    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+    "TUM/2. Semester/LinAlg/Determinante.md",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
+    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "Pasted image 20230615104015.png",
     "Pasted image 20230615103550.png",
     "Pasted image 20230615102640.png",
-    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-    "Design Patterns.md",
     "Performance.md",
     "Pasted image 20230615101903.png",
-    "TUM/2. Semester/EIST/Fault Tolerance.md",
     "Pasted image 20230615094608.png",
-    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
     "Pasted image 20230615090500.png",
     "Pasted image 20230615090406.png",
-    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/EIST/Security.md",
-    "TUM/2. Semester/LinAlg/Determinante.md",
     "TUM/2. Semester/GAD/Sortieren.md",
     "Pasted image 20230614132021.png",
     "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/GAD/Pasted image 20230613204239.png",
     "TUM/2. Semester/GAD/Pasted image 20230613204223.png",
-    "TUM/2. Semester/GAD/Pasted image 20230613201002.png",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "Cauchy-Schwarzsche Ungleichung.md",
-    "TUM/2. Semester/LinAlg/Vektorraeume.md",
-    "TUM/2. Semester/GAD/Hashing.md",
-    "TUM/2. Semester/FPV/Assertions and Verification.md",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
-    "TUM/1. Semester/ERA/Moderne Prozessoren.md",
-    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/1. Semester/ERA/Multithreading.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Kartesische Koordinaten.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
-    "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

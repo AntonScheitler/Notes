@@ -9,3 +9,4 @@
 ### [[Lineare Codes]]
 ### [[Determinante]]
 ### [[Orthogonalithaet]]
+### [[Lineare Ausgleichsrechnung]]
