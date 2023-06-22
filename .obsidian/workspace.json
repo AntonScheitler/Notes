@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f422a545b118d686",
+        "id": "43e62a977f9e0165",
         "type": "tabs",
         "children": [
           {
-            "id": "0ab39378fb6db65a",
+            "id": "757036ef53027f62",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Performance.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -93,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Performance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Performance.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,15 +147,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ab39378fb6db65a",
+  "active": "757036ef53027f62",
   "lastOpenFiles": [
-    "Design Patterns.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "Pasted image 20230615102640.png",
+    "Pasted image 20230615103550.png",
+    "Pasted image 20230615104015.png",
+    "TUM/2. Semester/GAD/Pasted image 20230621135827.png",
+    "Pasted image 20230615090406.png",
+    "TUM/2. Semester/GAD/Pasted image 20230614132021.png",
+    "TUM/2. Semester/GAD/Pasted image 20230621142417.png",
+    "TUM/2. Semester/EIST/Pasted image 20230622093106.png",
+    "TUM/2. Semester/EIST/Pasted image 20230622093234.png",
+    "TUM/2. Semester/EIST/Pasted image 20230622094444.png",
+    "TUM/2. Semester/EIST/Testing.md",
+    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+    "TUM/2. Semester/GAD/Effizienzmetrik.md",
+    "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "Performance.md",
+    "Design Patterns.md",
     "TUM/2. Semester/LinAlg/Vektorraeume.md",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
@@ -172,26 +183,7 @@
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/LinAlg/Determinante.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
-    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-    "Pasted image 20230615104015.png",
-    "Pasted image 20230615103550.png",
-    "Pasted image 20230615102640.png",
-    "Performance.md",
-    "Pasted image 20230615101903.png",
-    "Pasted image 20230615094608.png",
-    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
-    "Pasted image 20230615090500.png",
-    "Pasted image 20230615090406.png",
-    "TUM/2. Semester/EIST/Security.md",
-    "TUM/2. Semester/GAD/Sortieren.md",
-    "Pasted image 20230614132021.png",
-    "TUM/2. Semester/GAD/Priority Queues.md",
-    "TUM/2. Semester/GAD/Pasted image 20230613204239.png",
-    "TUM/2. Semester/GAD/Pasted image 20230613204223.png",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "Cauchy-Schwarzsche Ungleichung.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

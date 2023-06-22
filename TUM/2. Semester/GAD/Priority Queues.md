@@ -26,3 +26,28 @@
 #### Beispiel
 ![[Pasted image 20230613204223.png]]
 ![[Pasted image 20230613204239.png]]
+## Binomial Heaps
+- Ein Binomial Heap wird mithilfe von Binomialbaeumen konstruiert
+#### Binomialbaeume
+- Binomialbaeume muessen bestimmte Eigenschaften erfuellen, um einen Binomial Heap bilden zu koennen
+###### Rang
+- Jeder Binomialbaum hat einen Rang
+- Baeume mit dem Rang $0$ besitzen ein einzelnes Element
+- Baeume mit dem Rang $r$ besitzen Kinder, die Baueme mit dem Rang $r-1, r-2, ..., 0$ sind
+###### Heap-Eigenschaft
+- Die Prioritaet eines Knoten ist mindestens so hoch wie die seiner Kindknoten
+###### Beispiel
+![[Pasted image 20230621135827.png]]
+#### Heap Konstruktion
+- Ein Binomial Heap ist eine Liste von Binomialbaeumen, wobei es fuer jeden Rang hoechstens einen Baum geben darf
+#### Heap Merge
+- Zwei Heaps koennen zusammengefuegt werden, indem beide Listen schrittweise durchlaufen und bei Bedarf gemerged werden
+- Ausgehend von der Merge Operation, koennen alle weiteren Operationen definiert werden
+###### Einfuegen
+- Eine einelementige Liste mit dem neuen Element wird erstellt
+- Diese Liste wird mit dem Heap gemerged
+###### Loeschen
+- Das Element mit der hoechsten Prioritaet wird geloescht
+- Die Liste an Kindern des geloeschten Elements wird mit dem Heap gemerged
+#### Beispiel
+![[Pasted image 20230621142417.png]]

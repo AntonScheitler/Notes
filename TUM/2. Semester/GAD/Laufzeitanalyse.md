@@ -11,7 +11,7 @@ $$T(l_1 \space \text{;} \space l_2) = T(l_1) + T(l_2)$$
 - Bedingungen:
 $$T(\text{if (cond) then }l_1 \text{else }l_2 = O(T(\text{cond}) + max\{T(l_1), T(l_2)\})$$
 - Schleifen:
-$$T(\text{for (int i = a; i < n; i++)} \space l) = O(\sum_{i = a}^{b - 1}(1 + T(l)))$$
+$$T(\text{for (int i = a; i < n; i++)} \space l) = O(\sum_{i = a}^{n - 1}(1 + T(l)))$$
 #### Worst-case Laufzeit
 - In jedem Programmschritt wird vom zeitaufwaendigsten Fall ausgegangen
 - Die daraus resultierende worst-case Laufzeit ist allerdings fuer die meisten Faelle nicht realistisch
@@ -28,7 +28,7 @@ $$t(n) = \sum_{i \in I_n} p_i \cdot T(i)$$
 ###### Beispiel
 ![[Pasted image 20230513180744.png]]
 #### Erwartungswert
-- Eine Zufallsvariable $X$ dient als Abbildung eines zufaelligen Ergebnisses auf eine reelle Zahl
+- Eine Zufallsvariable $X$ dient als Abbildung einer zufaelligen Eingabe auf eine reelle Zahl
 - $W_X$ beschreibt die Menge der Werte, die $X$ annehmen kann
 - Die Wahrscheinlichkeit fuer das Auftreten der reellen Zahl $x$ wird beschrieben durch $Pr[X = x]$
 ###### Berechnung

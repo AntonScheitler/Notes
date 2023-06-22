@@ -21,6 +21,7 @@ $$Ker(A) = \{x \mid Ax = 0\}$$
 - Fuer die Dimension eines Kerns gilt:
 $$dim(Ker(A)) = n - rg(A)$$
 - Der Kern kann somit ermittelt werden, indem ein [[Erzeugendensysteme|Erzeugendensystem]] der Loesungen von $Ax = 0$ bestimmt wird
+- A ist invertierbar, falls $Ker(A) = 0$ ist
 ## Homogene LGS
 - Ein LGS mit $(A|0)$ bezeichnet man als homogenes LGS
 - Jedes LGS mit $(A|b)$ besitzt ein zugehoeriges homogenes LGS mit $(A|0)$ 
