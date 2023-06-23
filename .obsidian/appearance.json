@@ -4,5 +4,6 @@
   "theme": "obsidian",
   "translucency": false,
   "nativeMenus": false,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "baseFontSize": 16
 }

@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "43e62a977f9e0165",
+        "id": "5ea4cd37eee4a2b9",
         "type": "tabs",
         "children": [
           {
-            "id": "757036ef53027f62",
+            "id": "13a62ea0ed92eb65",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "405666763575bdc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,6 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +146,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md"
+              }
             }
           }
         ]
@@ -147,8 +168,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "757036ef53027f62",
+  "active": "405666763575bdc8",
   "lastOpenFiles": [
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
+    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
+    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
+    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
+    "TUM/2. Semester/LinAlg/Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
+    "TUM/2. Semester/GAD/Sortieren.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "Pasted image 20230615102640.png",
@@ -161,29 +195,17 @@
     "TUM/2. Semester/EIST/Pasted image 20230622093106.png",
     "TUM/2. Semester/EIST/Pasted image 20230622093234.png",
     "TUM/2. Semester/EIST/Pasted image 20230622094444.png",
-    "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "Performance.md",
     "Design Patterns.md",
-    "TUM/2. Semester/LinAlg/Vektorraeume.md",
-    "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
-    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/EIST/Fault Tolerance.md",
     "TUM/2. Semester/FPV/Assertions and Verification.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/LinAlg/Determinante.md",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

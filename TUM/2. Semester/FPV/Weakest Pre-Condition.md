@@ -15,10 +15,16 @@
 $$WP[b] (B_0, B_1) = (\neg b \land B_0) \lor (b \land B_1)$$
 #### Loop
 ![[Pasted image 20230508123523.png]]
-- In order to determine the weakest pre-condition of the statements in a loop, a **loop invariant** needs to be determined
-- The loop invariant $B$ is a condition at the end, or start of the loop, which holds for every iteration
+- In order to determine the weakest pre-condition of the statements in a loop, a **loop invariant** needs to be determined manually
+- The loop invariant $B$ is a condition at the end of the loop which holds for every iteration
 - The loop invariant is valid, if it implies the weakest pre-condition of the loop
-###### Construction of the loop invariant
-- Every variable inside the loop must be contained in the loop invariant
-- The break condition for the loop might be a good starting point for forming the invariant
+###### Pitfalls in Construction
+- If the loop invariant is too weak, it will not imply the weakest pre-condition of the loop
+- If the loop invariant is too strong, it might still imply the weakest pre-condition of the loop, but verification will fail at some other program point
+###### Best Practices in Construction
+- A good invariant should contain all variables involved in the loop
 - Since most loops contain a counter, defining variables in relation to that counter makes for a good invariant
+- The break condition should also be taken into consideration
+- It's recommended to keep track of the different variable's values across multiple iterations and look for patterns
+- The invariant should also contain the end result of the program in some, slightly different, form
+- In the above example, $z = i^2 \land x = 2i -1$ would be a suitable invariant
