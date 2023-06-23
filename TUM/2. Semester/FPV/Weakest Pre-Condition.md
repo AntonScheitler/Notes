@@ -15,7 +15,7 @@
 $$WP[b] (B_0, B_1) = (\neg b \land B_0) \lor (b \land B_1)$$
 #### Loop
 ![[Pasted image 20230508123523.png]]
-- In order to determine the weakest pre-condition of the statements in a loop, a **loop invariant** needs to be determined manually
+- In order to determine the weakest pre-conditions of the statements in a loop and the loop itself, a **loop invariant** needs to be constructed manually
 - The loop invariant $B$ is a condition at the end of the loop which holds for every iteration
 - The loop invariant is valid, if it implies the weakest pre-condition of the loop
 ###### Pitfalls in Construction
