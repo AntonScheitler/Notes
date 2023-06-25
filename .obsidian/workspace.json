@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "5ea4cd37eee4a2b9",
+        "id": "d94d883ca60a7f48",
         "type": "tabs",
         "children": [
           {
-            "id": "13a62ea0ed92eb65",
+            "id": "fc40a19fdb1dafa5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "405666763575bdc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "086a15a9069af4eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Suchstrukturen.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -119,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Suchstrukturen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Suchstrukturen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Suchstrukturen.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -180,23 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "086a15a9069af4eb",
+  "active": "fc40a19fdb1dafa5",
   "lastOpenFiles": [
-    "Pasted image 20230625171754.png",
-    "Pasted image 20230625170958.png",
-    "Pasted image 20230625165358.png",
-    "Pasted image 20230625163559.png",
-    "Pasted image 20230625162657.png",
-    "Pasted image 20230625162641.png",
-    "Pasted image 20230625162610.png",
-    "Pasted image 20230625162541.png",
-    "Pasted image 20230625160031.png",
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "README.md",
+    "Performance.md",
+    "Pasted image 20230615090406.png",
+    "Pasted image 20230615090500.png",
+    "Pasted image 20230615094608.png",
+    "Pasted image 20230615101903.png",
+    "TUM/2. Semester/EIST/Pasted image 20230615102640.png",
+    "TUM/2. Semester/EIST/Pasted image 20230615103550.png",
+    "TUM/2. Semester/EIST/Pasted image 20230615104015.png",
+    "TUM/2. Semester/EIST/Design Patterns.md",
+    "TUM/2. Semester/GAD/Pasted image 20230625160031.png",
+    "TUM/2. Semester/GAD/Pasted image 20230625162610.png",
+    "Pasted image 20230625162541.png",
+    "TUM/2. Semester/GAD/Suchstrukturen.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
-    "Suchstrukturen.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
@@ -208,15 +178,11 @@
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-    "Pasted image 20230615102640.png",
-    "Pasted image 20230615103550.png",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
-    "Performance.md",
-    "Design Patterns.md",
     "TUM/2. Semester/EIST/Fault Tolerance.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
