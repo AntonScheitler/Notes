@@ -37,3 +37,24 @@ $$\mathbb{E}[X] = \sum_{x \in W_X} x \cdot Pr[X = x]$$
 ###### Beispiel
 ![[Pasted image 20230513180947.png]]
 ![[Pasted image 20230513181015.png]]
+#### Amortisierung
+- In manchen Faellen werden zeiteffiziente Operationen selten von sehr zeitaufwendigen Operationen gefolgt
+- In der worst case Analyse fallen die zeitaufwendigen Operationen jedoch ueberdurchschnittlich ins Gewicht
+- Fuer genauere Laufzeitabschaetzung wird die Kontenmethode verwendet
+- Hierbei zahlen effiziente Operationen ein und Ineffiziente heben ab
+###### Vorgehen
+- Fuer eine Menge von Operationen $\sigma_1, ..., \sigma_m$ wird eine Funktion $\Delta$ definiert, die das Einzahlverhalten von unterschiedlichen $\sigma$ beschreibt
+- Hierbei muss gelten:
+$$\sum_{i=1}^m \Delta(\sigma_i) \geq 0$$
+- Die amortisierte Laufzeit $A$ fuer eine Operation $\sigma$ wird mithilfe der tatsaechlichen Laufzeit $T$ beschrieben:
+$$A(\sigma) = T(\sigma) + \Delta(\sigma)$$
+###### Beispiel
+- Ein dynamisches Array bietet die Methoden pushBack $O(1)$, popBack $O(1)$ und reallocate $O(n)$
+- $\Delta$ wird folgendermassen gewaehlt:
+$$\Delta(\text{pushBack}) = 2$$
+$$\Delta(\text{popBack}) = 1$$
+$$\Delta(\text{reallocate}) = -n$$
+- Fuer die amortisierten Laufzeiten gilt somit:
+$$A(\text{pushBack}) = 1 + 2 = 3$$
+$$A(\text{popBack}) = 1 + 1 = 2$$
+$$A(\text{reallocate}) = n - n = 0$$

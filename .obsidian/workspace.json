@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d94d883ca60a7f48",
+        "id": "9d84513716049958",
         "type": "tabs",
         "children": [
           {
-            "id": "fc40a19fdb1dafa5",
+            "id": "8b522673fee36162",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -89,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md"
+              }
             }
           }
         ]
@@ -146,10 +155,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc40a19fdb1dafa5",
+  "active": "8b522673fee36162",
   "lastOpenFiles": [
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "README.md",
     "Performance.md",
     "Pasted image 20230615090406.png",
@@ -178,8 +189,6 @@
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
-    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Priority Queues.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",

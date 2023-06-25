@@ -10,10 +10,7 @@
 #### Dynamisches Array
 - Ist das urspruengliche Array voll, so wird ein neues Array mit groesserer Laenge angelegt
 - Die Elemente des urspruenglichen Arrays muessen in das Neue kopiert werden, was in $O(n)$ erfolgt
-- Im worst-case laeuft das Einfuegen neuer Elemente somit in $O(n)$, obwohl es selten zur Anlegung eines neuen Arrays kommt
-###### Amortisierte Kosten
-- Die effizienten Einfuege-Operationen werden mit der teueren Kopier-Operation verrechnet
-- Die durchschnittliche Laufzeit betraegt somit $O(1)$
+- Mithilfe einer amortisierten [[Laufzeitanalyse|Aufwandsanalyse]] kann jedoch ermittelt werden, dass die tatsaechliche Laufzeit fuer das Einfuegen $O(1)$ betraegt
 #### Beispiel
 ![[Pasted image 20230513192742.png]]
 ## Doppelt verkettete Liste
