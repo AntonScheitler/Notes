@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "086a15a9069af4eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Suchstrukturen.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+                "file": "Suchstrukturen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
+                "file": "Suchstrukturen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/FPV/Weakest Pre-Condition.md"
+                "file": "Suchstrukturen.md"
               }
             }
           }
@@ -168,8 +180,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "405666763575bdc8",
+  "active": "086a15a9069af4eb",
   "lastOpenFiles": [
+    "Pasted image 20230625171754.png",
+    "Pasted image 20230625170958.png",
+    "Pasted image 20230625165358.png",
+    "Pasted image 20230625163559.png",
+    "Pasted image 20230625162657.png",
+    "Pasted image 20230625162641.png",
+    "Pasted image 20230625162610.png",
+    "Pasted image 20230625162541.png",
+    "Pasted image 20230625160031.png",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "Suchstrukturen.md",
+    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
@@ -177,24 +203,13 @@
     "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
     "TUM/2. Semester/LinAlg/Vektorraeume.md",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/GAD/Sortieren.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/EIST/Testing.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "Pasted image 20230615102640.png",
     "Pasted image 20230615103550.png",
-    "Pasted image 20230615104015.png",
-    "TUM/2. Semester/GAD/Pasted image 20230621135827.png",
-    "Pasted image 20230615090406.png",
-    "TUM/2. Semester/GAD/Pasted image 20230614132021.png",
-    "TUM/2. Semester/GAD/Pasted image 20230621142417.png",
-    "TUM/2. Semester/EIST/Pasted image 20230622093106.png",
-    "TUM/2. Semester/EIST/Pasted image 20230622093234.png",
-    "TUM/2. Semester/EIST/Pasted image 20230622094444.png",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
@@ -203,9 +218,6 @@
     "Performance.md",
     "Design Patterns.md",
     "TUM/2. Semester/EIST/Fault Tolerance.md",
-    "TUM/2. Semester/FPV/Assertions and Verification.md",
-    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
-    "TUM/2. Semester/LinAlg/Determinante.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

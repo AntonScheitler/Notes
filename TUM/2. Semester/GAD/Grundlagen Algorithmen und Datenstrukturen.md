@@ -4,3 +4,4 @@
 ### [[Hashing]]
 ### [[Sortieren]]
 ### [[Priority Queues]]
+### [[Suchstrukturen]]
