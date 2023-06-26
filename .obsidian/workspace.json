@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f24f45daa3ded09e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Verification in Ocaml.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+                "file": "Verification in Ocaml.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+                "file": "Verification in Ocaml.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Laufzeitanalyse.md"
+                "file": "Verification in Ocaml.md"
               }
             }
           }
@@ -155,25 +168,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b522673fee36162",
+  "active": "f24f45daa3ded09e",
   "lastOpenFiles": [
-    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
-    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "Pasted image 20230626203734.png",
+    "Pasted image 20230626203159.png",
+    "Pasted image 20230626203131.png",
+    "Pasted image 20230626202601.png",
+    "Pasted image 20230626202528.png",
+    "Pasted image 20230626200049.png",
+    "Pasted image 20230626194715.png",
+    "Pasted image 20230626194658.png",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "Verification in Ocaml.md",
+    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+    "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "README.md",
     "Performance.md",
     "Pasted image 20230615090406.png",
     "Pasted image 20230615090500.png",
     "Pasted image 20230615094608.png",
-    "Pasted image 20230615101903.png",
-    "TUM/2. Semester/EIST/Pasted image 20230615102640.png",
-    "TUM/2. Semester/EIST/Pasted image 20230615103550.png",
-    "TUM/2. Semester/EIST/Pasted image 20230615104015.png",
     "TUM/2. Semester/EIST/Design Patterns.md",
-    "TUM/2. Semester/GAD/Pasted image 20230625160031.png",
-    "TUM/2. Semester/GAD/Pasted image 20230625162610.png",
-    "Pasted image 20230625162541.png",
     "TUM/2. Semester/GAD/Suchstrukturen.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
@@ -191,8 +206,6 @@
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
     "TUM/2. Semester/GAD/Priority Queues.md",
-    "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
-    "TUM/2. Semester/EIST/Fault Tolerance.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
