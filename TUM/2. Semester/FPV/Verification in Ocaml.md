@@ -4,7 +4,7 @@
 ## Expression Evaluation
 - In order to evaluate any expression $e$, rules are defined for how $e$ can be evaluated in certain contexts
 #### Notation
-- A horizontal line separates the assumptions on a given expression, written above, and the conclusions drawn from those assumptions below
+- A horizontal line separates the prerequisites on a given expression, written above, and the conclusions drawn from those prerequisites below
 - Using this, rules can be defined for lists, tuples and functions
 - Those rules behave similar to how the ocaml runtime would
 #### Rules
@@ -12,8 +12,8 @@
 ![[Pasted image 20230626194715.png]]
 ![[Pasted image 20230626200049.png]]
 ## Verification
-- The conclusions drawn from one expression evaluation can be used as assumptions for following expressions
-- Similarly, the conclusions can be used to construct assumptions and thus generate a proof
+- The conclusions drawn from one expression evaluation can be used as prerequisites for following expressions
+- Similarly, the conclusions can be used to construct prerequisites and thus generate a proof
 #### Example
 ![[Pasted image 20230626202528.png]]
 ![[Pasted image 20230626202601.png]]

@@ -4,59 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9d84513716049958",
+        "id": "ccf48ba45c18f60c",
         "type": "tabs",
         "children": [
           {
-            "id": "8b522673fee36162",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f24f45daa3ded09e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "14a2f4bf7377deef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f8039d8d43fbed2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "42f5f1a251116a70",
+            "id": "548f49725baf389f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -67,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md",
+                "file": "Lineare Abbildungen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md",
+                "file": "Lineare Abbildungen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/FPV/Termination.md"
+                "file": "Lineare Abbildungen.md"
               }
             }
           }
@@ -204,35 +155,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8039d8d43fbed2c",
+  "active": "548f49725baf389f",
   "lastOpenFiles": [
-    "Pasted image 20230627195811.png",
-    "Pasted image 20230627195722.png",
+    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+    "TUM/2. Semester/FPV/Verification in Ocaml.md",
+    "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "Lineare Abbildungen.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "Pasted image 20230615090406.png",
+    "Pasted image 20230615090500.png",
+    "Pasted image 20230615094608.png",
+    "Pasted image 20230615101903.png",
+    "TUM/2. Semester/FPV/Pasted image 20230626194658.png",
+    "TUM/2. Semester/FPV/Pasted image 20230626194715.png",
+    "TUM/2. Semester/FPV/Pasted image 20230626200049.png",
+    "TUM/2. Semester/FPV/Pasted image 20230626202528.png",
+    "TUM/2. Semester/FPV/Pasted image 20230626202601.png",
+    "TUM/2. Semester/FPV/Pasted image 20230626203131.png",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-    "Verification in Ocaml.md",
-    "Pasted image 20230626203734.png",
-    "Pasted image 20230626203159.png",
-    "Pasted image 20230626203131.png",
-    "Pasted image 20230626202601.png",
-    "Pasted image 20230626202528.png",
-    "Pasted image 20230626200049.png",
-    "Pasted image 20230626194715.png",
-    "Pasted image 20230626194658.png",
-    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "README.md",
     "Performance.md",
-    "Pasted image 20230615090406.png",
     "TUM/2. Semester/EIST/Design Patterns.md",
     "TUM/2. Semester/GAD/Suchstrukturen.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
@@ -241,7 +192,6 @@
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/GAD/Sortieren.md",
     "TUM/2. Semester/EIST/Testing.md",
-    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
