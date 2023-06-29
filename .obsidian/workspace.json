@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lineare Abbildungen.md",
-                "mode": "source",
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lineare Abbildungen.md",
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lineare Abbildungen.md",
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lineare Abbildungen.md"
+                "file": "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md"
               }
             }
           }
@@ -157,12 +157,15 @@
   },
   "active": "548f49725baf389f",
   "lastOpenFiles": [
+    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
+    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "Lineare Abbildungen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/FPV/Verification in Ocaml.md",
     "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
-    "Lineare Abbildungen.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "Pasted image 20230615090406.png",
     "Pasted image 20230615090500.png",
@@ -182,7 +185,6 @@
     "Performance.md",
     "TUM/2. Semester/EIST/Design Patterns.md",
     "TUM/2. Semester/GAD/Suchstrukturen.md",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
@@ -191,7 +193,6 @@
     "TUM/2. Semester/LinAlg/Vektorraeume.md",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/GAD/Sortieren.md",
-    "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
