@@ -26,3 +26,6 @@
 ![[Pasted image 20230510133347.png]]
 #### Beispiel
 ![[Pasted image 20230510132900.png]]
+## Sortierte Sequenzen
+- Fuer Listen und Arrays kann ein sortiertes Einfuegen und Loeschen bereitgestellt werden
+- Die [[Effizienzmetrik|Laufzeit]] fuer diese Operationen betraegt zwar $O(n)$, jedoch kann hierdurch binary search implementiert werden, was das Finden von Elementen in $O(log(n))$ ermoeglicht

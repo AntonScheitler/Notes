@@ -50,3 +50,22 @@
 - Anschliessend wird der Baum, falls noetig rebalanciert
 #### Effizienz
 - Das Suchen, Einfuegen und Loeschen erfolgt stets in $O(log(n))$
+## (a, b) Baeume
+- Ein (a, b) Baum ist ein Suchbaum, wobei jeder Knoten einem sortierten Array entspricht und einen eigenen Ausgangsgrad hat
+#### Voraussetzungen
+- Alle Blaetter des Baums liegen in derselben Tiefe
+- Fuer jeden Knotengrad $d$ ausser der Wurzel gilt, falls $a \geq 2$ und $b \geq 2a - 1$:
+$$a \leq d \leq b$$
+- Ein Knoten besteht aus $d - 1$ sortierten Elementen und besitzt d Kinder
+- Die Elemente des $i$-ten Kindes liegen zwischen dem $i-1$-ten und $i$-ten Element des Knoten
+#### Beispiel
+![[Pasted image 20230630193607.png]]
+#### Operationen
+###### Suchen
+- Das gesuchte Element wird mit den Elementen eines Knotens verglichen
+- Falls noetig, wird das entsprechende Kind des Knotens durchsucht
+###### Einfuegen
+- Es wird nach der passenden Stelle fuer das Element im Baum gesucht und das Element dort eingefuegt
+- Im Knoten darueber wird das Element als Split-Key hinzugefuegt
+- Falls der Knoten hierdurch einen Rang groesser als $b$ erlangt, wird der Knoten halbiert und das Element in der Mitte wiederum in den Knoten darueber eingefuegt
+![[Pasted image 20230630195544.png]]

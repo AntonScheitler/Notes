@@ -6,6 +6,9 @@
 - Die Hashfunktion $h$ bildet Schluessel auf Indizes im Array ab:
 $$h: U \mapsto \{0, ..., m-1\}$$
 - Eine Hashfunktion ist zeiteffizient, und verfuegt ueber eine grosse Streuung
+###### C-Universelle Hashfunktionen
+- Eine Menge $H$ von Hashfunktionen $h: U \mapsto \{0, ..., m_1\}$ heisst c-universell, falls fuer jedes Paar $x, y \in U$ gilt:
+$$|\{h \in H: h(x) = h(y)\}| \leq \frac{c}{m}|H|$$
 ## Kollisionen
 - Werden Elemente mit unterschiedlichen Schluesseln den selben Index abgebildet, so kommt es zu einer Kollision
 - Kollisionen koennen auf unterschiedliche Weisen behandelt werden
