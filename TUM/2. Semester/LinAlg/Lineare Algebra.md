@@ -11,3 +11,4 @@
 ### [[Orthogonalithaet]]
 ### [[Lineare Ausgleichsrechnung]]
 ### [[Lineare Abbildungen]]
+### [Flashcards](https://ankiweb.net/shared/info/921866146)

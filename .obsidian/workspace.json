@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
                 "mode": "preview",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md"
+                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md"
               }
             }
           }
@@ -157,6 +157,8 @@
   },
   "active": "fb44726a16debb72",
   "lastOpenFiles": [
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
     "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/GAD/Hashing.md",
@@ -168,7 +170,6 @@
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
-    "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
     "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
     "Pasted image 20230615101903.png",
     "TUM/2. Semester/GAD/Pasted image 20230630193607.png",
@@ -176,7 +177,6 @@
     "TUM/2. Semester/GAD/Pasted image 20230630195544.png",
     "TUM/2. Semester/GAD/Suchstrukturen.md",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
     "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
