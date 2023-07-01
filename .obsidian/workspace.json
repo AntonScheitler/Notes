@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md",
-                "mode": "source",
+                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md"
+                "file": "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md"
               }
             }
           }
@@ -157,11 +157,13 @@
   },
   "active": "fb44726a16debb72",
   "lastOpenFiles": [
+    "TUM/2. Semester/EIST/Testing.md",
+    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
+    "TUM/2. Semester/GAD/Hashing.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-    "TUM/2. Semester/GAD/Hashing.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
@@ -178,7 +180,6 @@
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
     "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
-    "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
     "TUM/2. Semester/FPV/Verification in Ocaml.md",
     "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
@@ -192,7 +193,6 @@
     "Performance.md",
     "TUM/2. Semester/EIST/Design Patterns.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
-    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
