@@ -14,12 +14,25 @@
               "type": "markdown",
               "state": {
                 "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-                "mode": "preview",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23f0fe91b7fbfcd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TUM/2. Semester/GAD/Hashing.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+                "file": "TUM/2. Semester/GAD/Hashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+                "file": "TUM/2. Semester/GAD/Hashing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md"
+                "file": "TUM/2. Semester/GAD/Hashing.md"
               }
             }
           }
@@ -155,8 +168,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb44726a16debb72",
+  "active": "23f0fe91b7fbfcd7",
   "lastOpenFiles": [
+    "Pasted image 20230702201430.png",
+    "Pasted image 20230702200719.png",
+    "Graphen.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
     "TUM/2. Semester/EIST/Testing.md",
@@ -166,7 +184,6 @@
     "TUM/2. Semester/LinAlg/Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
@@ -181,18 +198,14 @@
     "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
     "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
     "TUM/2. Semester/FPV/Verification in Ocaml.md",
-    "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
     "Pasted image 20230615090406.png",
     "Pasted image 20230615090500.png",
     "Pasted image 20230615094608.png",
     "TUM/2. Semester/FPV/Pasted image 20230626194658.png",
     "TUM/2. Semester/FPV/Pasted image 20230626194715.png",
-    "TUM/2. Semester/FPV/Pasted image 20230626200049.png",
     "README.md",
     "Performance.md",
-    "TUM/2. Semester/EIST/Design Patterns.md",
-    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
