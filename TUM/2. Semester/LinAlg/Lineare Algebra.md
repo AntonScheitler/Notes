@@ -11,4 +11,5 @@
 ### [[Orthogonalithaet]]
 ### [[Lineare Ausgleichsrechnung]]
 ### [[Lineare Abbildungen]]
+### [[Eigenwerte und Eigenvektoren]]
 ### [Flashcards](https://ankiweb.net/shared/info/921866146)

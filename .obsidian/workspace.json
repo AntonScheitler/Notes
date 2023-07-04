@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a09e2d5fe705e22c",
+        "id": "0a83c8cfd5566cc6",
         "type": "tabs",
         "children": [
           {
-            "id": "fb44726a16debb72",
+            "id": "9a556e0ae73e2673",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23f0fe91b7fbfcd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md",
+                "file": "Eigenwerte und Eigenvektoren.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md",
+                "file": "Eigenwerte und Eigenvektoren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md",
+                "file": "Eigenwerte und Eigenvektoren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Hashing.md"
+                "file": "Eigenwerte und Eigenvektoren.md"
               }
             }
           }
@@ -168,44 +155,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23f0fe91b7fbfcd7",
+  "active": "9a556e0ae73e2673",
   "lastOpenFiles": [
-    "Pasted image 20230702201430.png",
-    "Pasted image 20230702200719.png",
-    "Graphen.md",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/FPV/Termination.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "Eigenwerte und Eigenvektoren.md",
+    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Determinante.md",
+    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/1. Semester/ERA/Cache.md",
+    "TUM/1. Semester/ERA/Einfuehrung in die Rechnerarchitekur.md",
+    "TUM/2. Semester/FPV/Verification in Ocaml.md",
+    "README.md",
+    "Performance.md",
+    "Pasted image 20230615090500.png",
+    "Pasted image 20230615094608.png",
+    "Pasted image 20230615090406.png",
+    "Pasted image 20230615101903.png",
+    "TUM/2. Semester/GAD/Pasted image 20230702200719.png",
+    "TUM/2. Semester/GAD/Pasted image 20230702201430.png",
+    "TUM/2. Semester/GAD/Graphen.md",
+    "TUM/2. Semester/GAD/Hashing.md",
+    "TUM/2. Semester/FPV/Termination.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
     "TUM/2. Semester/EIST/Testing.md",
     "TUM/2. Semester/EIST/Einfuehrung in die Softwaretechnik.md",
-    "TUM/2. Semester/GAD/Hashing.md",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "TUM/2. Semester/GAD/Datenstrukturen fuer Sequenzen.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/GAD/Effizienzmetrik.md",
-    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
-    "Pasted image 20230615101903.png",
     "TUM/2. Semester/GAD/Pasted image 20230630193607.png",
     "TUM/2. Semester/GAD/Pasted image 20230630195524.png",
     "TUM/2. Semester/GAD/Pasted image 20230630195544.png",
     "TUM/2. Semester/GAD/Suchstrukturen.md",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
-    "TUM/2. Semester/LinAlg/Komplexe Zahlen und Polarkoordinaten.md",
-    "TUM/2. Semester/FPV/Verification in Ocaml.md",
-    "TUM/2. Semester/FPV/Weakest Pre-Condition.md",
-    "Pasted image 20230615090406.png",
-    "Pasted image 20230615090500.png",
-    "Pasted image 20230615094608.png",
     "TUM/2. Semester/FPV/Pasted image 20230626194658.png",
-    "TUM/2. Semester/FPV/Pasted image 20230626194715.png",
-    "README.md",
-    "Performance.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",

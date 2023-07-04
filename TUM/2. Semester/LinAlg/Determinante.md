@@ -15,6 +15,7 @@ $$sng(\sigma) = (-1)^f$$
 ## Determinante einer Matrix
 - Fuer jede quadratische Matrix $A \in \mathbb{K}^{n \times n}$ wird die Determinante von $A$ definiert durch:
 $$|A| = det(A) = \sum_{\sigma \in S_n} sgn(\sigma) \prod_{i = 1}^{n} a_{i\sigma(i)}$$
+- Eine Matrix $A$ ist genau dann invertierbar, falls $det(A) \neq 0$ ist
 #### Umformungen
 - Fuer zwei beliebige Matrizen $A, B \in \mathbb{K}^{n \times n}$ gilt:
 $$det(AB) = det(A) \cdot det(B)$$
