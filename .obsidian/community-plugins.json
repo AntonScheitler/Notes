@@ -1,4 +1,5 @@
 [
   "obsidian-git",
-  "obsidian-relative-line-numbers"
+  "obsidian-relative-line-numbers",
+  "hot-reload"
 ]
