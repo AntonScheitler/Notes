@@ -7,7 +7,6 @@ $$f(\lambda v) = \lambda f(v)$$
 $$f(v + u) = f(v) + f(u)$$
 $$f(0) = 0$$
 - Die Komposition beliebiger linearer Funktionen ist ebenfalls linear
-- Ist $f$ linear und bijektiv, so bezeichnet man es als Isomorphismus
 #### Kernformel
 - Fuer den [[Lineare Gleichungssysteme|Kern]] von $f: V \mapsto W$ gilt:
 $$Ker(f) = \{ v \in V \mid f(v) = 0 \} \leq V$$
@@ -16,11 +15,11 @@ $$Ker(f) = \{ v \in V \mid f(v) = 0 \} \leq V$$
 $$Bild(f) = \{f(v) \mid v \in V \} \leq W$$
 #### Dimensionsformel
 - Fuer eine lineare Abbildung $f: V \mapsto W$ gilt:
-$$dim(Ker(f)) = def(f)$$
-$$dim(Bild(f)) = rg(f)$$
+$$def(f) = dim(Ker(f))$$
+$$rg(f) = dim(Bild(f))$$
 $$dim(V) = def(f) + rg(f)$$
 - $f$ ist genau dann injektiv, wenn $Ker(f) = \{ 0 \}$
-- Ist $f$ injektiv, so ist $f$ auch surjektiv und somit bijektiv
+- Ist $f$ injektiv, so ist $f$ auch surjektiv und somit bijektiv, falls $dim(V) = dim(W)$ ist
 - Ist $f$ bijektiv, so bezeichnet man $f$ als Isomorphismus
 ## Koordinatenvektoren
 - Es sei $B = (b_1, ..., b_n)$ eine geordnete [[Basen von Vektorraeumen|Basis]] von $V$
