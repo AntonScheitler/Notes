@@ -31,3 +31,4 @@ $$D = B^{-1}AB = B^TAB$$
 - Die $n$ Eigenwerte einer Matrix $A \in \mathbb{C}^{n \times n}$ liegen in den $n$ Gerschgorinkreisen
 - Der $i$-te Gerschgorinkreis wird beschrieben durch:
 $$K_i = \{z \in \mathbb{C} \mid |z - a_{i, i}| \leq \sum_{j = 1, \space j \neq i}^{n} |a_{i, j}|\}$$
+- Eine Matrix ist invertierbar, falls die $0$ in keinem der Gerschgorinkreise liegt

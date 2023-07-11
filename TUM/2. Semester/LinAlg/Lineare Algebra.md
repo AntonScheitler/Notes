@@ -12,4 +12,5 @@
 ### [[Lineare Ausgleichsrechnung]]
 ### [[Lineare Abbildungen]]
 ### [[Eigenwerte und Eigenvektoren]]
+### [[Singulaerwertszerlegung]]
 ### [Flashcards](https://ankiweb.net/shared/info/921866146)

@@ -13,6 +13,7 @@ A
 #### Codewoerter
 - Die Menge aller Codewoerter $C$ kann mithilfe der Generatormatrix $G$ beschrieben werden, wobei $k$ die Laenge der Informations- und $n$ die Laenge der Codewoerter ist:
 $$C = \{ Gx \mid x \in \mathbb{K}^k\} \leq \mathbb{K}^n$$
+- Die Informationsrate ist hierbei $\frac{k}{n}$ und die Redundanz $n - k$
 - $C$ ist somit das Bild von $G$, wobei fuer die [[Vektorraeume|Dimension]] von $C$ und den [[Lineare Gleichungssysteme|Rang]] von $G$ gilt:
 $$dim(C) = k$$
 $$rg(G) = k$$
@@ -26,7 +27,7 @@ $$Gx = c$$
 - Es sei $c \in \mathbb{K}^n$ ein beliebiges Codewort
 - Das Hamming Gewicht $w(c)$ von wird definiert durch:
 $$w(c) = | \{i \in \{1, ..., n\} \mid c_i \neq 0 \}|$$
-- Ist $c' \in \mathbb{K}^n$ ein weiteres Codewort, so wird die Hamming Abstand zwischen $c$ und $c'$ definiert durch:
+- Ist $c' \in \mathbb{K}^n$ ein weiteres Codewort, so wird der Hamming Abstand zwischen $c$ und $c'$ definiert durch:
 $$d(c, c') = |\{i \in \{1, ..., n\} \mid c_i \neq c'_i\}|$$
 $$d(c, c') = w(c - c')$$
 - Zudem wird der Hamming Abstand eines Codes $C$ beschrieben durch:
