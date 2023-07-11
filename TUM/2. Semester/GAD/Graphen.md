@@ -36,3 +36,11 @@
 - Der Graph wird in der topologischen Reihenfolge durchlaufen und fuer jeden Knoten die kleinste Distanz bestimmt
 ###### Beispiel
 ![[Pasted image 20230709161949.png]]
+#### Graph mit positivem Kantengewicht
+- Es wird bei einem Startknoten begonnen und die Distanz zu jedem anderen Knoten auf $\infty$ gesetzt
+- Die Distanzen zu allen Nachbarknoten des Startknotens werden gesetzt und neue Knoten in die [[Priority Queues|Prioritaetswarteschlange]] eingefuegt
+- Ist eine Distanz fuer einen Nachbarknoten bereits gegeben, so wird diese aktualisiert, falls die neue Distanz kuerzer ist
+- Der neue Startknoten wird aus der Prioritaetswarteschlange entnommen
+- Wurden alle Knoten besucht, so wurde der $SSSP$ bestimmt
+###### Beispiel
+![[Pasted image 20230711190344.png]]

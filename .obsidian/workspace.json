@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
+                "file": "TUM/2. Semester/GAD/Graphen.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0ef3a5ab5dbd401b",
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
+                "file": "TUM/2. Semester/GAD/Graphen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
+                "file": "TUM/2. Semester/GAD/Graphen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md"
+                "file": "TUM/2. Semester/GAD/Graphen.md"
               }
             }
           }
@@ -169,13 +170,15 @@
   },
   "active": "6534b2f823002c78",
   "lastOpenFiles": [
-    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
-    "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
-    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
-    "TUM/2. Semester/GAD/Pasted image 20230709154840.png",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "Pasted image 20230711190344.png",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+    "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
+    "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
+    "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
+    "TUM/2. Semester/GAD/Pasted image 20230709154840.png",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
@@ -189,7 +192,6 @@
     "TUM/2. Semester/GAD/Pasted image 20230709154927.png",
     "TUM/2. Semester/GAD/Pasted image 20230709161949.png",
     "Pasted image 20230615090406.png",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/LinAlg/Restklassengruppen.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
