@@ -13,4 +13,6 @@
 ### [[Lineare Abbildungen]]
 ### [[Eigenwerte und Eigenvektoren]]
 ### [[Singulaerwertszerlegung]]
+### [[Definitheit von Matrizen]]
+### [[Matrixnormen]]
 ### [Flashcards](https://ankiweb.net/shared/info/921866146)

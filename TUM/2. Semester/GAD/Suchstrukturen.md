@@ -69,3 +69,17 @@ $$a \leq d \leq b$$
 - Im Knoten darueber wird das Element als Split-Key hinzugefuegt
 - Falls der Knoten hierdurch einen Rang groesser als $b$ erlangt, wird der Knoten halbiert und das Element in der Mitte wiederum in den Knoten darueber eingefuegt
 ![[Pasted image 20230630195544.png]]
+#### Entfernen
+- Besitzt das Element keine Kindknoten, so kann es direkt geloescht werden
+- Besitzt das Element Kinder, so wird es mit seinem groessten linken Kind vertauscht und geloescht
+- Um die Invariante wiederherzustellen, wird die Kante eines Nachbars gestohlen
+- Ist das Stehlen nicht moeglich, so werden Knoten verschmolzen
+###### Kantenstehlen
+- Ist der Grad eines Nachbars groesser als $a$, so wird eine seiner Kanten gestohlen
+- Das geloeschte Element wird mit dem passenden Split-Key des Elternknoten ersetzt
+- Der Split-Key, von dem die Kante gestohlen wird in den Elternknoten gezogen
+###### Verschmelzen
+- Der Knoten, der das geloeschte Element enthaelt, wird mit einem seiner Nachbarknoten verschmolzen
+###### Beispiel
+![[Pasted image 20230716182258.png]]
+![[Pasted image 20230716182403.png]]

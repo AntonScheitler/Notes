@@ -19,7 +19,7 @@ $$\Sigma = \begin{pmatrix}
 - Hierbei ist $r = min\{m, n\}$
 #### Bestimmen von $\Sigma$
 - Die Eigenwerte $\lambda_1, ..., \lambda_r, ..., \lambda_n$ von $A^TA$ werden bestimmt
-- Von den Eigenwerten werden $\lambda_1, ..., \lambda_r$ betrachtet und sortiert
+- Von den Eigenwerten werden $\lambda_1, ..., \lambda_r$ betrachtet und absteigend sortiert
 - Fuer die Singulaerwerte $\sigma_i$ von $\Sigma$ gilt:
 $$\sigma_i = \sqrt{\lambda_i}$$
 #### Bestimmen von V

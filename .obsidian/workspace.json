@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e60a30c2e980a22f",
+        "id": "f405dbe366cda6ec",
         "type": "tabs",
         "children": [
           {
-            "id": "2984dd9748d08d7a",
+            "id": "9b692b108a0c805a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6534b2f823002c78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TUM/2. Semester/GAD/Graphen.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Winkel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -107,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Graphen.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Graphen.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Graphen.md"
+                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md"
               }
             }
           }
@@ -168,24 +156,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6534b2f823002c78",
+  "active": "9b692b108a0c805a",
   "lastOpenFiles": [
-    "Pasted image 20230711190344.png",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
-    "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
-    "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
-    "TUM/2. Semester/GAD/Pasted image 20230709154840.png",
+    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
+    "TUM/2. Semester/LinAlg/Matrixnormen.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
+    "TUM/2. Semester/LinAlg/Determinante.md",
+    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+    "TUM/2. Semester/LinAlg/Lineare Codes.md",
+    "TUM/2. Semester/LinAlg/Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
+    "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
+    "TUM/2. Semester/LinAlg/Saetze.md",
+    "TUM/2. Semester/GAD/Suchstrukturen.md",
+    "Pasted image 20230716182403.png",
+    "Pasted image 20230716182258.png",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/GAD/Graphen.md",
+    "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
+    "TUM/2. Semester/GAD/Laufzeitanalyse.md",
+    "TUM/2. Semester/EIST/Testing.md",
+    "TUM/2. Semester/LinAlg/Definitheit von Matrizen.md",
+    "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
+    "Pasted image 20230711190344.png",
+    "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
+    "TUM/2. Semester/GAD/Pasted image 20230709154840.png",
     "TUM/2. Semester/LinAlg/Erzeugendensysteme.md",
     "TUM/2. Semester/LinAlg/Kryptologie.md",
-    "TUM/2. Semester/LinAlg/Saetze.md",
-    "TUM/2. Semester/LinAlg/Determinante.md",
-    "TUM/2. Semester/LinAlg/Lineare Codes.md",
-    "TUM/2. Semester/GAD/Graphen.md",
     "Pasted image 20230615101903.png",
     "TUM/2. Semester/GAD/Pasted image 20230709154806.png",
     "TUM/2. Semester/GAD/Pasted image 20230709154901.png",
@@ -194,18 +193,7 @@
     "Pasted image 20230615090406.png",
     "TUM/2. Semester/LinAlg/Restklassengruppen.md",
     "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
-    "TUM/2. Semester/LinAlg/Vektorraeume.md",
-    "TUM/2. Semester/GAD/Suchstrukturen.md",
-    "TUM/2. Semester/LinAlg/Algebraische Strukturen.md",
-    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
-    "TUM/2. Semester/LinAlg/Matrizen.md",
-    "TUM/2. Semester/GAD/Hashing.md",
-    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
-    "Pasted image 20230615090500.png",
-    "Pasted image 20230615094608.png",
-    "TUM/2. Semester/GAD/Pasted image 20230702200719.png",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
