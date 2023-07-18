@@ -19,7 +19,7 @@ $$def(f) = dim(Ker(f))$$
 $$rg(f) = dim(Bild(f))$$
 $$dim(V) = def(f) + rg(f)$$
 - $f$ ist genau dann injektiv, wenn $Ker(f) = \{ 0 \}$
-- Ist $f$ injektiv, so ist $f$ auch surjektiv und somit bijektiv, falls $dim(V) = dim(W)$ ist
+- Ist $f$ injektiv und $dim(V) = dim(W)$, so ist $f$ auch surjektiv und somit bijektiv
 - Ist $f$ bijektiv, so bezeichnet man $f$ als Isomorphismus
 ## Koordinatenvektoren
 - Es sei $B = (b_1, ..., b_n)$ eine geordnete [[Basen von Vektorraeumen|Basis]] von $V$

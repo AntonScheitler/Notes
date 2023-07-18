@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
                 "mode": "preview",
                 "source": false
               }
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Algebra.md"
+                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md"
               }
             }
           }
@@ -158,15 +157,16 @@
   },
   "active": "9b692b108a0c805a",
   "lastOpenFiles": [
+    "TUM/2. Semester/LinAlg/Determinante.md",
+    "TUM/2. Semester/LinAlg/Definitheit von Matrizen.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Vektorraeume.md",
+    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
+    "TUM/2. Semester/LinAlg/Matrixnormen.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
     "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
-    "TUM/2. Semester/LinAlg/Matrixnormen.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
-    "TUM/2. Semester/LinAlg/Skalarprodukt.md",
-    "TUM/2. Semester/LinAlg/Determinante.md",
     "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
     "TUM/2. Semester/LinAlg/Lineare Codes.md",
-    "TUM/2. Semester/LinAlg/Vektorraeume.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Saetze.md",
@@ -178,7 +178,6 @@
     "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/EIST/Testing.md",
-    "TUM/2. Semester/LinAlg/Definitheit von Matrizen.md",
     "TUM/2. Semester/LinAlg/Singulaerwertszerlegung.md",
     "Pasted image 20230711190344.png",
     "TUM/2. Semester/LinAlg/Lineare Ausgleichsrechnung.md",
