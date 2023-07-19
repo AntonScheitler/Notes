@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+                "file": "TUM/2. Semester/GAD/Suchstrukturen.md",
                 "mode": "preview",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Winkel",
+                "query": "euklidischer ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+                "file": "TUM/2. Semester/GAD/Suchstrukturen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+                "file": "TUM/2. Semester/GAD/Suchstrukturen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/LinAlg/Lineare Abbildungen.md"
+                "file": "TUM/2. Semester/GAD/Suchstrukturen.md"
               }
             }
           }
@@ -157,23 +158,25 @@
   },
   "active": "9b692b108a0c805a",
   "lastOpenFiles": [
+    "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
+    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
+    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
+    "TUM/2. Semester/LinAlg/Matrizen.md",
+    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
+    "TUM/2. Semester/LinAlg/Lineare Codes.md",
+    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
     "TUM/2. Semester/LinAlg/Determinante.md",
     "TUM/2. Semester/LinAlg/Definitheit von Matrizen.md",
-    "TUM/2. Semester/LinAlg/Lineare Algebra.md",
     "TUM/2. Semester/LinAlg/Vektorraeume.md",
     "TUM/2. Semester/LinAlg/Skalarprodukt.md",
     "TUM/2. Semester/LinAlg/Matrixnormen.md",
     "TUM/2. Semester/LinAlg/Orthogonalithaet.md",
-    "TUM/2. Semester/LinAlg/Orthogonal- und Orthonormalsystem.md",
-    "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
-    "TUM/2. Semester/LinAlg/Lineare Codes.md",
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Saetze.md",
     "TUM/2. Semester/GAD/Suchstrukturen.md",
     "Pasted image 20230716182403.png",
     "Pasted image 20230716182258.png",
-    "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/GAD/Graphen.md",
     "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
@@ -191,8 +194,6 @@
     "TUM/2. Semester/GAD/Pasted image 20230709161949.png",
     "Pasted image 20230615090406.png",
     "TUM/2. Semester/LinAlg/Restklassengruppen.md",
-    "TUM/2. Semester/LinAlg/Rechnen mit Matrizen.md",
-    "TUM/2. Semester/LinAlg/Gaussches Eliminationsverfahren.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
