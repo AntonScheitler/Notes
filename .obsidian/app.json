@@ -8,5 +8,11 @@
   "strictLineBreaks": false,
   "alwaysUpdateLinks": true,
   "spellcheck": false,
-  "autoPairMarkdown": false
+  "autoPairMarkdown": false,
+  "pdfExportSettings": {
+    "pageSize": "Legal",
+    "landscape": false,
+    "margin": "1",
+    "downscalePercent": 100
+  }
 }

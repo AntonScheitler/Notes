@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUM/2. Semester/GAD/Suchstrukturen.md",
-                "mode": "preview",
+                "file": "TUM/2. Semester/GAD/Graphen.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TUM/2. Semester/GAD/Suchstrukturen.md",
+                "file": "TUM/2. Semester/GAD/Graphen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TUM/2. Semester/GAD/Suchstrukturen.md",
+                "file": "TUM/2. Semester/GAD/Graphen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TUM/2. Semester/GAD/Suchstrukturen.md"
+                "file": "TUM/2. Semester/GAD/Graphen.md"
               }
             }
           }
@@ -158,6 +158,10 @@
   },
   "active": "9b692b108a0c805a",
   "lastOpenFiles": [
+    "Pasted image 20230719223923.png",
+    "TUM/2. Semester/GAD/Suchstrukturen.md",
+    "TUM/2. Semester/GAD/Graphen.md",
+    "Pasted image 20230719223534.png",
     "TUM/2. Semester/FPV/Funktionale Programmierung und Verifikation.md",
     "TUM/2. Semester/GAD/Grundlagen Algorithmen und Datenstrukturen.md",
     "TUM/2. Semester/LinAlg/Lineare Abbildungen.md",
@@ -174,10 +178,8 @@
     "TUM/2. Semester/LinAlg/Lineare Gleichungssysteme.md",
     "TUM/2. Semester/LinAlg/Basen von Vektorraeumen.md",
     "TUM/2. Semester/LinAlg/Saetze.md",
-    "TUM/2. Semester/GAD/Suchstrukturen.md",
     "Pasted image 20230716182403.png",
     "Pasted image 20230716182258.png",
-    "TUM/2. Semester/GAD/Graphen.md",
     "TUM/2. Semester/LinAlg/Eigenwerte und Eigenvektoren.md",
     "TUM/2. Semester/GAD/Laufzeitanalyse.md",
     "TUM/2. Semester/EIST/Testing.md",
@@ -192,8 +194,6 @@
     "TUM/2. Semester/GAD/Pasted image 20230709154901.png",
     "TUM/2. Semester/GAD/Pasted image 20230709154927.png",
     "TUM/2. Semester/GAD/Pasted image 20230709161949.png",
-    "Pasted image 20230615090406.png",
-    "TUM/2. Semester/LinAlg/Restklassengruppen.md",
     "TUM/2. Semester/EIST",
     "TUM/2. Semester/Perlen der Informatik",
     "TUM/2. Semester/GAD",
