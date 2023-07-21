@@ -12,7 +12,6 @@ $$\langle X \rangle = lin(X) = span(X) = \Big \{ \sum_{i = 1}^{n} \lambda_i v_i 
 $$\forall \space T \subset \{v_1, ..., v_n\}: \langle T \rangle \subset \langle v_1, ..., v_n \rangle$$
 - Umgekehrt sind die Vektoren linear abhaengig, falls gilt:
 $$\exists \space T \subset \{v_1, ..., v_n\}: \langle T \rangle = \langle v_1, ..., v_n \rangle$$
-- Sind alle Teilmengen von $\{v_1, ..., v_n\}$ linear unabhaengig, so ist $\{v_1, ..., v_n\}$ linear unabhaengig
 ###### Kriterium
 - Das lineare Gleichungssystem $\lambda_1 v_1 + ... + \lambda_n v_n = 0$ wird aufgestellt
 - Hat das LGS genau eine Loesung, so sind die Vektoren linear unabhaengig

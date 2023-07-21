@@ -29,3 +29,15 @@ $$det(A^k) = det(A)^k$$
 $$det(A) = \sum_{j=1}^n(-1)^{i + j} \cdot a_{ij} \cdot det(A_{ij})$$
 - Fuer die Entwicklung nach der $j$-ten Spalte gilt:
 $$det(A) = \sum_{i=1}^n(-1)^{i + j} \cdot a_{ij} \cdot det(A_{ij})$$
+#### Dreiecksblockgestalt
+- Hat $A$ die Dreiecksblockgestalt, so kann sie dargestellt werden durch:
+$$A = \begin{pmatrix}
+B & 0 \\
+C & D \\
+\end{pmatrix}$$
+$$A = \begin{pmatrix}
+B & C \\
+0 & D \\
+\end{pmatrix}$$
+- Fuer die Determinante von $A$ gilt:
+$$det(A) = det(B) \cdot det(D)$$

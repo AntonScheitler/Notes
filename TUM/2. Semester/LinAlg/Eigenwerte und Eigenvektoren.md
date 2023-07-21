@@ -21,7 +21,7 @@ $$\prod \lambda_i = det(A)$$
 $$Eig_A(\lambda) = \{v \mid (A - \lambda E_n)v = 0\} = Ker(A - \lambda E_n)$$
 #### Vielfachheiten
 - Die Vielfachheit einer Nullstelle $\lambda$ des charakteristischen Polynoms bezeichnet man als algebraische Vielfachheit $alg(\lambda)$
-- Die Anzahl der Eigenvektoren mit Eigenwert $\lambda$ bezeichnet man als geometrische Vielfachheit $geo(\lambda)$
+- Die Dimension des Eigenraums mit Eigenwert $\lambda$ bezeichnet man als geometrische Vielfachheit $geo(\lambda)$
 - Die Matrix ist diagonalisierbar, falls algebraische und geometrische Vielfachheit stets gleich sind
 ## Orthogonales Diagonalisieren
 - Ist $A \in \mathbb{R}^{n \times n}$ symmetrisch, so sind die Eigenwerte $\lambda_i$ reell und $B$ ist eine [[Orthogonal- und Orthonormalsystem|Orthonormalbasis]]
@@ -31,3 +31,4 @@ $$D = B^{-1}AB = B^TAB$$
 - Die $n$ Eigenwerte einer Matrix $A \in \mathbb{C}^{n \times n}$ liegen in den $n$ Gerschgorinkreisen
 - Der $i$-te Gerschgorinkreis wird beschrieben durch:
 $$K_i = \{z \in \mathbb{C} \mid |z - a_{i, i}| \leq \sum_{j = 1, \space j \neq i}^{n} |a_{i, j}|\}$$
+- Eine Matrix ist invertierbar, falls die $0$ in keinem der Gerschgorinkreise liegt

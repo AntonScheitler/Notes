@@ -54,18 +54,32 @@
 - Ein (a, b) Baum ist ein Suchbaum, wobei jeder Knoten einem sortierten Array entspricht und einen eigenen Ausgangsgrad hat
 #### Voraussetzungen
 - Alle Blaetter des Baums liegen in derselben Tiefe
-- Fuer jeden Knotengrad $d$ ausser der Wurzel gilt, falls $a \geq 2$ und $b \geq 2a - 1$:
+- Fuer jeden Knotengrad $d$ ausser der Wurzel gilt, fuer $a \geq 2$ und $b \geq 2a - 1$:
 $$a \leq d \leq b$$
-- Ein Knoten besteht aus $d - 1$ sortierten Elementen und besitzt d Kinder
-- Die Elemente des $i$-ten Kindes liegen zwischen dem $i-1$-ten und $i$-ten Element des Knoten
+- Ein Knoten besteht aus hoechstens $d - 1$ sortierten Split-Keys und besitzt hoechstens d Kinder
+- Die Elemente des $i$-ten Split-Key eines Knotens liegen im $i$-ten Kind des Knotens
 #### Beispiel
 ![[Pasted image 20230630193607.png]]
 #### Operationen
 ###### Suchen
-- Das gesuchte Element wird mit den Elementen eines Knotens verglichen
+- Das gesuchte Element wird mit den Split-Keys eines Knotens verglichen
 - Falls noetig, wird das entsprechende Kind des Knotens durchsucht
 ###### Einfuegen
 - Es wird nach der passenden Stelle fuer das Element im Baum gesucht und das Element dort eingefuegt
 - Im Knoten darueber wird das Element als Split-Key hinzugefuegt
-- Falls der Knoten hierdurch einen Rang groesser als $b$ erlangt, wird der Knoten halbiert und das Element in der Mitte wiederum in den Knoten darueber eingefuegt
+- Falls der Knoten hierdurch einen Rang groesser als $b$ erlangt, wird der Knoten halbiert und der Split-Key in der Mitte wiederum in den Knoten darueber eingefuegt
 ![[Pasted image 20230630195544.png]]
+#### Entfernen
+- Besitzt der Split-Key keine Kindknoten, so kann er direkt geloescht werden
+- Besitzt der Split-Key Kinder, so wird er mit seinem groessten linken Kind vertauscht und geloescht
+- Um die Invariante wiederherzustellen, wird die Kante eines Nachbars gestohlen
+- Ist das Stehlen nicht moeglich, so werden Knoten verschmolzen
+###### Kantenstehlen
+- Ist der Grad eines Nachbars groesser als $a$, so wird eine seiner Kanten gestohlen
+- Der geloeschte Split-Key wird mit dem passenden Split-Key des Elternknoten ersetzt
+- Der Split-Key, von dem die Kante gestohlen wurde wird in den Elternknoten gezogen
+###### Verschmelzen
+- Der Knoten, der den geloeschten Split-Key enthaelt, wird mit einem seiner Nachbarknoten verschmolzen
+###### Beispiel
+![[Pasted image 20230716182258.png]]
+![[Pasted image 20230716182403.png]]

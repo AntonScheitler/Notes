@@ -20,7 +20,7 @@ $$v_a = \frac{\langle v, a \rangle}{\langle a, a \rangle}a$$
 $$v_{a^{\perp}} = v - v_a$$
 - Man bezeichnet somit $v = v_a + v_{a^{\perp}}$ als orthogonale Zerlegung von $v$ laengs $a$
 ## Anwendung von Orthogonalitaet
-#### Orthonormalisierungsverfahren
+#### Gram-Schmidtverfahren
 - Eine beliebige Basis $\{a_1, ..., a_n\}$ kann folgendermassen in eine [[Orthogonal- und Orthonormalsystem|Orthonormalbasis]] $\{b_1, ..., b_n\}$ ueberfuehrt werden: 
 $$b_1 = \frac{1}{||a_1||}a_1$$
 $$b_2 = \frac{1}{||c_2||}c_2 \text{, mit } c_2 = a_2 - \langle b_1, a_2 \rangle b_1$$
