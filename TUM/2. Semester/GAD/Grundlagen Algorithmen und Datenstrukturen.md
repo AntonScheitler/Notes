@@ -6,4 +6,5 @@
 ### [[Priority Queues]]
 ### [[Suchstrukturen]]
 ### [[Graphen]]
+### [[Pattern Matching]]
 ### [Flashcards](https://ankiweb.net/shared/info/1983647928)
