@@ -47,5 +47,5 @@ $$_Cf(v) = _CM(f)_B \cdot _Bv$$
 - Es seien $V, W$ und $U$ Vektorraeume mit dem Basen $B, C$ und $D$ und die Abbildungen $f: V \mapsto W$ und $g: W \mapsto U$ linear
 - Hierbei gilt:
 $$_DM(g \circ f)_B = _DM(g)_C \cdot _CM(f)_B$$
-- Mithilfe der Darstellungsmatrix $A = {_{E_n}M}(f)_{E_n}$ kann die Darstellungsmatrix von $f$ bezueglich der Basis $B = (b_1, ..., b_n)$ kann gebildet werden ueber:
+- Mithilfe der Darstellungsmatrix $A = {_{E_n}M}(f)_{E_n}$ kann die Darstellungsmatrix von $f$ bezueglich der Basis $B = (b_1, ..., b_n)$ gebildet werden ueber:
 $$_BM(f)_B = B^{-1} A B$$
