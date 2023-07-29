@@ -28,6 +28,9 @@ $$|\{h \in H: h(x) = h(y)\}| \leq \frac{c}{m}|H|$$
 #### Hashing mit linearem Sondieren
 - Elemente werden mit ihrem gegebenen Index $I$ im Array eingefuegt
 - Ist der Index $I$ bereits von einem anderen Element belegt, so wird versucht, das Element an den darauffolgenden Indizes einzufuegen
+###### Loeschen von Elementen
+- Elemente koennen durch das Einfuegen eines Platzhalters als geloescht markiert werden
+- Alternativ koennen alle kollidierenden Elemente des geloeschten Elements verschoben werden, um die enstandene Luecke zu fuellen
 ###### Beispiel
 ![[Pasted image 20230524153935.png]]
 #### Double Hashing

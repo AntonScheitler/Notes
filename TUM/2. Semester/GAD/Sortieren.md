@@ -1,27 +1,39 @@
 ## Einfache Verfahren
 #### Selection Sort
 - Das kleinste Element der verbleibenden Eingabesequenz wird gesucht und an den Anfang der Sequenz getauscht
+###### Laufzeit
+- Selection Sort laeuft in $\Theta(n^2)$
 ###### Beispiel
 ![[Pasted image 20230606145711.png]]
 #### Insertion Sort
 - Das naechste Element der verbliebenden Eingabesequenz wird entfernt und an der richtigen Stelle im sortierten Teilarray untergebracht
+###### Laufzeit
+- Insertion Sort laeuft im average case in $O(n^2)$, im best case jedoch in $\Theta(n)$
 ###### Beispiel
 ![[Pasted image 20230606150432.png]]
 ## Effizientere Verfahren
 #### Merge Sort
 - Die Eingabesequenz wird rekursiv aufgeteilt und sortiert zusammengefuegt
+###### Laufzeit
+- Merge Sort laeuft stets in $O(n\log(n))$ und benoetigt $O(n)$ Speicher
+- Merge Sort ist zudem stabil
 ###### Beispiel
 ![[Pasted image 20230606151259.png]]
 #### Quick Sort
 - Es wird ein Element der Sequenz als Pivot gewaehlt
 - Alle Elemente, die kleiner sind, als das Pivotelement werden links davon angeordnet, die, die groesser sind, rechts davon
 - Das Pivotelement steht nun an der richtigen Stelle und das Verfahren wird fuer die linke und rechte Haelfte wiederholt
+###### Laufzeit
+- Quick Sort laeuft im average case in $O(n \log n)$ und benoetigt $O(\log n)$ Speicher
+- Im worst case laeuft Quick Sort in $O(n^2)$
 ###### Beispiel
 ![[Pasted image 20230610130736.png]]
 #### Radix Sort
 - Die Ziffern aller Zahlen der Sequenz werden nacheinander betrachtet
 - Die Zahlen werden gemaess der entsprechenden Ziffer an einem bestimmten Index in einem [[Hashing|Hash Table]] eingefuegt
 - Die Elemente des Hash Tables werden in eine Sequenz umgewandelt und das Verfahren wird fuer alle Ziffern wiederholt
+###### Laufzeit
+- Radix Sort laeuft in $\Theta(d(n + K))$ wobei $n$ die Anzahl der Elemente, $K$ das groesste Element und $d$ die Anzahl der Stellen beschreibt
 ###### Beispiel
 ![[Pasted image 20230610141557.png]]
 ## Master Theorem
