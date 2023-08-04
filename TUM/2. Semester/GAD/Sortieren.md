@@ -44,7 +44,9 @@ $$r(n) = \begin{cases}
 a & \text{falls } n = 1 \\
 cn + d * r(n/b) & \text{falls } n > 1
 \end{cases}$$
+- $a$ ist die Problemgroesse im Basisfall
 - $d$ ist die Anzahl der Teilprobleme, in die das Problem aufgeteilt wird und $n/b$ ist die, daraus resultierende Problemgroesse
+- $cn$ ist zudem die Problemgroesse auf der momentanen Rekursionsebene
 - Fuer $r(n)$ gilt:
 $$r(n) = \begin{cases}
 \Theta(n) & \text{falls } d < b \\

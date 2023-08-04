@@ -17,6 +17,10 @@
 #### Einfuegen
 - Das neue Element wird in der untersten Ebene an der linkesten freien Stelle eingefuegt
 - Das Element wird so lange mit seinem Elternknoten vertauscht, bis es an der richtigen Stelle im Heap ist
+#### Effizienz
+- Das Einfuegen von Elementen laeuft in $O(\log(n))$
+- Das Loeschen der Wurzel laeuft in $O(\log(n))$
+- Die Konstruktion eines Heaps mithilfe einer Menge von Elementen $\{e_1, ..., e_n\}$ laeuft in $O(n)$
 ###### Beispiel
 ![[Pasted image 20230613201002.png]]
 #### Beispiel
