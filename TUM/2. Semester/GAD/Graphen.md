@@ -34,6 +34,8 @@
 - Die Knoten werden topologisch sortiert
 - Jedem Knoten wird hierbei erst dann eine Nummer zugewiesen, wenn jeder Vorgaenger des Knotens betrachtet wurde
 - Der Graph wird in der topologischen Reihenfolge durchlaufen und fuer jeden Knoten die kleinste Distanz bestimmt
+###### Effizienz
+- Die kuerzesten Wege werden in $O(n + m)$ bestimmt, wobei $n$ die Anzahl der Knoten und $m$ die Anzahl der Kanten ist
 ###### Beispiel
 ![[Pasted image 20230709161949.png]]
 #### Dijkstra Algorithmus
@@ -42,6 +44,8 @@
 - Ist eine Distanz fuer einen Nachbarknoten bereits gegeben, so wird diese aktualisiert, falls die neue Distanz kuerzer ist
 - Der neue Startknoten wird aus der Prioritaetswarteschlange entnommen
 - Wurden alle Knoten besucht, so wurde der $SSSP$ bestimmt
+###### Effizienz
+- Der Algorithmus von Dijkstra laeuft in $O(m + n\log(n))$, wobei $n$ die Anzahl der Knoten und $m$ die Anzahl der Kanten ist
 ###### Beispiel
 ![[Pasted image 20230711190344.png]]
 #### Bellman-Ford Algorithmus
@@ -49,6 +53,8 @@
 - Alle Kanten des Graphen werden $n - 1$ mal durchlaufen und in jeder Iteration die Distanz zu allen Knoten aktualisiert
 - Veraendert sich in einer $n$-ten Iteration die Distanz zu einem Knoten, so fuehrt ein negativer Zyklus zu ihm
 - Knoten, die ueber einen negativen Zyklus erreicht werden koennen erhalten die Distanz $-\infty$
+###### Effizienz
+- Der Bellman-Ford Algorithmus laeuft in $O(m * n)$, wobei $n$ die Anzahl der Knoten und $m$ die Anzahl der Kanten ist
 #### APSP
 - Enthaelt ein Graph keine negativen Zyklen, so koennen die $APSP$ bestimmt werden
 ###### Floyd-Warshall Algorithmus

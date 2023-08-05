@@ -83,3 +83,5 @@ $$a \leq d \leq b$$
 ###### Beispiel
 ![[Pasted image 20230716182258.png]]
 ![[Pasted image 20230716182403.png]]
+#### Effizienz
+- Das Einfuegen und Loeschen von Elementen erfolgt in $\Theta(\log(n))$

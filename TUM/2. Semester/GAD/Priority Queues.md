@@ -53,5 +53,8 @@
 ###### Loeschen
 - Das Element mit der hoechsten Prioritaet wird geloescht
 - Die Liste an Kindern des geloeschten Elements wird mit dem Heap gemerged
+#### Laufzeit
+- Ein Merge erfolgt in $O(\log(n))$
+- Das Einfuegen und Loeschen von Elementen erfolgt somit ebenfalls in $O(\log(n))$
 #### Beispiel
 ![[Pasted image 20230621142417.png]]

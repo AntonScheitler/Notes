@@ -9,6 +9,7 @@
 - Das naechste Element der verbliebenden Eingabesequenz wird entfernt und an der richtigen Stelle im sortierten Teilarray untergebracht
 ###### Laufzeit
 - Insertion Sort laeuft im average case in $O(n^2)$, im best case jedoch in $\Theta(n)$
+- Insertion Sort ist zudem stabil
 ###### Beispiel
 ![[Pasted image 20230606150432.png]]
 ## Effizientere Verfahren
