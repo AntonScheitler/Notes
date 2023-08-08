@@ -25,7 +25,7 @@
 - Alle Elemente, die kleiner sind, als das Pivotelement werden links davon angeordnet, die, die groesser sind, rechts davon
 - Das Pivotelement steht nun an der richtigen Stelle und das Verfahren wird fuer die linke und rechte Haelfte wiederholt
 ###### Laufzeit
-- Quick Sort laeuft im average case in $O(n \log n)$ und benoetigt $O(\log n)$ Speicher
+- Quick Sort laeuft im average case in $O(n \log n)$
 - Im worst case laeuft Quick Sort in $O(n^2)$
 ###### Beispiel
 ![[Pasted image 20230610130736.png]]
