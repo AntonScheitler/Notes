@@ -4,6 +4,7 @@
 - Rechner koennen sowohl Ganzzahlen, als auch Fliesskommazahlen darstellen
 #### Fliesskommazahldarstellung
 - Eine Fliesskommazahl wird mithilfe einer Mantisse, eines Exponenten und eines Vorzeichenbits dargestellt
+- Der minimale absolute Abstand zweier Fliesskommazahlen variiert und ist groesser, je groesser die Zahlen sind
 - Der minimale relative Abstand zwischen zwei Fliesskommazahlen ist immer gleich und wird als die Aufloesung bezeichnet
 ## Rundungsprinzip
 - Die Menge der Zahlen, die als Fliesskommazahl dargestellt werden kann ist diskret

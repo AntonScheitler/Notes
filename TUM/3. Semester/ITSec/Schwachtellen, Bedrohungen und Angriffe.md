@@ -6,5 +6,5 @@
 - Ein lesender oder schreibender Zugriff auf ein Datum geht ueber die Speichergrenzen dieses Datums hinaus
 - Hierdurch koennen Daten anderer Programmteile, wie Ruecksprungadressen ueberschrieben werden
 ###### Code Injection
-- Kommandos werden in eine Eingabe integriert, sodass das System diese ausfuehrt
-- Somit koennen fremde Befehle mit den Privilegien des Systems ausgefuehrt werden
+- Befehle werden in eine Eingabe integriert, sodass das System diese mit seinen Privilegien ausfuehrt
+- Somit koennen beispielsweise Datenbankeintraege ausgelesen oder geloescht werden
