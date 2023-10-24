@@ -1,1 +1,1 @@
-### [[Schwachtellen, Bedrohungen und Angriffe]]
+### [[Schwachtellen und Angriffe]]
