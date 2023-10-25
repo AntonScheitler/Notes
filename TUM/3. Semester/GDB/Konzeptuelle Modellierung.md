@@ -3,10 +3,10 @@
 #### Entities
 - Verschiedene Entities stehen in Beziehungen zueinander
 - Entities werden zudem mithilfe von Attributen beschrieben
-- Der Schluessel ist ein Attribut, welches den Entity eindeutig definiert
+- Das Schluesselattribut ist ein Attribut, welches den Entity eindeutig definiert
 ###### Schwacher Entitytyp
 - Alle Entities eines schwachen Typs nehmen an einer Beziehung Teil
-- Der Schluessel eines schwachen Entities ergibt sich aus seinem Schluessel und dem des Entites zu dem die Beziehung besteht
+- Der Schluessel eines schwachen Entities ergibt sich aus seinem partiellen Schluessel und dem des Entites zu dem die Beziehung besteht
 ###### Beispiel
 ![[Pasted image 20231018114626.png]]
 ![[Pasted image 20231018124624.png]]
