@@ -29,8 +29,7 @@ $$c_{abs} = \frac{f(x + \delta x) - f(x)}{\delta x} = f'(x)$$
 $$c_{rel} = \frac{c_{abs} \cdot x}{f(x)}$$
 ## Stabilitaet
 - Da Eingaben stets eine Stoerung $\tilde{x}$ besitzen, gilt jede Loesung $\tilde{y}$ als akzeptables Ergebnis von $p(x)$, falls gilt:
-$$\tilde{y} = p(\tilde{x}), \tilde{x} \in \{\tilde{x} 
-\mid \forall \tilde{x} \in \mathbb{F}, \exists x, \varepsilon \in \mathbb{R}: |\tilde{x} - x| < \varepsilon\}$$
+$$\tilde{y} = p(\tilde{x}), \tilde{x} \in \{\tilde{x}: |\tilde{x} - x| < \varepsilon\}$$
 - Ein Algorithmus ist stabil, falls fuer alle Eingaben innerhalb einer erlaubten Stoerung, akzeptable Ergebnisse geliefert werden 
 ## Ausloeschung
 - Bei einer Subtraktion zweier, gleich grosser Zahlen kann es zu einem grossen Verlust relevanter Stellen und grossen relativen Fehlern kommen
