@@ -3,9 +3,12 @@
 - Da Rechner nur endliche Zahlenmengen repraesentieren koennen, muessen Ergebnisse approximiert werden
 - Rechner koennen sowohl Ganzzahlen, als auch Fliesskommazahlen darstellen
 #### Fliesskommazahldarstellung
-- Eine Fliesskommazahl wird mithilfe einer Mantisse, eines Exponenten und eines Vorzeichenbits dargestellt
 - Der minimale absolute Abstand zweier Fliesskommazahlen variiert und ist groesser, je groesser die Zahlen sind
 - Der minimale relative Abstand zwischen zwei Fliesskommazahlen ist immer gleich und wird als die Aufloesung $\varrho$ bezeichnet
+###### IEEE Standard
+- Der IEEE Standard gibt vor, wie eine Fliesskommazahl im Speicher liegt
+- Eine Zahl wird durch ein Vorzeichenbit, Exponentenbits, sowie Mantissenbits dargestellt, wobei eine 1 vor dem Komma implizit ist
+- Vom dem gespeicherten Exponenten wird stets ein fester BIAS abgezogen
 ## Rundungsprinzip
 - Die Menge der Zahlen, die als Fliesskommazahl dargestellt werden kann ist diskret
 - Somit kann das Ergebnis einer Addition zweier darstellbarer Zahlen auserhalb dieser Menge liegen
@@ -16,6 +19,10 @@ $$\varepsilon(x) = \frac{\text{rd}(x) - x}{x}$$
 - Somit gilt fuer eine gerundete Zahl $x$:
 $$\text{rd}(x) = x(1 + \varepsilon)$$
 - Aufgrund des Rundungsverhaltens von Fliesskommazahlen ist die Addition nicht assoziativ
+#### Maschinengenauigkeit
+- Die Maschinengenauigkeit beschreibt den maximalen relativen Fehler, der bei der Darstellung einer Zahl entstehen kann
+- Die Maschinengenauigkeit $\epsilon_{Ma}$ ist somit die groesste Zahl, fuer die gilt:
+$$rd(1 + \epsilon_{Ma}) = 1$$
 ## Fliesskommaarithmetik
 - Waehrend einer Berechnung mit Fliesskommazahlen koennen sich Rundungsfehler akkumulieren
 - Um dies zu verhindern, wird der moegliche Rundungsfehler bei einer Operation mithilfe der Schranke $\tilde{\varepsilon} \in O(\varrho)$ eingegrenzt
