@@ -21,5 +21,17 @@
 - Der Ciphertext setzt sich aus den verschluesselten Bloecken zusammen
 ###### Schwachstellen
 - Eine pure Blockchiffre laesst Mustererkennung zu und ist somit unsicher
+###### Cipher-Block Chaining
+- Um Mustererkennung zu verhindern, wird ein Block mit seinem Vorgaenger, beziehungsweise mit einem Initialvektor verxodert
+![[Pasted image 20231107111850.png]]
 ###### Beispiel
 ![[Pasted image 20231103094425.png]]
+#### Stromchiffre
+- Ein Klartextstrom wird bitweise mit einem Schluesselstrom verxodert
+- Der Schluesselstrom wird mithilfe eines Pseudozufallszahlengenerators und einem Seed generiert
+###### Schwachstellen
+- Der verwendete Seed muss sich mit jeder Nachricht aendern, da sonst aus vergangenen Nachrichten der Schlussel hergeleitet werden kann
+###### Beispiel
+![[Pasted image 20231107105659.png]]
+#### Elliptische Kurven Kryptographie
+- TODO

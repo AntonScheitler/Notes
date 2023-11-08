@@ -3,23 +3,25 @@
 - Dies ist der Fall, da ein Prozess der CPU entzogen werden kann, oder auf die Festplatte ausgelagert wird
 #### Beispiel
 ![[Pasted image 20231030080632.png]]
-## Scheduling
-- Scheduling ist das Vorgehen, nachdem Prozesse der CPU zugewiesen werden
-#### Multiprogramming
-- Da unterschiedliche Prozesse unterschiedliche Ressourcen benoetigen, wird ihre Ausfuehrungsreihenfolge misachtet, um die CPU Auslastung zu erhoehen
-- Somit koennen CPU intensive Prozesse ausgefuehrt werden, waehrend ein anderer Prozess mit der I/O interagiert
 ## Threading
 - Ein Thread ist der Konstrollfluss eines Prozesses und wird durch Instruktionen vorgegeben
 - In einem multithreaded Prozess laufen mehrere Threads parallel im selben Adressraum, aber mit eigenen Befehlszaehlern und Registern
-#### Performanz
-- Das Erzeugen von Threads ist mit einem Overhead verbunden, der jedoch nicht so gross ist, wie beim Erzeugen von Prozessen
-- Mithilfe von Multithreading koennen Programmabschnitte parallel ausgefuehrt werden
+#### Implementierungen
+- Threads koennen auf unterschiedliche Weisen realisiert werden
+###### User-Level Threads
+- Bei User-Level Threads werden Threads mithilfe eines Laufzeitsystems in einem Prozess verwaltet
+- Der Scheduler des Betriebssystem kann Threads jedoch nicht zuweisen
+###### Kernel-Level Threads
+- Threads werden direkt von dem Betriebssystem verwaltet
+- Da fuer das Arbeiten mit Threads in den Systemmodus gewechselt werden muss, steigt der Overhead
+###### Beispiel
+![[Pasted image 20231108162046.png]]
 #### Beispiel
 ![[Pasted image 20231102100432.png]]
 ## Verwaltung
 - Das Betriebssystem verwendet unterschiedliche Datenstrukturen, um Prozesse zu verwalten
 #### Process Control Block
-- In einem Process Control Block werden alle Informationen ueber Prozesse, wie Adressen des Stack und Heap, die ProzessId und geoeffnete Dateien, verwaltet
+- In einem Process Control Block werden alle Informationen ueber Prozesse, wie Pointer auf Stack und Heap, die ProzessId und geoeffnete Dateien, verwaltet
 #### Prozesstabelle
 - Eine Prozesstabelle ist eine Liste von Process Control Blocks
 - Es werden separate Listen fuer wartende, oder rechenwillige Prozesse angelegt
@@ -30,4 +32,19 @@
 #### Prozesserzeugung
 - Mithilfe des System Calls fork, kann ein Elternprozess ein Kindprozess erzeugen
 - Der Kindprozess erbt das Text und das Data Segment seines Parents, kann dies jedoch auch ueberschreiben
-- Die PID eines Kindprozesses ist stets 0
+- Die PID eines Kindprozesses ist stets 0, seine PPID referenziert seinen Parent
+#### Prozessterminierung
+- Ein Prozess kann freiwillig terminieren, oder bei fatalen Fehlern durch das Betriebssystem beendet werden
+- Ein Elternprozess kann mithilfe von wait auf das Terminieren seiner Kindprozesse warten
+- Terminiert ein Parent vor seinem Kindprozess, so wird init zum neuen Parent
+## Dispatching
+- Ein Dispatcher entzieht Prozessen die CPU, um sie anderen zuzuweisen
+#### Context Switch
+- Der Kontext des vorherigen Prozesses wird im PCB gespeichert und der des neuen Prozesses vom PCB geladen
+#### Beispiel
+![[Pasted image 20231108162632.png]]
+## Scheduling
+- Scheduling ist das Vorgehen, nachdem Prozesse der CPU zugewiesen werden
+#### Multiprogramming
+- Da unterschiedliche Prozesse unterschiedliche Ressourcen benoetigen, wird ihre Ausfuehrungsreihenfolge misachtet, um die CPU Auslastung zu erhoehen
+- Somit koennen CPU intensive Prozesse ausgefuehrt werden, waehrend ein anderer Prozess mit der I/O interagiert
