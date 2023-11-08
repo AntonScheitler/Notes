@@ -9,10 +9,10 @@
 #### Implementierungen
 - Threads koennen auf unterschiedliche Weisen realisiert werden
 ###### User-Level Threads
-- Bei User-Level Threads werden Threads mithilfe eines Laufzeitsystems in einem Prozess verwaltet
+- User-Level Threads werden mithilfe eines Laufzeitsystems in einem Prozess verwaltet
 - Der Scheduler des Betriebssystem kann Threads jedoch nicht zuweisen
 ###### Kernel-Level Threads
-- Threads werden direkt von dem Betriebssystem verwaltet
+- Kernel-Level Threads werden direkt von dem Betriebssystem verwaltet
 - Da fuer das Arbeiten mit Threads in den Systemmodus gewechselt werden muss, steigt der Overhead
 ###### Beispiel
 ![[Pasted image 20231108162046.png]]
@@ -38,7 +38,7 @@
 - Ein Elternprozess kann mithilfe von wait auf das Terminieren seiner Kindprozesse warten
 - Terminiert ein Parent vor seinem Kindprozess, so wird init zum neuen Parent
 ## Dispatching
-- Ein Dispatcher entzieht Prozessen die CPU, um sie anderen zuzuweisen
+- Ein Dispatcher entzieht Prozessen die CPU, um sie anderen Prozessen zuzuweisen
 #### Context Switch
 - Der Kontext des vorherigen Prozesses wird im PCB gespeichert und der des neuen Prozesses vom PCB geladen
 #### Beispiel
