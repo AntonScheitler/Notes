@@ -1,9 +1,14 @@
 {
-  "accentColor": "#884cae",
-  "cssTheme": "Catppuccin",
+  "accentColor": "#5e81ac",
+  "cssTheme": "Obsidian Nord",
   "theme": "obsidian",
   "translucency": false,
   "nativeMenus": false,
   "showViewHeader": true,
-  "baseFontSize": 15
+  "baseFontSize": 14,
+  "enabledCssSnippets": [
+    "extension"
+  ],
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter"
 }

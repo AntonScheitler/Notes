@@ -56,3 +56,20 @@
 - Bei einer Gruppierung koennen Attribute aggregiert, beispielsweise summiert werden
 #### Beispiel
 ![[Pasted image 20231025192743.png]]
+## Tupelkalkuel
+- Alternativ zur relationalen Algebra kann das Relationenkalkuel fuer Anfragen verwendet werden
+#### Aufbau
+- Eine Anfrage im Relationenkalkuel hat die Form $\{t \mid P(t)\}$, wobei $t$ ein Tupel und $P(t)$ eine Formel zur Einschraenkung des Ergebnisses ist
+- Eine Formel kann ein Vergleich zwischen Variablen, oder eine Kombination mehrerer Formeln sein
+- Eine Formel $P$ kann auf eine Relation $R$ ueber $R(P)$ angewandt werden, um sie zu filtern
+#### Beispiel
+$$\{s \mid s \in \text{Studenten } \land \forall v \in \text{Vorlesungen}(v.SWS = 4 \Rightarrow \exists h \in \text{hoeren}(h.VorlNr = v.VorlNr \land h.MatrNr = s.MatrNr))\}$$
+- Es werden alle Studenten ausgegeben, die an allen vierstuendigen Vorlesungen teilnehmen
+## Domaenenkalkuel
+- Aehnlich zum Relationenkalkuel koennen auch mithilfe der Domaenenkalkuels, Anfragen erstellt werden
+#### Aufbau
+- Eine Anfrage im Domaenenkalkuel hat die Form $\{[v_1, ..., v_n] \mid P(v_1, ..., v_n)\}$, wobei $v_i$ Domaenenvariablen und $P$ eine Formel ist
+- Domaenenvariablen entsprechen den Attributen der Relationen
+#### Beispiel
+$$\{[matrNr, sName] \mid \exists s ([matrNr, sName] \in \text{Studenten } \land \exists persNr ([matrNr, persNr] \in \text{pruefen } \land \exists name ([persNr, name] \in \text{Professoren } \land name = \text{"Curie"})))$$
+- Es werden alle Matrikelnummern und Namen der Prueflinge von Curie wiedergegeben

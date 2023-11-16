@@ -10,7 +10,7 @@
 - Threads koennen auf unterschiedliche Weisen realisiert werden
 ###### User-Level Threads
 - User-Level Threads werden mithilfe eines Laufzeitsystems in einem Prozess verwaltet
-- Der Scheduler des Betriebssystem kann Threads jedoch nicht zuweisen
+- Der [[Scheduling|Scheduler]] des Betriebssystem kann Threads jedoch nicht zuweisen
 ###### Kernel-Level Threads
 - Kernel-Level Threads werden direkt von dem Betriebssystem verwaltet
 - Da fuer das Arbeiten mit Threads in den Systemmodus gewechselt werden muss, steigt der Overhead
@@ -41,10 +41,6 @@
 - Ein Dispatcher entzieht Prozessen die CPU, um sie anderen Prozessen zuzuweisen
 #### Context Switch
 - Der Kontext des vorherigen Prozesses wird im PCB gespeichert und der des neuen Prozesses vom PCB geladen
+- Bei einem Wechsel zwischen Threads im selben Prozess ist allerdings kein Context Switch noetig
 #### Beispiel
 ![[Pasted image 20231108162632.png]]
-## Scheduling
-- Scheduling ist das Vorgehen, nachdem Prozesse der CPU zugewiesen werden
-#### Multiprogramming
-- Da unterschiedliche Prozesse unterschiedliche Ressourcen benoetigen, wird ihre Ausfuehrungsreihenfolge misachtet, um die CPU Auslastung zu erhoehen
-- Somit koennen CPU intensive Prozesse ausgefuehrt werden, waehrend ein anderer Prozess mit der I/O interagiert

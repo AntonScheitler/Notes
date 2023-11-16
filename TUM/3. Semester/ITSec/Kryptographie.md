@@ -19,11 +19,16 @@
 #### Blockchiffre
 - Ein Klartext wird in Bloecke fester Laenge unterteilt
 - Der Ciphertext setzt sich aus den verschluesselten Bloecken zusammen
+###### Designprinzipien
+- Konfusion ist gewaehrt, falls der Zusammenhang zwischen Schluessel und Ciphertext nicht ersichtlich ist
+- Diffusion ist gewaehrt, falls jedes Klartextbit den gesamten Ciphertext beeinflusst
 ###### Schwachstellen
 - Eine pure Blockchiffre laesst Mustererkennung zu und ist somit unsicher
 ###### Cipher-Block Chaining
 - Um Mustererkennung zu verhindern, wird ein Block mit seinem Vorgaenger, beziehungsweise mit einem Initialvektor verxodert
 ![[Pasted image 20231107111850.png]]
+###### Counter Modus
+- TODO
 ###### Beispiel
 ![[Pasted image 20231103094425.png]]
 #### Stromchiffre
@@ -33,5 +38,4 @@
 - Der verwendete Seed muss sich mit jeder Nachricht aendern, da sonst aus vergangenen Nachrichten der Schlussel hergeleitet werden kann
 ###### Beispiel
 ![[Pasted image 20231107105659.png]]
-#### Elliptische Kurven Kryptographie
-- TODO
+

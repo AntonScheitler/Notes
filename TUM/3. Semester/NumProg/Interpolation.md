@@ -53,14 +53,24 @@ $$p(x) = \sum_{i = 0}^n c_{0, i} \space \cdot \prod_{k = 0}^{i - 1} x - x_k$$
 ###### Beispiel
 ![[Pasted image 20231113110446.png]]
 #### Runge Effekt
-- Bei einer aequidistanten Platzierung der Stuetzpunkte kommt es an den Raendern des betrachteten Intervalls zu grossen Stoerungen
+- Bei einer aequidistanten Platzierung vieler Stuetzpunkte kommt es an den Raendern des betrachteten Intervalls zu grossen Stoerungen
 - Stuetzpunkte sollten somit vorwiegend an den Raendern des Intervalls platziert werden
 ###### Beispiel
 ![[Pasted image 20231107172438.png]]
 ## Polynomspline
 - Eine Interpolation ist moeglich, indem mehrere Polynome niedrigeren Grades zu einer geeigneten Form zusammengefuegt werden
-- Die Polynome werden generell in einem Intervall um einen Stuetzpunkte $(x_i, y_i)$ konstruiert
+- Die Polynome werden generell in einem Intervall um einen Stuetzpunkt $(x_i, y_i)$ konstruiert
 - Ein Spline der Ordnung $n$ verwendet in jedem Stuetzpunkt ein Polynom vom Grad $n - 1$
 #### Konstruktion
 - Es muss sichergestellt werden, dass das Gesamtpolynom stetig und differenzierbar ist
+- TODO
+## Methode der kleinsten Quadrate
+- Eine Punktwolke wird mit einer Menge von Basisfunktionen $\phi_i$ approximiert
+- Mithilfe dieser Basisfunktionen wird die Matrix $A$ erstellt
+- Mithilfe der [[Lineare Ausgleichsrechnung|Methode der kleinsten Quadrate]] koennen die Koeffizienten von $\phi_i$ bestimmt werden
+- TODO
+## Trigonometrische Interpolation
+- Es ist eine Menge von Punkten auf dem Einheitskreis gegeben
+- Mithilfe einer  [[Erzeugendensysteme|Linearkombination]] aus Exponentialfunktionen kann diese Punktmenge interpoliert werden
+#### Fourier Transformation
 - TODO

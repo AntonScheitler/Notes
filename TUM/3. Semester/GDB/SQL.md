@@ -37,7 +37,6 @@ where s1.Semester >= (select s2.Semester
 #### Having
 - Muessen fuer die Aggregationen von Attributen bestimmte Praedikate gelten, so werden diese hier angegeben
 #### Beispiel
-
 ```sql
 select gelesenVon, sum(SWS)
 from vorlesungen
