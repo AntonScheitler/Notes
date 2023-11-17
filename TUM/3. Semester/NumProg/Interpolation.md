@@ -68,7 +68,6 @@ $$p(x) = \sum_{i = 0}^n c_{0, i} \space \cdot \prod_{k = 0}^{i - 1} x - x_k$$
 - Eine Punktwolke wird mit einer Menge von Basisfunktionen $\phi_i$ approximiert
 - Mithilfe dieser Basisfunktionen wird die Matrix $A$ erstellt
 - Mithilfe der [[Lineare Ausgleichsrechnung|Methode der kleinsten Quadrate]] koennen die Koeffizienten von $\phi_i$ bestimmt werden
-- TODO
 ## Trigonometrische Interpolation
 - Es ist eine Menge von Punkten auf dem Einheitskreis gegeben
 - Mithilfe einer  [[Erzeugendensysteme|Linearkombination]] aus Exponentialfunktionen kann diese Punktmenge interpoliert werden

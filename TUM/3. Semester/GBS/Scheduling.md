@@ -8,7 +8,7 @@
 - In First-Come-First-Served und Shortest-Job-First werden Prozesse bis zu ihrer Terminierung ausgefuehrt
 - In Shortest-Remaining-Time-Next wird ein Prozess unterbrochen, falls einer mit einer kuerzeren Laufzeit erstellt wurde
 #### Interaktive Systeme
-- Da die Laufzeit eines Prozess vorab nicht bekannt ist, werden Prozesse abwechselnd ausgefuehrt
+- Damit jeder Prozess auf moegliche Eingaben reagieren kann, werden sie abwechselnd ausgefuehrt
 ###### Implementierungen
 - Bei Round-Robin wechseln sich Prozesse zu einem festen Zeitintervall ab
 - Durch statisches Priority-Scheduling wird vorab fuer jeden Prozess eine Proritaet berechnet, wodurch Prozesse jedoch verhungern koennen
