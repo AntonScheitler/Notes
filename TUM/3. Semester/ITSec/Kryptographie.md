@@ -28,7 +28,9 @@
 - Um Mustererkennung zu verhindern, wird ein Block mit seinem Vorgaenger, beziehungsweise mit einem Initialvektor verxodert
 ![[Pasted image 20231107111850.png]]
 ###### Counter Modus
-- TODO
+- Im Counter Modues werden eine Nonce mit einem Counter verschluesselt
+- Das Ergebnis wird mit dem Klartext verxodert, um Mustererkennung zu verhindern und Parallelisierung zu ermoeglichen
+![[Pasted image 20231117101716.png]]
 ###### Beispiel
 ![[Pasted image 20231103094425.png]]
 #### Stromchiffre
@@ -38,4 +40,3 @@
 - Der verwendete Seed muss sich mit jeder Nachricht aendern, da sonst aus vergangenen Nachrichten der Schlussel hergeleitet werden kann
 ###### Beispiel
 ![[Pasted image 20231107105659.png]]
-

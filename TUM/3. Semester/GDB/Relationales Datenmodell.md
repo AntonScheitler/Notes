@@ -45,16 +45,16 @@
 ###### Beispiel
 ![[Pasted image 20231025133039.png]]
 ![[Pasted image 20231025133222.png]]
-## Division
+#### Division
 - Es seien $R, S$ Relationen mit den Attributen $\beta, \gamma$, wobei $\gamma \subset \beta$ ist
 - Es sei $\overline{R} = \Pi_{\beta \setminus \gamma}(R)$
 - Es werden genau die Zeilen aus $\overline{R}$ ausgegeben, deren Gegenstuecke in $R$, $S$ enthalten
-#### Beispiel
+###### Beispiel
 ![[Pasted image 20231025193644.png]]
-## Aggregation und Gruppierung
+#### Aggregation und Gruppierung
 - Tupel einer Relation koennen ausgehend von ihren Attributwerten gruppiert werden
 - Bei einer Gruppierung koennen Attribute aggregiert, beispielsweise summiert werden
-#### Beispiel
+###### Beispiel
 ![[Pasted image 20231025192743.png]]
 ## Tupelkalkuel
 - Alternativ zur relationalen Algebra kann das Relationenkalkuel fuer Anfragen verwendet werden
