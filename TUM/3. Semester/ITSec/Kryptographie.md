@@ -34,7 +34,7 @@
 ###### Beispiel
 ![[Pasted image 20231103094425.png]]
 #### Stromchiffre
-- Ein Klartextstrom wird bitweise mit einem Schluesselstrom verxodert
+- Ein Klartextstrom wird bitweise mit einem gleichlangen Schluesselstrom verxodert
 - Der Schluesselstrom wird mithilfe eines Pseudozufallszahlengenerators und einem Seed generiert
 ###### Schwachstellen
 - Der verwendete Seed muss sich mit jeder Nachricht aendern, da sonst aus vergangenen Nachrichten der Schlussel hergeleitet werden kann

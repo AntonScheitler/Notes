@@ -37,5 +37,5 @@
 - Ein Angreifer kann eine Nachricht mit mac $N$ und den Hashwert $h$ abfangen
 - Fuer manche Hashverfahren $f$ gilt:
 $$f(x||y) = f(f(x)||y)$$
-- Der Angreifer kann somit $N' = N||M$, sowie $h' = f(key||N||M) = f(h||M)$ erzeugen und an den Empfaenger weiterschicken
-- Rekonstruiert der Empfaenger nun $h'$ ueber $h' = f(key||N')$ bleibt die Manipulation unbemerkt
+- Der Angreifer kann somit $N' = N||M$, sowie $h' = f(h||N') = f(f(key||N)||M) = f(key||N||M)$ erzeugen und an den Empfaenger weiterschicken
+- Rekonstruiert der Empfaenger nun $h'$ ueber $h' = f(key||N') = f(key||N||M)$, bleibt die Manipulation unbemerkt
