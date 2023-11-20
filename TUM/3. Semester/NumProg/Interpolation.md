@@ -66,8 +66,8 @@ $$p(x) = \sum_{i = 0}^n c_{0, i} \space \cdot \prod_{k = 0}^{i - 1} x - x_k$$
 - Es muss sichergestellt werden, dass das Gesamtpolynom stetig und differenzierbar ist
 - Eine Funktion muss somit an ihren Intervallgrenzen sowohl mit den Werten $y_i, y_{i+1}$ als auch den Ableitungswerten $y_i', y_{i+1}'$ uebereinstimmen
 - Die Koeffizienten der kubischen Intervallfunktion koennen somit mithilfe eines [[Lineare Gleichungssysteme|linearen Gleichungssystems]] bestimmt werden
-- Eine Intervallfunktion in Abhaengigkeit von $y_0, y_0', y_1, y_1'$ lautet somit:
-$$TODO$$
+- Eine Intervallfunktion in Abhaengigkeit von $y_i, y_i', y_{i + 1}, y_{i + 1}'$ lautet somit:
+			$$p_i(t) = y_i(1 - 3t^2 + 2t^3) + y_{i + 1}(3t^2 - 2t^3) + h_i \cdot (y_i'(t - 2t^2 + t^3) + y_{i + 1}'(-t^2 + t^3)$$
 ###### Transormation
 - Um die Koeffizienten effizient fuer jedes Intervall zu berechnen, werden die Koeffizienten im Intervall $[0, 1]$ in Abhaengigkeit von $y_0, y_0', y_1, y_1'$ ermittelt
 - Um eine Stelle eines beliebigen Intervalls $[x_i, x_{i+1}]$ in eine Stelle im Intervall $[0, 1]$ zu uebersetzen, wird eine Transformationsfunktion verwendet:
@@ -75,8 +75,26 @@ $$h_i = x_{i+1} - x_i$$
 $$t_i(x) = \frac{x - x_i}{h_i}$$
 #### Vorteil
 - Durch die stueckweise Interpolation wird der Runge-Effekt verhindert
-## Polynomsplines
-- TODO
+#### Polynomsplines
+- Um zusaetzlich die zweifache Differenzierbarkeit des Interpolaten zu garantieren, werden Polynomsplines konstruiert
+- Aus $p_i''(1) = p_{i + 1}''(0)$ laesst sich herleiten:
+$$\begin{pmatrix}
+4 & 1 & & & \\
+1 & 4 & \ddots & \\
+& \ddots & \ddots & 1 \\
+& & 1 & 4
+\end{pmatrix} \begin{pmatrix}
+y_1' \\ y_2' \\ \vdots \\ y_{n - 2}' \\ y_{n - 1}'
+\end{pmatrix} = \frac{3}{h} \begin{pmatrix}
+y_2 - y_0 \\ y_3 - y_1 \\
+\vdots \\
+y_{n - 1} - y_{n - 3} \\ y_n - y_{n - 2} 
+\end{pmatrix} - \begin{pmatrix}
+y_0' \\ 0 \\
+\vdots \\
+0 \\ y_n'
+\end{pmatrix}$$
+- Hierdurch lassen sich die Ableitungswerte $y_i'$ bestimmen und die Intervallfunktionen ermitteln
 ## Methode der kleinsten Quadrate
 - Eine Punktwolke wird mit einer Menge von Basisfunktionen $\phi_i$ approximiert
 - Mithilfe dieser Basisfunktionen wird die Matrix $A$ erstellt
