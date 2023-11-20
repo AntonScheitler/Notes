@@ -57,12 +57,25 @@ $$p(x) = \sum_{i = 0}^n c_{0, i} \space \cdot \prod_{k = 0}^{i - 1} x - x_k$$
 - Stuetzpunkte sollten somit vorwiegend an den Raendern des Intervalls platziert werden
 ###### Beispiel
 ![[Pasted image 20231107172438.png]]
-## Polynomspline
+## Hermite-Interpolation
 - Eine Interpolation ist moeglich, indem mehrere Polynome niedrigeren Grades zu einer geeigneten Form zusammengefuegt werden
-- Die Polynome werden generell in einem Intervall um einen Stuetzpunkt $(x_i, y_i)$ konstruiert
-- Ein Spline der Ordnung $n$ verwendet in jedem Stuetzpunkt ein Polynom vom Grad $n - 1$
+- Die Polynome werden nur in einem Intervall zwischen zwei Stuetzstellen $x_i, x_{i+1}$ konstruiert
+- Ein Interpolatn der Ordnung $n$ verwendet in jedem Stuetzpunkt ein Polynom vom Grad $n - 1$
+- In der Regel werden kubische Funkionen als Intervallfunktion verwendet
 #### Konstruktion
 - Es muss sichergestellt werden, dass das Gesamtpolynom stetig und differenzierbar ist
+- Eine Funktion muss somit an ihren Intervallgrenzen sowohl mit den Werten $y_i, y_{i+1}$ als auch den Ableitungswerten $y_i', y_{i+1}'$ uebereinstimmen
+- Die Koeffizienten der kubischen Intervallfunktion koennen somit mithilfe eines [[Lineare Gleichungssysteme|linearen Gleichungssystems]] bestimmt werden
+- Eine Intervallfunktion in Abhaengigkeit von $y_0, y_0', y_1, y_1'$ lautet somit:
+$$TODO$$
+###### Transormation
+- Um die Koeffizienten effizient fuer jedes Intervall zu berechnen, werden die Koeffizienten im Intervall $[0, 1]$ in Abhaengigkeit von $y_0, y_0', y_1, y_1'$ ermittelt
+- Um eine Stelle eines beliebigen Intervalls $[x_i, x_{i+1}]$ in eine Stelle im Intervall $[0, 1]$ zu uebersetzen, wird eine Transformationsfunktion verwendet:
+$$h_i = x_{i+1} - x_i$$
+$$t_i(x) = \frac{x - x_i}{h_i}$$
+#### Vorteil
+- Durch die stueckweise Interpolation wird der Runge-Effekt verhindert
+## Polynomsplines
 - TODO
 ## Methode der kleinsten Quadrate
 - Eine Punktwolke wird mit einer Menge von Basisfunktionen $\phi_i$ approximiert
