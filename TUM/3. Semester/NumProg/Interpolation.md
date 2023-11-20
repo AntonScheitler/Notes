@@ -96,11 +96,11 @@ y_0' \\ 0 \\
 \end{pmatrix}$$
 - Hierdurch lassen sich die Ableitungswerte $y_i'$ bestimmen und die Intervallfunktionen ermitteln
 ## Methode der kleinsten Quadrate
-- Eine Punktwolke wird mit einer Menge von Basisfunktionen $\phi_i$ approximiert
-- Mithilfe dieser Basisfunktionen wird die Matrix $A$ erstellt
-- Mithilfe der [[Lineare Ausgleichsrechnung|Methode der kleinsten Quadrate]] koennen die Koeffizienten von $\phi_i$ bestimmt werden
+- Eine Punktwolke wird mit einer linearen Funktion $y = t + mx$ approximiert
+- Mithilfe der Punktewolke wird die Matrix $A$ erstellt
+- Mithilfe der [[Lineare Ausgleichsrechnung|Normalengleichung]] koennen die Koeffizienten $t$ und $m$ bestimmt werden
 ## Trigonometrische Interpolation
 - Es ist eine Menge von Punkten auf dem Einheitskreis gegeben
-- Mithilfe einer  [[Erzeugendensysteme|Linearkombination]] aus Exponentialfunktionen kann diese Punktmenge interpoliert werden
+- Mithilfe einer [[Erzeugendensysteme|Linearkombination]] aus Exponentialfunktionen kann diese Punktmenge interpoliert werden
 #### Fourier Transformation
 - TODO

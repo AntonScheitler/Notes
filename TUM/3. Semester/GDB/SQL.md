@@ -23,7 +23,7 @@ where p.PerNr not in (select v.gelesenVon from
 ```sql
 select s1.Name
 from studenten s1
-where s1.Semester >= (select s2.Semester
+where s1.Semester >= all (select s2.Semester
 					from studenten s2)
 ```
 - Gibt die Studenten zurueck, die die groesste Anzahl an Semestern haben
