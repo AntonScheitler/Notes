@@ -11,6 +11,10 @@
 #### Example
 - Given a random variable $X$, which is the number of heads in a series of three coin tosses, the expectation is:
 $$E(X) = 0 + \frac{3}{8} + 2 \cdot \frac{3}{8} + 3 \cdot \frac{1}{8} = \frac{3}{2}$$
+## Bias
+- Bias is the difference between an estimated value based on a sample and the true value based on the entire population
+- An estimated value $\hat{\Theta}$ is unbiased, if it's expectation $E(\hat{\Theta})$ is equal to the true value $\Theta$
+- In general, since the true value is never known for certain, certain assumptions are made regarding $\Theta$ to approximate a true value 
 ## Variance
 - The variance $\sigma^2$ is the expectation of a dataset's deviation from the mean squared
 - It therefore measures, how dispersed a dataset is
