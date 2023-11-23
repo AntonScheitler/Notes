@@ -25,3 +25,17 @@
 ###### Monitor
 - Zugriffe auf geteilte Ressourcen werden durch einen Monitor verwaltet, welcher die Prozesse synchronisiert
 - Die Synchronisation wird mithilfe von Semaphoren erreicht
+###### Beispiel
+![[Pasted image 20231123143221.png]]
+#### Deadlocks
+- Ein Deadlock entsteht, falls Prozesse geteilte Ressourcen benoetigen, welche vom jeweils anderen beansprucht sind
+###### Ursachen
+- Prozesse schliessen sich gegenseitig aus
+- Prozesse belegen Ressourcen, selbst wenn sie weitere benoetigen
+- Ressourcen koennen einem Prozess nicht entzogen werden
+- Es existiert eine zirkulaere Abhaengigkeit von Ressourcen
+###### Behebung und Verhinderung
+- Ressourcen werden von einem Spooler verwaltet, ueber den Prozesse, Ressourcen nutzen koennen
+- Alle noetigen Ressourcen muessen zu Beginn belegt werden, bevor der Prozess ausgefuehrt wird
+- Ein Ressourcenentzug wird ermoeglicht
+- Ressourcen duerfen nur in einer vordefinierten Reihenfolge belegt werden
