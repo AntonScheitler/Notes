@@ -1,7 +1,7 @@
 ## Allgemeines
 - Mithilfe von Hashfunktionen koennen Daten digital signiert werden, um die [[Schwachtellen und Angriffe|Datenintegritaet]] zu wahren
 - Die Ausgabe einer Hashfunktion hat stets eine feste Laenge
-#### Kompressionsfunktionen
+#### Merkle-Damgard Konstruktion
 - Um eine Nachricht auf die korrekte Laenge zu reduzieren, wird diese in Bloecke unterteilt und komprimiert
 - Die komprimierte Nachricht wird in einen Hashwert umgewandelt
 ###### Beispiel
