@@ -9,8 +9,10 @@
 #### Kollisionen
 - Da Hashfunktionen nicht injektiv sind, koennen zwei unterschiedliche Nachrichten denselben Hashwert besitzen
 #### Eigenschaften
+- Hashfunktionen sind effizient berechenbar
 - Die Eingabe einer Hashfunktion soll nicht anhand der Ausgabe bestimmt werden koennen
-- Eine Nachricht $m'$ zu bestimmen, welche denselben Hashwert hat wie eine Nachricht $m$ soll schwer sein
+- Die Kollisionsresitenz ist schwach, falls es schwer ist, eine Nachricht $m'$ zu bestimmen, welche denselben Hashwert hat wie eine gegebene Nachricht $m$ hat
+- Die Kollisionsresitenz ist stark, falls es schwer ist, ein Nachrichtenpaar $m', m$ zu bestimmen, deren Elemente denselben Hashwert haben
 ## Klassen von Hashfunktionen
 - Hashfunktionen koennen auf unterschiedliche Weisen realisiert werden
 #### Blockchiffre
