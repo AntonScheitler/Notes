@@ -33,13 +33,14 @@
 - Kommunikation mit einem mac erfordert einen Schluessel der vorab beiden Entitaeten bekannt ist
 - Ein mac wird erstellt, indem der Schluessel in die Nachricht eingebaut und das Ergebnis gehasht wird
 - Der Empfaenger ueberprueft die Authentizitaet des Senders, indem er den mac nachbaut und mit dem empfangenen mac vergleicht
+- Generell sollte das Prinzip "Encrypt then mac" befolgt werden
 ###### Beispiel
 ![[Pasted image 20231114112644.png]]
 ###### Length Extension Angriff
+- Length Extension Angriffe sind bei Hashfunktionen moeglich, die nach dem Merkle-Damgard Prinzip arbeiten
+- Hierbei kann mit einem gegebenen Hash weitergehasht werden
 - Ein Angreifer kann eine Nachricht mit mac $N$ und den Hashwert $h$ abfangen
-- Fuer manche Hashverfahren $f$ gilt:
-$$f(x||y) = f(f(x)||y)$$
-- Der Angreifer kann somit $N' = N||M$, sowie $h' = f(h||N') = f(f(key||N)||M) = f(key||N||M)$ erzeugen und an den Empfaenger weiterschicken
+- Der Angreifer kann somit $N' = N||M$, sowie $h' = f_h(M) = f(key||N||M)$ erzeugen und an den Empfaenger weiterschicken
 - Rekonstruiert der Empfaenger nun $h'$ ueber $h' = f(key||N') = f(key||N||M)$, bleibt die Manipulation unbemerkt
 #### Digitale Signatur
 - TODO

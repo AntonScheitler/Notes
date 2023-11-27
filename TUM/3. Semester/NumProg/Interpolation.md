@@ -102,5 +102,37 @@ y_0' \\ 0 \\
 ## Trigonometrische Interpolation
 - Es ist eine Menge von Punkten auf dem Einheitskreis gegeben
 - Mithilfe einer [[Erzeugendensysteme|Linearkombination]] aus Exponentialfunktionen kann diese Punktmenge interpoliert werden
-#### Fourier Transformation
-- TODO
+#### Diskrete Fourier Transformation
+- Das Ziel einer Fourier Transformation ist das Unterteilen einer Funktion in ihre Grundfrequenzen
+- Insbesondere muss ein Gewichtungsvektor $c$ der Grundfrequenzen bestimmt werden
+###### Vorgehen
+- Gegeben ist ein Vektor $v$ von Frequenzwerten, sowie $\omega = e^{\frac{2\pi i}{n}}$
+- $c$ wird bestimmt ueber:
+$$c_k = \frac{1}{n} \cdot \sum_{j=0}^{n-1} v_j \cdot \overline{\omega}^{jk}$$
+- Dies wird mit einer Matrix Vektor Multiplikation realisiert:
+$$\begin{pmatrix}
+c_0 \\
+c_1 \\
+\vdots \\
+c_{n - 1}
+\end{pmatrix} = \begin{pmatrix}
+1 & 1 & 1 & ... & 1 \\
+1 & \omega^1 & \omega^2 & ... & \omega^{n-1} \\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+1 & \omega^{n-1} & \omega^{2(n-1)} & ... & \omega^{(n-1)(n-1)}
+\end{pmatrix} \cdot \begin{pmatrix}
+v_0 \\
+v_1 \\
+\vdots \\
+v_{n-1}
+\end{pmatrix}$$
+#### Schnelle Inverse Fourier Transformation
+- Das Ziel einer inversen Fourier Transformation ist das Bestimmen der Frequenzwerte $v$ anhand eines Gewichtungsvektors $c$
+###### Vorgehen
+- Die schnelle inverse Fourier Transformation wird in eine Sortier- und eine Kombinierphase eingeteilt
+- In der Sortierphase werden Vektoren anhand der Paritaet der Indizes ihrer Elemente aufgeteilt
+- In der Kombinierphase werden Teilvektoren ueber den Butterfly-Operator zu einem Gesamtvektor zusammengefuegt
+###### Butterfly-Operator
+![[Pasted image 20231127204523.png]]
+###### Beispiel
+![[Pasted image 20231127204453.png]]
