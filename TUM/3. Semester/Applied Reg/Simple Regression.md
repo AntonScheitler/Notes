@@ -21,7 +21,13 @@ $$y = \beta_0 + \beta_1x + \varepsilon, \space \varepsilon \in N(0, \sigma^2)$$
 - Therefore the following needs to be proven using the properties of the [[Statistical Basics|expectation]]:
 $$E(\hat\beta_0) = \beta_0$$
 $$E(\hat\beta_1) = \beta_1$$
+#### Variance of the slope
+- Using the [[Statistical Basics|arithmetic properties of the variance]], the variance of $\hat \beta_1$ can be derived to be $\frac{s^2}{\sum_{i=1}^n (x_i - \overline{x})^2}$, where $s$ is an unbiased estimate for $\sigma$
+- The standard error
 ## Maximum Likelihood
 - Alternatively to the least squares approach, the parameters $\hat\beta_0$ and $\hat\beta_1$ can be obtained by maximizing a likelihood function
 #### Likelihood function
-- Given a set of parameters, the likelihood function returns the probability of observing the sample data in the model described by the parameters
+- Given a set of parameters, the likelihood function describes the probability of set of data points
+- This function needs to be maximized, such that the observed data points are most probable
+$$L = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \big (- \frac{1}{2\sigma^2}(y_i - \beta_0 - \beta_1x_i)^2 \big )$$
+## T-Tests

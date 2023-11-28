@@ -1,1 +1,2 @@
+### [[Statistical Basics]]
 ### [[Simple Regression]]

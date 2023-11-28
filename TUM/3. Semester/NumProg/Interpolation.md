@@ -133,6 +133,6 @@ v_{n-1}
 - In der Sortierphase werden Vektoren anhand der Paritaet der Indizes ihrer Elemente aufgeteilt
 - In der Kombinierphase werden Teilvektoren ueber den Butterfly-Operator zu einem Gesamtvektor zusammengefuegt
 ###### Butterfly-Operator
-![[Pasted image 20231127204523.png]]
+![[Pasted image 20231128091239.png]]
 ###### Beispiel
 ![[Pasted image 20231127204453.png]]

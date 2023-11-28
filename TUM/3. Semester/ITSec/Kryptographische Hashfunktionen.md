@@ -43,4 +43,6 @@
 - Der Angreifer kann somit $N' = N||M$, sowie $h' = f_h(M) = f(key||N||M)$ erzeugen und an den Empfaenger weiterschicken
 - Rekonstruiert der Empfaenger nun $h'$ ueber $h' = f(key||N') = f(key||N||M)$, bleibt die Manipulation unbemerkt
 #### Digitale Signatur
-- TODO
+- Um die Urheberschaft von Daten zu beweisen, werden asymmetrische Verfahren, wie RSA verwendet
+- Eine Nachricht wird hierbei gehasht und das Ergebnis durch den privaten Schluessel einer Entitaet verschluesselt
+- Der Empfaenger ueberprueft die Urheberschaft, indem er die Signatur durch den public key entschluesselt, den Hash nachbaut und vergleicht

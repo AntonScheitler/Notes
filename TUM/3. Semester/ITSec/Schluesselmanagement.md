@@ -8,7 +8,19 @@
 ![[Pasted image 20231121112039.png]]
 ## Schluesselaustausch
 - Ein Schluesselaustausch zwischen allen Entitaeten ist nicht sklaierbar, weshalb effiziente Austauschverfahren noetig sind
-#### Key Distribution Center
-- Ein Key Distribution Center dient als Zentrale fuer den Schluesselaustausch zweier Entitaeten
-- Eine Entitaet $A$ besitzt einen geteilten symmetrischen Schluessel $k_A$ mit dem KDC
-- Um mit der Entitaet $B$ zu kommunizieren, wird ein Schluessel $k_{AB}$ durch das KDC erzeugt
+#### Key Encapsulation Mechanism
+- Ein symmetrischer Schluessel wird ueber ein asymmetrisches Verfahren verschluesselt und zwischen Entitaeten ausgetauscht
+- Wird RSA verwendet und der private Schluessel einer der Entitaeten komprimiert, sind alle zukuenftigen und vergangenen versandten Schluessel unsicher
+- RSA erfuellt somit nicht das Prinzip der Perfect Forward Secrecy
+###### Perfect Forward Secrecy
+- Perfect Foward Secrecy ist gewaehrt, falls ein komprimierter Schluessel nicht dazu fuehrt, dass vergangene versandte Schluessel unsicher werden
+#### Diffie-Hellman
+- Eine Primzahl $p$ und ein Generatorelement $g \in \mathbb{Z}^{\star}_p$ sind oeffentlich
+- Die Entitaeten $A$ und $B$ waehlen geheime Primzahlen $a, b \in \{2, ..., p-2\}$ und senden einander die Werte $a' = g^a \mod p$ und $b' = g^b \mod p$
+- $A$ und $B$ koennen somit unabhaengig voneinander den gemeinsamen Schluessel $\text{DH-k}_{AB} = (b')^a \mod p = (a')^b \mod p = g^{ab} \mod p$ ermitteln
+- Mithilfe einer Key Derivation Function $KDF$ kann nun ein symmetrischer Schluessel generiert werden:
+$$KDF(\text{DH-k}_{AB}, n) = k_{AB}$$
+###### Vorteil
+- Werden $a$ und $b$ in jeder Sitzung neu gewaehlt, so erfuellt Diffie-Hellman das Prinzip der Perfect Forward Secrecy
+###### Beispiel
+![[Pasted image 20231128105852.png]]

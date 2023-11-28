@@ -11,6 +11,8 @@
 #### Example
 - Given a random variable $X$, which is the number of heads in a series of three coin tosses, the expectation is:
 $$E(X) = 0 + \frac{3}{8} + 2 \cdot \frac{3}{8} + 3 \cdot \frac{1}{8} = \frac{3}{2}$$
+#### Arithmetic Properties
+- TODO
 ## Bias
 - Bias is the difference between an estimated value based on a sample and the true value based on the entire population
 - An estimated value $\hat{\Theta}$ is unbiased, if it's expectation $E(\hat{\Theta})$ is equal to the true value $\Theta$
@@ -21,3 +23,19 @@ $$E(X) = 0 + \frac{3}{8} + 2 \cdot \frac{3}{8} + 3 \cdot \frac{1}{8} = \frac{3}{
 #### Example
 - Given a random variable $X$, which is the number of heads in a series of three coin tosses, variance is:
 $$Var(X) = E[(X - E(X))^2] = \left(0 - \frac{3}{2}\right)^2 \cdot \frac{1}{8} + \left(1 - \frac{3}{2}\right)^2 \cdot \frac{3}{8} + \left(2 - \frac{3}{2}\right)^2 \cdot \frac{3}{8} + \left(3 - \frac{3}{2}\right)^2 \cdot \frac{1}{8} = \frac{3}{4}$$
+#### Arithmetic Properties
+- TODO
+## Standard error
+- Another measure for the dispersion of a dataset is the standard error $se$
+- The standard error is defined to be the square root of the variance
+#### Example
+- Given a random variable $X$, which is the number of heads in a series of three coin tosses, standard error is:
+$$se(X) = \sqrt{Var(X)} = \sqrt{\frac34}$$
+## Covariance
+- The covariance of two variables $X$ and $Y$ measures their joint variability
+- The sign of the covariance describes if the variables are proportional or inversely proportional to one another
+- A covariance of 0 means that the variables don't correlate at all
+- Mathematically, covariance is described as:
+$$cov(X, Y) = E \big ((X - E(X)) \cdot (Y - E(Y)) \big )$$
+#### Arithmetic properties
+- TODO
