@@ -1,7 +1,18 @@
 ## Praedikate auf Mengen
-#### Existenz
+#### Existenzquantor
 - Das **exists** Schluesselwort dient als Existenzquantor in SQL
 - In vielen Szenarien kann **exists** auch durch **in** ersetzt werden
+###### Beispiel
+```sql
+select p.Name
+from professoren p
+where p.PerNr not in (select v.gelesenVon from 
+					 vorlesungen v)
+```
+- Gibt alle Professoren zurueck, die keine Vorlesungen halten
+#### Allquantor
+- Es gibt keinen expliziten Allquantor in SQL
+- Um das Verhalten eines Allquantors zu imitieren, kann ein **not exists** mit negiertem Praedikat verwendet werden
 ###### Beispiel
 ```sql
 select p.Name
@@ -9,12 +20,6 @@ from professoren p
 where not exists (select * from 
 				 vorlesungen v
 				 where v.gelesenVon = p.PersNr)
-```
-```sql
-select p.Name
-from professoren p
-where p.PerNr not in (select v.gelesenVon from 
-					 vorlesungen v)
 ```
 - Gibt alle Professoren zurueck, die keine Vorlesungen halten
 #### Mengenvergleich
@@ -57,3 +62,47 @@ where s.GebDat < (select max(p.GebDat)
 				 from professoren p)
 ```
 - Gibt alle Studenten aus, die aelter sind als jeder Professor
+## Common Table Expression
+- Die Ergebnisse von Anfragen koennen als Tabelle abgespeichert und weiterverwendet werden
+#### Beispiel
+```sql
+with h as (select VorlNr, count(*) as anzahlProVorl from hoeren group by VorlNr),
+	 g as (select count(*) as gesamtAnzahl from Studenten)
+
+select h.VorlNr, h.anzahlProVorl/g.gesamtAnzahl as Marktanteil from g, h
+```
+- Gibt den Marktanteil an Studenten jeder Vorlesung aus
+## Rekursion
+- Um transitive Beziehungen zu erfassen, koennen Tabellen rekursiv generiert werden
+#### Beispiel
+```sql
+with recursive TransVorl(Vorg, Nachf) as (
+	select Vorgaenger, Nachfolger from voraussetzen
+	union all
+	select t.Vorg, v.Nachfolger
+	from TransVorl t, voraussetzen v
+	where t.Nachf = v.Vorgaenger
+)
+
+select Titel from Vorlesungen
+where VorlNr in (
+	select Vorg from TransVorl
+	where Nachf in (
+		select VorlNr from Vorlesungen where Titel='Der Wiener Kreis'
+	)
+)
+```
+- Gibt alle Vorgaengervorlesungen der Vorlesung "Der Wiener Kreis" aus
+## Sichten
+- Aehnlich zu Common Table Expressions, koennen mit Sichten, Anfragen als Tabellen abgespeichert werden
+- Diese werden jedoch in den Speicher geschrieben und sind ueber mehrere Anfragen verfuegbar
+#### Beispiel
+```sql
+create view PruefGuete(Name, GueteGrad) as (
+	select prof.Name, avg(pruef.note)
+	from Professoren prof join pruefen pruef on prof.PersNr = pruef.PersNr
+	group by prof.Name, prof.PersNr
+	having count(*) > 50
+)
+```
+- Erstellt eine Sicht von Professoren und ihren durchschnittlichen Noten
