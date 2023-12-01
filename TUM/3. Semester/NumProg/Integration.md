@@ -32,3 +32,4 @@ $$Q_{TS}(f) = \frac{(b - a)}{2} \cdot \Big (\frac{f(x_0)}{2} + f(x_1) + f(x_2) +
 - In jedem Teilintervall wird die Keplersche Regel angewandt und die Ergebnisse summiert:
 $$Q_{SS}(f) = \frac{b - a}{6} \cdot \big (f(x_0) + 4f(x_1) + 2f(x_2) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n) \big)$$
 ## Extrapolation
+- Integrationsverfahren fuer Polynome mit hohem Grad koennen aus Verfahren mit niedrigerem Genauigkeitsgrad abgeleitet werden

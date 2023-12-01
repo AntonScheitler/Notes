@@ -2,7 +2,7 @@
 - Da die Sicherheit eines [[Kryptographie|kryptographischen Verfahrens]] von der Staerke des Schluessels abhaengt, muss dieser gut gewaehlt werden
 #### Zufallszahlengenerator
 - Starke Schluessel besitzen eine hohe Entropie, welche mit Zufallszahlen erzielt werden kann
-- Zufallszahlen duerfen nicht vorhersagbar sein und statistisch gleichviele Nullen und Einsen besitzen
+- Zufallszahlen duerfen nicht vorhersagbar sein und statistisch gleichviele Nullen und Einsen besitzen, ohne komprimierbar zu sein
 ###### Beispiel
 - Eine [[Kryptographie|Blockchiffre]] im CTR Modus dient als Zufallszahlengenerator, wobei die Nonce der Seed ist 
 ![[Pasted image 20231121112039.png]]

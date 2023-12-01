@@ -29,5 +29,5 @@
 ###### Beispiel
 ![[Pasted image 20231128164552.png]]
 #### Lebendigkeit
-- Ein Petri Netz ist lebendig, falls es fuer alle Transitionen einen erreichbaren Zustand gibt, indem sie schalten koennen
+- Ein Petri Netz ist lebendig, falls jeder Zustand von jedem anderen Zustand erreicht werden kann
 - Eine Verklemmung, ist ein Zustand, in dem keine Transition schalten kann 

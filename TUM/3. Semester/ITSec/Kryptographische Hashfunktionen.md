@@ -45,4 +45,4 @@
 #### Digitale Signatur
 - Um die Urheberschaft von Daten zu beweisen, werden asymmetrische Verfahren, wie RSA verwendet
 - Eine Nachricht wird hierbei gehasht und das Ergebnis durch den privaten Schluessel einer Entitaet verschluesselt
-- Der Empfaenger ueberprueft die Urheberschaft, indem er die Signatur durch den public key entschluesselt, den Hash nachbaut und vergleicht
+- Der Empfaenger ueberprueft die Urheberschaft, indem er die Signatur durch den oeffentlichen Schluessel entschluesselt, den Hash nachbaut und vergleicht
