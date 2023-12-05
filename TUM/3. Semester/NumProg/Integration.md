@@ -20,6 +20,8 @@ $$Q_T(f) = (b-a) \cdot \frac{f(a) + f(b)}{2}$$
 - Fuer einen hoeheren Genauigkeitsgrad kann die Keplersche Regel fuer die Integration genutzt werden:
 $$Q_F(f) = (b - a) \cdot \frac{f(a) + 4f \Big (\frac{a+b}{2} \Big) + f(b)}{6}$$
 - Diese Approximation ist fuer Polynome mit einem Grad von hoechstens 3 fehlerfrei
+###### Restglied
+- TODO
 ###### Beispiel
 ![[Pasted image 20231129184049.png]]
 #### Zusammengesetzte Integrationsregeln

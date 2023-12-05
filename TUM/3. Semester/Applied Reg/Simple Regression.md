@@ -17,13 +17,15 @@ $$y = \beta_0 + \beta_1x + \varepsilon, \space \varepsilon \in N(0, \sigma^2)$$
 	- **Homogeneity of variance of y:** The [[Statistical Basics|variance]] of different samples should be the same
 	- **Normal distribution of y:** $y$ should follow a normal distribution
 #### Expectation of Parameters
+- In this model, $\beta_0$ and $\beta_1$ are the population values and $\hat \beta_0$, as well as $\hat \beta_1$ are the estimated values based on the dataset
 - In order to proof that the calculated $\hat{\beta_1}$ and $\hat{\beta_0}$ are representative, it needs to be shown, that they are [[Statistical Basics|unbiased]]
 - Therefore the following needs to be proven using the properties of the [[Statistical Basics|expectation]]:
 $$E(\hat\beta_0) = \beta_0$$
 $$E(\hat\beta_1) = \beta_1$$
 #### Variance of the slope
 - Using the [[Statistical Basics|arithmetic properties of the variance]], the variance of $\hat \beta_1$ can be derived to be $\frac{s^2}{\sum_{i=1}^n (x_i - \overline{x})^2}$, where $s$ is an unbiased estimate for $\sigma$
-- The standard error
+- The standard error of the slope is therefore:
+$$se(\hat \beta_1) = \sqrt{Var(\hat \beta_1)} = \frac{s}{\sqrt{\sum_{i=1}^n (x_i - \overline x)^2}}$$
 ## Maximum Likelihood
 - Alternatively to the least squares approach, the parameters $\hat\beta_0$ and $\hat\beta_1$ can be obtained by maximizing a likelihood function
 #### Likelihood function
@@ -31,3 +33,19 @@ $$E(\hat\beta_1) = \beta_1$$
 - This function needs to be maximized, such that the observed data points are most probable
 $$L = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \big (- \frac{1}{2\sigma^2}(y_i - \beta_0 - \beta_1x_i)^2 \big )$$
 ## T-Tests
+- In order to show, that the results are [[Statistical Basics|statistically significant]], they are compared to the null hypothesis
+- The t-statistic measures how far a computed result is from it's hypothesized null value in units of the standard error
+- A value $\alpha$ represents a threshold, past which the null hypothesis can be rejected
+#### Null Hypothesis
+- The null hypothesis states that there is no correlation in the given dataset and, under this model, the slope has a value of $0$
+#### Quantile Approach
+- A normal distribution represents the values, the slope can assume
+- If the computed slope is in one of the $\frac{\alpha}{2}$ quantiles, the result is statistically significant
+###### Example
+![[Pasted image 20231205092621.png]]
+#### Probability Approach
+- A p-value represents the probability of observing the computed slope under the null hypothesis
+- If the p-value is then below a certain $\alpha$ threshold, the null hypothesis can be rejected
+###### Example
+![[Pasted image 20231205092852.png]]
+## Prediction

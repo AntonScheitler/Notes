@@ -39,3 +39,6 @@ $$se(X) = \sqrt{Var(X)} = \sqrt{\frac34}$$
 $$cov(X, Y) = E \big ((X - E(X)) \cdot (Y - E(Y)) \big )$$
 #### Arithmetic properties
 - TODO
+## Significance
+- A statistic is statistically significant, if it has real world implications that hold
+- Statistical significance can be proven using a variety of tests
