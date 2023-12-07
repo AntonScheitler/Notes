@@ -36,3 +36,15 @@ $$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
 - Eine Relation ist in der 3. Normalform, falls keine funtionalen Abhaengigkeiten zwischen den Nichtschluessel-Attributen bestehen
 ![[Pasted image 20231201165436.png]]
 ![[Pasted image 20231201165449.png]]
+###### Synthese
+1. Die funktionalen Abhaengigkeiten der Relation werden bestimmt und die linken Seiten zusammengefasst
+2. Fuer jede funktionale Abhaengigkeit wird eine Relation erstellt
+3. Relationen, die in anderen enthalten sind, werden eliminiert
+###### Beispiel
+![[Pasted image 20231207205911.png]]
+#### Boyce-Codd Normalform
+- Eine Relation ist in Boyce-Codd Normalform, falls jedes Attribut nur von dem Superschluessel funktional abhaengt
+###### Dekomposition
+- Alle funktionalen Abhaengigkeiten, die die Boyce-Codd Normalform verletzen, bilden eine neue Relation
+###### Beispiel
+![[Pasted image 20231207213921.png]]
