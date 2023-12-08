@@ -8,6 +8,14 @@ $$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
 - $a$ ist ein Superschluessel, falls $a \rightarrow R$
 - $b$ ist voll funktional abhaengig von  $a$, falls $a \rightarrow b$ gilt und $a$ nicht verkleinert werden kann
 - $a$ ist genau dann ein Kandidaten-Schluessel, falls $R$ voll funktional abhaengig von $a$ ist
+#### Mehrwertige Abhaengigkeiten
+- TODO
+#### Attributhuelle
+- Die Huelle eines Attributes $\alpha$ ist die Menge an funktional abhaengigen Attributen, ausgehend von $\alpha$
+###### Beipsiel
+- TODO
+#### Kanonische Ueberdeckung
+- TODO
 #### Anomalien
 - Liegen redundante Daten in einem Schema vor, so kann es zu verschiedenen Anomalien kommen
 ###### Einfuege-Anomalie
@@ -48,3 +56,5 @@ $$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
 - Alle funktionalen Abhaengigkeiten, die die Boyce-Codd Normalform verletzen, bilden eine neue Relation
 ###### Beispiel
 ![[Pasted image 20231207213921.png]]
+#### 4. Normalform
+- TODO
