@@ -1,6 +1,7 @@
 ## Signale
 - Das Betriebssystem stellt eine Menge von Signalen zur Verfuegung, mit der Prozesse miteinander Kommunizieren koennen
-- Die Kommunikation erfolgt mithilfe von Signal Handlern, die von Prozessen definiert werden
+- Die Kommunikation erfolgt mithilfe von Signal Handlern, die von Prozessen ueber den syscall signal definiert werden
+- Mithilfe des syscalls kill kann ein Signal an einen Prozess gesendet werden
 ## Synchrone und Asynchrone Kommunikation
 - Bei einer synchronen Kommunikation werden beide Prozesse blockiert
 - Bei einer asynchronen Kommunikation werden die Prozesse voneinander entkoppelt
@@ -28,13 +29,13 @@
 ###### Anonyme Pipes
 - Ueber den pipe syscall werden zwei Dateideskriptoren erzeugt, die die Enden einer Pipe repraesentieren
 - Die Pipe existiert nur innerhalb des Programms
-- Falls Kindprozesse erzeugt werden, muss sichergestellt werden, dass Lese- und Schreibzugriffe trotz zusaetzlicher Teilung der Pipe deterministisch sind
+- Falls Kindprozesse erzeugt werden, muss sichergestellt werden, dass Lese- und Schreibzugriffe trotz zusaetzlicher offener Verbindungen deterministisch sind
 ![[Pasted image 20231208180721.png]]
 ###### Named Pipes
 - Named Pipes sind im Dateisystem verlinkt und koennen mit open geoeffnet werden
 - Named Pipes bleiben auch nach Prozessende erhalten
 #### Ports
-- Um Kommunikation mit mehreren Prozessen, ueber den eigenen Adressraum hinweg zu ermoeglichen, werden Ports verwendet
+- Ports werden verwendet, um Kommunikation zwischen Prozessen ueber mehrere Rechner hinweg zu ermoeglichen
 - Ein Rechner verfuegt ueber eine feste Anzahl an Ports
 - Zu einem gegebenen Zeitpunkt kann ein Port nur durch einen Prozess beansprucht werden
 ###### Client und Server
