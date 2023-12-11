@@ -29,9 +29,20 @@ $$Q_F(f) = (b - a) \cdot \frac{f(a) + 4f \Big (\frac{a+b}{2} \Big) + f(b)}{6}$$
 - Das Integrationsintervall wird hierbei in $n$ Teile der Laenge $\frac{b - a}{n}$ aufgeteilt
 ###### Trapezsumme
 - In jedem Teilintervall wird die Trapezregel angewandt und die Ergebnisse summiert:
-$$Q_{TS}(f) = \frac{(b - a)}{2} \cdot \Big (\frac{f(x_0)}{2} + f(x_1) + f(x_2) + ... f(x_{n-1})+ \frac{f(x_n)}{2} \Big )$$
+$$Q_{TS}(f) = \frac{(b - a)}{n} \cdot \Big (\frac{f(x_0)}{2} + f(x_1) + f(x_2) + ... f(x_{n-1})+ \frac{f(x_n)}{2} \Big )$$
 ###### Simpson Summe
 - In jedem Teilintervall wird die Keplersche Regel angewandt und die Ergebnisse summiert:
-$$Q_{SS}(f) = \frac{b - a}{6} \cdot \big (f(x_0) + 4f(x_1) + 2f(x_2) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n) \big)$$
+$$Q_{SS}(f) = \frac{b - a}{3n} \cdot \big (f(x_0) + 4f(x_1) + 2f(x_2) + ... + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n) \big)$$
 ## Extrapolation
 - Integrationsverfahren fuer Polynome mit hohem Grad koennen aus Verfahren mit niedrigerem Genauigkeitsgrad abgeleitet werden
+#### Romberg Quadratur
+- Das Integral kann mithilfe von Trapezsummen ueber ein Dreiecksschema approximiert werden
+- Die Intervallgroessen der Trapezsummen halbieren sich hierbei in jedem Schritt
+- Die Kombinationsregel des Dreiecksschemas lautet:
+$$Q_{i, k} = Q_{i, k-1} + \frac{Q_{i, k-1} - Q_{i-1, k-1}}{\frac{h_{i - k}^2}{h_i^2} - 1}$$
+###### Beispiel
+![[Pasted image 20231211104351.png]]
+#### Gauss Quadratur
+- Der Genauigkeitsgrad wird maximiert, indem die Stuetzpunkte und ihre Gewichte optimal gewaehlt werden
+- Um Polynome vom Grad $2n - 1$ exakt zu interpolieren, muessen $w_i$ und $x_i$ so bestimmt werden, dass gilt:
+$$\sum_{i=1}^n w_i \cdot f(x_i) = \int_a^b p(x)\text{d}x$$

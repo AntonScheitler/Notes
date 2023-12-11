@@ -1,5 +1,10 @@
 ## Schluesselerzeugung
 - Da die Sicherheit eines [[Kryptographie|kryptographischen Verfahrens]] von der Staerke des Schluessels abhaengt, muss dieser gut gewaehlt werden
+#### Entropie
+- Die Entropie eines Passoworts misst seinen Informationsgehalt
+- Je hoeher die Entropie eines Passworts ist, desto schwerer kann es ueber brute-force bestimmt werden
+- Die Entropie eines Passworts mit der Laenge $L$ aus dem Alphabet $M$ wird ermittelt durch:
+$$E = log_2(|M|^L)$$
 #### Zufallszahlengenerator
 - Starke Schluessel besitzen eine hohe Entropie, welche mit Zufallszahlen erzielt werden kann
 - Zufallszahlen duerfen nicht vorhersagbar sein und statistisch gleichviele Nullen und Einsen besitzen, ohne komprimierbar zu sein
