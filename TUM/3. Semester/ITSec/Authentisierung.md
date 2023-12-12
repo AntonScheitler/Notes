@@ -27,3 +27,5 @@ $$OTP = AES(Token||s||Zeit)$$
 - $B$ kann die Nachricht nun entschluesseln und mit der Zufallszahl vergleichen
 ###### Beispiel
 ![[Pasted image 20231205113022.png]]
+#### Asymmetrisches CR
+- TODO
