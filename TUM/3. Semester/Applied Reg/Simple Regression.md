@@ -4,7 +4,7 @@
 #### Solving
 - $\hat{\beta_0}, \hat{\beta_1}$ are determined by setting the derivative of $\sum_{i=1}^{n} (y - \hat{\beta_0} - \hat{\beta_1}x_i)^2$ with respect to $\hat{\beta_0}, \hat{\beta_1}$ to $0$ and solving
 - This is possible because the sum is always positive, meaning that the determined $\hat{\beta}_0, \hat{\beta}_1$ insure that the sum is minimal
-- The resulting slope and intercept can then be plotted
+- The resulting slope always passes through the data centroid $(x_i, y_i)$ and can be plotted
 ![[Pasted image 20231113091328.png]]
 #### Assumed Model
 - In order to perform a proper analysis, certain assumptions need to be made for the dataset
@@ -49,3 +49,22 @@ $$L = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \big (- \frac{1}{2\sigm
 ###### Example
 ![[Pasted image 20231205092852.png]]
 ## Prediction
+- Using the assumed model, predictions can be made about where the mean of a population at a given $x$ lies and where a new datapoint at a given $x$ may lie
+- A confidence interval describes how large an interval has to be, for a prediction to meet a certain likelihood
+- In general, the confidence interval of the two predictions is centered around the same location, with the CI of the datapoint prediction being wider than that of the mean prediction
+#### Prediction of the mean
+- The confidence interval for the prediction of the mean can be computed using the [[Statistical Basics|variance]] of the [[Statistical Basics|expectation]] of the assumed model
+#### Prediction of a new point
+- The confidence interval for the prediction of a new point is computed via the variance of the model
+## Analysis of variance
+- In an analysis of variance, a variable is partitioned into components attributable to different sources of variation
+- The partitioned groups need to have a low variance and distinct expectations, in order to be considered a probable source of variation
+#### Example
+- The weight of dogs in a dogshow has a large variation, which can have different causes
+- Partitioning the dogs in groups of young and old, as well as short- and long-haired, leads to a poor fit, since the variance is great and the expectations are similar:
+![[Pasted image 20231212094243.png]]
+- Partitioning the dogs by their breed, however leads to a better fit:
+![[Pasted image 20231212094326.png]]
+- Therefore, the breed of a dog is a probable source of weight differences in the dog dataset
+## Percent Variation
+- TODO
