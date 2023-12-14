@@ -1,7 +1,6 @@
 ## Funktionale Abhaengigkeiten
 - Es sei $R = \{A, B, C, D\}$ ein beliebiges Schema mit $a, b \subseteq R$
-- $b$ ist genau dann funktional abhaengig von $a$, falls gilt:
-$$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
+- $b$ ist genau dann funktional abhaengig von $a$, falls jedem $a$ genau ein $b$ zugeordnet werden kann
 #### Beispiel
 ![[Pasted image 20231201154232.png]]
 #### Schluessel
@@ -9,13 +8,19 @@ $$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
 - $b$ ist voll funktional abhaengig von  $a$, falls $a \rightarrow b$ gilt und $a$ nicht verkleinert werden kann
 - $a$ ist genau dann ein Kandidaten-Schluessel, falls $R$ voll funktional abhaengig von $a$ ist
 #### Mehrwertige Abhaengigkeiten
-- TODO
+- $b$ ist mehrwertig abhaengig von $a$, falls jedes $a$ mit einer Menge von Attributen aus $b$ assoziiert ist
+###### Beispiel
+![[Pasted image 20231214105825.png]]
 #### Attributhuelle
 - Die Huelle eines Attributes $\alpha$ ist die Menge an funktional abhaengigen Attributen, ausgehend von $\alpha$
 ###### Beipsiel
-- TODO
+![[Pasted image 20231214110204.png]]
 #### Kanonische Ueberdeckung
-- TODO
+- Die kanonische Ueberdeckung einer Menge von funktionalen Abhaengigkeiten wird ueber mehrere Schritte bestimmt :
+	1. Linksreduktion: Die linken Seiten der funktionalen Abhaengigkeiten duerfen keine ueberfluessigen Attribute enthalten
+	2. Rechtsreduktion: Die rechten Seiten der funktionalen Abhaengigkeiten duerfen keine Attribute enthalten, die von einem anderen Attribut auf der rechten Seite funktional abhaengig sind
+	3. Entfernen funktionaler Abhaengigkeiten der Form $a \rightarrow \emptyset$
+	4. Vereinigungsregel: Funktionale Abhaengigkeiten, deren linke Seiten gleich sind, werden zusammengefasst
 #### Anomalien
 - Liegen redundante Daten in einem Schema vor, so kann es zu verschiedenen Anomalien kommen
 ###### Einfuege-Anomalie
@@ -42,6 +47,7 @@ $$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
 ![[Pasted image 20231201164535.png]]
 #### 3. Normalform
 - Eine Relation ist in der 3. Normalform, falls keine funtionalen Abhaengigkeiten zwischen den Nichtschluessel-Attributen bestehen
+- Bis zur 3. Normalformen ist die Normalisierung von Relationen abhaengigkeitserhaltend
 ![[Pasted image 20231201165436.png]]
 ![[Pasted image 20231201165449.png]]
 ###### Synthese
@@ -57,4 +63,4 @@ $$\forall r, s \in R: \space r.a = s.a \Rightarrow r.b = s.b$$
 ###### Beispiel
 ![[Pasted image 20231207213921.png]]
 #### 4. Normalform
-- TODO
+- Eine Relation ist in der 4. Normalform, falls jede mehrwertige Abhaengigkeit von einem Kandidatenschluessel abhaengt

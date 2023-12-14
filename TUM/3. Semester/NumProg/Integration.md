@@ -20,8 +20,6 @@ $$Q_T(f) = (b-a) \cdot \frac{f(a) + f(b)}{2}$$
 - Fuer einen hoeheren Genauigkeitsgrad kann die Keplersche Regel fuer die Integration genutzt werden:
 $$Q_F(f) = (b - a) \cdot \frac{f(a) + 4f \Big (\frac{a+b}{2} \Big) + f(b)}{6}$$
 - Diese Approximation ist fuer Polynome mit einem Grad von hoechstens 3 fehlerfrei
-###### Restglied
-- TODO
 ###### Beispiel
 ![[Pasted image 20231129184049.png]]
 #### Zusammengesetzte Integrationsregeln
@@ -43,6 +41,7 @@ $$Q_{i, k} = Q_{i, k-1} + \frac{Q_{i, k-1} - Q_{i-1, k-1}}{\frac{h_{i - k}^2}{h_
 ###### Beispiel
 ![[Pasted image 20231211104351.png]]
 #### Gauss Quadratur
-- Der Genauigkeitsgrad wird maximiert, indem die Stuetzpunkte und ihre Gewichte optimal gewaehlt werden
+- Der Genauigkeitsgrad wird maximiert, indem die variablen Stuetzpunkte und ihre Gewichte optimal gewaehlt werden
 - Um Polynome vom Grad $2n - 1$ exakt zu interpolieren, muessen $w_i$ und $x_i$ so bestimmt werden, dass gilt:
 $$\sum_{i=1}^n w_i \cdot f(x_i) = \int_a^b p(x)\text{d}x$$
+- Das Integral kann hierbei nur im Intervall $[-1, 1]$ approximiert werden
