@@ -18,10 +18,29 @@
 - Die Validitaet muss hierbei haeufig und regelmaessig ueberprueft werden
 ###### Beispiel
 ![[Pasted image 20231212110134.png]]
-## Single-Sign-On
-- Eine Entitaet $A$ versucht, sich mit einem Service zu verbinden
-- $A$ authentisiert sich gegenueber einem AuC und fordert ein Ticket fuer den Service
-- Das Ticket wird ueber den geteilten Schluessel der AuC und des Service verschluesselt und an $A$ versandt
-- $A$ sendet nun das Ticket an den Service und authentisiert sich ueber einen geteilten Schluessel mit dem Service
-#### Beispiel
-![[Pasted image 20231212111558.png]]
+## Kerberos
+- Kerberos ist ein Single-Sign-On Protokoll, mit dem eine Entitaet $A$ ueber einen zentralen $AuC$ Zugriff auf einen Service $S$ erhaelt
+- Single-Sign-Ons basieren auf Tickets $T^{A, S}$ und Authents $Authent^A$, welche folgenden Aufbau haben:
+$$T^{A, S} = (S, A, addr_A, timestamp, lifetime, k_{A,S})$$
+$$Authent^A = (A, addr_A, timestamp)$$
+- Tickets werden mit dem Schluessel von $S$ verschluesselt
+- Authents werden mit einem , von $A$ und $S$ geteilten, Schluessel verschluesselt
+#### Ablauf
+- Das $AuC$ ist in einen Authenticator Service $AS$ und einen Ticket Granting Service $TGS$ aufgeteilt
+- Diese Services sind fuer unterschiedliche Teile des Protokolls zustaendig
+###### Authentication
+- $A$ generiert mithilfe eines Passworts den Schluessel $k_A$ und erzeugt eine Nonce $N1$
+- $A$ schickt an den $AS$ die Nonce und den Namen des Service, mit dem sich verbunden werden soll, in diesem Fall $TGS$
+- $AS$ generiert einen shared key $k_{A, TGS}$ und erstellt ein Ticket $T^{A, TGS}$
+- $AS$ schickt nun an $A$ den shared key, die Nonce und den Namen des Service, mit dem sich verbunden werden soll, verschluesselt mit $k_A$ und das Ticket $T^{A, TGS}$, verschluesselt mit $k_{TGS}$
+- $A$ kann somit den shared key $k_{A, TGS}$ ermitteln und die Integritaet anhand der Nonce und dem Namen des Service ueberpruefen
+![[Pasted image 20231219161020.png]]
+###### Ticket Granting
+- $A$ erstellt einen Authent, verschluesselt diesen mit $k_{A, TGS}$ und generiert eine Nonce 
+- $A$ sendet an $TGS$ das verschluesselte Ticket $T^{A, TGS}$, die Nonce, den verschluesselten Authent und den Namen des Service, mit dem sich verbunden werden soll, in diesem Fall $S$
+- $TGS$ entschluesselt das Ticket $T^{A, TGS}$, verifiziert den Authent von $A$, und generiert einen shared key $k_{A,S}$ und ein Ticket $T^{A, S}$
+- $TGS$ sendet nun an $A$ den shared key, die Nonce und den Namen des Service, mit dem sich verbunden werden soll, verschluesselt mit $k_{A, TGS}$ und das Ticket $T^{A, S}$ verschluesselt mit $k_F$
+- $A$ kann somit den shared key $k_{A, F}$ ermitteln und die Integritaet anhand der Nonce und dem Namen des Service ueberpruefen
+![[Pasted image 20231220122809.png]]
+###### Sign-On
+- Um $S$ zu nutzen, sendet $A$ nun das Ticket $T^{A, F}$, verschluesselt mit $k_F$ sowie ein Authent, verschluesselt mit dem shared key $k_{A, F}$ an $S$

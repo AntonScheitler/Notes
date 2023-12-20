@@ -22,7 +22,7 @@ $$E = log_2(|M|^L)$$
 #### Diffie-Hellman
 - Eine Primzahl $p$ und ein Generatorelement $g \in \mathbb{Z}^{\star}_p$ sind oeffentlich
 - Die Entitaeten $A$ und $B$ waehlen geheime Primzahlen $a, b \in \{2, ..., p-2\}$ und senden einander die Werte $a' = g^a \mod p$ und $b' = g^b \mod p$
-- $A$ und $B$ koennen somit unabhaengig voneinander den gemeinsamen Schluessel $\text{DH-k}_{AB} = (b')^a \mod p = (a')^b \mod p = g^{ab} \mod p$ ermitteln
+- $A$ und $B$ koennen somit unabhaengig voneinander das gemeinsame Secret ermitteln $\text{DH-k}_{AB} = (b')^a \mod p = (a')^b \mod p = g^{ab} \mod p$ ermitteln
 - Mithilfe einer Key Derivation Function $KDF$ kann nun ein symmetrischer Schluessel generiert werden:
 $$KDF(\text{DH-k}_{AB}, n) = k_{AB}$$
 ###### Vorteil
