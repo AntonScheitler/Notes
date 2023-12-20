@@ -80,7 +80,7 @@
 ![[Pasted image 20231218181201.png]]
 #### Ein- und Auslagerung
 - Ist der Speicherbedarf eines Prozess groesser, als der Hauptspeicher erlaubt, so koennen Seiten auf die Festplatte ausgelagert werden
-- Falls versucht wird, auf eine Seite zuzugreifen, die nicht im Hauptspeicher liegt, so muss diese in den Hauptspeicher eingelagert werden
+- Falls versucht wird, auf eine Seite zuzugreifen, die nicht im Hauptspeicher liegt, kommt es zu einem Seitenfehler und die Seite muss in den Hauptspeicher eingelagert werden
 ###### Vorteile
 - Die Granularitaet ist hierbei feiner als beim Swapping von Segmenten
 #### Seitenersetzungsstrategien
@@ -89,9 +89,20 @@
 - Die aelteste, eingelagerte Seite wird ausgelagert
 - Dies fuehrt zu Problemen, falls eine Seite lange eingelagert ist und haeufig genutzt wird
 ###### Second Chance
-- Ist das Reverenced Bit der aeltesten Seite gesetzt, so wird dieses geloescht und die Seite erneut in die Liste eingefuegt
-- Wurde eine Seite ohne gesetztes Reverenced Bit gefunden, so wird diese ausgelagert
+- Ist das R-Bit der aeltesten Seite gesetzt, so wird dieses geloescht und die Seite erneut in die Liste eingefuegt
+- Wurde eine Seite ohne gesetztes R-Bit gefunden, so wird diese ausgelagert
 ###### Clock Algorithmus
 - Ein Pointer referenziert die aelteste, eingelagerte Seite
-- Falls das Reverenced Bit gesetzt ist, wird es geloescht und der Pointer deutet auf die naechste Seite
-- Wurde eine Seite ohne gesetztes Reverenced Bit gefunden, so wird diese ausgelagert
+- Falls das R-Bit gesetzt ist, wird es geloescht und der Pointer deutet auf die naechste Seite
+- Wurde eine Seite ohne gesetztes R-Bit gefunden, so wird diese ausgelagert
+###### Aging
+- Jedes Zeitintervall wird der Counter einer Seite um 1 erhoeht, falls ihr R-Bit gesetzt ist
+- Der Counter wird dann um 1 nach rechts geshiftet und das R-Bit auf das linkeste Bit des Zaehlers addiert
+![[Pasted image 20231220151929.png]]
+#### Working Sets
+- Die Menge der Seiten, die ein Prozess, in einem Rechenzeitintervall $\tau$ benoetigt, ist das Working Set
+- Jedes Zeitintervall $I$ werden alle Seiten betrachtet und das Working Set neu konstruiert
+###### Konstruktion
+- Jeder Prozess besitzt einen Zaehler $Z$, der seine Rechenzeit angibt und jede Seite einen Zaehler $Z_p$ der ihre letzte Zugriffszeit angibt
+- Ist das R-Bit einer Seite gesetzt, so gehoert sie zum Working Set und das entsprechende $Z_p$ wird auf $Z$ gesetzt
+- Andernfalls wird die Seite aus dem Working Set entfernt, falls $Z - Z_p > \tau$, wobei $\tau$ ein Rechenzeitintervall ist
