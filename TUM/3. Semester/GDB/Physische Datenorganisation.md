@@ -1,6 +1,15 @@
 ## RAID Systeme
 - Die Fehlertoleranz von Daten kann mithilfe von RAID System sichergestellt werden
-- TODO
+#### Level
+- Verschiedene Level bieten verschiedene Vorteile im Bezug auf Fehlertoleranz und Performanz auf Kosten von Speicherbedarf
+###### RAID 1
+- Daten werden redundant ueber zwei Platten gespeichert
+- Hierdurch wird zusaetzlich eine Lastverteilung beim Lesen ermoeglicht, der Speicherbedarf verdoppelt sich hierdurch jedoch
+![[Pasted image 20231220184419.png]]
+###### RAID 5
+- Fuer jeden Block wird ein Paritaetsblock angelegt der, verxodert mit allen Bloecken ausser einem, den uebrigen Block ergibt
+- Somit werden die Daten vor dem Ausfall hoechstens einer Platte gesichert
+![[Pasted image 20231220184657.png]]
 ## B-Baeume
 - B-Baeume sind balancierte Baeume und ermoeglichen Lese-, Schreib und Entfernoperationen in $O(log(n))$
 #### Aufbau
