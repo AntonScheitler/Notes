@@ -8,7 +8,11 @@
 - $b$ ist voll funktional abhaengig von  $a$, falls $a \rightarrow b$ gilt und $a$ nicht verkleinert werden kann
 - $a$ ist genau dann ein Kandidaten-Schluessel, falls $R$ voll funktional abhaengig von $a$ ist
 #### Mehrwertige Abhaengigkeiten
-- $b$ ist mehrwertig abhaengig von $a$, falls jedes $a$ mit einer Menge von Attributen aus $b$ assoziiert ist
+- $\beta$ und $\gamma$ sind mehrwertig abhaengig von $\alpha$ falls die Tupel $t1, t2, t3, t4$ so gewaehlt werden koennen, dass gilt:
+$$t1.\alpha = t2.\alpha = t3.\alpha = t4.\alpha$$
+$$t1.\beta = t3.\beta, \space \space t2.\beta = t4.\beta$$
+$$t1.\gamma = t4.\gamma, \space \space t2.\gamma = t3.\gamma$$
+- Da $t1 = t2 = t3 = t4$ moeglich ist, sind $\beta$ und $\gamma$ mehrwertig abhaengig von $\alpha$, falls $a \rightarrow \beta\gamma$ 
 ###### Beispiel
 ![[Pasted image 20231214105825.png]]
 #### Attributhuelle
@@ -51,9 +55,10 @@
 ![[Pasted image 20231201165436.png]]
 ![[Pasted image 20231201165449.png]]
 ###### Synthese
-1. Die funktionalen Abhaengigkeiten der Relation werden bestimmt und die linken Seiten zusammengefasst
+1. Die kanonische Ueberdeckung wird ermittelt
 2. Fuer jede funktionale Abhaengigkeit wird eine Relation erstellt
 3. Relationen, die in anderen enthalten sind, werden eliminiert
+4. Eine der Relationen muss einen Kandidatenschluessel enthalten
 ###### Beispiel
 ![[Pasted image 20231207205911.png]]
 #### Boyce-Codd Normalform
