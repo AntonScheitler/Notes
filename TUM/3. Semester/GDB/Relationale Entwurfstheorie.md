@@ -13,6 +13,8 @@ $$t1.\alpha = t2.\alpha = t3.\alpha = t4.\alpha$$
 $$t1.\beta = t3.\beta, \space \space t2.\beta = t4.\beta$$
 $$t1.\gamma = t4.\gamma, \space \space t2.\gamma = t3.\gamma$$
 - Da $t1 = t2 = t3 = t4$ moeglich ist, sind $\beta$ und $\gamma$ mehrwertig abhaengig von $\alpha$, falls $a \rightarrow \beta\gamma$ 
+###### Komplementregel
+- Gilt $\alpha \twoheadrightarrow \beta$, so gilt auch $\alpha \twoheadrightarrow R \backslash \beta$
 ###### Beispiel
 ![[Pasted image 20231214105825.png]]
 #### Attributhuelle
@@ -58,14 +60,18 @@ $$t1.\gamma = t4.\gamma, \space \space t2.\gamma = t3.\gamma$$
 1. Die kanonische Ueberdeckung wird ermittelt
 2. Fuer jede funktionale Abhaengigkeit wird eine Relation erstellt
 3. Relationen, die in anderen enthalten sind, werden eliminiert
-4. Eine der Relationen muss einen Kandidatenschluessel enthalten
+4. Eine der Relationen muss einen Kandidatenschluessel der urspruenglichen Relation enthalten
 ###### Beispiel
 ![[Pasted image 20231207205911.png]]
 #### Boyce-Codd Normalform
-- Eine Relation ist in Boyce-Codd Normalform, falls jedes Attribut nur von dem Superschluessel funktional abhaengt
+- Eine Relation ist in Boyce-Codd Normalform, falls die linke Seite jeder funktionalen Abhaengigkeit ein Superschluessel ist
+- Um eine Relation in die Boyce-Codd Normalform zu bringen, wird der Dekompositionsalgorithmus verwendet
 ###### Dekomposition
-- Alle funktionalen Abhaengigkeiten, die die Boyce-Codd Normalform verletzen, bilden eine neue Relation
+1. Eine funktionale Abhaengigkeit $f$, die die BCNF verletzt wird ermittelt
+2. Eine neue Relation wird anhand von $f$ erstellt, wobei die linke Seite von $f$ in der urspruenglichen Relation bleibt
+3. Dies wird wiederholt, bis alle Relationen die BCNF erfuellen
 ###### Beispiel
 ![[Pasted image 20231207213921.png]]
 #### 4. Normalform
 - Eine Relation ist in der 4. Normalform, falls jede mehrwertige Abhaengigkeit von einem Kandidatenschluessel abhaengt
+- Um eine Relation in die 4. Normalform zu bringen, wird eine Abwandlung der Dekomposition verwendet, bei der mehrwertige Abhaengigkeiten in Relationen extrahiert werden
