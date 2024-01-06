@@ -39,8 +39,8 @@ $$Authent^A = (A, addr_A, timestamp)$$
 - $A$ erstellt einen Authent, verschluesselt diesen mit $k_{A, TGS}$ und generiert eine Nonce 
 - $A$ sendet an $TGS$ das verschluesselte Ticket $T^{A, TGS}$, die Nonce, den verschluesselten Authent und den Namen des Service, mit dem sich verbunden werden soll, in diesem Fall $S$
 - $TGS$ entschluesselt das Ticket $T^{A, TGS}$, verifiziert den Authent von $A$, und generiert einen shared key $k_{A,S}$ und ein Ticket $T^{A, S}$
-- $TGS$ sendet nun an $A$ den shared key, die Nonce und den Namen des Service, mit dem sich verbunden werden soll, verschluesselt mit $k_{A, TGS}$ und das Ticket $T^{A, S}$ verschluesselt mit $k_F$
-- $A$ kann somit den shared key $k_{A, F}$ ermitteln und die Integritaet anhand der Nonce und dem Namen des Service ueberpruefen
+- $TGS$ sendet nun an $A$ den shared key, die Nonce und den Namen des Service, mit dem sich verbunden werden soll, verschluesselt mit $k_{A, TGS}$ und das Ticket $T^{A, S}$ verschluesselt mit $k_S$
+- $A$ kann somit den shared key $k_{A, S}$ ermitteln und die Integritaet anhand der Nonce und dem Namen des Service ueberpruefen
 ![[Pasted image 20231220122809.png]]
 ###### Sign-On
 - Um $S$ zu nutzen, sendet $A$ nun das Ticket $T^{A, F}$, verschluesselt mit $k_F$ sowie ein Authent, verschluesselt mit dem shared key $k_{A, F}$ an $S$

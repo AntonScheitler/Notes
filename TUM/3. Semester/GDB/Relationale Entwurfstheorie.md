@@ -52,7 +52,7 @@ $$t1.\gamma = t4.\gamma, \space \space t2.\gamma = t3.\gamma$$
 - Um die 2. Normalform zu garantieren kann eine Aufteilung der Relation noetig sein
 ![[Pasted image 20231201164535.png]]
 #### 3. Normalform
-- Eine Relation ist in der 3. Normalform, falls keine funtionalen Abhaengigkeiten zwischen den Nichtschluessel-Attributen bestehen
+- Eine Relation ist in der 3. Normalform, falls keine funtionalen Abhaengigkeiten zwischen den Nichtschluessel-Attributen existieren
 - Bis zur 3. Normalformen ist die Normalisierung von Relationen abhaengigkeitserhaltend
 ![[Pasted image 20231201165436.png]]
 ![[Pasted image 20231201165449.png]]
@@ -73,5 +73,5 @@ $$t1.\gamma = t4.\gamma, \space \space t2.\gamma = t3.\gamma$$
 ###### Beispiel
 ![[Pasted image 20231207213921.png]]
 #### 4. Normalform
-- Eine Relation ist in der 4. Normalform, falls jede mehrwertige Abhaengigkeit von einem Kandidatenschluessel abhaengt
+- Eine Relation ist in der 4. Normalform, falls die linke Seite jeder mehrwertigen Abhaengigkeit ein Superschluessel ist
 - Um eine Relation in die 4. Normalform zu bringen, wird eine Abwandlung der Dekomposition verwendet, bei der mehrwertige Abhaengigkeiten in Relationen extrahiert werden
