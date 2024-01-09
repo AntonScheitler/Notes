@@ -43,4 +43,5 @@ $$Authent^A = (A, addr_A, timestamp)$$
 - $A$ kann somit den shared key $k_{A, S}$ ermitteln und die Integritaet anhand der Nonce und dem Namen des Service ueberpruefen
 ![[Pasted image 20231220122809.png]]
 ###### Sign-On
-- Um $S$ zu nutzen, sendet $A$ nun das Ticket $T^{A, F}$, verschluesselt mit $k_F$ sowie ein Authent, verschluesselt mit dem shared key $k_{A, F}$ an $S$
+- Um $S$ zu nutzen, sendet $A$ nun das Ticket $T^{A, S}$, verschluesselt mit $k_S$ sowie ein Authent, verschluesselt mit dem shared key $k_{A, S}$ an $S$
+- $S$ entschluesselt das Ticket $T^{A, S}$ und verifiziert den Authent von $A$

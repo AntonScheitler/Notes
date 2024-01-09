@@ -26,12 +26,12 @@
 - Die Laenge der Bitmap entspricht somit der Anzahl der Bloecke im Hauptspeicher
 ###### Nachteil
 - Die Suche nach einem freien Speicherblock mit gegebener Groesse ist sehr aufwendig
-- Je kleiner die Speicherbloecke, desto groesser der Speicherbedarf einer Bitmap
 ###### Beispiel
 ![[Pasted image 20231218091243.png]]
 #### Verkettete Liste
 - Ein Listenelement speichert die Startadresse und die Laenge von prozesszugehoerigen, beziehungsweise freien Speicherbereichen
 ###### Nachteil
+- Je kleiner die Speicherbloecke, desto groesser der Speicherbedarf einer Liste
 - Das Zusammenfuegen freier Bereiche ist aufwendig
 ###### Beispiel
 ![[Pasted image 20231218092843.png]]
@@ -66,7 +66,7 @@
 ###### Externe Fragmentierung
 - Falls Speicher in dynamischen Groessen vergeben wird, kann es sein, dass kleine Bereiche zwischen vergebenen Bereichen ungenutzt bleiben
 ## Paging
-- Der virtuelle Adressraum wird ein Seiten, der physische Speicher in Kacheln fester groesse aufgeteilt
+- Der virtuelle Adressraum wird ein Seiten, der physische Speicher in Kacheln fester Groesse aufgeteilt
 #### Memory Management Unit
 - Durch die MMU werden virtuelle Adressen in physische uebersetzt
 ###### Page Tables
