@@ -19,10 +19,28 @@
 ###### Beispiel
 ![[Pasted image 20231214192433.png]]
 #### Axiome
-- Jeder Knoten eines B-Baumes mit Grad $k$ besitzt hoechstenes $2k$ Kinder
-- Jeder innere Knoten besitzt mindestens $k$ Kinder
-- Die Wurzel hat mindestens $2k$ Kinder oder ist ein Blatt
 - Alle Blaetter liegen in derselben Ebene
-- Ein Knoten mit $k-1$ Kindern besitzt $k$ Schluesselelemente
+- Alle Knoten, aussser der Wurzel, eines B-Baumes von Grad $k$ besitzen mindestens $k$ und hoechstens $2k$ Eintraege
+- Alle Knoten, ausser den Blaettern, mit $n$ Eintraegen besitzen $n + 1$ Kinder
 #### Operationen
 - Die Operationen werden identisch zu denen eines (a, b) Baums implementiert
+## R-Baeume
+- Ein R-Baumes partitioniert eine Punktemenge durch das Aufspannen von Rechtecken
+- Die Flaeche, die durch die Rechtecke aufgespannt wird, muss hierbei minimal sein
+#### Aufbau
+- Jeder Eintrag in einem Knoten spannt ein Rechteck auf
+- Je weiter ein Knoten von der Wurzel entfernt ist, feiner ist die Granularitaet der Partitionierung 
+- Alle Blaetter liegen hierbei in derselben Ebene
+###### Beispiel
+![[Pasted image 20240113094748.png]]
+## Erweiterbares Hashing
+- Beim erweiterbaren Hashing werden Elemente anhand des Praefix ihres Hashes in die Hashtabelle eingefuegt
+#### Aufbau
+- Ein Directory bildet Praefixe auf Buckets ab
+- Jeder Bucket kann bis zu zwei Eintraege enthalten
+- Wird die Kapazitaet eines Buckets ueberschritten, so wird der Praefix des Directories vergroessert
+###### Beispiel
+![[Pasted image 20240113104629.png]]
+#### Lokale und Globale Tiefe
+- Die globale Tiefe ist die Groesse des Praefix, der im Directory gespeichert wird 
+- Die lokale Tiefe ist die Groesse des Praefix, der in einem Bucket betrachtet wird
