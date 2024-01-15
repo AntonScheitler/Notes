@@ -96,8 +96,8 @@
 - Falls das R-Bit gesetzt ist, wird es geloescht und der Pointer deutet auf die naechste Seite
 - Wurde eine Seite ohne gesetztes R-Bit gefunden, so wird diese ausgelagert
 ###### Aging
-- Jedes Zeitintervall wird der Counter einer Seite um 1 erhoeht, falls ihr R-Bit gesetzt ist
-- Der Counter wird dann um 1 nach rechts geshiftet und das R-Bit auf das linkeste Bit des Zaehlers addiert
+- Jede Page besitzt einen Counter, welcher jedes Zeitintervall aktualisiert wird
+- Der Counter wird hierbei um 1 nach rechts geshiftet und das R-Bit auf das linkeste Bit des Zaehlers addiert
 ![[Pasted image 20231220151929.png]]
 #### Working Sets
 - Die Menge der Seiten, die ein Prozess, in einem Rechenzeitintervall $\tau$ benoetigt, ist das Working Set

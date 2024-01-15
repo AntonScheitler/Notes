@@ -3,7 +3,7 @@
 #### Aequivalente Transformationen
 - Die [[Relationales Datenmodell|relationale Algebra]] laesst Umformungen von Ausdruecken zu
 ###### Verhalten der Selektion
-- Selektionen sind kommutativ und ihre Praedikate koennen aufgebrochen werden
+- Selektionen sind kommutativ und ihre konjunktiven Praedikate koennen aufgebrochen werden
 - Selektionen und Projektionen koennen vertauscht werden, falls sich die Selektionen nur auf Attribute der Projektionsliste beziehen
 - Selektionen sind distributiv mit Joins und Vereinigungen
 - Eine Kombination aus kartesischem Produkt und Selektion kann mit einem Join zusammengefasst werden
@@ -21,3 +21,4 @@ $$\pi_A(\pi_B(R)) = \pi_A(R)$$
 - Kartesische Produkte, gefolgt von Selektionen werden zu Joins zusammengefasst
 ###### Beispiel
 ![[Pasted image 20240113103237.png]]
+- slkdfjlsdfj

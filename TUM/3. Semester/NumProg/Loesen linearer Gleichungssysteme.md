@@ -25,5 +25,10 @@ x & x & x & ... \\
 - Die Diagonalwerte einer Matrix werden als Pivot bezeichnet
 - Um Teilungen durch 0 zu verhindern, muss sichergestellt werden, dass die Pivots einer Matrix nicht 0 sind
 #### Suchstrategien
+- Ein Pivot kann auf unterschiedliche Weise ermittelt werden
+###### Zeilen- und Spaltenpivotsuche
 - Bei der Zeilen- oder Spaltenpivotsuche wird ein Pivot, das den Wert 0 hat, mit dem betragsmaessig groessten Element derselben Zeile, beziehungsweise Spalte vertauscht
+- Die Suche wird mit einem einfachen Zeilen-, beziehungsweise Spaltentausch realisiert
+###### Matrixpivotsuche
 - Bei der Matrixpivotsuche werden Pivots, die den Wert 0 haben, mit den betragsmaessig groessten Elementen der Matrix vertauscht
+- Die Suche wird mit einem Zeilen-, und einem Spaltentausch realisiert

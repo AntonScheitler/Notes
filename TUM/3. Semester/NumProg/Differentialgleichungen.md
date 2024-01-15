@@ -4,10 +4,15 @@
 #### Aufbau
 - Sei $f$ eine Funktion und $\dot{f}$ ihre Ableitung, so kann eine Differentialgleichung in Abhaengigkeit von der Zeit $t$ aufgestellt werden:
 $$\dot{f}(t) = F(t, f(t))$$
+## Analytische Verfahren
+- In seltenen Faellen ist es moeglich, eine Differentialgleichung analytisch zu loesen:
+- Hierfuer wird auf Ableitungen $\dot{y}$ die Leipniz Notation $\frac{dy}{dt}$ angewandt und die Variablen separiert
+- Anschliessend wird auf beide Seiten der Gleichung ein Integral angewandt, wobei $y$ durch $\mu$ und $t$ durch $\tau$ ersetzt wird:
+$$\int_{y_0}^y ... d\mu = \int_{t_0}^t ... d\tau$$
 ## Approximationsverfahren
-- Es sei $\dot{f}$ die Ableitung von $f$, wobei die Differentialgleichung $\dot{f}(t) = F(t, f(t))$ gilt
-- Die Differentialgleichung wird diskretisiert, indem jedes Vorkommen einer Ableitung durch den Differenzenquotienten ueber ein Zeitintervall $\delta t$ ersetzt wird
-- TODO $f(t_k, y_k)$
+- Es sei $\dot{y}$ die Ableitung von $y$, wobei die Differentialgleichung $\dot{y}(t) = F(t, y(t))$ gilt
+- $y$ wird zu jedem Zeitintervall $\delta t$ ausgewertet
+- In der Regel bezeichnet $y_k$ den Funktionswert und $f(t_k, y_k)$ die Steigung zum Zeitpunkt $t_k$
 #### Eulersche Methode
 - $y_0$ zum Startzeitpunkt $t_0$ ist gegeben
 - Um einen Wert $y_{k + 1}$ zum Zeitpunkt $t_{k + 1} = t_0 + (k + 1) \cdot \delta t$ zu ermitteln, werden der Differenzenquotient $f(t_k, y_k)$, sowie der Wert $y_k$ zum vorherigen Zeitpunkt $t_k$ verwendet
@@ -19,6 +24,8 @@ $$y_{k + 1} = y_k + \delta t \cdot f(t_k, y_k)$$
 - Mithilfe der eulerschen Methode werden die Werte $y_k$ und $y_{k+1}$ bestimmt
 - Der Durchschnitt der Steigungen $f(t_k, y_k)$ und $f(t_{k + 1}, y_{k + 1})$ wird ermittelt, um die tatsaechliche Steigung zum Zeitpunkt $t_k$ besser zu approximieren 
 - Die Anzahl der Auswertungen von $f$ verdoppelt sich hierdurch jedoch
+- Somit gilt:
+$$y_{k + 1} = y_k + \frac{\delta t}{2} \big (f(t_k, y_k) + f(t_{k+1}, y_k + \delta t \cdot f(t_k, y_k)) \big )$$
 #### Runge-Kuttasche Methode
 - Zwischen den Zeitpunkten $t_k$ und $t_{k + 1}$ werden zwei zusaetzliche Stuetzpunkte definiert
 - Die Steigungen $f(t_k, y_k)$ und $f(t_{k + 1}, y_{k + 1})$, sowie die an den Stuetzpunkten wird fuer eine bessere Approximation der Steigung zum Zeitpunkt $t_k$ genutzt
