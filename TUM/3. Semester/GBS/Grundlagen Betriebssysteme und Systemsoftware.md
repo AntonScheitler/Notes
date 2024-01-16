@@ -1,5 +1,4 @@
 ### [[Betriebssysteme]]
-
 ### [[Prozessverwaltung]]
 ### [[Scheduling]]
 
@@ -8,4 +7,5 @@
 ### [[Interprozesskommunikation]]
 ### [[Speichermanagement]]
 ### [[Dateisysteme]]
+### [[Ein- und Ausgabe]]
 ### <a href ="./GBS.apkg" download>Download Flashcards</a>

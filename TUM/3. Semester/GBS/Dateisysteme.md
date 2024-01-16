@@ -60,3 +60,21 @@
 - Adressinformationen werden in Form der Adresse der Datei auf der Festplatte, der Nummer ihres ersten Blocks, oder der Nummer ihrer i-node gespeichert
 ###### Dateiattribute
 - Dateiattribute werden direkt im Verzeichniseintrag, oder in der i-node gespeichert
+#### Links
+- Um Dateien gemeinsam zu Nutzen, werden Links verwendet
+###### Hard Links
+- Ein Link auf eine geteilte Datei wird erstellt, indem ihre i-node direkt referenziert wird
+###### Symbolic Links
+- Eine besondere Datei wird angelegt, welche als Verweis auf den Pfad der geteilten Datei dient
+## Optimierungen
+- Die Korrektheit und Performanz eines Dateisystems kann mit unterschiedlichen Optimierungen verbessert werden
+#### Journaling
+- Um das korrekte Verhalten des Dateisystems bei Crashes zu gewaehrleisten, werden Journals verwendet
+- Bevor eine Folge von Operationen ausgefuehrt wird, wird sie zunaechst in ein Journal geschrieben
+- Kommt es zu einem Crash, so koennen die Operationen erneut ausgefuehrt werden
+###### Idempotenz
+- Damit Operationen erneut ausgefuehrt werden koennen, ohne, dass es zu Fehlern kommt, muessen sie idempotent sein
+#### Virtual File System
+- Um die Existenz von mehreren Dateisystemen fuer den Nutzer zu abstrahieren, werden virtuelle Dateisysteme genutzt
+#### Buffer-Cache
+- Zuletzt gelesene Bloecke werden in einem Buffer im Hauptspeicher gecached
