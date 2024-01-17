@@ -40,7 +40,7 @@
 ###### Beispiel
 ![[Pasted image 20240108171308.png]]
 #### i-nodes Allocation
-- Jede Datei wird durch eine i-node repraesentiert, die die Adreesen der belegten Bloecke speichert
+- Jede Datei wird durch eine i-node repraesentiert, die die Adreesen der belegten Bloecke, sowie zusaetzliche Attribute der Datei speichert
 ###### Vorteil
 - i-nodes sind Speichereffizient
 ###### Nachteil
@@ -78,3 +78,4 @@
 - Um die Existenz von mehreren Dateisystemen fuer den Nutzer zu abstrahieren, werden virtuelle Dateisysteme genutzt
 #### Buffer-Cache
 - Zuletzt gelesene Bloecke werden in einem Buffer im Hauptspeicher gecached
+- Ueber 

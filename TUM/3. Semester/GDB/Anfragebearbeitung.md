@@ -21,4 +21,5 @@ $$\pi_A(\pi_B(R)) = \pi_A(R)$$
 - Kartesische Produkte, gefolgt von Selektionen werden zu Joins zusammengefasst
 ###### Beispiel
 ![[Pasted image 20240113103237.png]]
-- slkdfjlsdfj
+## Pipelining
+- TODO
