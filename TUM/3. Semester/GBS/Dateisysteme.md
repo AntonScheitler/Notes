@@ -18,36 +18,13 @@
 - Die Position in einer Datei kann mithilfe von lseek veraendert werden
 ## Dateisystemimplementierug
 - Eine physische Festplatte besteht aus einer Sequenz von Bloecken gleicher Groesse
-- Diese Bloecke koennen auf unterschiedliche Arten fuer Dateien belegt werden
-#### Contiguous Allocation
-- Eine Datei wird als zusammenhaengende Folge von Bloecken allokiert
-###### Vorteile
-- Die Implementierung ist einfach und Leseoperationen sehr effizient
-###### Nachteile
-- Es kommt zu externer Speicherfragmentierug
+- Diese Bloecke werden von Dateien belegt
+#### i-nodes
+- Jede Datei wird durch eine i-node repraesentiert, die die Attribute der Datei, sowie die Adressen der belegten Bloecke abspeichert
+- Da i-nodes eine feste Groesse besitzen, muss fuer grosse Dateien eine Hierarchie von indirect Blocks angelegt werden
+- Die Groesse eines indirect Blocks entspricht der Groesse eines Blocks auf der Festplatte 
 ###### Beispiel
-![[Pasted image 20240108170521.png]]
-#### Linked List Allocation
-- Fuer jede Datei wird eine verkettete Liste erstellt, die die allokierten Bloecke enthaelt
-- Das erste Wort in einem Block dient als Pointer naechsten Block
-###### Vorteile
-- Externe Fragmentierung wird verhindert
-###### Nachteile
-- Leseoperationen sind ineffizient
-- Die Kapazitaet eines Blocks wird nicht vollstaendig ausgenutzt
-###### File Allocation Table
-- Alternativ koennen die Pointer auf folgende Bloecke im Hauptspeicher gespeichert werden
-###### Beispiel
-![[Pasted image 20240108171308.png]]
-#### i-nodes Allocation
-- Jede Datei wird durch eine i-node repraesentiert, die die Adreesen der belegten Bloecke, sowie zusaetzliche Attribute der Datei speichert
-###### Vorteil
-- i-nodes sind Speichereffizient
-###### Nachteil
-- Eine i-node hat eine feste Anzahl von Blockadressen
-- Grosse Dateien besitzen somit eine Hierarchie von i-nodes
-###### Beispiel
-![[Pasted image 20240110155947.png]]
+![[Pasted image 20240118095713.png]]
 ## Verzeichnisimplementierung
 - Verzeichnise organisieren Dateien mithilfe von ihren Verzeichniseintraegen
 #### Verzeichniseintrag
