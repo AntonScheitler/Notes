@@ -1,4 +1,4 @@
-## Approximation linearer Gleichungssysteme
+## Relaxationsmethoden
 - Um die Loesungen [[Lineare Gleichungssysteme|linearer Gleichungssysteme]] mit sproadischen Matrizen zu approximieren, werden iterative Verfahren verwendet
 - $x^{(i)}$ ist hierbei die approximierte Loesung im $i$-ten Schritt, wobei $x^{(0)}$ beliebig gewaehlt wird
 #### Residuum
@@ -21,3 +21,5 @@ $$x^{(i + 1)} = x^{(i)} + y$$
 #### Damping und Over-Relaxation
 - Ein Aktualisierungsvektor $y$ wird haeufig mit einer Konstante $0 < \alpha < 1$, beziehungsweise $1 < \alpha < 2$ multipliziert, sodass fuer den naechsten Approximanten gilt:
 $$x^{(i + 1)} = x^{(i)} + \alpha y$$
+## Minimierungsmethoden
+ - 
