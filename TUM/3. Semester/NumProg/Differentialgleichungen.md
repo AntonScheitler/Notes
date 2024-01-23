@@ -13,7 +13,7 @@ $$\int_{y_0}^y ... d\mu = \int_{t_0}^t ... d\tau$$
 - Es sei $\dot{y}$ die Ableitung von $y$, wobei die Differentialgleichung $\dot{y}(t) = F(t, y(t))$ gilt
 - $y$ wird zu jedem Zeitintervall $\delta t$ ausgewertet
 - In der Regel bezeichnet $y_k$ den Funktionswert und $f(t_k, y_k)$ die Steigung zum Zeitpunkt $t_k$
-#### Eulersche Methode
+#### Explizites Eulerverfahren
 - $y_0$ zum Startzeitpunkt $t_0$ ist gegeben
 - Um einen Wert $y_{k + 1}$ zum Zeitpunkt $t_{k + 1} = t_0 + (k + 1) \cdot \delta t$ zu ermitteln, werden der Differenzenquotient $f(t_k, y_k)$, sowie der Wert $y_k$ zum vorherigen Zeitpunkt $t_k$ verwendet
 - Hierbei gilt:
@@ -21,7 +21,7 @@ $$y_{k + 1} = y_k + \delta t \cdot f(t_k, y_k)$$
 ###### Beispiel
 ![[Pasted image 20240105121149.png]]
 #### Heunsche Methode
-- Mithilfe der eulerschen Methode werden die Werte $y_k$ und $y_{k+1}$ bestimmt
+- Mithilfe des expliziten Eulerverfahrens werden die Werte $y_k$ und $y_{k+1}$ bestimmt
 - Der Durchschnitt der Steigungen $f(t_k, y_k)$ und $f(t_{k + 1}, y_{k + 1})$ wird ermittelt, um die tatsaechliche Steigung zum Zeitpunkt $t_k$ besser zu approximieren 
 - Die Anzahl der Auswertungen von $f$ verdoppelt sich hierdurch jedoch
 - Somit gilt:
@@ -36,6 +36,8 @@ $$y_{k + 1} = y_k + \frac{\delta t}{2} \big (f(t_k, y_k) + f(t_{k+1}, y_k + \del
 - Fuer $y_{k + 1}$ gilt hierbei:
 $$y_{k + 1} = y_k + \frac{\delta t}{2} \big (3f(t_k, y_k) - f(t_{k - 1}, y_{k - 1}) \big)$$
 - Fuer den ersten Schritt, muss jedoch eine Einschrittmethode verwendet werden
+#### Implizites Eulerverfahren
+- TODO
 ## Fehlerverhalten
 - Approximationsverfahren werden anhand ihrer Konsistenz und Konvergenz bewertet
 #### Konsistenz
@@ -44,3 +46,6 @@ $$y_{k + 1} = y_k + \frac{\delta t}{2} \big (3f(t_k, y_k) - f(t_{k - 1}, y_{k - 
 #### Konvergenz
 - Der maximale Fehler der Summe aller Approximationen ist der globale Diskretisierungsfehler
 - Ein Verfahren ist konvergent, falls der globale Diskretisierungsfehler gegen 0 geht, falls $\delta t$ gegen 0 geht
+- Ein Verfahren konvergiert genau dann, wenn es konsistent und [[Fliesskommazahlen und Rundung|stabil]] ist
+#### Steifheit
+- Fuer steife Probleme sind selbst konsistente und konvergente Verfahren teils zu ineffizient, da sie extrem kleine Zeitschritte erfordern

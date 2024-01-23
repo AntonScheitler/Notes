@@ -1,3 +1,8 @@
+## Allgemeines
+- TODO
+- need-to-know
+- complete mediation
+- access control
 ## Modelle
 - Um Zugriffsrechte zu verwalten, werden verschiedene Modelle verwendet
 #### Zugriffsmatrix
@@ -7,7 +12,7 @@
 - Die Rollen der Subjekte werden nicht betrachtet
 - Die Matrix skaliert schlecht
 ###### Beispiel
-![[Pasted image 20240119161048.png]]
+![[Pasted image 20240122132937.png]]
 #### Role-based Access Control
 - Jedem Subjekt werden Rollen zugewiesen, wobei jeder Rolle eine Menge von Berechtigungen zugewiesen wird
 ###### Hierarchien
@@ -22,10 +27,14 @@
 - Die no-write-down Regel legt fest, dass ein Subjekt nur in Objekte schreiben kann, deren Classification groesser, oder gleich ihrer Clearance sind
 ###### Nachteil
 - Subjekte koennen in Objekte schreiben, ohne sie zu lesen zu duerfen
+## Implementierungen
+- TODO
+- ACL
+- Capabilities
 ## Zugriffskontrolle
 - Greift ein Subjekt auf ein Objekt zu, so muss durch Kontrollen sichergestellt werden, dass das Subjekt autorisiert ist
 #### Berechtigungskontrolle
-- Bei der Berechtigungskontrolle wird sichergestellt, dass das Subjekt zum Zugriff autorisiert ist
+- Bei dem Policy-Decision Point wird sichergestellt, dass das Subjekt zum Zugriff autorisiert ist
 - Ist das Subjekt autorisiert, so wird eine Berechtigungsbescheinigung ausgestellt
 #### Zulaessigkeitskontrolle
-- Bei der Zulaessigkeitskontrolle wird sichergestellt, dass die Berechtigungsbescheinigung eines Subjekts gueltig ist 
+- Bei dem Policy-Enforcement Point wird sichergestellt, dass die Berechtigungsbescheinigung eines Subjekts gueltig ist 
