@@ -30,14 +30,17 @@ $$y_{k + 1} = y_k + \frac{\delta t}{2} \big (f(t_k, y_k) + f(t_{k+1}, y_k + \del
 - Zwischen den Zeitpunkten $t_k$ und $t_{k + 1}$ werden zwei zusaetzliche Stuetzpunkte definiert
 - Die Steigungen $f(t_k, y_k)$ und $f(t_{k + 1}, y_{k + 1})$, sowie die an den Stuetzpunkten wird fuer eine bessere Approximation der Steigung zum Zeitpunkt $t_k$ genutzt
 - Die Anzahl der Auswertungen von $f$ wird somit vervierfacht
-#### Mehrschrittmethode
+#### Mehrschrittmethoden
 - Um $y_{k+1}$ zu ermitteln, werden die Differenzenquotienten $f(t_k, y_k)$ und $f(t_{k-1}, y_{k-1})$ verwendet
 - Mithilfe von Extrapolation kann $y_{k + 1}$ somit besser approximiert werden, ohne, dass $f$ oefter ausgewertet werden muss
-- Fuer $y_{k + 1}$ gilt hierbei:
+- Hierbei sind unterscheidliche Methoden moeglich:
 $$y_{k + 1} = y_k + \frac{\delta t}{2} \big (3f(t_k, y_k) - f(t_{k - 1}, y_{k - 1}) \big)$$
+$$y_{k + 1} = y_{k - 1} + 2\delta t \cdot f(t_k, y_k)$$
 - Fuer den ersten Schritt, muss jedoch eine Einschrittmethode verwendet werden
 #### Implizites Eulerverfahren
-- TODO
+- Um $y_{k + 1}$ zu bestimmen, werden $y_k$, sowie der Differenzenquotient $f(t_{k + 1}, y_{k + 1})$ verwendet
+- Hierbei gilt:
+$$y_{k + 1} = y_k + \delta t \cdot f(t_{k + 1}, y_{k + 1})$$
 ## Fehlerverhalten
 - Approximationsverfahren werden anhand ihrer Konsistenz und Konvergenz bewertet
 #### Konsistenz

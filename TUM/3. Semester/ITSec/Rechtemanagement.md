@@ -1,8 +1,15 @@
 ## Allgemeines
-- TODO
-- need-to-know
-- complete mediation
-- access control
+- Um Informationen in einem System sicher zu verwalten, muessen Rechte vergeben werden
+#### need-to-know Rechtevergabe
+- Bei der need-to-know Rechtevergabe erhalten Subjekte die minimale Anzahl an Rechten, die sie benoetigen
+- Rechte koennen hierbei auf unterschiedliche Arten vergeben werden
+###### Discretionary Access Control
+- Der Besitzer von Daten entscheidet selbst, welches Subjekt welche Rechte auf diese Daten hat
+###### Role-Based Access Control
+- Jedem Subjekt wird eine Rolle zugewiesen, wobei jede Rolle mit einer Menge von Rechten assoziiert ist
+- Ueber eine Hierarchie von Rollen koennen zudem Rechte vererbt werden
+###### Mandatory Access Control
+- Eine zentrale Entitaet gibt vor, welches Subjekt welche Rechte hat
 ## Modelle
 - Um Zugriffsrechte zu verwalten, werden verschiedene Modelle verwendet
 #### Zugriffsmatrix
@@ -13,13 +20,7 @@
 - Die Matrix skaliert schlecht
 ###### Beispiel
 ![[Pasted image 20240122132937.png]]
-#### Role-based Access Control
-- Jedem Subjekt werden Rollen zugewiesen, wobei jeder Rolle eine Menge von Berechtigungen zugewiesen wird
-###### Hierarchien
-- Rollen und ihre Berechtigungen koennen hierarchisch angeordnet werden
-###### Nachteil
-- Komprimierende Informationsfluesse werden nicht reguliert
-#### Bella-LaPadula Modell
+#### Bell-LaPadula Modell
 - Anhand von Labels erhalten Subjekte eine Clearance und Objekte eine Classification
 - Flussrelationen definieren anhand dieser Labels, welche Informationsfluesse erlaubt sind
 ###### BLP-MAC Policy
@@ -28,11 +29,20 @@
 ###### Nachteil
 - Subjekte koennen in Objekte schreiben, ohne sie zu lesen zu duerfen
 ## Implementierungen
-- TODO
-- ACL
-- Capabilities
+- Modelle zur Rechtevergabe koennen auf unterschiedliche Weisen implementiert werden
+#### Access Control Lists
+- ACLs sind eine Implementierung einer Zugriffsmatrix
+- Fuer jedes Objekt wird hierbei eine Liste von Subjekten und ihren Rechten auf diese Datei verwaltet
+###### Nachteile
+- Das Aendern von Attributen eines Subjekts ist aufwendig
+#### Capabilities
+- Capabilities sind eine Implementierung einer Zugriffsmatrix
+- Fuer jedes Subjekt wird eine Liste von Objekten und den Rechte auf diese verwaltet
+###### Nachteile
+- Die Rechteruecknahme fuer Objekte ist aufwendig
 ## Zugriffskontrolle
 - Greift ein Subjekt auf ein Objekt zu, so muss durch Kontrollen sichergestellt werden, dass das Subjekt autorisiert ist
+- Beim complete-mediation Prinzip wird jeder Zugriff auf eine geschuetzte Ressource kontrolliert
 #### Berechtigungskontrolle
 - Bei dem Policy-Decision Point wird sichergestellt, dass das Subjekt zum Zugriff autorisiert ist
 - Ist das Subjekt autorisiert, so wird eine Berechtigungsbescheinigung ausgestellt

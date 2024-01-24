@@ -37,10 +37,10 @@
 - Beim erweiterbaren Hashing werden Elemente anhand des Praefix ihres Hashes in die Hashtabelle eingefuegt
 #### Aufbau
 - Ein Directory bildet Praefixe auf Buckets ab
-- Jeder Bucket kann bis zu zwei Eintraege enthalten
+- Jeder Bucket kann eine gewisse Anzahl an Eintraegen enthalten
 - Wird die Kapazitaet eines Buckets ueberschritten, so wird der Praefix des Directories vergroessert
 ###### Beispiel
 ![[Pasted image 20240113104629.png]]
 #### Lokale und Globale Tiefe
 - Die globale Tiefe ist die Groesse des Praefix, der im Directory gespeichert wird 
-- Die lokale Tiefe ist die Groesse des Praefix, der in einem Bucket betrachtet wird
+- Die lokale Tiefe ist die Groesse des Praefix, der in einem Bucket betrachtet werden muss, um die Elemente eindeutig zu identifizieren
