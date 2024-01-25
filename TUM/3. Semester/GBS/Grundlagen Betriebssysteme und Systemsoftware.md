@@ -8,4 +8,5 @@
 ### [[Speichermanagement]]
 ### [[Dateisysteme]]
 ### [[Ein- und Ausgabe]]
+### [[Virtualisierung]]
 ### <a href ="./GBS.apkg" download>Download Flashcards</a>

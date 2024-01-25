@@ -15,10 +15,12 @@
 - Block Special Files modellieren Speichergeraete wie Festplatten und USB-Speicher
 #### Dateizugriff
 - Eine Datei kann mit open geoeffnet, mit read gelesen und write geschrieben werden
-- Die Position in einer Datei kann mithilfe von lseek veraendert werden
 ## Dateisystemimplementierug
 - Eine physische Festplatte besteht aus einer Sequenz von Bloecken gleicher Groesse
-- Diese Bloecke werden von Dateien belegt
+- Diese Bloecke werden in einer Block Group zusammengefasst
+#### Block Groups
+- Ein Super-Block enthaelt allgemeine Informationen, wie die Anzahl und Groesse von i-nodes
+- Ein Block Group Descriptor Table enthaelt die Adresse der Block, sowie der i-node Allocation Bitmap und des i-node Tables
 #### i-nodes
 - Jede Datei wird durch eine i-node repraesentiert, die die Attribute der Datei, sowie die Adressen der belegten Bloecke abspeichert
 - Da i-nodes eine feste Groesse besitzen, muss fuer grosse Dateien eine Hierarchie von indirect Blocks angelegt werden
@@ -28,15 +30,9 @@
 ## Verzeichnisimplementierung
 - Verzeichnise organisieren Dateien mithilfe von ihren Verzeichniseintraegen
 #### Verzeichniseintrag
-- Beim Oeffnen einer Datei wird ihr Pfad verwendet, um den entsprechenden Verzeichniseintrag zu finden
+- Ein Verzeichniseintrag speichert den Namen, die i-node Nummer und Attribute einer Datei
+- Beim Oeffnen einer Datei wird ihr Pfad verwendet, um den entsprechenden Verzeichniseintrag und somit die i-node zu finden
 - Um Verzeichniseintraege anhand eines Dateinamen zu finden, wird eine Hashtabelle verwendet
-- Ein Verzeichniseintrag speichert den Namen, Adressinformationen und Attribute einer Datei
-###### Dateinamen
-- Dateinamen haben variable Laengen und werden im Heap gespeichert
-###### Adressinformationen
-- Adressinformationen werden in Form der Adresse der Datei auf der Festplatte, der Nummer ihres ersten Blocks, oder der Nummer ihrer i-node gespeichert
-###### Dateiattribute
-- Dateiattribute werden direkt im Verzeichniseintrag, oder in der i-node gespeichert
 #### Links
 - Um Dateien gemeinsam zu Nutzen, werden Links verwendet
 ###### Hard Links
@@ -55,4 +51,3 @@
 - Um die Existenz von mehreren Dateisystemen fuer den Nutzer zu abstrahieren, werden virtuelle Dateisysteme genutzt
 #### Buffer-Cache
 - Zuletzt gelesene Bloecke werden in einem Buffer im Hauptspeicher gecached
-- Ueber 

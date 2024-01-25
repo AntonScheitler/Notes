@@ -32,7 +32,7 @@
 - Modelle zur Rechtevergabe koennen auf unterschiedliche Weisen implementiert werden
 #### Access Control Lists
 - ACLs sind eine Implementierung einer Zugriffsmatrix
-- Fuer jedes Objekt wird hierbei eine Liste von Subjekten und ihren Rechten auf diese Datei verwaltet
+- Fuer jedes Objekt wird hierbei eine Liste von Subjekten und ihren Rechten auf dieses Objekt verwaltet
 ###### Nachteile
 - Das Aendern von Attributen eines Subjekts ist aufwendig
 #### Capabilities

@@ -5,4 +5,5 @@
 ### [[Relationale Entwurfstheorie]]
 ### [[Physische Datenorganisation]]
 ### [[Anfragebearbeitung]]
+### [[Transaktionen]]
 ### <a href ="./GDB.apkg" download>Download Flashcards</a>
