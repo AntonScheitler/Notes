@@ -19,6 +19,9 @@ $$\varepsilon(x) = \frac{\text{rd}(x) - x}{x}$$
 - Somit gilt fuer eine gerundete Zahl $x$:
 $$\text{rd}(x) = x(1 + \varepsilon)$$
 - Aufgrund des Rundungsverhaltens von Fliesskommazahlen ist die Addition nicht assoziativ
+#### Rundungsverfahren
+- Eine Fliesskommazahl wird abgerundet, falls $y | 0x$ gilt und $x$ beliebig ist, oder, falls $y0 | 1x$ gilt und $x$ ausschliesslich aus Nullen besteht
+- In allen anderen Faellen wird aufgerundet
 #### Maschinengenauigkeit
 - Die Maschinengenauigkeit beschreibt den maximalen relativen Fehler, der bei der Darstellung einer Zahl entstehen kann
 - Die Maschinengenauigkeit $\epsilon_{Ma}$ ist somit die groesste Zahl, fuer die gilt:

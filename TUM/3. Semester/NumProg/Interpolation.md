@@ -3,6 +3,7 @@
 #### Interpolationsproblem
 - Ein Approximant $p(x)$ muss an bestimmten Stuetzpunkte $(x_i, y_i)$ genau $f(x)$ entsprechen
 - $p(x)$ ist in diesem Fall ein Interpolant
+- Alle Interpolationsverfahren liefern denselben Interpolanten und unterscheiden sich nur in dessen Berechnung
 ## Polynomielle Interpolation
 - Es bietet sich an, bei der Interpolation, Polynome vom Grad $n$ zu verwenden, die die $n + 1$ Stuetzpunkte $(x_i, y_i)$ durchlaufen
 #### Lineares Gleichungssystem
@@ -35,10 +36,15 @@ $$L_k(x_i) = \begin{cases}
 \end{cases}$$
 - Werden Lagrange Polynome verwendet, so entsprechen die Koeffizienten den Stuetzwerten
 $$p(x) = \sum_{k = 0}^{n} y_k \cdot L_k(x)$$
+###### Vorteil
+- Es muss kein lineares Gleichungssystem ausgewertet werden, um die Koeffizienten der Polynome zu bestimmen
 #### Aitken-Neville Verfahren
-- Mithilfe des Aitken-Neville Verfahrens kann der Interpolant $p(x)$ an einer bestimmten Stelle $x_j$ ausgewertet werden, ohne, dass die Koeffizienten des Polynoms berechnet werden muessen
+- Mithilfe des Aitken-Neville Verfahrens kann der Interpolant $p(x)$ an einer bestimmten Stelle $x_j$ ausgewertet werden
 - Zur bestimmung von $p(x_j)$ wird ein rekursives Verfahren angewandt:
+$$p[i, 0] = f(x_i) = y_i$$
 $$p[i, k] = p[i, k - 1] + \frac{x_j - x_i}{x_{i + k} - x_i} \cdot (p[i + 1, k - 1] - p[i, k - 1])$$
+###### Vorteil
+- Da das Verfahren den Interpolanten nur auswertet, muessen weder die Koeffizienten noch die Polynome zur Interpolation bestimmt werden
 ###### Beispiel
 ![[Pasted image 20231113113035.png]]
 #### Newton Verfahren
@@ -57,27 +63,28 @@ $$p(x) = \sum_{i = 0}^n c_{0, i} \space \cdot \prod_{k = 0}^{i - 1} x - x_k$$
 - Stuetzpunkte sollten somit vorwiegend an den Raendern des Intervalls platziert werden
 ###### Beispiel
 ![[Pasted image 20231107172438.png]]
+#### Kondition
+- Muessen viele Punkte interpoliert werden, so ist der Grad des polynomiellen Interpolanten besonders gross
+- Das Interpolationsproblem wird hierdurch schlecht konditioniert
+- Das Verbessern der Genauigkeit durch das Hinzufuegen zusaetzlicher Stuetzpunkte verschlechtert somit die Kondition
 ## Hermite-Interpolation
 - Eine Interpolation ist moeglich, indem mehrere Polynome niedrigeren Grades zu einer geeigneten Form zusammengefuegt werden
 - Die Polynome werden nur in einem Intervall zwischen zwei Stuetzstellen $x_i, x_{i+1}$ konstruiert
-- Ein Interpolatn der Ordnung $n$ verwendet in jedem Stuetzpunkt ein Polynom vom Grad $n - 1$
 - In der Regel werden kubische Funkionen als Intervallfunktion verwendet
-#### Konstruktion
-- Es muss sichergestellt werden, dass das Gesamtpolynom stetig und differenzierbar ist
-- Eine Funktion muss somit an ihren Intervallgrenzen sowohl mit den Werten $y_i, y_{i+1}$ als auch den Ableitungswerten $y_i', y_{i+1}'$ uebereinstimmen
-- Die Koeffizienten der kubischen Intervallfunktion koennen somit mithilfe eines [[Lineare Gleichungssysteme|linearen Gleichungssystems]] bestimmt werden
-- Eine Intervallfunktion in Abhaengigkeit von $y_i, y_i', y_{i + 1}, y_{i + 1}'$ lautet somit:
-			$$p_i(t) = y_i(1 - 3t^2 + 2t^3) + y_{i + 1}(3t^2 - 2t^3) + h_i \cdot (y_i'(t - 2t^2 + t^3) + y_{i + 1}'(-t^2 + t^3)$$
-###### Transormation
-- Um die Koeffizienten effizient fuer jedes Intervall zu berechnen, werden die Koeffizienten im Intervall $[0, 1]$ in Abhaengigkeit von $y_0, y_0', y_1, y_1'$ ermittelt
-- Um eine Stelle eines beliebigen Intervalls $[x_i, x_{i+1}]$ in eine Stelle im Intervall $[0, 1]$ zu uebersetzen, wird eine Transformationsfunktion verwendet:
-$$h_i = x_{i+1} - x_i$$
-$$t_i(x) = \frac{x - x_i}{h_i}$$
-#### Vorteil
-- Durch die stueckweise Interpolation wird der Runge-Effekt verhindert
+#### Herleitung
+- Um eine allgemeine Intervallfunktionen zu bestimmen wird zunaechst eine Funktion fuer das Invervall $[0, 1]$ aufgestellt, wodurch sich folgende Basispolynome ergeben
+$$H_0(t) = 1 - 3t^2 + 2t^3$$
+$$H_1(t) = 3t^2 - 2t^3$$
+$$H_2(t) = t - 2t^2 + t^3$$
+$$H_3(t) = -t^2 + t^3$$
+- Um diese Funktion zu verallgemeinern muessen beliebige $x_i$ und $x_{i + 1}$ mithilfe einer Transformationsfunktion auf das Intervall $[0, 1]$  abgebildet werden:
+$$t_i(x) = \frac{x - x_i}{x_{i + 1} - x_i} = \frac{x - x_i}{h_i}$$
+- Hierdurch ergibt sich die allgemeine Form der kubischen Intervallfunktion:
+$$p_i(t) = y_i H_0(t) + y_{i + 1} H_1(t)+ h_i \cdot (y_i' H_2(t) + y_{i + 1}' H_3(t))$$
 #### Polynomsplines
-- Um zusaetzlich die zweifache Differenzierbarkeit des Interpolaten zu garantieren, werden Polynomsplines konstruiert
-- Aus $p_i''(1) = p_{i + 1}''(0)$ laesst sich herleiten:
+- Um die Ableitungen an den Stuetzpunkten zu bestimmen wird gefordert, dass der Interpolant an jeder Stelle doppelt differenzierbar ist
+- Zusaetzlich muessen die Ableitungen zum Start- und Endpunkt muessen gegeben sein, oder werden auf $0$ gesetzt
+- Fuer die uebrigen Ableitungen gilt:
 $$\begin{pmatrix}
 4 & 1 & & & \\
 1 & 4 & \ddots & \\
@@ -94,11 +101,18 @@ y_0' \\ 0 \\
 \vdots \\
 0 \\ y_n'
 \end{pmatrix}$$
-- Hierdurch lassen sich die Ableitungswerte $y_i'$ bestimmen und die Intervallfunktionen ermitteln
+- Wurden alle Ableitungen bestimmt, so koennen die Polynome in den Intervallen bestimmt werden durch:
+$$p_i(t) = y_i H_0(t) + y_{i + 1} H_1(t)+ h_i \cdot (y_i' H_2(t) + y_{i + 1}' H_3(t)), \space \space x_i \leq t \leq x_{i + 1}$$
+###### Vorteile
+- Das Interpolieren durch Polynomsplines ist deutlich effizienter als jede Form der polynomiellen Interpolation
+- Durch Polynomsplines wird der Runge-Effekt verhindert
+###### Besonderheiten
+- Eine Veraenderung in einem Stuetzpunkt hat bei Polynomsplines nur lokale Auswirkungen
 ## Methode der kleinsten Quadrate
 - Eine Punktwolke wird mit einer linearen Funktion $y = t + mx$ approximiert
 - Mithilfe der Punktewolke wird die Matrix $A$ erstellt
-- Mithilfe der [[Lineare Ausgleichsrechnung|Normalengleichung]] koennen die Koeffizienten $t$ und $m$ bestimmt werden
+- Mithilfe der [[Lineare Ausgleichsrechnung|Normalengleichung]] koennen die Koeffizienten $t$ und $m$ bestimmt werden:
+$$A^TAx = A^Tb$$
 ## Trigonometrische Interpolation
 - Es ist eine Menge von Punkten auf dem Einheitskreis gegeben
 - Mithilfe einer [[Erzeugendensysteme|Linearkombination]] aus Exponentialfunktionen kann diese Punktmenge interpoliert werden

@@ -4,4 +4,5 @@
 ### [[Loesen linearer Gleichungssysteme]]
 ### [[Differentialgleichungen]]
 ### [[Iterative Verfahren]]
+### [[Eigenwertprobleme]]
 ### <a href ="./NumProg.apkg" download>Download Flashcards</a>
