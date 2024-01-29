@@ -38,9 +38,10 @@ $$rd(1 + \epsilon_{Ma}) = 1$$
 $$c_{abs} = \frac{f(x + \delta x) - f(x)}{\delta x} = f'(x)$$
 $$c_{rel} = \frac{c_{abs} \cdot x}{f(x)}$$
 ## Stabilitaet
-- Da Eingaben stets eine Stoerung $\tilde{x}$ besitzen, gilt jede Loesung $\tilde{y}$ als akzeptables Ergebnis von $p(x)$, falls gilt:
-$$\tilde{y} = p(\tilde{x}), \tilde{x} \in \{\tilde{x}: |\tilde{x} - x| < \varepsilon\}$$
+- Eine Loesung $\tilde{y}$ gilt als akzeptables Ergebnis von $p(x)$, falls sie das exakte Ergebnis von $p(\tilde{x})$ ist, wobei sich $\tilde{x}$ kaum von $x$ unterscheidet:
+$$\tilde{y} = p(\tilde{x}), \space \space |\tilde{x} - x| < \varepsilon$$
 - Ein Algorithmus ist stabil, falls fuer alle Eingaben innerhalb einer erlaubten Stoerung, akzeptable Ergebnisse geliefert werden
+- Ist ein Problem schlecht konditioniert, so ist die Stabilitaet eines Algorithmus bedeutungslos
 ## Ausloeschung
 - Bei einer Subtraktion zweier, gleich grosser Zahlen kann es zu einem grossen Verlust relevanter Stellen und grossen relativen Fehlern kommen
 #### Beispiel

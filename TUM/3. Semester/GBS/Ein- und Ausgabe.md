@@ -6,10 +6,12 @@
 ###### Programmed IO
 - Die CPU kommuniziert direkt mit dem Geraet und wartet aktiv auf Antworten
 - Die CPU wird somit durch die I/O blockiert
+- Bei kurzer Kommunikation ist dies jedoch effizienter
 ###### Direct Memory Access
 - Die CPU gibt Parameter wie Speicheradressen an einen DMA Controller
 - Der DMA Controller initiiert die Uebertragung von Geraetedaten in den Hauptspeicher
-- Ist der Transfer abgeschlossen, so wird der DMA Controller informiert und die CPU unterbrochen
+- Ist der Transfer abgeschlossen, so wird der DMA Controller durch das Geraet informiert und unterbricht die CPU
+- Hierdurch muss die CPU die Daten nicht selbst in den Hauptspeicher laden und wird weniger oft unterbrochen
 ###### Beispiel
 ![[Pasted image 20240117180920.png]]
 ## Geraetesoftware
@@ -17,7 +19,7 @@
 #### Geraetetreiber
 - Die Treiber fuer ein Geraet gehoeren zum Betriebssytem
 - Treiber fuehren geraetespezifische Software aus, indem sie mit den Controllern der Geraete kommunizieren
-- Es muss sichergestellt werden, dass Treiber eine einheitliche Schnittstelle zum Rest des Betriebssystems ueber Funktionen wie open, read, write und close bieten
+- Es muss sichergestellt werden, dass Treiber durch geraeteunabhaengige Software eine einheitliche Schnittstelle zum Rest des Betriebssystems ueber Funktionen wie open, read, write und close bieten
 ###### Beispiel
 ![[Pasted image 20240117180844.png]]
 #### Spooler
@@ -46,3 +48,13 @@
 - Um die Abnutzung beim Schreiben auszugleichen, wird das wear leveling angewandt
 - Beim Ueberschreiben eines Blocks werden die, noch gueltigen, Daten kopiert und der gesamte Block geloescht
 - Die neuen, sowie die noch gueltigen, Daten werden in einen neuen Block geschrieben
+#### Timer
+- Timer werden genutzt, um den Zeitablauf zu erfassen und sind somit relevant fuer Scheduling und Profiling
+- Timer koennen hierbei auf unterschiedliche Arten realisiert werden
+###### Hardware-Timer
+- Der Hardware-Timer wird im Systemmodus gesetzt und generiert einen Interrupt, sobald er auslaeuft
+- Somit sind Hardware-Timer genauer, koennen jedoch durch die staendigen Interrputs ein Programm verlangsamen
+###### Soft-Timer
+- Soft-Timer laufen nur, wenn ein Programm im Systemmodus ist
+- Laeuft ein Soft-Timer aus, so kann ein Event behandelt werden, ohne, dass ein Interrupt noetig ist
+- Soft-Timer sind somit effizienter, jedoch auch ungenauer
