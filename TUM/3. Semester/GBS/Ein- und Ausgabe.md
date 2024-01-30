@@ -27,7 +27,7 @@
 - Der Spooler verwaltet hierbei Auftraege und interagiert mit dem Treiber des Geraets
 ## Geraete
 - Geraete bieten zusaetzliche Funktionen fuer einen Rechner
-- Man unterscheidet grundsaetzlich Blockorientierte Geraete, deren Inhalte adressierbar sind und Zeichenorientierte Geraete, welche Daten seriell transferieren
+- Man unterscheidet grundsaetzlich blockorientierte Geraete, deren Inhalte adressierbar sind und zeichenorientierte Geraete, welche Daten seriell transferieren
 #### Festplatten
 - Auf Festplatten koennen Daten permanent gespeichert werden
 ###### Aufbau

@@ -1,10 +1,14 @@
 ## Allgemeines
 - Transaktionen sind Datenuebertragungen mit bestimmten Eigenschaften
 #### Eigenschaften
-- Transaktionen werden atomar behandelt
-- Transaktionen muessen valide sein und duerfen die Konsistenz der Datenbank nicht verletzen
-- Transaktionen sind von anderen Transaktionen isoliert
-- Aenderungen, die von Transaktionen herbeigefuehrt werden, sind dauerhaft
+###### Atomicity
+- Transaktionen werden entweder komplett oder garnicht ausgefuehrt
+###### Consistency
+- Transaktionen muessen die Integritaetsbedingungen der Datenbank erfuellen
+###### Isolation
+- Parallele Transaktionen beeinflussen sich nicht gegenseitig
+###### Durability
+- Aenderungen, die durch Transaktionen commited wurden, sind dauerhaft
 #### Ausfuehrung
 - Eine Transaktion wird mit begin-of-transaction eingeleitet
 - War die Transaktion erfolgreich, so werden die Aenderungen ueber commit zurueckgeschrieben
