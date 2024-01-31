@@ -2,8 +2,11 @@
 - Die Fehlertoleranz von Daten kann mithilfe von RAID System sichergestellt werden
 #### Level
 - Verschiedene Level bieten verschiedene Vorteile im Bezug auf Fehlertoleranz und Datendurchsatz auf Kosten von Speicherbedarf
+###### RAID 0
+- Die Datenlast wird ueber striping gleichmaessig auf mehrere Platten verteilt
+![[Pasted image 20240130181520.png]]
 ###### RAID 1
-- Daten werden redundant ueber zwei Platten gespeichert
+- Daten werden mithilfe von mirroring ueber zwei Platten gespeichert
 - Hierdurch wird zusaetzlich eine Lastverteilung beim Lesen ermoeglicht, der Speicherbedarf verdoppelt sich hierdurch jedoch
 ![[Pasted image 20231220184419.png]]
 ###### RAID 5

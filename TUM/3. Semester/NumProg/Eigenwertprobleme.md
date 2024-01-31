@@ -5,6 +5,9 @@ $$Ax = A(c_1u_1 + ... + c_n u_n)$$
 $$Ax = \lambda_1c_1u_1 + ... + \lambda_nc_1u_n$$
 $$A^kx = \lambda_1^k(c_1u_1 + ... + \Big ( \frac{\lambda_n}{\lambda_1} \Big )^k c_1u_n)$$
 - Multipliziert man somit $x$ nur oft genug mit $A$, so erhaelt man ein eine Approximation des Eigenvektors des betragsmaessig groessten Eigenwerts
+###### Vorgehen
+- Mithilfe eines Startvektors $x^{(0)}$ kann folgendermassen iteriert werden:
+- TODO
 #### Berechnen des Eigenwerts
 - Ist $x$ der approximierte Eigenvektor, so gilt fuer den entsprechenden Eigenwert $\lambda$:
 $$\lambda = \frac{x^T A x}{x^T x}$$
@@ -30,3 +33,10 @@ $$(A - \mu E_n) x^{(k + 1)} = x^{(k)}$$
 - Das Verfahren konvergiert in der Regel schneller
 ###### Nachteile
 - Da sich $\mu^{(k)}$ in jeder Iteration veraendert, kann fuer das Loesen des LGS $(A - \mu^{(k)}E_n)x^{(k + 1)}$ nicht mehr die [[Loesen linearer Gleichungssysteme|LR-Dekomposition]] verwendet werden
+## QR Iteration
+- Eine Folge $A_k$ von Matrizen wird erzeugt, deren Eigenwerte denen von $A$ entsprechen und die gegen eine Dreiecksmatrix konvergieren
+- Wurde die Dreiecksmatrix erreicht, so koennen die Eigenwerte abgelesen werden
+#### Vorgehen
+- TODO
+#### Reduktionsalgorithmus
+- Die QR Zerlegung einer Tridiagonalmatrix ist effizient zu realisieren
