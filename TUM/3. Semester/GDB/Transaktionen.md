@@ -38,13 +38,13 @@
 - Bei der physischen Protokollierung werden die absoluten Werte von Daten protokolliert
 - Ein Log saehe hierbei folgendermassen aus:
 $$[\#1, T_1, BOT, 0]$$
-$$[\#2, T_1, X = 101, X = 100, \#1]$$
+$$[\#2, T_1, P_X, X = 101, X = 100, \#1]$$
 $$[\#3, T_1, commit, \#2]$$
 ###### Logische Protokollierung
 - Bei der logischen Protokollierung werden die relativen Aenderungen von Daten protokolliert
 - Ein Log saehe hierbei folgendermassen aus:
 $$[\#1, T_1, BOT, 0]$$
-$$[\#2, T_1, X = X + 1, X = X - 1, \#1]$$
+$$[\#2, T_1, P_X, X = X + 1, X = X - 1, \#1]$$
 $$[\#3, T_1, commit, \#2]$$
 ###### Before-Image
 - Das before-image ist der Zustand vor der Ausfuehrung einer gegebenen Transaktion

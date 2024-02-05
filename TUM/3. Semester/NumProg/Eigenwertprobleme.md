@@ -6,9 +6,12 @@ $$Ax = \lambda_1c_1u_1 + ... + \lambda_nc_1u_n$$
 $$A^kx = \lambda_1^k(c_1u_1 + ... + \Big ( \frac{\lambda_n}{\lambda_1} \Big )^k c_1u_n)$$
 - Multipliziert man somit $x$ nur oft genug mit $A$, so erhaelt man ein eine Approximation des Eigenvektors des betragsmaessig groessten Eigenwerts
 ###### Vorgehen
-- Mithilfe eines Startvektors $x^{(0)}$ kann folgendermassen iteriert werden:
-- TODO
-#### Berechnen des Eigenwerts
+- Mithilfe eines Startvektors $x^{(0)}$, mit $|| x^{(0)} || = 1$ kann folgendermassen iteriert werden:
+	1. $w^{(k)} = A x^{(k)}$
+	2. $\lambda^{(k)} = (x^{(k)})^T w^{(k)}$
+	3. $x^{(k + 1)} = \frac{w^{(k)}}{||w^{(k)}||}$
+- $x^{(k)}$ und $\lambda^{(k)}$ sind hierbei die Approximationen des groessten Eigenwerts und des entsprechenden Eigenvektors im $k$-ten Schritt
+#### Rayleigh Quotient
 - Ist $x$ der approximierte Eigenvektor, so gilt fuer den entsprechenden Eigenwert $\lambda$:
 $$\lambda = \frac{x^T A x}{x^T x}$$
 #### Bestimmen zusaetzlicher Eigenwerte
@@ -17,9 +20,18 @@ $$A' = A - \lambda_1 x_1 x_1^T$$
 - $A'$ hat hierbei dieselben Eigenwerte wie $A$, jedoch gilt $\lambda_1 = 0$
 - In nachfolgenden Iterationen koennen somit weitere Eigenwerte besitmmt werden
 #### Nachteile
-- Jede Vektoriteration hat einen Aufwand von $O(n^2)$
+- Jede Vektoriteration hat wegen der Matrix-Vektor Multiplikation einen Aufwand von $O(n^2)$
+#### Kondition
+- Das Bestimmen von Eigenwerten ist gut konditioniert, das von Eigenvektoren ist schlecht konditioniert
+- Die Kondition einer Matrix wird mithilfe ihrer Spektralnorm bestimmt:
+$$cond(A) = ||A||_2 \cdot ||A^{-1}||_2$$
+$$||A||_2 = max | \sqrt{\lambda_i(A^TA)} |$$
+- Fuer symmetrische Matrizen gilt somit:
+$$||A||_2 = max | \lambda_i(A) |$$
+$$cond(A) = \frac{max | \lambda_i(A) |}{min | \lambda_i(A) |} $$
 #### Inverse Iteration
-- Soll der Eigenwert ermittelt werden, dessen Wert nahe einer Schaetzung $\mu$ liegt, so muss $(A - \mu E_n)^{-1}$ in einer Vektoriteration genutzt werden
+- Soll der Eigenwert ermittelt werden, dessen Wert nahe einer Schaetzung $\mu$ liegt, so muss $(A - \mu E_n)^{-1}$ anstelle von $A$ in einer Vektoriteration genutzt werden
+- $A$ wird hierdurch so veraendert, dass ihr groesster Eigenwert nun nahe $\mu$ liegt
 - Statt das Inverse der Matrix zu berechnen, kann jedoch das Verhalten von $(A - \mu E_n)^{-1}$ ausgenutzt werden
 - Hierbei gilt:
 $$x^{(k + 1)} = (A - \mu E_n)^{-1} x^{(k)}$$

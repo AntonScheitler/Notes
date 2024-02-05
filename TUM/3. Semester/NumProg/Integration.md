@@ -42,6 +42,10 @@ $$Q_{i, k} = Q_{i, k-1} + \frac{Q_{i, k-1} - Q_{i-1, k-1}}{\frac{h_{i - k}^2}{h_
 ![[Pasted image 20231211104351.png]]
 #### Gauss Quadratur
 - Der Genauigkeitsgrad wird maximiert, indem die variablen Stuetzpunkte und ihre Gewichte optimal gewaehlt werden
-- Um Polynome vom Grad $2n - 1$ exakt zu interpolieren, muessen $w_i$ und $x_i$ so bestimmt werden, dass gilt:
-$$\sum_{i=1}^n w_i \cdot f(x_i) = \int_a^b p(x)\text{d}x$$
+- Mithilfe von $n$ Stuetzpunkten koennen Polynome vom Grad $2n - 1$ exakt integriert werden
+- Hierfuer, muessen $w_i$ und $x_i$ so bestimmt werden, dass gilt:
+$$\sum_{i=0}^{n - 1} w_i \cdot f_k(x_i) = \int_{-1}^1 f_k(x)\text{d}x$$
+- Wobei gilt:
+$$f_k(x) = x^k$$
 - Das Integral kann hierbei nur im Intervall $[-1, 1]$ approximiert werden
+- Stuetzpunkte, sowie ihre Gewichte fuer haeufige Polynome sind in der Regel tabelliert
