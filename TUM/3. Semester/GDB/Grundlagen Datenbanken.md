@@ -6,4 +6,5 @@
 ### [[Physische Datenorganisation]]
 ### [[Anfragebearbeitung]]
 ### [[Transaktionen]]
+### [[Mehrbenutzersynchronisation]]
 ### <a href ="./GDB.apkg" download>Download Flashcards</a>
