@@ -21,9 +21,9 @@ $$\varepsilon(x) = \Big | \frac{\text{rd}(x) - x}{x} \Big |$$
 - Eine Fliesskommazahl wird abgerundet, falls $y | 0x$ gilt und $x$ beliebig ist, oder, falls $y0 | 1x$ gilt und $x$ ausschliesslich aus Nullen besteht
 - In allen anderen Faellen wird aufgerundet
 #### Maschinengenauigkeit
-- Die Maschinengenauigkeit beschreibt den maximalen relativen Fehler, der bei der Darstellung einer Zahl entstehen kann
-- Die Maschinengenauigkeit $\epsilon_{Ma}$ ist somit die groesste Zahl, fuer die gilt:
-$$rd(1 + \epsilon_{Ma}) = 1$$
+- Die Maschinengenauigkeit $\epsilon_{MA}$ beschreibt den maximalen relativen Fehler, der bei der Darstellung einer Zahl entstehen kann:
+$$\epsilon_{MA} = \Big (\frac12 \Big ) \cdot B^{(1 - M)}$$
+- $B$ entspricht hierbei der Zahlenbasis und $M$ der Anzahl der Mantissenbits, inklusive der fuehrenden Eins
 ## Kondition
 - Die Kondition beschreibt, wie sehr die Stoerung $\delta y$ in der Ausgabe von der Stoerung $\delta x$ in der Eingabe beeinflusst wird
 - Haben selbst kleine Aenderungen in $\delta x$ grosse Auswirkungen auf $\delta y$, so liegt eine schlechte Kondition vor, andernfalls eine Gute
