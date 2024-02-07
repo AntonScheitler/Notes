@@ -24,6 +24,7 @@ x & x & x & ... \\
 ## Pivotsuche
 - Die Diagonalwerte einer Matrix werden als Pivot bezeichnet
 - Um Teilungen durch 0 zu verhindern, muss sichergestellt werden, dass die Pivots einer Matrix nicht 0 sind
+- Die Pivotsuche verbessert zudem die Stabilitaet des Loesen von Gleichungssystemen
 #### Suchstrategien
 - Ein Pivot kann auf unterschiedliche Weise ermittelt werden
 ###### Zeilen- und Spaltenpivotsuche

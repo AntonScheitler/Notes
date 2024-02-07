@@ -30,8 +30,20 @@ $$r_k^{(i)} = b_k - \sum_{j = 1}^{k - 1} a_{kj}x_j^{(i + 1)} - \sum_{j = k}^{n}a
 - Die Approximation $x^{(i)}$ wird ebenso komponentenweise bestimmt:
 $$x_k^{(i+1)} = x_k^{(i)} + \frac{1}{a_{kk}} \cdot r_k^{(i)}$$
 #### Methode des steilsten Abstiegs
-- TODO
-## Newton Verfahren
-#### Damping und Over-Relaxation
-- Ein Aktualisierungsvektor $y$ wird haeufig mit einer Konstante $0 < \alpha < 1$, beziehungsweise $1 < \alpha < 2$ multipliziert, sodass fuer den naechsten Approximanten gilt:
-$$x^{(i + 1)} = x^{(i)} + \alpha y$$
+- Fuer $M$ wird keine Matrix gewaehlt
+- Stattdessen wird das Residuum mit einer optimalen Schrittweite $\alpha^{(i)}$ gestreckt:
+$$\alpha^{(i)} = \frac{r^{(i)^T}r^{(i)}}{r^{(i)^T}Ar^{(i)}}$$
+- Hierbei gilt:
+$$x^{(i + 1)} = x^{(i)} + \alpha^{(i)}r^{(i)}$$
+## Nullstellenapproximation
+- Um Nullstellen iterativ zu approximieren, koennen unterschiedliche Verfahren verwendet werden
+#### Newton Verfahren
+- Die Ableitung einer Funktion $f$ zu einem Startpunkt $x^{(0)}$ wird berechnet und ihre Nullstelle ermittelt
+- Diese Nullstelle dient als Startpunkt fuer den naechsten Iterationsschritt
+###### Beispiel
+![[Pasted image 20240207084111.png]]
+#### Sekantenverfahren
+- Das Sektantenverfahren erfolgt aehnlich zum Newton Verfahren
+- Hierbei wird jedoch nicht die Ableitung gebildet, sondern stattdessen eine Sektante durch zwei Startpunkte konstruiert
+###### Beispiel
+![[Pasted image 20240207084245.png]]
