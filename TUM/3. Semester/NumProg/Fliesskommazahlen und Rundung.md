@@ -15,9 +15,7 @@
 - Ein solches Ergebnis muss mithilfe einer Rundung in den darstellbaren Bereich gebracht werden
 #### Rundungsfehler
 - Der relative Rundungsfehler $\varepsilon$ einer Fliesskommazahl $x$ wird beschrieben durch:
-$$\varepsilon(x) = \frac{\text{rd}(x) - x}{x}$$
-- Somit gilt fuer eine gerundete Zahl $x$:
-$$\text{rd}(x) = x(1 + \varepsilon)$$
+$$\varepsilon(x) = \Big | \frac{\text{rd}(x) - x}{x} \Big |$$
 - Aufgrund des Rundungsverhaltens von Fliesskommazahlen ist die Addition nicht assoziativ
 #### Rundungsverfahren
 - Eine Fliesskommazahl wird abgerundet, falls $y | 0x$ gilt und $x$ beliebig ist, oder, falls $y0 | 1x$ gilt und $x$ ausschliesslich aus Nullen besteht
@@ -26,9 +24,6 @@ $$\text{rd}(x) = x(1 + \varepsilon)$$
 - Die Maschinengenauigkeit beschreibt den maximalen relativen Fehler, der bei der Darstellung einer Zahl entstehen kann
 - Die Maschinengenauigkeit $\epsilon_{Ma}$ ist somit die groesste Zahl, fuer die gilt:
 $$rd(1 + \epsilon_{Ma}) = 1$$
-## Fliesskommaarithmetik
-- Waehrend einer Berechnung mit Fliesskommazahlen koennen sich Rundungsfehler akkumulieren
-- Um dies zu verhindern, wird der moegliche Rundungsfehler bei einer Operation mithilfe der Schranke $\tilde{\varepsilon} \in O(\varrho)$ eingegrenzt
 ## Kondition
 - Die Kondition beschreibt, wie sehr die Stoerung $\delta y$ in der Ausgabe von der Stoerung $\delta x$ in der Eingabe beeinflusst wird
 - Haben selbst kleine Aenderungen in $\delta x$ grosse Auswirkungen auf $\delta y$, so liegt eine schlechte Kondition vor, andernfalls eine Gute
@@ -41,7 +36,11 @@ $$c_{rel} = \frac{c_{abs} \cdot x}{f(x)}$$
 - Eine Loesung $\tilde{y}$ gilt als akzeptables Ergebnis von $p(x)$, falls sie das exakte Ergebnis von $p(\tilde{x})$ ist, wobei sich $\tilde{x}$ kaum von $x$ unterscheidet:
 $$\tilde{y} = p(\tilde{x}), \space \space |\tilde{x} - x| < \varepsilon$$
 - Ein Algorithmus ist stabil, falls fuer alle Eingaben innerhalb einer erlaubten Stoerung, akzeptable Ergebnisse geliefert werden
+- Dies ist nicht der Fall, falls sich Rundungfehler akkumulieren und stark abgewandelte Ergebnisse liefern
 - Ist ein Problem schlecht konditioniert, so ist die Stabilitaet eines Algorithmus bedeutungslos
+#### Epsilontik
+- Um die Stabilitaet eines Algorithmus zu messen, wird in jede Operation ein Fehler $\epsilon_i$ einberechnet
+- Der resultierende relative Fehler beschreibt die Stabilitaet des Algorithmus
 ## Ausloeschung
 - Bei einer Subtraktion zweier, gleich grosser Zahlen kann es zu einem grossen Verlust relevanter Stellen und grossen relativen Fehlern kommen
 #### Beispiel
