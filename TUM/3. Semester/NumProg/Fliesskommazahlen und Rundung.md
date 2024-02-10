@@ -23,7 +23,7 @@ $$\varepsilon(x) = \Big | \frac{\text{rd}(x) - x}{x} \Big |$$
 #### Maschinengenauigkeit
 - Die Maschinengenauigkeit $\epsilon_{MA}$ beschreibt den maximalen relativen Fehler, der bei der Darstellung einer Zahl entstehen kann:
 $$\epsilon_{MA} = \Big (\frac12 \Big ) \cdot B^{(1 - M)}$$
-- $B$ entspricht hierbei der Zahlenbasis und $M$ der Anzahl der Mantissenbits, inklusive der fuehrenden Eins
+- $B$ entspricht hierbei der Zahlenbasis und $M$ der Anzahl der Mantissenbits, inklusive der fuehrenden $1$
 ## Kondition
 - Die Kondition beschreibt, wie sehr die Stoerung $\delta y$ in der Ausgabe von der Stoerung $\delta x$ in der Eingabe beeinflusst wird
 - Haben selbst kleine Aenderungen in $\delta x$ grosse Auswirkungen auf $\delta y$, so liegt eine schlechte Kondition vor, andernfalls eine Gute
@@ -31,7 +31,7 @@ $$\epsilon_{MA} = \Big (\frac12 \Big ) \cdot B^{(1 - M)}$$
 - Je nach Kondition, wird einer Operation eine Konditionsnummer zugeteilt
 - Die absolute und relative Konditionsnummern $c_{abs}$  und $c_{rel}$ der Operation $f$ ergeben sich durch:
 $$c_{abs} = \frac{f(x + \delta x) - f(x)}{\delta x} = f'(x)$$
-$$c_{rel} = \frac{c_{abs} \cdot x}{f(x)}$$
+$$c_{rel} = \left | \frac{c_{abs} \cdot x}{f(x)} \right |$$
 ## Stabilitaet
 - Eine Loesung $\tilde{y}$ gilt als akzeptables Ergebnis von $p(x)$, falls sie das exakte Ergebnis von $p(\tilde{x})$ ist, wobei sich $\tilde{x}$ kaum von $x$ unterscheidet:
 $$\tilde{y} = p(\tilde{x}), \space \space |\tilde{x} - x| < \varepsilon$$
