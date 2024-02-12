@@ -37,6 +37,8 @@
 - Konfliktoperationen koennen mithilfe eines Serialisierbarkeitsgraphen modelliert werden
 - Transaktionen werden mithilfe von Knoten repraesentiert
 - Herrscht eine Konfliktoperation zwischen zwei Transaktionen so werden sie ueber eine Kante verknuepft, die bei der ausloesenden Transaktion beginnt
+###### Zusammenhang mit Serialisierbarkeit
+- Eine Historie ist genau dann serialisierbar, falls ihr Serialisierbarkeitsgraph azyklisch ist
 ###### Beispiel
 ![[Pasted image 20240210121748.png]]
 #### Ruecksetzbarkeit
@@ -44,7 +46,7 @@
 - Eine lesende Transaktion darf somit nicht commited werden, bis alle schreibenden Transaktionen, von denen gelesen wurde commited sind 
 #### Kaskadierendes Ruecksetzen
 - Baut sich eine Abhaengigkeit von einer Transaktion auf, die schluessendlich abgebrochen wird, so muessen alle abhaengigen Transaktioen ebenfalls abgebrochen werden, was die Performanz des Datenbanksystems stark verschlechtert
-- Dies kann verhindert werden, indem erst auf veraenderte Daten zugegriffen wird, nachdem die entsprechende Transaktion commited wurde
+- Dies kann verhindert werden, indem veraenderte Daten erst gelesen werden, nachdem die entsprechende Transaktion commited wurde
 ###### Beispiel
 ![[Pasted image 20240210130643.png]]
 #### Striktheit

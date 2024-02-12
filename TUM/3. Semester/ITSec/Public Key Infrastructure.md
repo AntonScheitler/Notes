@@ -15,7 +15,7 @@
 ![[Pasted image 20231212103916.png]]
 #### Validierung
 - Mithilfe des Online Certificate Status Protocols kann eine Entitaet die Validitaet ihres Zertifikats ueber eine CA ueberpruefen
-- Die Validitaet muss hierbei haeufig und regelmaessig ueberprueft werden
+- Die Validitaet muss hierbei haeufig und regelmaessig ueberprueft werden, da Zertifikate zurueckgerufen werden koennen
 ###### Beispiel
 ![[Pasted image 20231212110134.png]]
 ## Kerberos

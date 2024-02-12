@@ -38,8 +38,10 @@ $$x^{(i + 1)} = x^{(i)} + \alpha^{(i)}r^{(i)}$$
 ## Nullstellenapproximation
 - Um Nullstellen iterativ zu approximieren, koennen unterschiedliche Verfahren verwendet werden
 #### Newton Verfahren
-- Die Ableitung einer Funktion $f$ zu einem Startpunkt $x^{(0)}$ wird berechnet und ihre Nullstelle ermittelt
+- Die Tangente einer Funktion $f$ zu einem Startpunkt $x^{(0)}$ wird berechnet und ihre Nullstelle ermittelt
 - Diese Nullstelle dient als Startpunkt fuer den naechsten Iterationsschritt
+- Somit gilt:
+$$x^{(k + 1)} = x^{(k)} - \frac{f(x^{(k)})}{f'(x^{(k)})}$$
 ###### Beispiel
 ![[Pasted image 20240207084111.png]]
 #### Sekantenverfahren
