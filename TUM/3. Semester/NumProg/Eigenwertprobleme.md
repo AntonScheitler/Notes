@@ -51,7 +51,7 @@ $$cond(A) = \frac{max | \lambda_i(A) |}{min | \lambda_i(A) |} $$
 - Eine Folge $A^{(i)}$ von Matrizen wird erzeugt, deren Eigenwerte denen von $A$ entsprechen und die gegen eine Dreiecksmatrix konvergieren
 - Wurde die Dreiecksmatrix erreicht, so koennen die Eigenwerte abgelesen werden
 #### Vorgehen
-- Es wird wiederholt die QR Zerlegung von $A^{(i)}$ ermittelt, um $A^{(i + 1)}$ zu bestimmen:
+- Es wird wiederholt die [[Loesen linearer Gleichungssysteme|QR Zerlegung]] von $A^{(i)}$ ermittelt, um $A^{(i + 1)}$ zu bestimmen:
 	1. $A^{(i)} = QR$
 	2. $A^{(i + 1)} = RQ$
 	3. Falls, die Eintraege ueber der Diagonalen von $A^{(i + 1)}$ klein genug sind, ist die Iteration beendet und die Eigenwerte koennen abgelesen werden
