@@ -43,10 +43,11 @@ $$(A - \mu E_n) x^{(k + 1)} = x^{(k)}$$
 - Das Bestimmen von Eigenwerten ist gut konditioniert, das von Eigenvektoren ist schlecht konditioniert
 - Die Kondition einer Matrix wird mithilfe ihrer Spektralnorm bestimmt:
 $$cond(A) = ||A||_2 \cdot ||A^{-1}||_2$$
-$$||A||_2 = max | \sqrt{\lambda_i(A^TA)} |$$
+$$||A||_2 = max \left | \sqrt{\lambda_i(A^TA)} \right |$$
+$$||A^{-1}||_2 = \frac{1}{min \left | \sqrt{\lambda_i(A^TA)} \right|}$$
 - Fuer symmetrische Matrizen gilt somit:
-$$||A||_2 = max | \lambda_i(A) |$$
-$$cond(A) = \frac{max | \lambda_i(A) |}{min | \lambda_i(A) |} $$
+$$||A||_2 = max \left | \lambda_i(A) \right |$$
+$$cond(A) = \frac{max \left | \lambda_i(A) \right |}{min \left | \lambda_i(A) \right |} $$
 ## QR Iteration
 - Eine Folge $A^{(i)}$ von Matrizen wird erzeugt, deren Eigenwerte denen von $A$ entsprechen und die gegen eine Dreiecksmatrix konvergieren
 - Wurde die Dreiecksmatrix erreicht, so koennen die Eigenwerte abgelesen werden
