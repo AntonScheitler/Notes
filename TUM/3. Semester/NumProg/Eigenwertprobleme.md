@@ -23,6 +23,12 @@ $$A' = A - \lambda_1 x_1 x_1^T$$
 - In nachfolgenden Iterationen koennen somit weitere Eigenwerte besitmmt werden
 ###### Nachteile
 - Jede Vektoriteration hat wegen der Matrix-Vektor Multiplikation einen Aufwand von $O(n^2)$
+#### Konvergenzrate
+- Mithilfe von Shifts $\mu$, die der diagonalen von $A$ abgezogen werden, kann die Konvergenzrate der Power Iteration beeinflusst werden
+- Die Konvergenzrate wird definiert durch:
+$$\left | \frac{\lambda_1 - \mu}{\lambda_2 - \mu} \right |$$
+- $\lambda_1 - \mu$ ist hierbei der kleinstmoegliche Shift und $\lambda_2 - \mu$ der groesstmoegliche 
+- Je kleiner die Konvergenzrate, desto schneller ist die Loesung bekannt
 #### Inverse Iteration
 - Soll der Eigenwert ermittelt werden, dessen Wert nahe einer Schaetzung $\mu$ liegt, so muss $(A - \mu E_n)^{-1}$ anstelle von $A$ in einer Vektoriteration genutzt werden
 - $A$ wird hierdurch so veraendert, dass ihr groesster Eigenwert nun nahe $\mu$ liegt

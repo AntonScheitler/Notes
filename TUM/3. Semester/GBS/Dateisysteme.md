@@ -15,7 +15,7 @@
 - Block Special Files modellieren Speichergeraete wie Festplatten und USB-Speicher
 #### Dateizugriff
 - Eine Datei kann mit open geoeffnet, mit read gelesen und write geschrieben werden
-## Dateisystemimplementierug
+## Dateisystemimplementierung
 - Eine physische Festplatte besteht aus einer Sequenz von Bloecken gleicher Groesse
 - Diese Bloecke werden in einer Block Group zusammengefasst
 #### Block Groups
@@ -27,6 +27,14 @@
 - Die Groesse eines indirect Blocks entspricht der Groesse eines Blocks auf der Festplatte 
 ###### Beispiel
 ![[Pasted image 20240118095713.png]]
+#### Alternativen
+- In einem FAT Dateisystem, wird fuer jede Datei eine Liste von Bloecken verwaltet, die von der Datei belegt werden
+- Die File Allocation Table, oder FAT, die diese Listen enthaelt wird im Hauptspeicher gehalten
+###### Vorteile
+- Da Informationen ueber die gespeicherten Bloecke im Hauptspeicher liegen, ist der Random Access auf einzelne Bloecke schneller
+###### Nachteile
+- Ein Teil des Hauptspeichers muss stets fuer die FAT aufgewendet werden
+
 ## Verzeichnisimplementierung
 - Verzeichnise organisieren Dateien mithilfe von ihren Verzeichniseintraegen
 #### Verzeichniseintrag
