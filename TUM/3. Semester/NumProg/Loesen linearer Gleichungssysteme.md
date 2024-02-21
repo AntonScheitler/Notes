@@ -39,16 +39,16 @@ c & s \\
 ###### Beispiel
 - Es sei $A \in \mathbb{R}^{2 \times 2}$ mit:
 $$A = \begin{pmatrix}
-a & b \\
-d & e \\
+a & d \\
+b & e \\
 \end{pmatrix}$$
 - Fuer die Rotationsmatrix $G_{\varphi}$ muss somit gelten:
-$$G_{\varphi} \begin{pmatrix}a \\ d \end{pmatrix} = \begin{pmatrix}
+$$G_{\varphi} \begin{pmatrix}a \\ b \end{pmatrix} = \begin{pmatrix}
 c & s \\
 -s & c \\
 \end{pmatrix}\begin{pmatrix}
 a \\
-d
+b
 \end{pmatrix} \overset{!}{=} \begin{pmatrix}
 r \\
 0 \\

@@ -33,7 +33,7 @@
 ###### Vorteile
 - Da Informationen ueber die gespeicherten Bloecke im Hauptspeicher liegen, ist der Random Access auf einzelne Bloecke schneller
 ###### Nachteile
-- Ein Teil des Hauptspeichers muss stets fuer die FAT aufgewendet werden
+- Ein Teil des Hauptspeichers wird stets von der FAT belegt
 
 ## Verzeichnisimplementierung
 - Verzeichnise organisieren Dateien mithilfe von ihren Verzeichniseintraegen
