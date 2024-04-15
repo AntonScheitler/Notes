@@ -142,9 +142,9 @@ v_{n-1}
 #### Diskrete Inverse Fourier Transformation
 - Die diskrete inverse Fourier Transformation erfolgt aehnlich zur regulaeren Fourier Transformation
 ###### Vorgehen
-- Gegeben sind ein Gewichtungsvektor $c4, sowie $\omega = e^{\frac{2\pi i}{n}}$
+- Gegeben sind ein Gewichtungsvektor $c$, sowie $\omega = e^{\frac{2\pi i}{n}}$
 - $v$ wird bestimmt ueber:
-$$c_k = \frac{1}{n} \cdot \sum_{j=0}^{n-1} v_j \cdot \omega^{jk}$$
+$$v_k = \sum_{j=0}^{n-1} c_j \cdot \omega^{jk}$$
 - Dies wird mit einer Matrix Vektor Multiplikation realisiert:
 $$\begin{pmatrix}
 v_0 \\

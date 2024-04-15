@@ -28,7 +28,7 @@ $$y_{k + 1} = y_k + \delta t \cdot f(t_k, y_k)$$
 $$y_{k + 1} = y_k + \frac{\delta t}{2} \big (f(t_k, y_k) + f(t_{k+1}, y_k + \delta t \cdot f(t_k, y_k)) \big )$$
 #### Runge-Kuttasche Methode
 - Zwischen den Zeitpunkten $t_k$ und $t_{k + 1}$ werden zwei zusaetzliche Stuetzpunkte definiert
-- Die Steigungen $f(t_k, y_k)$ und $f(t_{k + 1}, y_{k + 1})$, sowie die an den Stuetzpunkten wird fuer eine bessere Approximation der Steigung zum Zeitpunkt $t_k$ genutzt
+1. Die Steigungen $f(t_k, y_k)$ und $f(t_{k + 1}, y_{k + 1})$, sowie die an den Stuetzpunkten wird fuer eine bessere Approximation der Steigung zum Zeitpunkt $t_k$ genutzt
 - Die Anzahl der Auswertungen von $f$ wird somit vervierfacht
 #### Mehrschrittmethoden
 - Um $y_{k+1}$ zu ermitteln, werden die Differenzenquotienten $f(t_k, y_k)$ und $f(t_{k-1}, y_{k-1})$ verwendet
