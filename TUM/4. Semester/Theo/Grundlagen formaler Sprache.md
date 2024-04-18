@@ -19,9 +19,12 @@
 ## Grammatik
 - Die Grammatik einer Sprache legt ihr verhalten fest und wird als $4$-Tupel $G = (V, \Sigma, P, S)$ definiert
 #### Aufbau
-- $V$ ist eine Menge von Nichtterminalen und entspricht den inneren Knoten eines Syntaxbaums
-- $\Sigma$ ist eine Menge von Terminalen und entspricht den Blaettern eines Syntaxbaums
-- $P \subseteq (V \cup \Sigma)^{\star} \times (V \cup \Sigma)^{\star}$ ist eine Menge von Projektionen und legt Verbindungen zwischen Woertern der Sprache fest
-- $S \in V$ dient als Startpunkt fuer einen Ausdruck und entspricht der Wurzel eines Syntaxbaums
-###### Beispiel
-![[Pasted image 20240415172600.png]]
+- $V$ ist eine Menge von Nichtterminalen
+- $\Sigma$ ist eine Menge von Terminalen
+- $P \subseteq (V \cup \Sigma)^{\star} \times (V \cup \Sigma)^{\star}$ ist eine Menge von Projektionen und legen den Aufbau von Woertern der Sprache fest
+- $S \in V$ dient als Startpunkt fuer einen Ausdruck
+###### Ableitungsrelationen
+- In einer Grammatik koennen ueber Ableitungsrelationen $\rightarrow_G$ anhand von Projektionen Woerter erzeugt werden werden
+- Die Menge aller Woerter, die von einer Grammatik erzeugt werden koennen, werden mit $L(G)$ beschrieben
+###### Wortproblem
+- Im Wortproblem muss festgestellt werden, ob ein Wort aus einer gegebenen Grammatik abgeleitet werden kann
