@@ -21,10 +21,24 @@
 #### Aufbau
 - $V$ ist eine Menge von Nichtterminalen
 - $\Sigma$ ist eine Menge von Terminalen
-- $P \subseteq (V \cup \Sigma)^{\star} \times (V \cup \Sigma)^{\star}$ ist eine Menge von Projektionen und legen den Aufbau von Woertern der Sprache fest
+- $P \subseteq (V \cup \Sigma)^{\star} \times (V \cup \Sigma)^{\star}$ ist eine Menge von Produktionen und legen den Aufbau von Woertern der Sprache fest
 - $S \in V$ dient als Startpunkt fuer einen Ausdruck
 ###### Ableitungsrelationen
-- In einer Grammatik koennen ueber Ableitungsrelationen $\rightarrow_G$ anhand von Projektionen Woerter erzeugt werden werden
+- In einer Grammatik koennen ueber Ableitungsrelationen $\rightarrow_G$ anhand von Produktionen Woerter erzeugt werden werden
 - Die Menge aller Woerter, die von einer Grammatik erzeugt werden koennen, werden mit $L(G)$ beschrieben
 ###### Wortproblem
 - Im Wortproblem muss festgestellt werden, ob ein Wort aus einer gegebenen Grammatik abgeleitet werden kann
+#### Chomsky Hierarchie
+- Grammatiken werden anhand bestimmter Kriterien hierarchisch angeordnet
+###### Typ 0
+- Die Anfoderungen einer Typ 0 Grammatik sind stets erfuellt
+- Typ 0 Grammatiken sind Phrasenstrukturgrammatiken
+###### Typ 1
+- Eine Grammatik ist von Typ 1, falls fuer jede Produktion $\alpha \rightarrow \beta$, $|\beta| \geq |\alpha|$ gilt
+- Typ 1 Grammatiken sind kontextsensitiv
+###### Typ 2
+- Eine Grammatik ist von Typ 2, falls sie Typ 1 ist und zudem fuer jede Produktion $\alpha \rightarrow \beta$, $\alpha \in V$ gilt
+- Typ 2 Grammatiken sind kontextfrei
+###### Typ 3
+- Eine Grammatik ist von Typ 3, falls sie Typ 2 ist und zudem fuer jede Produktion $\alpha \rightarrow \beta$, $\beta \in \Sigma \cup \Sigma V$ gilt
+- Typ 3 Grammatiken sind rechtslinear
