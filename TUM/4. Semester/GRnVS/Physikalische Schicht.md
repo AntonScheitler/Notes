@@ -46,3 +46,18 @@ $$C_s = B \log_2 \left (1 + \frac{P_S}{P_N} \right )$$
 - Fuer die Uebertragung von Nachrichten muessen unterschiedliche Kodierungsphasen durchlaufen werden
 #### Quellenkodierung
 - Bei der Quellenkodierung werden Nachrichten durch das Entfernen von Redundanzen komprimiert, um die Effizienz der Uebertragung zu erhoehen
+- Binaersequenzen werden hierbei in Codewoerter umgewandelt
+#### Kanalkodierung
+- Bei der Nachrichtenuebertragung durch einen Kanal kommt es mit hohen Wahrscheinlichkeiten zu Bitfehlern
+- Um Bitfehler zu erkennen und zu korrigieren, wird Nachrichten, Redundanz zugefuegt
+- Diese Redundanz besteht meist aus Pruefsummen oder Wiederholungen
+###### Kodierung
+- Codewoerter werden in Bloecke der Laenge $k$ unterteilt und in Kanalwoerter der Laenge $n > k$ kodiert
+- Das Verhaeltnis $\frac{k}{n}$ bezeichnet man als Coderate
+#### Leitungskodierung
+- Durch einen Leitungscode werden Bits, oder Gruppen von Bits, in Grundimpulse kodiert
+- Eine Abfolge von Grundimpulsen bildet einen Sendeimpuls
+- Je schneller abrupte Signalwechsel erfolgen, desto hoeher muss die Bandbreite des Kanals sein
+###### Beispiel
+![[Pasted image 20240424181002.png]]
+![[Pasted image 20240424181017.png]]
