@@ -21,7 +21,7 @@
 #### Aufbau
 - $V$ ist eine Menge von Nichtterminalen
 - $\Sigma$ ist eine Menge von Terminalen
-- $P \subseteq (V \cup \Sigma)^{\star} \times (V \cup \Sigma)^{\star}$ ist eine Menge von Produktionen und legen den Aufbau von Woertern der Sprache fest
+- $P \subseteq (V \cup \Sigma)^{\star} \times (V \cup \Sigma)^{\star}$ ist eine Menge von Produktionen und legt den Aufbau von Woertern der Sprache fest
 - $S \in V$ dient als Startpunkt fuer einen Ausdruck
 ###### Ableitungsrelationen
 - In einer Grammatik koennen ueber Ableitungsrelationen $\rightarrow_G$ anhand von Produktionen Woerter erzeugt werden werden

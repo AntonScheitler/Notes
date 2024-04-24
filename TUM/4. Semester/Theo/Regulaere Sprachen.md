@@ -5,7 +5,7 @@
 - Ein DFA besteht aus:
 	- Einer endlichen Zustandsmenge $Q$
 	- Einem Eingabealphabet $\Sigma$
-	- Eine Uebergangsfunktion $\delta: Q \times \Sigma \rightarrow Q$
+	- Einer Uebergangsfunktion $\delta: Q \times \Sigma \rightarrow Q$
 	- Einem Startzustand $q_0 \in Q$
 	- Einer Menge von Endzustaenden $F \subseteq Q$
 #### Worterkennung
@@ -32,5 +32,3 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - Jeder NFA kann auch durch einen DFA repraesentiert werden
 - Ein Zustand des DFAs entspricht hierbei immer der Menge aller Zustaende, die der NFA mit den bisherigen Eingabebuchstaben annehmen kann
 - Die formale Definition eines solchen DFAs ist somit $\left(P(Q), \Sigma, \bar{\delta}, {q_0}, F_M \right)$, mit $F_M = \left \{S \subseteq Q \mid S \cap F \neq \emptyset \right \}$
-###### Beispiel
-- TODO
