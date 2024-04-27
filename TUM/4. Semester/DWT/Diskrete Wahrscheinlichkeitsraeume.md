@@ -14,3 +14,28 @@ $$Pr[A \cup B \cup C] = Pr[A] + Pr[B] + Pr[C] - Pr[A \cap B] - Pr[A \cap C] - Pr
 ## Bedingte Wahrscheinlichkeit
 - Bei zwei Ereignissen $A$ und $B$ wird die bedingte Wahrscheinlichkeit $Pr[A|B]$ vom Eintreten von $A$, falls $B$ gegeben ist, definiert durch:
 $$Pr[A|B] = \frac{Pr[A \cap B]}{Pr[B]}$$
+- Somit gilt fuer $Pr[A \cap B]$:
+$$Pr[A \cap B] = Pr[A | B] \cdot Pr[B] = Pr[B | A] \cdot Pr[A]$$
+#### Satz der totalen Wahrscheinlichkeit
+- Sind die Ereignisse $A_1, ..., A_n$ paarweise disjunkt und $B \subseteq A_1 \, \cup \, ... \cup \, A_n$, so gilt:
+$$Pr[B] = \sum_{i = 1}^n Pr[B | A_i] \cdot Pr[A_i] = \sum_{i = 1}^n Pr[B \cap A_i]$$
+#### Unabhaengigkeit
+- Zwei Ereignisse $A$ und $B$ sind unabhaengig, falls gilt:
+$$Pr[A \cap B] = Pr[A] \cdot Pr[B]$$
+- Sind $A$ und $B$ somit unabhaengig mit $Pr[A], Pr[B] \gt 0$, so koennen sie nicht disjunkt sein, da sonst folgender Widerspruch gilt:
+$$Pr[A \cap B] = Pr[\emptyset] = 0 = Pr[A] \cdot Pr[B]$$
+- Aus der Unabhaengigkeit von $A$ und $B$ folgt zudem die Unabhaengigkeit ihrer Komplemente
+## Zufallsvariablen
+- Eine Zufallsvariable $X$ ist eine Abbildung $X: \Omega \rightarrow \mathbb{R}$ und ist diskret, falls $\Omega$ endlich, oder abzaehlbar unendlich ist
+- Fuer den Wertebereich $W_X$ von $X$ gilt:
+$$W_X = \left \{ x \in \mathbb{R} \mid \exists \, w \in \Omega: X(w) = x \right \}$$
+- Ereignisse $A_i$ koennen somit anhand von Bildern $x_i$ von $X$ definiert werden:
+$$A = \left \{ w \in \Omega \mid X(w) = x_i \right \} = A^{-1}(x_i)$$
+- Die Wahrscheinlichkeit von $A_i$ kann durch $Pr[X = x_i]$ ausgedrueckt werden
+#### Dichte und Verteilung
+- Die Dichtefunktion $f_X$, sowie die Verteilungsfunktion $F_X$ werden definiert durch:
+$$f_X(x) = Pr[X = x]$$
+$$F_X(x) = \sum_{x' \in W_X, \ x' \leq x} Pr[X = x]$$
+#### Erwartungswert
+- Der Erwartungswert $\mathbb{E}[X]$ wird definiert durch:
+$$\mathbb{E}[X] = \sum_{x \in W_X} x \cdot Pr[X = x]$$
