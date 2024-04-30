@@ -32,3 +32,18 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - Jeder NFA kann auch durch einen DFA repraesentiert werden
 - Ein Zustand des DFAs entspricht hierbei immer der Menge aller Zustaende, die der NFA mit den bisherigen Eingabebuchstaben annehmen kann
 - Die formale Definition eines solchen DFAs ist somit $\left(P(Q), \Sigma, \bar{\delta}, {q_0}, F_M \right)$, mit $F_M = \left \{S \subseteq Q \mid S \cap F \neq \emptyset \right \}$
+## Regulaere Ausdruecke
+- Regulaere Ausdruecke sind eine alternative Notation fuer rechtslineare Sprachen
+- Sie sind somit genauso maechtig, wie DFAs oder NFAs 
+#### Aufbau
+- Regulaere Ausdruecke werden mithilfe von gewissen Basisausdruecken induktiv definiert
+- Diese Basisausdruecke sind $\emptyset$, $\epsilon$, sowie jedes $a \in \Sigma$ und sind selbst regulaere Ausdruecke
+- Zwei regulaere Ausdruecke $\alpha$ und $\beta$ koennen kombiniert werden durch $\alpha\beta$, $\alpha | \beta$, oder $\alpha^{\star}$
+#### Umwandeln von NFAs 
+- Ein beliebiger NFA kann mithilfe einer Reihe von Regeln in einen regulaeren Ausdruck umgewandelt werden
+###### Lineare Gleichungssystemen
+- Ein lineares Gleichungssystem kann anhand eines NFAs erstellt werden
+- Dieses lineare Gleichungssystem kann dann einen regulaeren Ausdruck umgeformt werden
+###### Beispiel
+![[Pasted image 20240430153859.png]]
+![[Pasted image 20240430153959.png]]
