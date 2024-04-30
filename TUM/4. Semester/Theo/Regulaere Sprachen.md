@@ -32,6 +32,11 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - Jeder NFA kann auch durch einen DFA repraesentiert werden
 - Ein Zustand des DFAs entspricht hierbei immer der Menge aller Zustaende, die der NFA mit den bisherigen Eingabebuchstaben annehmen kann
 - Die formale Definition eines solchen DFAs ist somit $\left(P(Q), \Sigma, \bar{\delta}, {q_0}, F_M \right)$, mit $F_M = \left \{S \subseteq Q \mid S \cap F \neq \emptyset \right \}$
+#### $\epsilon$-NFAs
+- Ein $\epsilon$-NFA ist ein NFA mit $\epsilon$-Uebergaengen
+- Diese Uebergaenge koennen ohne Eingabebuchstabe traversiert werden
+###### Zusammenhang mit NFAs
+- Fuer jeden $\epsilon$-NFA $N_{\epsilon}$, gibt es einen NFA $N$ mit $L(N_{\epsilon}) = L(N)$
 ## Regulaere Ausdruecke
 - Regulaere Ausdruecke sind eine alternative Notation fuer rechtslineare Sprachen
 - Sie sind somit genauso maechtig, wie DFAs oder NFAs 
