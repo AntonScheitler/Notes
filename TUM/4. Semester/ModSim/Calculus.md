@@ -9,6 +9,7 @@ $$B_{\varepsilon}(x_0) \cap D \neq \emptyset \space \text{and} \space B_{\vareps
 - The set $\partial D$ of all boundary points of $D$ is called the boundary of $D$
 - The set $\overline{D} = D \cup \partial D$ is called the closure of $D$
 ###### Types
+- $D$ is open, if $D = \dot{D}$
 - $D$ is closed, if $D = \overline{D}$
 - $D$ is bounded, if all vectors in $D$ have a limited length
 - $D$ is compact, if it is closed and bounded
