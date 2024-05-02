@@ -26,8 +26,6 @@
 ###### Ableitungsrelationen
 - In einer Grammatik koennen ueber Ableitungsrelationen $\rightarrow_G$ anhand von Produktionen Woerter erzeugt werden werden
 - Die Menge aller Woerter, die von einer Grammatik erzeugt werden koennen, werden mit $L(G)$ beschrieben
-###### Wortproblem
-- Im Wortproblem muss festgestellt werden, ob ein Wort aus einer gegebenen Grammatik abgeleitet werden kann
 #### Chomsky Hierarchie
 - Grammatiken werden anhand bestimmter Kriterien hierarchisch angeordnet
 ###### Typ 0

@@ -28,9 +28,9 @@ $$L(N) = \left \{ w \in \Sigma^{\star} \mid \hat{\bar{\delta}}(\{q_0\}, w) \cap 
 - Hierfuer wird eine erweiterte Uebergangsfunktion $\bar{\delta}: P(Q) \times \Sigma \rightarrow P(Q)$ definiert:
 $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - $\hat{\bar{\delta}}: P(Q) \times \Sigma^{\star} \rightarrow P(Q)$ ist die Kombination aus $\hat{\delta}$ und $\bar{\delta}$
-#### Gemeinsamkeiten mit DFAs
+#### Umwandlung zu DFAs
 - Jeder NFA kann auch durch einen DFA repraesentiert werden
-- Ein Zustand des DFAs entspricht hierbei immer der Menge aller Zustaende, die der NFA mit den bisherigen Eingabebuchstaben annehmen kann
+- Ein Zustand des DFAs entspricht hierbei immer der Menge aller Zustaende, die der NFA mit denselben Eingabebuchstaben annehmen kann
 - Die formale Definition eines solchen DFAs ist somit $\left(P(Q), \Sigma, \bar{\delta}, {q_0}, F_M \right)$, mit $F_M = \left \{S \subseteq Q \mid S \cap F \neq \emptyset \right \}$
 #### $\epsilon$-NFAs
 - Ein $\epsilon$-NFA ist ein NFA mit $\epsilon$-Uebergaengen
@@ -52,3 +52,21 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 ###### Beispiel
 ![[Pasted image 20240430153859.png]]
 ![[Pasted image 20240430153959.png]]
+## Pumping Lemma
+- Um zu bestimmen, ob eine gegebene Sprache regulaer ist, kann das Pumping Lemma verwendet werden
+#### Lemma
+- Ist $R \subseteq \Sigma$ regulaer, so gibt es ein $n$, sodass fuer alle $z \in R$ mit $|z| \geq n$ mit $z = uvw$ git:
+	- $v \neq \epsilon$
+	- $|uv| \leq n$
+	- $\forall \, i \geq 0: uv^iw \in R$
+#### Beweis
+- Mithilfe eines Widerspruchsbeweises kann gezeigt werden, dass eine Sprache nicht regulaer ist
+- Hierbei werden $n$ und $z \in R$ allgemein gewaehlt und es wird gezeigt, dass es keine Zerlegung $z = uvw$ gibt, die das Pumping Lemma erfuellt
+## Entscheidungsprobleme
+- Bei einem Entscheidungsproblem muss festgestellt werden, ob eine regulaere Sprache in einem gegebenen Format $D$ eine bestimmte Eigenschaft erfuellt
+- Ein Entscheidungsproblem ist entscheidbar, falls fuer jede Eingabe die korrekte Loesung in endlicher Zeit bestimmt werden kann
+- Nicht alle Entscheidungsprobleme sind entscheidbar
+#### Wortproblem
+- Im Wortproblem muss fuer ein Wort $w$ entschieden werden, ob $w \in L(D)$
+#### Leerheitsproblem
+- Im Leerheitsproblem muss entschieden werden, ob $L(D) = \emptyset$ ist

@@ -7,7 +7,7 @@ $$I(x) = -\log_2(p(x))$$
 #### Entropie
 - Die Entropie einer Zufallsvariable $X$, die eine Signalquelle emittiert, berechnet sich aus dem Informationsgehalt aller moeglichen Zeichen:
 $$H(X) = \sum_{x \in X} p(x) I(x)$$
-- Die Entropie gibt hierbei an, wieviele bit benoetigt werden, um ein Zeichen der Signalquelle zu kodieren
+- Die Entropie ist ein Mass der Unvorhersehbarkeit einer Signalquelle und gibt an, wieviele Bit benoetigt werden, um ein Zeichen der Signalquelle zu kodieren
 ###### Bedingte Entropie
 - Mithilfe der bedingten Entropie kann ausgedrueckt werden, ob sich die Entropie einer Zufallszahl $Y$ veraendert, falls die Zufallsvariable $X$ bekannt ist:
 $$H(Y|X) = \sum_{x \in X} p(x) H(Y|X = x) = \sum_{x \in X} p(x) \sum_{y \in Y} p(y|x) I(y|x)$$
@@ -21,6 +21,7 @@ $$\hat{s}(t) = s(t) \sum_{n = - \infty}^{\infty} \delta[t - nT_a], \space  \text
 1, \space \text{falls} \space t = nT_a \\
 0, \space \text{sonst} \\
 \end{cases}$$
+- Das Signal wird somit zeitdiskretisiert
 - Anhand der hierdurch entstehenden Stuetzstellen, kann das urspruengliche Signal mithilfe einer [[Interpolation]] rekonstruiert werden
 ###### Beispiel
 ![[Pasted image 20240416151100.png]]
@@ -29,6 +30,10 @@ $$\hat{s}(t) = s(t) \sum_{n = - \infty}^{\infty} \delta[t - nT_a], \space  \text
 - Die abgetasteten Werte sind kontinuierlich und koennen nicht exakt abgespeichert werden
 - Stattdessen werden Stufen kodiert, auf die die Teile eines Signals dann abgebildet werden
 - Das Signal wird somit wertdiskretisiert
+###### Quantisierungsfehler
+- Liegen die Amplituden eines Signals zwischen $a$ und $b$ und wird mit einer Schrittweite von $\Delta$ quantisiert, so lauten die Quantisierungsstufen $Q = \{ a + \frac{\Delta}{2}, a + \frac{\Delta}{2} + \Delta, ..., b - \frac{\Delta}{2} \}$
+- Insbesondere setzen die Quantisierungsstufen nicht direkt bei $a$ und $b$ an
+- Der durch, das Quantisieren entstehende Rundungsfehler, ist der Quantisierungsfehler $q_e = \frac{\Delta}{2}$
 ###### Beispiel
 ![[Pasted image 20240422103331.png]]
 ## Uebertragungskanaele
