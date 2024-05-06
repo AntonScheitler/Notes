@@ -39,3 +39,23 @@ $$F_X(x) = \sum_{x' \in W_X, \ x' \leq x} Pr[X = x]$$
 #### Erwartungswert
 - Der Erwartungswert $\mathbb{E}[X]$ wird definiert durch:
 $$\mathbb{E}[X] = \sum_{x \in W_X} x \cdot Pr[X = x]$$
+- Damit ein Erwartungswert existieren kann, muss somit $\sum_{x \in W_X} x \cdot Pr[X = x]$ konvergieren
+- Fuer Umrechnungen gilt:
+$$\mathbb{E}[a \cdot X + b] = a \cdot \mathbb{E}[X] + b$$
+###### Verknuepfung
+- Eine zusaetzliche Funktion kann auf eine Zufallsvariable angewandt werden, um eine neue Zufallsvariable zu erzeugen:
+$$Y = f \circ X = f(X)$$
+- Fuer den Erwartungswert von $Y$ gilt somit:
+$$\mathbb{E}(Y) = \sum_{y \in W_Y} y \cdot Pr[Y = y] = \sum_{y \in W_Y} y \cdot \sum_{x: f(x) = y} Pr[X = x] = \sum_{x \in W_X} f(x) \cdot Pr[X = x]$$
+###### Bedingte Zufallsvariablen
+- Eine bedingte Zufallsvariable kann durch $X|A$ ausgedrueckt werden
+- Hierbei gilt:
+$$Pr[X = x | A] = \frac{Pr[X = x \cap A]}{Pr[A]}$$
+- Der Satz der totalen Wahrscheinlichkeit kann auf den Erwartungswert bedingter Zufallsvariablen uebertragen werden:
+$$\mathbb{E}[X] = \sum_{i = 1}^{n} \mathbb{E}[X | A_i] \cdot Pr[A_i]$$
+#### Varianz
+- Die Varianz ist die quadratische Abweichung einer Zufallsvariable von ihrem Erwartungswert:
+$$Var[X] = \mathbb{E}[(X - \mu)^2] = \sum_{x \in W_X} (x - \mu)^2 \cdot Pr[X = x]$$
+- Fuer die Varianz gilt bei Umrechnungen:
+$$Var[X] = \mathbb{E}[X^2] - \mathbb{E}[X^2]$$
+$$Var[a \cdot X + b] = a^2 \cdot Var[X]$$
