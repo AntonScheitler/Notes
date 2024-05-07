@@ -68,5 +68,34 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - Nicht alle Entscheidungsprobleme sind entscheidbar
 #### Wortproblem
 - Im Wortproblem muss fuer ein Wort $w$ entschieden werden, ob $w \in L(D)$
+- $w \in L(D)$, falls $w$ vom entsprechenden DFA, oder NFA akzeptiert wird
 #### Leerheitsproblem
 - Im Leerheitsproblem muss entschieden werden, ob $L(D) = \emptyset$ ist
+- $L(D)$ ist leer, falls im entsprechenden DFA, oder NFA kein Endzustand vom Startzustand $q_0$ erreicht werden kann
+#### Endlichkeitsproblem
+- Im Endlichkeitsproblem muss festgestellt werden, ob $|L(D)| = \infty$
+- $L(D)$ ist unendlich, falls der entsprechende DFA, oder NFA eine nicht-leere Schleife enthaelt, die zu einem der Endzustaende fuehrt
+#### Aequivalenzproblem
+- Im Aequivalenzproblem muss bestimmt werden, ob $L_1 = L_2$ ist
+- Hierfuer muss folgendes gezeigt werden:
+$$L_1 \subseteq L_2 \Leftrightarrow L_1 \cap \overline{L_2} = \emptyset$$
+$$L_1 = L_2 \Leftrightarrow (L_1 \subseteq L_2) \land (L_2 \subseteq L_1) $$
+## Minimierung endlicher Automaten
+- Jede regulaere Sprache besitzt genau einen minimalen Recognizer
+- Ein minimierter Automat wird als Quotientenautomat bezeichnet
+#### Algorithmus
+- Alle, nicht erreichbaren Zustaende werden eliminiert
+- Alle aequivalenten Zustaende werden bestimmt und zusammengefasst 
+- Jede Transition zwischen Zustaenden wird in der Zusammenfassung uebernommen
+###### Aequivalente Zustaende
+- Zwei Zustaende $p, q$ sind aequivalent, falls fuer alle Woerter $w \in \Sigma^{\star}$ gilt:
+$$\hat{\delta}(p, w) \in F \; \Leftrightarrow \; \hat{\delta}(p, w) \in F$$
+- Andernfalls sind $p, q$ unterscheidbar
+- Somit sind $p \in F$ und $q \notin F$ stets unterscheidbar
+- Sind $\delta(p, a)$ und $\delta(q, a)$ in einem DFA unterscheidbar, so sind $p$ und $q$ ebenfalls unterscheidbar
+- Unterscheidbarkeit pflanzt sich somit ruecktwaerts fort
+###### Implementierung
+- Eine Tabelle von umarkierten Paaren $p, q$ wird angelegt
+- Jedes Paar mit $p \in F$ und $q \notin F$ wird markiert
+- Nun wird jedes Paar $p, q$ markiert, fuer das ein $a \in \Sigma$ existiert, sodass $\{ \delta(p, a), \delta(q, a)\}$ bereits markiert ist
+- Wurden alle unmarkierten Paare traversiert, ohne, dass eines markiert wurde, so terminiert der Algorithmus
