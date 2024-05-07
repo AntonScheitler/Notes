@@ -1,2 +1,2 @@
 ### [[Calculus]]
-### [[Decision Models]]
+### [[Discrete Modeling and Simulation]]

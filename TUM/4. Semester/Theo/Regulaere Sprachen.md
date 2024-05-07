@@ -16,6 +16,10 @@ $$\hat{\delta}(q, \epsilon) = q$$
 $$\hat{\delta}(q, aw) = \hat{\delta}(\delta(q, a), w)$$
 - Jeder Buchstabe eines Worts bewirkt somit einen Zustandswechsel im DFA
 - Ist der DFA in einem der Endzustaende, sobald das Wort abgearbeitet wurde, so ist es in der repraesentierten Sprache enthalten
+#### Produkt-Konstruktion
+- Sind $M_1 = (Q_1, \Sigma, \delta_1, s_1, F_1)$ und $M_2 = (Q_2, \Sigma, \delta_2, s_2, F_2)$ zwei DFAs, so kann ein Produkt-Automat, der $L(M_1) \cap L(M_2)$ akzeptiert, definiert werden durch:
+$$M = (Q_1 \times Q_2, \Sigma, \delta, (s_1, s_2), F_1 \times F_2)$$
+$$\delta((q_1, q_2), a) = \left (\delta_1(q_1, a), \delta_2(q_2, a) \right )$$
 ## Nichtdeterministische Endliche Automaten
 - NFAs sind eine Verallgemeinerung von DFAs und erlauben beliebig viele Zustanduebergaenge fuer jeden Zustand
 - Eingaben koennen somit zu unterschiedlichen Zustandsfolgen fuehren
@@ -49,6 +53,8 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 ###### Lineare Gleichungssystemen
 - Ein lineares Gleichungssystem kann anhand eines NFAs erstellt werden
 - Dieses lineare Gleichungssystem kann dann einen regulaeren Ausdruck umgeformt werden
+- Hierbei gilt Ardens Lemma:
+$$X = aX \mid b \; \; \Longrightarrow  \; \; X = a^*b$$
 ###### Beispiel
 ![[Pasted image 20240430153859.png]]
 ![[Pasted image 20240430153959.png]]
