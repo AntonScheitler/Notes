@@ -57,5 +57,5 @@ $$\mathbb{E}[X] = \sum_{i = 1}^{n} \mathbb{E}[X | A_i] \cdot Pr[A_i]$$
 - Die Varianz ist die quadratische Abweichung einer Zufallsvariable von ihrem Erwartungswert:
 $$Var[X] = \mathbb{E}[(X - \mu)^2] = \sum_{x \in W_X} (x - \mu)^2 \cdot Pr[X = x]$$
 - Fuer die Varianz gilt bei Umrechnungen:
-$$Var[X] = \mathbb{E}[X^2] - \mathbb{E}[X^2]$$
+$$Var[X] = \mathbb{E}[X^2] - \mathbb{E}[X]^2$$
 $$Var[a \cdot X + b] = a^2 \cdot Var[X]$$

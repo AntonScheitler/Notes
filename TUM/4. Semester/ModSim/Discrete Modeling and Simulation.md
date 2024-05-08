@@ -20,3 +20,12 @@
 - The players may reach an equilibrium, where the loss is minimized and the win is maximized
 - If an equilibrium is reached, a change in strategy would benefit neither of the players
 - Their strategies therefore remain the same
+#### Group Decision Making
+- A ranking $\delta$ is assigned to a set of candidates $A$, which measures their importance
+- This ranking defines a preference relation $\varrho$ between the candidates:
+$$x \varrho y \; \Leftrightarrow \; r(x) < r(y)$$
+###### Collective Choice Function
+- $P_A$ is a set of preference relations and represents an individuals ranking of all candidates
+- A collective choice function takes every individuals $P_A$ into account, in order to create a total $P_A$:
+$$K: P_A \times P_A \times ... \times P_A \rightarrow P_A$$
+## Scheduling
