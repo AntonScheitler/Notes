@@ -63,9 +63,11 @@ $$C_s = B \log_2 \left (1 + \frac{P_S}{P_N} \right )$$
 - Durch einen Leitungscode werden Bits, oder Gruppen von Bits, in Grundimpulse kodiert
 - Eine Abfolge von Grundimpulsen bildet einen Sendeimpuls
 - Je schneller abrupte Signalwechsel erfolgen, desto hoeher muss die Bandbreite des Kanals sein
+###### Kodierungsarten
 ###### Signalisieren des Sendestarts
 - Um den Start einer Nachricht zu signalisieren, kann eine Reihe von Bits als Praeambel und Start Frame Delimiter verwendet werden
 - Alternativ koennen ueber einen Code, Steuerzeichen erzeugt werden, die dann den Nachrichtenbeginn signalisieren
 ###### Beispiel
 ![[Pasted image 20240424181002.png]]
 ![[Pasted image 20240424181017.png]]
+#### Modulation

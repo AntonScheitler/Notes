@@ -21,11 +21,15 @@
 - If an equilibrium is reached, a change in strategy would benefit neither of the players
 - Their strategies therefore remain the same
 #### Group Decision Making
-- A ranking $\delta$ is assigned to a set of candidates $A$, which measures their importance
+- A ranking $r$ is assigned to a set of candidates $A$, which measures their importance
 - This ranking defines a preference relation $\varrho$ between the candidates:
 $$x \varrho y \; \Leftrightarrow \; r(x) < r(y)$$
 ###### Collective Choice Function
 - $P_A$ is a set of preference relations and represents an individuals ranking of all candidates
 - A collective choice function takes every individuals $P_A$ into account, in order to create a total $P_A$:
 $$K: P_A \times P_A \times ... \times P_A \rightarrow P_A$$
-## Scheduling
+- The resulting preference relation may differ based on the method used to determine it
+###### Rank Addition
+- The sums of the rankings of each candidate are calculated and compared
+- The candidate with the lowest sum wins the majority vote
+![[Pasted image 20240511114119.png]]
