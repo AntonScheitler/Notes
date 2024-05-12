@@ -32,13 +32,10 @@ $$L(N) = \left \{ w \in \Sigma^{\star} \mid \hat{\bar{\delta}}(\{q_0\}, w) \cap 
 - Hierfuer wird eine erweiterte Uebergangsfunktion $\bar{\delta}: P(Q) \times \Sigma \rightarrow P(Q)$ definiert:
 $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - $\hat{\bar{\delta}}: P(Q) \times \Sigma^{\star} \rightarrow P(Q)$ ist die Kombination aus $\hat{\delta}$ und $\bar{\delta}$
-#### Umwandlung zu DFAs
-- Jeder NFA kann auch durch einen DFA repraesentiert werden
-- Ein Zustand des DFAs entspricht hierbei immer der Menge aller Zustaende, die der NFA mit denselben Eingabebuchstaben annehmen kann
-- Die formale Definition eines solchen DFAs ist somit $\left(P(Q), \Sigma, \bar{\delta}, {q_0}, F_M \right)$, mit $F_M = \left \{S \subseteq Q \mid S \cap F \neq \emptyset \right \}$
 #### $\epsilon$-NFAs
 - Ein $\epsilon$-NFA ist ein NFA mit $\epsilon$-Uebergaengen
 - Diese Uebergaenge koennen ohne Eingabebuchstaben traversiert werden
+- Fuer jeden $\epsilon$-NFA $N$ gibt es einen NFA $N'$, mit $L(N) = L(N')$
 ###### Zusammenhang mit NFAs
 - Fuer jeden $\epsilon$-NFA $N_{\epsilon}$, gibt es einen NFA $N$ mit $L(N_{\epsilon}) = L(N)$
 ## Regulaere Ausdruecke
@@ -48,16 +45,46 @@ $$\bar{\delta(S, a)} = \bigcup_{q \in S} \delta(q, a)$$
 - Regulaere Ausdruecke werden mithilfe von gewissen Basisausdruecken induktiv definiert
 - Diese Basisausdruecke sind $\emptyset$, $\epsilon$, sowie jedes $a \in \Sigma$ und sind selbst regulaere Ausdruecke
 - Zwei regulaere Ausdruecke $\alpha$ und $\beta$ koennen kombiniert werden durch $\alpha\beta$, $\alpha | \beta$, oder $\alpha^{\star}$
-#### Umwandeln von NFAs 
-- Ein beliebiger NFA kann mithilfe einer Reihe von Regeln in einen regulaeren Ausdruck umgewandelt werden
-###### Lineare Gleichungssystemen
-- Ein lineares Gleichungssystem kann anhand eines NFAs erstellt werden
-- Dieses lineare Gleichungssystem kann dann einen regulaeren Ausdruck umgeformt werden
-- Hierbei gilt Ardens Lemma:
-$$X = aX \mid b \; \; \Longrightarrow  \; \; X = a^*b$$
+## Umwandlungen
+- DFAs, NFAs, sowie regulaere Ausdruecke koennen ineinander umgewandelt werden
+#### Potenzmengenkonstruktion
+- Durch die Potenzmengenkonstruktion kann ein NFA in einen DFA umgewandelt werden
+###### Vorgehen
+- Die Zustaende des DFAs entsprechen der Menge der Zustaende, die ein NFA mit denselben Eingabebuchstaben erreichen kann
+- Jeder Zustand ist ein Endzustand, falls er mindestens einen der Endzustand des NFAs enthaelt
+###### Tupeldarstellung
+- Ist $N = (Q, \Sigma, \delta, q_0, F)$ ein NFA, so kann der DFA, der durch die Potenzmengenkonstruktion erzeugt wird beschrieben werden durch:
+$$M = (P(Q), \Sigma, \bar{\delta}, \{q_0\}, F_M), \; \; F_M = (S \subseteq Q \mid S \cap F \neq \emptyset)$$
+#### NFAs mit RE-Uebergaengen
+- Ein NFA mit RE-Uebergaengen, besitzt Transitionen, die durch regulaere Ausdruecke beschrieben werden
+- Hierueber kann ein NFA in einen regulaeren Ausdruck umgewandelt werden und umgekehrt 
+###### RE zu $\epsilon$-NFA
+- Im Preprocessing werden Terme vereinfacht, die die leere Menge enthalten
+- Die Konkatenationen, Auswahlen und Iterationen eines regulaeren Ausdrucks werden in eine Reihe von Zustaenden und Transitionen uebersetzt
+![[Pasted image 20240512172953.png]]
+![[Pasted image 20240512173003.png]]
+###### NFA zu RE
+- Dieselben Operationen, die bei der Umwandlung von regulaeren Ausdrucken zu NFAs verwendet werden, werden nun umgekehrt angewandt
+![[Pasted image 20240512173115.png]]
+![[Pasted image 20240512173121.png]]
+#### Lineare Gleichungssysteme
+- Ein NFA kann mithilfe von linearen Gleichungssystemen dargestellt werden
+- Die Loesung dieser Gleichungssysteme ist ein regulaerer Ausdruck
+###### Ardens Lemma
+- Die Grundlage fuer das Loesen dieser Gleichungssysteme ist Ardens Lemma
+- Sind $a$, $b$, und $X$ regulaere Ausdruecke, mit $\epsilon \notin L(a)$, so gilt:
+$$X = aX|b \; \Longrightarrow \; X = a^*b$$
+###### Vorgehen
+- Das lineare Gleichungssystem wird anhand der Stellen und Transitionen des NFAs erstellt
+- Wann immer moeglich, wird Ardens Lemma verwendet, um Gleichungen zu vereinfachen 
+- Durch Einsetzen wird das lineare Gleichungssystem verkleinert, bis nurnoch eine Gleichung, mit dem Startzustand auf der linken Seite, verbleibt
 ###### Beispiel
-![[Pasted image 20240430153859.png]]
-![[Pasted image 20240430153959.png]]
+![[Pasted image 20240512173746.png]]
+![[Pasted image 20240512173806.png]]
+![[Pasted image 20240512173823.png]]
+## Abschlusseigenschaften
+- Sind $R$, $R_1$, und $R_2$ regulaere Sprachen, so bilden folgende Ausdruecke ebenfalls regulaere Sprachen:
+$$R1R2,\; R_1 \cup R_2,\; R^*,\; \overline{R},\; R_1 \cap R_2,\; R_1 \setminus R_2$$
 ## Pumping Lemma
 - Um zu bestimmen, ob eine gegebene Sprache regulaer ist, kann das Pumping Lemma verwendet werden
 #### Lemma
