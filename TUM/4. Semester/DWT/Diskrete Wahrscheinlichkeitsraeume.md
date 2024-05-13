@@ -59,3 +59,4 @@ $$Var[X] = \mathbb{E}[(X - \mu)^2] = \sum_{x \in W_X} (x - \mu)^2 \cdot Pr[X = x
 - Fuer die Varianz gilt bei Umrechnungen:
 $$Var[X] = \mathbb{E}[X^2] - \mathbb{E}[X]^2$$
 $$Var[a \cdot X + b] = a^2 \cdot Var[X]$$
+## 

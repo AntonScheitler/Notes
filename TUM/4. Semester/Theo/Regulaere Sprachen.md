@@ -1,6 +1,6 @@
 ## Deterministische Endliche Automaten 
 - Ein DFA kann mithilfe einer Reihe von Zustaenden alle Woerter einer rechtslinearen Sprache repraesentieren
-- Mithilfe eines DFAs kann somit das [[Grundlagen formaler Sprache|Wortproblem]] fuer eine rechtslineare Sprache geloest werden
+- Mithilfe eines DFAs kann somit das Wortproblem fuer eine rechtslineare Sprache geloest werden
 #### Aufbau
 - Ein DFA besteht aus:
 	- Einer endlichen Zustandsmenge $Q$
@@ -16,10 +16,6 @@ $$\hat{\delta}(q, \epsilon) = q$$
 $$\hat{\delta}(q, aw) = \hat{\delta}(\delta(q, a), w)$$
 - Jeder Buchstabe eines Worts bewirkt somit einen Zustandswechsel im DFA
 - Ist der DFA in einem der Endzustaende, sobald das Wort abgearbeitet wurde, so ist es in der repraesentierten Sprache enthalten
-#### Produkt-Konstruktion
-- Sind $M_1 = (Q_1, \Sigma, \delta_1, s_1, F_1)$ und $M_2 = (Q_2, \Sigma, \delta_2, s_2, F_2)$ zwei DFAs, so kann ein Produkt-Automat, der $L(M_1) \cap L(M_2)$ akzeptiert, definiert werden durch:
-$$M = (Q_1 \times Q_2, \Sigma, \delta, (s_1, s_2), F_1 \times F_2)$$
-$$\delta((q_1, q_2), a) = \left (\delta_1(q_1, a), \delta_2(q_2, a) \right )$$
 ## Nichtdeterministische Endliche Automaten
 - NFAs sind eine Verallgemeinerung von DFAs und erlauben beliebig viele Zustanduebergaenge fuer jeden Zustand
 - Eingaben koennen somit zu unterschiedlichen Zustandsfolgen fuehren
@@ -82,6 +78,11 @@ $$X = aX|b \; \Longrightarrow \; X = a^*b$$
 ![[Pasted image 20240512173746.png]]
 ![[Pasted image 20240512173806.png]]
 ![[Pasted image 20240512173823.png]]
+#### Produkt-Konstruktion
+- Sind $M_1 = (Q_1, \Sigma, \delta_1, s_1, F_1)$ und $M_2 = (Q_2, \Sigma, \delta_2, s_2, F_2)$ zwei DFAs, so kann ein Produkt-Automat, der $L(M_1) \cap L(M_2)$ akzeptiert, definiert werden durch:
+$$M = (Q_1 \times Q_2, \Sigma, \delta, (s_1, s_2), F_1 \times F_2)$$
+$$\delta((q_1, q_2), a) = \left (\delta_1(q_1, a), \delta_2(q_2, a) \right )$$
+- Ein Automat, welcher $L(M_1) \cup L(M_2)$ akzeptiert, besitzt denselben Aufbau, jedoch gilt fuer die Endzustaende nun: $F = F_1 \times Q_2 \cup F_2 \times Q_1$
 ## Abschlusseigenschaften
 - Sind $R$, $R_1$, und $R_2$ regulaere Sprachen, so bilden folgende Ausdruecke ebenfalls regulaere Sprachen:
 $$R1R2,\; R_1 \cup R_2,\; R^*,\; \overline{R},\; R_1 \cap R_2,\; R_1 \setminus R_2$$
@@ -101,18 +102,29 @@ $$R1R2,\; R_1 \cup R_2,\; R^*,\; \overline{R},\; R_1 \cap R_2,\; R_1 \setminus R
 - Nicht alle Entscheidungsprobleme sind entscheidbar
 #### Wortproblem
 - Im Wortproblem muss fuer ein Wort $w$ entschieden werden, ob $w \in L(D)$
-- $w \in L(D)$, falls $w$ vom entsprechenden DFA, oder NFA akzeptiert wird
+- $w \in L(D)$, falls $w$ vom entsprechenden DFA, NFA, akzeptiert wird
+###### Entscheidbarkeit
+- Das Wortproblem ist fuer DFAs und NFAs entscheidbar
+- Fuer DFAs kann das Wortproblem in linearer Zeit geloest werden, fuer NFAs in quadratischer
 #### Leerheitsproblem
 - Im Leerheitsproblem muss entschieden werden, ob $L(D) = \emptyset$ ist
 - $L(D)$ ist leer, falls im entsprechenden DFA, oder NFA kein Endzustand vom Startzustand $q_0$ erreicht werden kann
+###### Entscheidbarkeit
+- Das Leerheitsproblem ist fuer DFAs und NFAs entscheidbar
+- Fuer DFAs kann das Leerheitsproblem in linearer Zeit geloest werden, fuer NFAs in quadratischer
 #### Endlichkeitsproblem
 - Im Endlichkeitsproblem muss festgestellt werden, ob $|L(D)| = \infty$
 - $L(D)$ ist unendlich, falls der entsprechende DFA, oder NFA eine nicht-leere Schleife enthaelt, die zu einem der Endzustaende fuehrt
+###### Entscheidbarkeit
+- Das Endlichkeitsproblem ist fuer DFAs und NFAs entscheidbar
 #### Aequivalenzproblem
 - Im Aequivalenzproblem muss bestimmt werden, ob $L_1 = L_2$ ist
 - Hierfuer muss folgendes gezeigt werden:
 $$L_1 \subseteq L_2 \Leftrightarrow L_1 \cap \overline{L_2} = \emptyset$$
 $$L_1 = L_2 \Leftrightarrow (L_1 \subseteq L_2) \land (L_2 \subseteq L_1) $$
+###### Entscheidbarkeit
+- Das Aequivalenzproblem ist nur fuer DFAs und NFAs entscheidbar
+- Fuer DFAs kann das Aequivalenzproblem in quadratischer Zeit geloest werden, fuer NFAs in exponentieller
 ## Minimierung endlicher Automaten
 - Jede regulaere Sprache besitzt genau einen minimalen Recognizer
 - Ein minimierter Automat wird als Quotientenautomat bezeichnet
@@ -132,3 +144,9 @@ $$\hat{\delta}(p, w) \in F \; \Leftrightarrow \; \hat{\delta}(p, w) \in F$$
 - Jedes Paar mit $p \in F$ und $q \notin F$ wird markiert
 - Nun wird jedes Paar $p, q$ markiert, fuer das ein $a \in \Sigma$ existiert, sodass $\{ \delta(p, a), \delta(q, a)\}$ bereits markiert ist
 - Wurden alle unmarkierten Paare traversiert, ohne, dass eines markiert wurde, so terminiert der Algorithmus
+###### Residualsprachen
+- Eine Residualsprache von $L$ bezueglich $w \in \Sigma^*$ wird definiert durch:
+$$L^w = \{ z \in \Sigma^* \mid wz \in L  \}$$
+- Eine Sprache ist genau dann regulaer, wenn sie endlich viele Residualsprachen hat
+###### Effizienz
+- Der effizienteste Algorithmus zur Minimierung von Automaten laeuft in $n \log(n)$
