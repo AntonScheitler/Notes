@@ -30,7 +30,7 @@ $$Pr[A \cap B] = Pr[\emptyset] = 0 = Pr[A] \cdot Pr[B]$$
 - Fuer den Wertebereich $W_X$ von $X$ gilt:
 $$W_X = \left \{ x \in \mathbb{R} \mid \exists \, w \in \Omega: X(w) = x \right \}$$
 - Ereignisse $A_i$ koennen somit anhand von Bildern $x_i$ von $X$ definiert werden:
-$$A = \left \{ w \in \Omega \mid X(w) = x_i \right \} = A^{-1}(x_i)$$
+$$A_i = \left \{ w \in \Omega \mid X(w) = x_i \right \} = A_i^{-1}(x_i)$$
 - Die Wahrscheinlichkeit von $A_i$ kann durch $Pr[X = x_i]$ ausgedrueckt werden
 #### Dichte und Verteilung
 - Die Dichtefunktion $f_X$, sowie die Verteilungsfunktion $F_X$ werden definiert durch:
@@ -59,4 +59,52 @@ $$Var[X] = \mathbb{E}[(X - \mu)^2] = \sum_{x \in W_X} (x - \mu)^2 \cdot Pr[X = x
 - Fuer die Varianz gilt bei Umrechnungen:
 $$Var[X] = \mathbb{E}[X^2] - \mathbb{E}[X]^2$$
 $$Var[a \cdot X + b] = a^2 \cdot Var[X]$$
-## 
+#### Indikatorvariable
+- Eine Indikatorvariable $I_A$ ist eine Zufallsvariable zu einem Ereignis $A$, fuer die gilt:
+$$I_A = \begin{cases}
+1, \; \text{falls} \; A \; \text{eintritt} \\
+0, \; \text{sonst}
+\end{cases}$$
+## Mehrere Zufallsvariablen
+- In einem Zufallsexperiment ist es moeglich, mehr als eine Zufallsvariable zu definieren
+- Die Wahrscheinlichkeit, dass die Zufallsvariablen, beispielsweise $X$ und $Y$, bestimmte Werte annehmen, wird durch $Pr[X = x, Y = y]$, beziehungsweise $Pr[X = x \land Y = y]$ beschrieben
+#### Dichte und Verteilung
+- Die gemeinsame Dichte zweier Zufallsvariablen $X$ und $Y$ wird definiert durch:
+$$f_{X, Y}(x, y) = Pr[X = x, Y = y]$$
+- Die gemeinsame Verteilung der Zufallsvariablen wird definiert durch:
+$$F_{X, Y}(x, y) = \sum_{x' \leq x} \sum_{y' \leq y} f_{X, Y}(x', y')$$
+###### Randdichte
+- Aus der gemeinsamen Dichte koennen die Randdichten $f_X$ und $f_Y$ abgeleitet werden:
+$$f_X(x) = \sum_{y \in W_Y} f_{X, Y}(x, y)$$
+$$f_Y(y) = \sum_{x \in W_X} f_{X, Y}(x, y)$$
+- Hierbei gilt zudem:
+$$f_X(x) = Pr[X = x], \; f_Y(x) = Pr[Y = y]$$
+###### Randverteilung
+- Aehnlich zur Randdichte wird auch die Randverteilung definiert:
+$$F_X(x) = \sum_{x' \leq x} f_X(x')$$
+$$F_Y(y) = \sum_{y' \leq y} f_Y(y')$$
+#### Unabhaengigkeit
+- Zwei Zufallsvariablen $X$ und $Y$ sind unabhaengig, falls gilt:
+$$Pr[X = x, Y = y] = Pr[X = x] \cdot Pr[Y = y]$$
+#### Zusammengesetzte Zufallsvariablen
+- Neue Zufallsvariablen koennen erstellt werden, indem bestehende Zufallsvariablen, beispielsweise durch Addition zusammengefasst werden
+- Fuer eine Zufallsvariable $Z = X + Y$ mit unabhaengigen $X$ und $Y$ gilt hierbei:
+$$f_Z(z) = \sum_{x \in W_X} f_X(x) \cdot f_Y(z - x)$$
+###### Erwartungswert
+- Fuer den Erwartungswert der zusammengesetzten Zufallsvariable $X = a_1X_1 + ... + a_nX_n$ gilt:
+$$\mathbb{E}[X] = a_1 \mathbb{E}[X_1] + ... + a_n \mathbb{E}[X_n]$$
+- Sind $X_1, ..., X_n$ unabhaengig, so gilt zudem:
+$$\mathbb{E}[X_1 \cdot \; ... \; \cdot X_n] = \mathbb{E}[X_1] \cdot \; ... \; \cdot \mathbb{E}[X_n]$$
+###### Varianz
+- Fuer die Varianz von $X = X_1 + ... + X_n$, mit unabhaengigen $X_1, ..., X_n$ gilt:
+$$Var[X] = Var[X_1] + ... + Var[X_n]$$
+## Diskrete Verteilungen
+- Bestimmte Verteilungen erscheinen haeufig in der diskreten Wahrscheinlichkeitstheorie
+#### Bernoulli Verteilung
+- Eine Zufallsvariable $X$ ist Bernoulli-verteilt, falls ihr Wertebereicht $W_X = \{0, 1\}$ ist, und sie die Dichte
+$$f_X(x) = \begin{cases}
+p, \; \text{falls} \; x = 1 \\
+1 - p, \; \text{falls} \; x = 0 \\
+\end{cases}$$
+- Fuer den Erwartungswert und die Varianz von $X$ gilt hierbei:
+$$\mathbb{E}[X] = p, \; Var[X] = p(1-p)$$

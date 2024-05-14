@@ -1,3 +1,11 @@
+## Kommunikation zwischen Schichten
+- Das Austauschen von Daten zwischen Schichten erfolgt ueber mehrere Schritte
+#### Schritte
+- Die $n + 1$ Schicht gibt an die darunterliegende $n$ Schicht eine Interface Data Unit, bestehend aus den Nutzdaten (Service Data Unit) und Kontrollinformationen (Interface Control Information)
+- In der $n$ Schicht wird die SDU gemaess eines Protokolls veraendert und die Protocol Control Information wird ihr angehaengt, um die Protocol Data Unit zu erstellen
+- Aus dieser PDU und neuer Interface Control Information ergibt sich die Interface Data Unit fuer die naechste, darunterliegende Schicht
+###### Beispiel
+![[Pasted image 20240513122656.png]]
 ## Signale
 - Mithilfe von Signalen koennen Symbole uebertragen werden, welche Informationen repraesentieren
 #### Informationsgehalt
@@ -12,6 +20,17 @@ $$H(X) = \sum_{x \in X} p(x) I(x)$$
 - Mithilfe der bedingten Entropie kann ausgedrueckt werden, ob sich die Entropie einer Zufallszahl $Y$ veraendert, falls die Zufallsvariable $X$ bekannt ist:
 $$H(Y|X) = \sum_{x \in X} p(x) H(Y|X = x) = \sum_{x \in X} p(x) \sum_{y \in Y} p(y|x) I(y|x)$$
 - Ist $H(Y|X) = H(Y)$, so sind die beiden Zufallsvariablen unabhaengig voneinander, andernfalls sind sie voneinander abhaengig
+## Fourierreihe und Fouriertransformation
+- Periodische und nicht-periodische Signale koennen mithilfe der Fourierreihe oder einer Fouriertransformation dargestellt werden
+#### Fourierreihe
+- Periodische Signale, koennen durch Summen von gewichteten Sinus- und Kosinusfunktionen dargestellt werden
+- Die somit entstehende Reihendarstellung wird als Fourierreihe bezeichnet:
+$$s(t) = \frac{a_0}{2} + \sum_{k = 1}^{\infty} (a_k cos(k\omega t) + b_k sin(k \omega t))$$
+- $\frac{a_0}{2}$ wird als Gleichanteil bezeichnet, die $a_k$ als Kosinus- und die $b_k$ als Sinusanteil
+#### Fouriertransformation
+- Nicht-periodische Signale koennen nicht mithilfe einer Fourierreihe dargestellt werden
+- Um beide Arten von Signalen repraesentieren zu koennen, werden Fouriertransformationen verwendet:
+$$s(t) = \frac{1}{\sqrt{2\pi}} \int_{t = - \infty}^{\infty} s(t) \cdot (cos(2\pi ft) - i sin(2\pi ft)) dt$$
 ## Signalinterpretation
 - Natuerliche Signale sind zeit- und wertkontinuierlich und somit schwer, im ganzen zu erfassen
 - Stattdessen werden bei einem digitalen Signal diese kontinuierlichen Werte diskretisiert

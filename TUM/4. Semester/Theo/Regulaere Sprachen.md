@@ -126,8 +126,9 @@ $$L_1 = L_2 \Leftrightarrow (L_1 \subseteq L_2) \land (L_2 \subseteq L_1) $$
 - Das Aequivalenzproblem ist nur fuer DFAs und NFAs entscheidbar
 - Fuer DFAs kann das Aequivalenzproblem in quadratischer Zeit geloest werden, fuer NFAs in exponentieller
 ## Minimierung endlicher Automaten
-- Jede regulaere Sprache besitzt genau einen minimalen Recognizer
+- Jede regulaere Sprache besitzt einen minimalen Recognizer
 - Ein minimierter Automat wird als Quotientenautomat bezeichnet
+- Bei DFAs ist ein minimaler Automat stets eindeutig, bei NFAs jedoch nicht
 #### Algorithmus
 - Alle, nicht erreichbaren Zustaende werden eliminiert
 - Alle aequivalenten Zustaende werden bestimmt und zusammengefasst 
