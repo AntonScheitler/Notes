@@ -88,7 +88,7 @@ $$F_Y(y) = \sum_{y' \leq y} f_Y(y')$$
 $$Pr[X = x, Y = y] = Pr[X = x] \cdot Pr[Y = y]$$
 #### Zusammengesetzte Zufallsvariablen
 - Neue Zufallsvariablen koennen erstellt werden, indem bestehende Zufallsvariablen, beispielsweise durch Addition zusammengefasst werden
-- Fuer eine Zufallsvariable $Z = X + Y$ mit unabhaengigen $X$ und $Y$ gilt hierbei:
+- Fuer eine Zufallsvariable $Z = X + Y$ mit unabhaengigen $X$ und $Y$ gilt hierbei die Faltungsregel:
 $$f_Z(z) = \sum_{x \in W_X} f_X(x) \cdot f_Y(z - x)$$
 ###### Erwartungswert
 - Fuer den Erwartungswert der zusammengesetzten Zufallsvariable $X = a_1X_1 + ... + a_nX_n$ gilt:
