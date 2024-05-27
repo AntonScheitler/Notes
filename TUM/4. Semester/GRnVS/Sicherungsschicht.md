@@ -17,10 +17,10 @@
 - Verbindungen unterscheiden sich in vielen Faktoren
 ###### Uebertragungsrate
 - Die Uebertragungsrate $r$ einer Verbindung gibt an, wieviel Zeit benoetigt wird, um $L$ Datenbits zu uebertragen
-- Die hierfuer benoetigte Zeit wird als Serialsisierungszeit $t_S$ bezeichnet
+- Die hierfuer benoetigte Zeit wird als Serialsisierungszeit $t_S = \frac{L}{r}$ bezeichnet
 ###### Ausbreitungsverzoegerung
 - Abhaengig von dem Material einer Verbindung, verzoegert sich die Ausbreitung von Signalen ueber eine Strecke
-- Diese Ausbreitungsverzoegerung wird beschrieben durch
+- Diese Ausbreitungsverzoegerung ueber einen Kanal der Laenge $d$ wird beschrieben durch:
 $$t_P = \frac{d}{\rho c}$$
 - Die Gesamtverzoegerung ergibt sich somit aus $t_S$ und $t_P$
 ###### Bandbreitenverzoegerungsprodukt
@@ -32,6 +32,7 @@ $$C = \frac{d}{\rho c} \cdot r$$
 ###### Aloha Protokoll
 - Jede Station kann zu einem beliebigen Zeitpunkt eine Nachricht senden
 - Die Bestaetigung einer Nachricht werden auf einer anderen Frequenz verschickt, um zusaetzliche Kollisionen zu vermeiden
+- Bleibt die Bestaetigung aus, so gab es eine Kollision
 ![[Pasted image 20240514162328.png]]
 ###### Slotted Aloha Protokoll
 - Stationen koennen Nachrichten nur zu festen Zeitslots senden
@@ -39,16 +40,33 @@ $$C = \frac{d}{\rho c} \cdot r$$
 ![[Pasted image 20240514162347.png]]
 ###### Carrier Sense Multiple Access
 - Es wird gewartet, bis der Kanal frei ist, bevor Nachrichten versendet werden
-- Um wiederholte Kollisionen zwischen denselben Nachrichten zu vermeiden, wird ein exponential backoff angewandt
-- Hierbei warten die Stationen nach dem $k$-ten Sendeversuch, $n$ Slotzeiten, bevor die Nachricht erneut gesendet wird
-- $n$ wird zufaellig gewaehlt, wobei gilt:
-$$n \in \{0, ...,  \text{min}(2^{k - 1}, 1023) \}$$
+- CSMA Verfahren unterscheiden sich in ihrer Persistenz:
+	- Bei $1$-persistentem CSMA wird direkt gesendet, sobald der Kanal frei, ist, was zu Kollisionen fuehren kann
+	- Bei $p$-persistentem CSMA wird mit einer Wahrscheinlichkeit von $p$ die Nachricht versendet und mit einer Wahrscheinlichkeit von $p - 1$ ein bestimmtes Zeitintervall gewartet, wobei die Latenz mit kleineren $p$ steigt
+###### CSMA/CD
+- Bemerkt eine Station waehren dem Senden ihrer Nachricht, dass es zu einer Kollision gekommen ist, so unterbricht sie ihre Nachricht und sendet stattdessen ein JAM-Signal
+- Ueber dieses JAM-Signal wird andere Stationen mitgeteilt, dass ihre Nachrichten kollidiert sind
+- Eine Station muss waehrend dem Senden das JAM-Signal empfangen, um benachrichtigt zu werden
+- Somit muessen Nachrichten eine gewisse Mindestlaenge besitzen:
+$$L_{min} = \frac{2d}{\rho c}r$$
+![[Pasted image 20240527103256.png]]
+###### CSMA/CA
+- Da in Funknetzwerken CSMA/CD nicht funktioniert, muessen Kollisionen stattdessem im Vorhinein vermieden werden
+- Hierbei waehlt jede Station, nachdem der Kanal fuer eine gewisse Zeit frei war, zufaellig eine Menge von Backoff-Slots, die dann gewartet werden
+- Erst nachdem die Backoff-Slots in einem Contention Window abgewartet wurden, und der Kanal frei ist, kann gesendet werden
+![[Pasted image 20240527105422.png]]
 ###### RTS/CTS
+- RTS/CTS ist eine Erweiterung von CSMA/CA
 - Moechte eine Station $A$ eine Nachricht an $B$ senden, so muss zuerst ein $RTS$ an eine Basisstation gesendet werden
 - Sendet diese ein $CTS$ sowohl an $A$, als auch $B$, so darf $A$ die Nachricht senden
 - $B$ darf kein $RTS$ senden, bis eine Zeitspanne, die in $CTS$ definiert wird, abgelaufen ist
 - Somit koennen Kollisionen verringert werden
 ![[Pasted image 20240514162609.png]]
+###### Binary Exponential Backoff
+- Um wiederholte Kollisionen zwischen denselben Nachrichten zu vermeiden, wird ein exponential backoff angewandt
+- Hierbei warten die Stationen nach dem $k$-ten Sendeversuch, $n$ Slotzeiten, bevor die Nachricht erneut gesendet wird
+- $n$ wird zufaellig gewaehlt, wobei gilt:
+$$n \in \{0, ...,  \text{min}(2^{k - 1}, 1023) \}$$
 ###### Token Passing
 - Alle Stationen werden in einem logischen Ring verbunden, in dem genau ein Token zirkuliert
 - Moechte eine Station senden, so beansprucht sie den Token und darf als einzige im Ring, Nachrichten verschicken
@@ -84,7 +102,7 @@ $$n \in \{0, ...,  \text{min}(2^{k - 1}, 1023) \}$$
 #### Switches
 - Ein Switch verbindet, ueber seine Ports, mehrere Hubs zu einem groesseren Netzwerk und unterbrechen somit ihre Collision-Domain
 - Switches merken sich auf welchem Port eine Nachricht emfpangen wurde, um dem Port die MAC Adressen der Geraete zuzuteilen, die an ihn angeschlossen sind
-- Ein Switch mit nur zwei Ports ist eine Bridge
+- Eine Bridge ist eine Art Switch, welcher nur zwischen zwei Seiten unterscheidet
 - Switches koennen zudem Domaenen mit unterschiedlichen Medienzugriffsverfahren verbinden
 ###### Switching-Table
 - Die MAC Adressen der Geraete und ihr entsprechende Port sind in einem Switching-Table vermerkt

@@ -88,7 +88,7 @@ $$F_Y(y) = \sum_{y' \leq y} f_Y(y')$$
 $$Pr[X = x, Y = y] = Pr[X = x] \cdot Pr[Y = y]$$
 #### Zusammengesetzte Zufallsvariablen
 - Neue Zufallsvariablen koennen erstellt werden, indem bestehende Zufallsvariablen, beispielsweise durch Addition zusammengefasst werden
-- Fuer eine Zufallsvariable $Z = X + Y$ mit unabhaengigen $X$ und $Y$ gilt hierbei die Faltungsregel:
+- Fuer eine Zufallsvariable $Z = X + Y$ mit unabhaengigen $X$ und $Y$ gilt hierbei die Faltungsformel:
 $$f_Z(z) = \sum_{x \in W_X} f_X(x) \cdot f_Y(z - x)$$
 ###### Erwartungswert
 - Fuer den Erwartungswert der zusammengesetzten Zufallsvariable $X = a_1X_1 + ... + a_nX_n$ gilt:
@@ -101,10 +101,54 @@ $$Var[X] = Var[X_1] + ... + Var[X_n]$$
 ## Diskrete Verteilungen
 - Bestimmte Verteilungen erscheinen haeufig in der diskreten Wahrscheinlichkeitstheorie
 #### Bernoulli Verteilung
-- Eine Zufallsvariable $X$ ist Bernoulli-verteilt, falls ihr Wertebereicht $W_X = \{0, 1\}$ ist, und sie die Dichte
+- Eine Zufallsvariable $X$ ist Bernoulli-verteilt, falls ihr Wertebereicht $W_X = \{0, 1\}$ ist, und sie folgende Dichte besitzt:
 $$f_X(x) = \begin{cases}
 p, \; \text{falls} \; x = 1 \\
 1 - p, \; \text{falls} \; x = 0 \\
 \end{cases}$$
+- $X$ ist somit eine Indikatorvariable
 - Fuer den Erwartungswert und die Varianz von $X$ gilt hierbei:
 $$\mathbb{E}[X] = p, \; Var[X] = p(1-p)$$
+###### Binomial Verteilung
+- Betrachtet man Summen von Indikatorvariablen, so wird die Binomialverteilung verwendet
+- Ist $X = X_1 + ... + X_n$ eine Summe aus $n$ Indikatorvariablen, welche jeweils die Erfolgswahrscheinlichkeit $p$ besitzten, so ist der Wertebereich $W_X = \{0, ..., n\}$ und fuer die Dichte gilt:
+$$f_X(x) = b(x;n,p) = \binom{n}{x}p^x(1 - p)^{n - x}$$
+- Der Erwartungswert und die Varianz von $X$ lassen sich aus der Bernoulli Verteilung ableiten:
+$$\mathbb{E}[X] = np, \; Var[X] = np(1-p)$$
+- Ist $X$ binomialverteilt, so wird dies durch $X \sim Bin(n, p)$ ausgedrueckt
+- Sind $X \sim Bin(n_X, p)$ und $Y \sim Bin(n_Y, p)$, so ist folgt fuer $Z = X + Y$, dass $Z \sim Bin(n_X + n_Y, p)$
+#### Geometrische Verteilung
+- Wird ein Experiment mit Erfolgswahrscheinlichkeit $p$ solange durchgefuehrt, bis ein Erfolg eintritt, so bezeichne die Zufallsvariable $X$ die Anzahl der Versuche, bis ein Erfolg eintritt
+- Fuer die Dichte von $X$ gilt hierbei:
+$$f_X(i) = p(1-p)^{i - 1}$$
+- Der Erwartungswert und die Varianz ergeben sich somit zu:
+$$\mathbb{E}[X] = \frac{1}{p}, \; Var[X] = \frac{1 - p}{p^2}$$
+###### Negative Binomialverteilung
+- Ist $Z = X_1 + ... + X_n$ eine Summe aus $n$ geometrisch verteilten Zufallsvariablen, so bezeichnet sie die Anzahl der Versuche, bis alle $n$ Experimente erfolgreich sind
+- Bei $Z = z$ gibt es somit $n$ erfolgreiche und $z - n$ erfolglose Experimente
+- Fuer die Dichte von $Z$ gilt somit:
+$$f_Z(z) = \binom{z - 1}{n - 1} \cdot p^n(1 - p)^{z - n}$$
+- $Z$ ist somit negativ binomialverteilt
+#### Poisson Verteilung
+- Erfolgt ein Experiment mit einer bestimmten Rate in einem Zeitintervall, mit jeweils unabhaengigen Erfolgen, so kann die Anzahl der Erfolge in einem Zeitintervall durch die Poisson Verteilung ausgedrueckt werden
+- Bezeichnet die Zufallsvariable $X$ die Anzahl der Erfolge in einem Zeitintervall, bei einer Rate $\lambda$, so gilt fuert die Dichte:
+$$f_X(i) = \frac{e^{-\lambda}\lambda^i}{i!}$$
+- Fuer den Erwartungswert und die Varianz gilt somit:
+$$\mathbb{E}[X] = \lambda, \; Var[X] = \lambda$$
+- Ist $X$ poissonverteilt, so wird dies durch $X \sim Po(\lambda)$ ausgedrueckt
+###### Zusammenhang mit der Binomialverteilung
+- Die Binomialverteiung einer Zufallsvariable $X$ mit $X \sim Bin(n, \lambda /n)$ naehrt sich fuer $n \to \infty$ an die Poisson Verteilung $Po(\lambda)$ an
+###### Summe von Zufallsvariablen
+- Sind $X \sim Po(\lambda)$ und $Y \sim Po(\mu)$, so gilt fuer $Z = X + Y$, dass $Z \sim Po(\lambda + \mu)$
+## Abschaetzen von Wahrscheinlichkeiten
+- Es gibt unterschiedliche Methoden, um Wahrscheinlichkeiten nicht genau zu bestimmen, sondern zu approximieren
+#### Markov Ungleichung
+- Ist $X$ eine Zufallsvariable, die nur nicht-negative Werte annimmt, dann gilt fuer alle $t \in \mathbb{R^+}$:
+$$Pr[X \geq t] \leq \frac{\mathbb{E}[X]}{t}$$
+#### Chebyshev Ungleichung
+- Ist $X$ eine Zufallsvariable, und $t \in \mathbb{R^+}$, so gilt:
+$$Pr[|X - \mathbb{E}[X]| \geq t] \leq \frac{Var[X]}{t^2}$$
+#### Gesetz der grossen Zahlen
+- Es sei $X$ eine Zufallsvariable mit beliebigen, aber festen $\varepsilon, \delta > 0$, und mit $n \geq \frac{Var[X]}{\varepsilon \delta^2}$
+- Sind $X_1, ..., X_n$ unabhaengige Zufallszahlen mit derselben Verteilung wie $X$ und ist $Z = \frac{X_1 + ... + X_n}{n}$, so gilt:
+$$Pr[|Z - \mathbb{E}[X]| \geq \delta] \leq \varepsilon$$

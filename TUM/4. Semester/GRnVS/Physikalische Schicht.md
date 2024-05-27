@@ -79,10 +79,14 @@ $$C_s = B \log_2 \left (1 + \frac{P_S}{P_N} \right )$$
 - Codewoerter werden in Bloecke der Laenge $k$ unterteilt und in Kanalwoerter der Laenge $n > k$ kodiert
 - Das Verhaeltnis $\frac{k}{n}$ bezeichnet man als Coderate
 #### Leitungskodierung
-- Durch einen Leitungscode werden Bits, oder Gruppen von Bits, in Grundimpulse kodiert
+- Durch einen Leitungscode werden Bits, in Grundimpulse kodiert
 - Eine Abfolge von Grundimpulsen bildet einen Sendeimpuls
 - Je schneller abrupte Signalwechsel erfolgen, desto hoeher muss die Bandbreite des Kanals sein
 ###### Kodierungsarten
+- Bits koennen in verschiedene Grundimpulse kodiert werden, welche unterschiedliche Vor- und Nachteile haben
+	- Effiziente Impulse benoetigen wenige Symbole, beziehungsweise Zustaende, um ein Bit darzustellen
+	- Impulse, die eine Tackrueckgewinnung erlauben, ermoeglichen das Erkennen des Sendetakts, um das Empfangssignal korrekt abtasten zu koennen, selbst wenn zwei Stationen ausser Synchronisation geraten
+	- Gleichstromfreie Impulse haben im Durchschnitt eine Amplitude von $0$, was das Induzieren von Strom in Leitungen verhindert
 ###### Signalisieren des Sendestarts
 - Um den Start einer Nachricht zu signalisieren, kann eine Reihe von Bits als Praeambel und Start Frame Delimiter verwendet werden
 - Alternativ koennen ueber einen Code, Steuerzeichen erzeugt werden, die dann den Nachrichtenbeginn signalisieren
@@ -90,3 +94,5 @@ $$C_s = B \log_2 \left (1 + \frac{P_S}{P_N} \right )$$
 ![[Pasted image 20240424181002.png]]
 ![[Pasted image 20240424181017.png]]
 #### Modulation
+- Damit mehrere Signale ueber denselben Kanal uebertragen werden koennen, muessen deren Frequenzen moduliert werden 
+- Die Amplitude dieser Signale wird verschoben, um das Signal vor der Daempfung des Kanals zu bewahren

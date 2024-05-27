@@ -89,7 +89,7 @@ $$R1R2,\; R_1 \cup R_2,\; R^*,\; \overline{R},\; R_1 \cap R_2,\; R_1 \setminus R
 ## Pumping Lemma
 - Um zu bestimmen, ob eine gegebene Sprache regulaer ist, kann das Pumping Lemma verwendet werden
 #### Lemma
-- Ist $R \subseteq \Sigma$ regulaer, so gibt es ein $n$, sodass fuer alle $z \in R$ mit $|z| \geq n$ mit $z = uvw$ git:
+- Ist $R \subseteq \Sigma$ regulaer, so gibt es ein $n$, sodass es fuer alle $z \in R$ mit $|z| \geq n$ eine Zerlegung $z = uvw$ gibt, sodass gilt:
 	- $v \neq \epsilon$
 	- $|uv| \leq n$
 	- $\forall \, i \geq 0: uv^iw \in R$
@@ -145,9 +145,16 @@ $$\hat{\delta}(p, w) \in F \; \Leftrightarrow \; \hat{\delta}(p, w) \in F$$
 - Jedes Paar mit $p \in F$ und $q \notin F$ wird markiert
 - Nun wird jedes Paar $p, q$ markiert, fuer das ein $a \in \Sigma$ existiert, sodass $\{ \delta(p, a), \delta(q, a)\}$ bereits markiert ist
 - Wurden alle unmarkierten Paare traversiert, ohne, dass eines markiert wurde, so terminiert der Algorithmus
-###### Residualsprachen
-- Eine Residualsprache von $L$ bezueglich $w \in \Sigma^*$ wird definiert durch:
-$$L^w = \{ z \in \Sigma^* \mid wz \in L  \}$$
-- Eine Sprache ist genau dann regulaer, wenn sie endlich viele Residualsprachen hat
 ###### Effizienz
 - Der effizienteste Algorithmus zur Minimierung von Automaten laeuft in $n \log(n)$
+###### Beispiel
+![[Pasted image 20240516105507.png]]
+## Residualsprachen
+- Eine Residualsprache von $L$ bezueglich $w \in \Sigma^*$ wird definiert durch:
+$$L^w = \{ z \in \Sigma^* \mid wz \in L  \}$$
+- Zwei Woerter sind aequivalent, wenn sie dieselbe Residualsprache haben
+- Die Aequivalenz ueber Residualsprachen $\equiv_L$ ist somit eine Aequivalenzrelation und die Anzahl der Aequivalenzklassen von $\equiv_L$ ist die Anzahl der Residualsprachen von $L$
+#### Zusammenhang mit regulaeren Sprachen
+- Eine Sprache ist genau dann regulaer, wenn sie endlich viele Residualsprachen hat
+- Um zu zeigen, dass eine Sprache regulaer ist, kann gezeigt werden, dass die Menge ihrer Residualsprachen endlich ist
+- Um zu zeigen, dass eine Sprache nicht regulaer ist, kann gezeigt werden, dass es eine unendliche Menge von Woertern gibt, die jeweils paarweise unterschiedliche Residualsprachen haben
