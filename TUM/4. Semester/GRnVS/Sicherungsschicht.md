@@ -10,11 +10,8 @@
 #### Adressierung
 - Nachrichten koennen von mehreren Knoten empfangen werden, selbst wenn sie nicht als Empfaenger bestimmt sind  
 - Dies wird durch die Sicherungsschicht vermieden
-#### Beispiel
 ## Verbindungen
 - Die Verbindungen eines Direktverbindungsnetzes haben unterschiedliche Charakteristiken und Eigenschaften
-#### Charakteristiken
-- Verbindungen unterscheiden sich in vielen Faktoren
 ###### Uebertragungsrate
 - Die Uebertragungsrate $r$ einer Verbindung gibt an, wieviel Zeit benoetigt wird, um $L$ Datenbits zu uebertragen
 - Die hierfuer benoetigte Zeit wird als Serialsisierungszeit $t_S = \frac{L}{r}$ bezeichnet
@@ -26,48 +23,54 @@ $$t_P = \frac{d}{\rho c}$$
 ###### Bandbreitenverzoegerungsprodukt
 - Aufgrund der Ausbreitungsverzoegerung kann sich zu einem gegebenen Zeitpunkt feste eine Menge an Bits im Kanal befinden:
 $$C = \frac{d}{\rho c} \cdot r$$
-#### Medienzugriff
+## Medienzugriff
 - Verschiedene Medienzugriffsverfahren erlauben das gleichzeitige Nutzen eines Kanals
 - Diese Verfahren koennen entweder konkurrierend, oder geregelt verlaufen
-###### Aloha Protokoll
+#### Aloha Protokoll
 - Jede Station kann zu einem beliebigen Zeitpunkt eine Nachricht senden
 - Die Bestaetigung einer Nachricht werden auf einer anderen Frequenz verschickt, um zusaetzliche Kollisionen zu vermeiden
 - Bleibt die Bestaetigung aus, so gab es eine Kollision
+###### Beispiel
 ![[Pasted image 20240514162328.png]]
-###### Slotted Aloha Protokoll
+#### Slotted Aloha Protokoll
 - Stationen koennen Nachrichten nur zu festen Zeitslots senden
 - Dies reduziert die Kollisionswahrscheinlichkeit
+###### Beispiel
 ![[Pasted image 20240514162347.png]]
-###### Carrier Sense Multiple Access
+#### Carrier Sense Multiple Access
 - Es wird gewartet, bis der Kanal frei ist, bevor Nachrichten versendet werden
 - CSMA Verfahren unterscheiden sich in ihrer Persistenz:
 	- Bei $1$-persistentem CSMA wird direkt gesendet, sobald der Kanal frei, ist, was zu Kollisionen fuehren kann
 	- Bei $p$-persistentem CSMA wird mit einer Wahrscheinlichkeit von $p$ die Nachricht versendet und mit einer Wahrscheinlichkeit von $p - 1$ ein bestimmtes Zeitintervall gewartet, wobei die Latenz mit kleineren $p$ steigt
-###### CSMA/CD
+#### CSMA/CD
 - Bemerkt eine Station waehren dem Senden ihrer Nachricht, dass es zu einer Kollision gekommen ist, so unterbricht sie ihre Nachricht und sendet stattdessen ein JAM-Signal
 - Ueber dieses JAM-Signal wird andere Stationen mitgeteilt, dass ihre Nachrichten kollidiert sind
 - Eine Station muss waehrend dem Senden das JAM-Signal empfangen, um benachrichtigt zu werden
 - Somit muessen Nachrichten eine gewisse Mindestlaenge besitzen:
 $$L_{min} = \frac{2d}{\rho c}r$$
+- Da bei CSMA/CD Kollisionen erkannt werden koennen, wird auf Bestaetigungen von Nachrichten verzichtet
+###### Beispiel
 ![[Pasted image 20240527103256.png]]
-###### CSMA/CA
+#### CSMA/CA
 - Da in Funknetzwerken CSMA/CD nicht funktioniert, muessen Kollisionen stattdessem im Vorhinein vermieden werden
 - Hierbei waehlt jede Station, nachdem der Kanal fuer eine gewisse Zeit frei war, zufaellig eine Menge von Backoff-Slots, die dann gewartet werden
 - Erst nachdem die Backoff-Slots in einem Contention Window abgewartet wurden, und der Kanal frei ist, kann gesendet werden
+###### Beispiel
 ![[Pasted image 20240527105422.png]]
-###### RTS/CTS
+#### RTS/CTS
 - RTS/CTS ist eine Erweiterung von CSMA/CA
 - Moechte eine Station $A$ eine Nachricht an $B$ senden, so muss zuerst ein $RTS$ an eine Basisstation gesendet werden
 - Sendet diese ein $CTS$ sowohl an $A$, als auch $B$, so darf $A$ die Nachricht senden
 - $B$ darf kein $RTS$ senden, bis eine Zeitspanne, die in $CTS$ definiert wird, abgelaufen ist
 - Somit koennen Kollisionen verringert werden
+###### Beispiel
 ![[Pasted image 20240514162609.png]]
-###### Binary Exponential Backoff
-- Um wiederholte Kollisionen zwischen denselben Nachrichten zu vermeiden, wird ein exponential backoff angewandt
+#### Binary Exponential Backoff
+- Um wiederholte Kollisionen zwischen denselben Nachrichten bei CSMA zu vermeiden, wird ein exponential backoff angewandt
 - Hierbei warten die Stationen nach dem $k$-ten Sendeversuch, $n$ Slotzeiten, bevor die Nachricht erneut gesendet wird
 - $n$ wird zufaellig gewaehlt, wobei gilt:
 $$n \in \{0, ...,  \text{min}(2^{k - 1}, 1023) \}$$
-###### Token Passing
+#### Token Passing
 - Alle Stationen werden in einem logischen Ring verbunden, in dem genau ein Token zirkuliert
 - Moechte eine Station senden, so beansprucht sie den Token und darf als einzige im Ring, Nachrichten verschicken
 - Wurden alle Nachrichten versandt, so wird der Token wieder freigegeben
@@ -91,6 +94,19 @@ $$n \in \{0, ...,  \text{min}(2^{k - 1}, 1023) \}$$
 - Diese MAC Adresse wird durch die Netzwerkkarte eines Geraets bereits ueber den Hersteller festgelegt 
 #### Fehlererkennung
 - In der zweiten Schicht werden, im Gegensatz zur ersten, keine Fehler korrigiert, sondern nur erkannt und an hoehere Schichten gemeldet
+- Dies erfolgt ueber den Cyclic Redundancy Check
+###### Vorgehen
+- Ein Datenwort der Laenge $n$ kann dargestellt werden als ein Polynom der Form:
+$$a(x) = \sum_{i = 0}^{n - 1} a_ix^i, \; x_i \in \{0, 1\}$$
+- Die Addition zwischen Polynomen entspricht hierbei einer XOR Operation, Modulo dem Rest einer Polynomdivision
+- Um eine Nachricht $m(x)$ von Grad $k$ mittels CRC zu uebertragen, wird ein Reduktionspolynom $r(x)$ von Grad $n$ benoetigt:
+	1. $n$ Nullen werden an $m(x)$ angehaengt, sodass $m'(x) = m(x) \cdot x^n$
+	2. Die Pruefsumme $c(x) = m'(x) \mod{r(x)}$ wird gebildet
+	3. Die Nachricht $s(x) = m'(x) + c(x)$ wird versendet
+	4. Um Uebertragungsfehler der Nachricht $s'(x) = s(x) + e(x)$ zu erkennen, prueft der Empfaenger $s'(x) \mod{r(x)} = m'(x) + c(x) + e(x) \mod{r(x)} = e(x) \mod{r(x)} \stackrel{?}{=} 0$
+- Ist $s'(x) \mod{r(x)} = 0$, so kam es mit hoher Wahrscheinlichkeit zu keinem Bitfehler
+- Ist $e(x)$ jedoch ein Vielfaches des Reduktionspolynoms, so wird der Fehler nicht erkannt
+
 ## Verbindungen
 - Um Knoten zu einem Direkverbindungsnetz zu verbinden, werden unterschiedliche Konstrukte genutzt
 #### Hubs

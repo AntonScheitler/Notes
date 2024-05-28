@@ -13,6 +13,10 @@
 - Ist jede Grammatik einer Sprache mehrdeutig, so ist die Sprache inhaerent mehrdeutig
 ###### Beispiel
 ![[Pasted image 20240525095154.png]]
+#### Maechtigkeit
+- Um zu Beweisen, dass die Sprache aus einer kontextfreien Grammatik $L(G)$ genauso maechtig ist, wie eine gegebene Sprache $L$, kann Induktion verwendet werden
+- Um $L(G) \subseteq L$ zu zeigen, kann eine Induktion ueber die Laenge der Produktionen genutzt werden 
+- Um $L \subseteq L(G)$ zu zeigen, wird eine Induktion ueber die Wortlaenge verwendet
 ## Chomsky Normalform
 - Eine Grammatik ist in Chomsky Normalform, falls alle Produktionen eine der folgenden Formen haben:
 $$A \rightarrow a \; \; \; \; A \rightarrow BC$$
@@ -35,8 +39,20 @@ $$A \rightarrow a \; \; \; \; A \rightarrow BC$$
 ###### Eliminieren der Kettenproduktionen
 - Eine Menge $\hat{P}$ wird erstellt, die zunaechst alle Produktionen aus $P$ enthaelt
 - Sind $A \rightarrow B$, sowie $B \rightarrow a$ in $\hat{P}$ enthalten, so wird auch $A \rightarrow a$ in $\hat{P}$ hinzugefuegt
+- Nun werden alle Kettenproduktionen $A \rightarrow B$ aus $\hat{P}$ entfernt, um $G'$ zu erzeugen
 ## Pumping Lemma
 - Fuer jede kontextfreie Sprache $L$ gibt es ein $n \geq 1$, sodass es fuer jedes $z \in L$ mit $|z| \geq n$ eine Zerlegung $uvwxy$ gibt, sodass gilt:
 	- $vx \neq \epsilon$
 	- $|vwx| \leq n$
 	- $\forall i \in \mathbb{N}: uv^iwx^iy \in L$
+## Abschlusseigenschaften
+- Sind $G_1$ und $G_2$ kontextfreie Grammatiken, so sind die folgenden Sprachen ebenfalls kontextfrei:
+	- $L(G_1) \cup L(G_2)$
+	- $L(G_1)  L(G_2)$
+	- $L(G_1)^*$
+	- $L(G_1)^R$
+## Algorithmen
+- Symbole $X \in V \cup \Sigma$ werden unterschiedlich klassifiziert:
+	- $X$ ist nuetzlich, falls es eine Reihe von Ableitungen $S \rightarrow^* w$ gibt, in der $X$ vorkommt
+	- $X$ ist erzeugend, falls es eine Reihe von Ableitungen $X \rightarrow^* w$ gibt
+	- $X$ ist erreichbar, falls es eine Reihe von Ableitungen $S \rightarrow^* \alpha X \beta$ gibt

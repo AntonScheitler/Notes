@@ -152,3 +152,39 @@ $$Pr[|X - \mathbb{E}[X]| \geq t] \leq \frac{Var[X]}{t^2}$$
 - Es sei $X$ eine Zufallsvariable mit beliebigen, aber festen $\varepsilon, \delta > 0$, und mit $n \geq \frac{Var[X]}{\varepsilon \delta^2}$
 - Sind $X_1, ..., X_n$ unabhaengige Zufallszahlen mit derselben Verteilung wie $X$ und ist $Z = \frac{X_1 + ... + X_n}{n}$, so gilt:
 $$Pr[|Z - \mathbb{E}[X]| \geq \delta] \leq \varepsilon$$
+#### Chernoff Schranken
+- Ist $X$ eine binomialverteilte Zufallsvariable, mit $\mu = \mathbb{E}[X]$, so gilt fuer $X$ fuer jedes $\delta >0$:
+$$Pr[X \geq (1 + \delta)\mu] \leq \left( \frac{e^{\delta}}{(1 + \delta)^{1 + \delta}} \right)^\mu$$
+- Zusaetzlich gilt fuer jedes $0 < \delta < 1$:
+$$Pr[X \leq (1 - \delta)\mu] \leq \left( \frac{e^{- \delta}}{(1 - \delta)^{1 - \delta}} \right)^\mu$$
+## Erzeugende Funktionen
+- Fuer eine Zufallsvariable $X$ mit $W_X \subseteq \mathbb{N}_0$ wird die erzeugende Funktion definiert durch:
+$$G_X(s) = \sum_{k = 0}^{\infty} s^k \cdot Pr[X = k] = \mathbb{E}[s^X]$$
+- Mithilfe von $G_X(s)$ koennen die Dichte, Verteilung, der Erwartungswert und die Varianz von $X$ bestimmt werden:
+$$Pr[X = i] = \frac{G_X^{(i)}(0)}{i!}$$
+$$\mathbb{E}[X] = G'_X(1)$$
+$$Var[X] = G''_X(1) + G'_X(1) - (G'_X(1))^2$$
+#### Verteilungen
+- Die erzeugenden Funktionen besitzen fuer jede diskrete Verteilung ein bestimmtes Format 
+###### Bernoulli Verteilung
+- Ist $X$ bernoulli verteilt, so gilt:
+$$G_X(s) = 1 - p + ps$$
+###### Gleichverteilt
+- Ist $X$ auf $\{0, ..., n\}$ gleichverteilt, sodass $Pr[X = k] = \frac{1}{n + 1}$, so gilt:
+$$G_X(s) = \frac{s^{n + 1} - 1}{(n + 1)(s - 1)}$$
+###### Binomial Verteilung
+- Ist $X$ binomialverteilt, so gilt:
+$$G_X(s) = (1 - p + ps)^n$$
+###### Geometrische Verteilung
+- Ist $X$ geometrisch verteilt, so gilt:
+$$G_X(s) = \frac{ps}{1 - (1 - p)s}$$
+###### Poisson Verteilung
+- Ist $X$ poisson verteilt, so gilt:
+$$G_X(s) = e^{\lambda (s - 1)}$$
+#### Mehrere Zufallsvariablen 
+- Sind $X_1, ..., X_n$ unabhaengige Zufallsvariablen, so gilt fuer $Z = X_1 + ... + X_n$:
+$$G_Z(s) = G_{X_1}(s) \; \cdot \; ... \; \cdot \; G_{X_n}(s)$$
+###### Zufaellige Summen
+- Die Laenge einer Summe von Zufallsvariablen $X_1, X_2, ...$ kann von einer Zufallsvariable $N$ abhaengen
+- Sind $X_1, X_2, ...$ unabhaengige und identisch verteilte Zufallsvariablen mit der erzeugenden Funktion $G_X(s)$ und ist $N$ eine Zufallsvariable, wobei $Z = X_1 + ... + X_N$ ist, so gilt fuer die erzeugende Funktion von $Z$:
+$$G_Z(s) = G_N(G_X(s))$$
