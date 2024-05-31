@@ -158,12 +158,14 @@ $$Pr[X \geq (1 + \delta)\mu] \leq \left( \frac{e^{\delta}}{(1 + \delta)^{1 + \de
 - Zusaetzlich gilt fuer jedes $0 < \delta < 1$:
 $$Pr[X \leq (1 - \delta)\mu] \leq \left( \frac{e^{- \delta}}{(1 - \delta)^{1 - \delta}} \right)^\mu$$
 ## Erzeugende Funktionen
-- Fuer eine Zufallsvariable $X$ mit $W_X \subseteq \mathbb{N}_0$ wird die erzeugende Funktion definiert durch:
+- Fuer eine Zufallsvariable $X$ mit $W_X \subseteq \mathbb{N}_0$ wird die wahrscheinlichkeitserzeugende Funktion definiert durch:
 $$G_X(s) = \sum_{k = 0}^{\infty} s^k \cdot Pr[X = k] = \mathbb{E}[s^X]$$
 - Mithilfe von $G_X(s)$ koennen die Dichte, Verteilung, der Erwartungswert und die Varianz von $X$ bestimmt werden:
 $$Pr[X = i] = \frac{G_X^{(i)}(0)}{i!}$$
 $$\mathbb{E}[X] = G'_X(1)$$
 $$Var[X] = G''_X(1) + G'_X(1) - (G'_X(1))^2$$
+- Zudem wird die momenterzeugende Funktion definiert durch:
+$$M_X(s) = \mathbb{E}\left[e^{Xs}\right] = G_X(e^s)$$
 #### Verteilungen
 - Die erzeugenden Funktionen besitzen fuer jede diskrete Verteilung ein bestimmtes Format 
 ###### Bernoulli Verteilung
@@ -186,5 +188,5 @@ $$G_X(s) = e^{\lambda (s - 1)}$$
 $$G_Z(s) = G_{X_1}(s) \; \cdot \; ... \; \cdot \; G_{X_n}(s)$$
 ###### Zufaellige Summen
 - Die Laenge einer Summe von Zufallsvariablen $X_1, X_2, ...$ kann von einer Zufallsvariable $N$ abhaengen
-- Sind $X_1, X_2, ...$ unabhaengige und identisch verteilte Zufallsvariablen mit der erzeugenden Funktion $G_X(s)$ und ist $N$ eine Zufallsvariable, wobei $Z = X_1 + ... + X_N$ ist, so gilt fuer die erzeugende Funktion von $Z$:
+- Sind $X_1, X_2, ...$ unabhaengige und identisch verteilte Zufallsvariablen mit der erzeugenden Funktion $G_X(s)$ und ist $N$ eine Zufallsvariable, wobei $Z = X_1 + ... + X_N$ ist, so gilt fuer die wahrscheinlichkeitserzeugende Funktion von $Z$:
 $$G_Z(s) = G_N(G_X(s))$$

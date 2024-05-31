@@ -141,8 +141,7 @@ $$\hat{\delta}(p, w) \in F \; \Leftrightarrow \; \hat{\delta}(p, w) \in F$$
 - Sind $\delta(p, a)$ und $\delta(q, a)$ in einem DFA unterscheidbar, so sind $p$ und $q$ ebenfalls unterscheidbar
 - Unterscheidbarkeit pflanzt sich somit ruecktwaerts fort
 ###### Implementierung
-- Eine Tabelle von umarkierten Paaren $p, q$ wird angelegt
-- Jedes Paar mit $p \in F$ und $q \notin F$ wird markiert
+- Eine Tabelle von umarkierten Paaren $p, q$ wird angelegt - Jedes Paar mit $p \in F$ und $q \notin F$ wird markiert
 - Nun wird jedes Paar $p, q$ markiert, fuer das ein $a \in \Sigma$ existiert, sodass $\{ \delta(p, a), \delta(q, a)\}$ bereits markiert ist
 - Wurden alle unmarkierten Paare traversiert, ohne, dass eines markiert wurde, so terminiert der Algorithmus
 ###### Effizienz

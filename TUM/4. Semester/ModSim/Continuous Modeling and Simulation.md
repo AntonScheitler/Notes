@@ -50,3 +50,29 @@ $$f_p, g_p, g_q < 0, \; \; f_q > 0$$
 - This is because all species are competing with themselves and $p$ preys on $q$, however, the more prey $q$ there is, the more $p$ can grow
 - The eigenvalues of the Jacobian of the equilibrium is entirely imaginary
 - This means, that there is a neighborhood of stability around the equilibrium
+## Control Engineering
+- The controls of a technical process need to be optimized, in order to achieve a certain state
+- There are different approaches to constructing these controls
+#### Feedback Control
+- In feedback control, the target is constantly monitored and a reference value is provided, which serves as a guideline for the controls
+- The ultimate goal is to minimize the difference between the reference values and the actual measured values, produced by the controller
+###### P Controller
+- A P Controller contains just one variable, which is proportional to the deviation of the actual measured value from the target reference value
+- Just looking at this one variable, however, may result in a permanent deviation from the reference value
+###### PID Controller
+- A PID Controller consists of three parts:
+	- A proportional variable, which behaves just as in the P Controller
+	- An integral variable, which is proportional to the cumulated deviations from the reference value and serves to counteract deviations in the long run
+	- A differential variable, which is proportional to changes in the deviation from the reference value and serves to counteract oscillations
+###### Example
+![[Pasted image 20240531093428.png]]
+#### Fuzzy Logic
+- When controlling via fuzzy logic, a crisp set of values $X$ is required
+- A fuzzy set $\tilde{A}$ is defined on top of $X$ like so:
+$$\tilde{A} = \left \{ (x, \mu(x, X, \tilde{A}), x \in X\right \}$$
+- $\mu(x, X, \tilde{A}) \rightarrow [0, 1]$ is a function, which rates how closely an element $x$ is related to the fuzzy set $\tilde{A}$
+###### Operations
+- Operations, such as the intersection, union, or complement of fuzzy sets are defined like so:
+$$\tilde{A} \cap \tilde{B} = \left \{ \left(x, \text{min} \left \{ \mu(x, X, \tilde{A}), \mu(x, X, \tilde{B})\right \} \right ), x \in X \right \}$$
+$$\tilde{A} \cup \tilde{B} = \left \{ \left(x, \text{max} \left \{ \mu(x, X, \tilde{A}), \mu(x, X, \tilde{B})\right \} \right ), x \in X \right \}$$
+$$\bar{\tilde{A}} = \left \{ \left(x, \left ( 1 - \mu(x, X, \tilde{A}) \right ) \right ), x \in X \right \}$$
