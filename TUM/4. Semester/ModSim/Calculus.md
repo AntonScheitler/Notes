@@ -24,7 +24,7 @@ f_{x_1}(a) \\
 f_{x_n}(a) \\
 \end{pmatrix}$$
 - This vector represents the steepest ascent from $a$
-- As a result, the steepest ascent from $a$ is represented by $- \nabla f(a)$
+- As a result, the steepest ascent from $a$ is represented by $\nabla f(a)$
 ###### Hessian Matrix
 - The hessian matrix of $f$ is defined using its second partial derivatives:
 $$H_f(x) = \begin{pmatrix}
@@ -46,7 +46,7 @@ $$Df(x) = \begin{pmatrix}
 \nabla f_m(x)^T \\
 \end{pmatrix}$$
 ## Roots and Optima
-- In order to find all extrema of a function $f: D \subseteq \mathbb{R}^n = \mathbb{R}$, the root of its gradient needs to be determined
+- In order to find all extrema of a function $f: D \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$, the root of its gradient needs to be determined
 - All points $x_i$ with $\nabla f(x_i) = 0$ are called critical points of $f$
 #### Types of extrema
 - For a critical point $x_i$ of $f$ the following holds:
