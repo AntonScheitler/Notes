@@ -1,1 +1,2 @@
 ### [[Diskrete Wahrscheinlichkeitsraeume]]
+### [[Kontinuierliche Wahrscheinlichkeitsraeume]]
