@@ -18,7 +18,7 @@ $$F_Y(y) = Pr[Y \leq y] = Pr[g(X) \leq y] = \int_C f_X(t) \; \mathrm{d}t$$
 - Die Dichtefunktion kann zudem durch Ableiten von $F_Y(y)$ bestimmt werden
 #### Erwartungswert und Varianz
 - Der Erwartungswert einer kontinuierlichen Zufallsvariable $X$ wird definiert ueber: 
-$$\mathbb{E}[X] = \int_{- \infty}^{\infty} t \cdot f_X(t) \; \mathrm{d}x$$
+$$\mathbb{E}[X] = \int_{- \infty}^{\infty} t \cdot f_X(t) \; \mathrm{d}t$$
 - Fuer die Varianz gilt dementspreched:
 $$Var[X] = \mathbb{E}[X^2] - \mathbb{E}[X]^2 = \int_{- \infty}^{\infty} (t - \mathbb{E}[X])^2 \cdot f_X(t) \; \mathrm{d}t$$
 ## Stetige Verteilungen

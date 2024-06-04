@@ -4,7 +4,7 @@
 - Mithilfe der Albeitungsrelationen, werden ueber die Produktionen Woerter generiert
 - Ableitungsrelationen haben die Form $\alpha \rightarrow_G^{n + 1} \gamma$, $\alpha \rightarrow_G^{\star} \gamma$, oder $\alpha \rightarrow_G^{+} \gamma$, falls $\gamma$ durch $\alpha$ in $n + 1$, beliebig vielen, oder mindestens einer Ableitung erreicht werden kann
 - Eine Reihe von Ableitungen ist eine Linksableitung, falls stets die linkesten Nichtterminale zuerst abgeleitet werden
-#### Syntaxbaeume
+#### Syntaxbaeume 
 - Da es auf der linken Seite einer Produktion nur ein Nichtterminal gibt, kann ein Syntaxbaum erzeugt werden, wobei innere Knoten durch Nichtterminale und Blaetter durch Terminale repraesentiert werden
 - Eltern-Kind Beziehungen werden hierbei durch Produktionen festgelegt
 - Der Rand beschreibt das Wort, dass die Blaetter ergeben, wenn sie von links nach rechts gelesen werden
@@ -56,3 +56,38 @@ $$A \rightarrow a \; \; \; \; A \rightarrow BC$$
 	- $X$ ist nuetzlich, falls es eine Reihe von Ableitungen $S \rightarrow^* w$ gibt, in der $X$ vorkommt
 	- $X$ ist erzeugend, falls es eine Reihe von Ableitungen $X \rightarrow^* w$ gibt
 	- $X$ ist erreichbar, falls es eine Reihe von Ableitungen $S \rightarrow^* \alpha X \beta$ gibt
+#### Cocke-Younger-Kasami Algorithmus
+- Mithilfe des CYK Algorithmus kann das Wortproblem fuer kontextfreie Grammatiken in Chomsky Normalform entschieden werden 
+- Hierfuer werden die Produktionen $V_{i, j}$ betrachtet, die bestimmte Teilwoerter des Wortes generieren:
+$$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
+###### Vorgehen
+- Die $V_{i, j}$ werden rekursiv nach wachsendem $j - i$ berechnet, angefangen bei $V_{ii} = \{ A \in V \mid (A \to a_i) \in P\}$
+- Die Groesse der Teilwoerter wird in jedem Schritt um $1$ erhoeht
+- In einem Feld $ij$ einer Tabelle werden alle Mengen von Nichtterminalen notiert, welche das Teilwort $a_i, ..., a_j$ erzeugen koennen
+- Enthaelt das oberste Feld der Tabelle das Nichtterminal $S$, so kann das Wort von der Grammatik erzeugt werden 
+###### Beispiel
+![[Pasted image 20240603144116.png]]
+#### Kellerautomaten
+- Mithilfe von Kellerautomaten kann das Wortproblem fuer kontextfreie Sprachen geloest werden
+###### Aufbau
+- Ein Kellerautomat $M$ besteht aus:
+	- Einer endlichen Zustandsmenge $Q$
+	- Einem Eingabealphabet $\Sigma$
+	- Einem Kelleralphabet $\Gamma$
+	- Einem Anfangszustand $q_0$
+	- Dem untersten Kellerzeichen $Z_0$
+	- Einer Uebergangsfunktion $\delta: Q \times (\Sigma \cup \{\epsilon\}) \times \Gamma \to P(Q \times \Gamma^*)$
+	- Einer Menge von Endzustaenden $F \subseteq Q$
+###### Konfiguration
+- Der Zustand eines Kellerautomaten zu einem gegebenen Zeitpunkt kann durch $(q, w, a)$ dargestellt werden
+- $q$ entspricht hierbei dem Zustand des Automaten, $w$ dem verbleibenden, einzulesenden Wort und $a$ dem aktuellen Kellerinhalt
+###### Zustandsuebergang
+- Befindet sich $M$ im Zustand $q$, liest das Eingabezeichen $a$, besitzt das oberste Kellerzeichen $Z$ und geht dann in den Zustand $q'$ ueber und besitzt nun das oberste Kellerzeichen $\alpha$, so kann dies durch $(q', \alpha) \in (q, a, Z)$ ausgedrueckt werden
+- Durch push und pop Operationen koennen Kellerzeichen auf den Keller gelegt, beziehungsweise davon entfernt werden
+###### Akzeptanz von Woertern
+- Ein PDA akzeptiert $w \in \Sigma^*$ mit Endzustand, genau dann wenn:
+$$(q_0, w, Z_0) \to_{M}^* (f, \epsilon, \gamma), \; \; f \in F, \gamma \in \Gamma$$
+- Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_F(M)$ beschrieben
+- Ein PDA akzeptiert $w \in \Sigma^*$ mit leerem Keller, genau dann wenn:
+$$(q_0, w, Z_0) \to_{M}^* (q, \epsilon, \epsilon), \; \; q \in Q$$
+- Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_{\epsilon}(M)$ beschrieben
