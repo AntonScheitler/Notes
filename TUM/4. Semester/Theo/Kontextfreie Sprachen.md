@@ -56,6 +56,10 @@ $$A \rightarrow a \; \; \; \; A \rightarrow BC$$
 	- $X$ ist nuetzlich, falls es eine Reihe von Ableitungen $S \rightarrow^* w$ gibt, in der $X$ vorkommt
 	- $X$ ist erzeugend, falls es eine Reihe von Ableitungen $X \rightarrow^* w$ gibt
 	- $X$ ist erreichbar, falls es eine Reihe von Ableitungen $S \rightarrow^* \alpha X \beta$ gibt
+#### Entfernen unnuetzer Symbole
+- Unnuetze Symbole koennen aus einer Grammatik entfernt werden, indem folgende Schritte befolgt werden:
+	- Alle nicht erzeugenden Symbole werden entfernt
+	- Alle nicht erreichbaren Symbole werden entfernt
 #### Cocke-Younger-Kasami Algorithmus
 - Mithilfe des CYK Algorithmus kann das Wortproblem fuer kontextfreie Grammatiken in Chomsky Normalform entschieden werden 
 - Hierfuer werden die Produktionen $V_{i, j}$ betrachtet, die bestimmte Teilwoerter des Wortes generieren:
@@ -69,6 +73,8 @@ $$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
 ![[Pasted image 20240603144116.png]]
 #### Kellerautomaten
 - Mithilfe von Kellerautomaten kann das Wortproblem fuer kontextfreie Sprachen geloest werden
+- Der Kellerautomat besteht hierbei aus einem Stack und einem Kontrollgraphen, der das Verhalten des Stacks fuer eingelesene Zeichen festlegt
+- Der Kontrollgraph verhaelt sich nicht deterministisch
 ###### Aufbau
 - Ein Kellerautomat $M$ besteht aus:
 	- Einer endlichen Zustandsmenge $Q$
@@ -83,7 +89,7 @@ $$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
 - $q$ entspricht hierbei dem Zustand des Automaten, $w$ dem verbleibenden, einzulesenden Wort und $a$ dem aktuellen Kellerinhalt
 ###### Zustandsuebergang
 - Befindet sich $M$ im Zustand $q$, liest das Eingabezeichen $a$, besitzt das oberste Kellerzeichen $Z$ und geht dann in den Zustand $q'$ ueber und besitzt nun das oberste Kellerzeichen $\alpha$, so kann dies durch $(q', \alpha) \in (q, a, Z)$ ausgedrueckt werden
-- Durch push und pop Operationen koennen Kellerzeichen auf den Keller gelegt, beziehungsweise davon entfernt werden
+- Durch push und pop Operationen koennen Kellerzeichen auf den Stack gelegt, beziehungsweise davon entfernt werden
 ###### Akzeptanz von Woertern
 - Ein PDA akzeptiert $w \in \Sigma^*$ mit Endzustand, genau dann wenn:
 $$(q_0, w, Z_0) \to_{M}^* (f, \epsilon, \gamma), \; \; f \in F, \gamma \in \Gamma$$
