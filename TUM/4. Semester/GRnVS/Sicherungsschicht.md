@@ -90,7 +90,7 @@ $$n \in \{0, ...,  \text{min}(2^{k - 1}, 1023) \}$$
 - Die Regeln eines Leitungscodes werden absichtlich verletzt, um ein neues, ungueltiges Symbol zu erzeugen
 - Dieses Symbol kann nun genutzt werden, um den Beginn, oder das Ende eines Rahmens zu markieren
 #### Adressierung
-- Im Direktverbindungsnetz der zweiten Schicht werden Knoten eindeutig ueber ihre Media Access Controll Adresse identifiziert
+- Im Direktverbindungsnetz der zweiten Schicht werden Knoten eindeutig ueber eine 6 Byte Media Access Controll Adresse identifiziert
 - Diese MAC Adresse wird durch die Netzwerkkarte eines Geraets bereits ueber den Hersteller festgelegt 
 #### Fehlererkennung
 - In der zweiten Schicht werden, im Gegensatz zur ersten, keine Fehler korrigiert, sondern nur erkannt und an hoehere Schichten gemeldet

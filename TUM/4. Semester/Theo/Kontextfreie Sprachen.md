@@ -56,6 +56,7 @@ $$A \rightarrow a \; \; \; \; A \rightarrow BC$$
 	- $X$ ist nuetzlich, falls es eine Reihe von Ableitungen $S \rightarrow^* w$ gibt, in der $X$ vorkommt
 	- $X$ ist erzeugend, falls es eine Reihe von Ableitungen $X \rightarrow^* w$ gibt
 	- $X$ ist erreichbar, falls es eine Reihe von Ableitungen $S \rightarrow^* \alpha X \beta$ gibt
+- Falls $X$ nuetzlich ist, so ist es auch erzeugend und erreichbar, aber nicht umgekehrt
 #### Entfernen unnuetzer Symbole
 - Unnuetze Symbole koennen aus einer Grammatik entfernt werden, indem folgende Schritte befolgt werden:
 	- Alle nicht erzeugenden Symbole werden entfernt
@@ -71,11 +72,11 @@ $$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
 - Enthaelt das oberste Feld der Tabelle das Nichtterminal $S$, so kann das Wort von der Grammatik erzeugt werden 
 ###### Beispiel
 ![[Pasted image 20240603144116.png]]
-#### Kellerautomaten
+## Kellerautomaten
 - Mithilfe von Kellerautomaten kann das Wortproblem fuer kontextfreie Sprachen geloest werden
 - Der Kellerautomat besteht hierbei aus einem Stack und einem Kontrollgraphen, der das Verhalten des Stacks fuer eingelesene Zeichen festlegt
 - Der Kontrollgraph verhaelt sich nicht deterministisch
-###### Aufbau
+#### Aufbau
 - Ein Kellerautomat $M$ besteht aus:
 	- Einer endlichen Zustandsmenge $Q$
 	- Einem Eingabealphabet $\Sigma$
@@ -84,16 +85,28 @@ $$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
 	- Dem untersten Kellerzeichen $Z_0$
 	- Einer Uebergangsfunktion $\delta: Q \times (\Sigma \cup \{\epsilon\}) \times \Gamma \to P(Q \times \Gamma^*)$
 	- Einer Menge von Endzustaenden $F \subseteq Q$
-###### Konfiguration
+#### Konfiguration
 - Der Zustand eines Kellerautomaten zu einem gegebenen Zeitpunkt kann durch $(q, w, a)$ dargestellt werden
 - $q$ entspricht hierbei dem Zustand des Automaten, $w$ dem verbleibenden, einzulesenden Wort und $a$ dem aktuellen Kellerinhalt
-###### Zustandsuebergang
-- Befindet sich $M$ im Zustand $q$, liest das Eingabezeichen $a$, besitzt das oberste Kellerzeichen $Z$ und geht dann in den Zustand $q'$ ueber und besitzt nun das oberste Kellerzeichen $\alpha$, so kann dies durch $(q', \alpha) \in (q, a, Z)$ ausgedrueckt werden
-- Durch push und pop Operationen koennen Kellerzeichen auf den Stack gelegt, beziehungsweise davon entfernt werden
-###### Akzeptanz von Woertern
+#### Zustandsuebergang
+- Die Zustandsuebergangsfunktion akzeptiert einen Zustand $q$, ein Eingabezeichen $a$ und das oberste Kellerzeichen $Z$ und lieferet einen neuen Zustand $q'$, sowie ein neues oberstes Kellerzeichen $Z'$
+- Dies kann ueber $(q', Z') \in \delta(q, a, Z)$ ausgedrueckt werden
+- Hierdurch koennen push und pop Operationen definiert werden, die Zeichen auf den Stack legen, beziehungsweise davon entfernen
+- Ausserdem koennen Zeichen gelesen werden, ohne, dass sich der Stack veraendert
+#### Akzeptanz von Woertern
 - Ein PDA akzeptiert $w \in \Sigma^*$ mit Endzustand, genau dann wenn:
 $$(q_0, w, Z_0) \to_{M}^* (f, \epsilon, \gamma), \; \; f \in F, \gamma \in \Gamma$$
 - Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_F(M)$ beschrieben
 - Ein PDA akzeptiert $w \in \Sigma^*$ mit leerem Keller, genau dann wenn:
 $$(q_0, w, Z_0) \to_{M}^* (q, \epsilon, \epsilon), \; \; q \in Q$$
 - Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_{\epsilon}(M)$ beschrieben
+#### Umwandeln von PDAs
+- Die Unterschiedlichen Arten von PDAs koennen ineinander umgewandelt werden 
+###### Endzustand zu leerem Keller
+- Um einen PDA $M$, der mit Endzustaenden akzeptiert in einen PDA $M'$ umzuwandeln, der mit leerem Keller akzeptiert, werden folgende Schritte ausgefuehrt:
+	- Der Startzustand von $M'$ besitzt einen $\epsilon$ Uebergang, der ein Zeichen $Z_0'$ auf den Stack legt und in den Startzustand von $M$ uebergeht
+	- Jeder Endzustand von $M$ besitzt einen Uebergang, der alle Zeichen vom Keller entfernt 
+###### Leerer Keller zu Endzustand
+- Um einen PDA $M$, der mit leerem Keller akzeptiert in einen PDA $M'$ umzuwandeln, der mit Endzustaenden akzeptiert, werden folgende Schritte ausgefuehrt:
+	- Der Startzustand von $M'$ besitzt einen $\epsilon$ Uebergang, der ein Zeichen $Z_0'$ auf den Stack legt und in den Startzustand von $M$ uebergeht
+	- Aus jedem Zustand kann in einen Endzustand gewechselt werden, falls $Z_0'$ das einzige Zeichen auf dem Stack ist

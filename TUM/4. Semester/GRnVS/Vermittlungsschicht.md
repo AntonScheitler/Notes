@@ -35,10 +35,10 @@
 ## IPv4
 - Eine IPv4 Adresse dient dazu, Geraete global zu identifizieren und besteht aus 4 Bytes, welche jeweils durch einen Punkt getrennt sind
 - Unterschiedliche Teile einer IPv4 Adresse dienen dazu das Netz des Hosts, beziehungsweise den Host selbst zu identifizieren
-- Die Broadcastadresse besitzt hierbei nur Einsen im Hostanteil
+- Die Fragmentierung einer Nachricht erfolgt hierbei beim Router, das Reassemblieren beim Empfaenger
 #### Header
 - Da Router anhand der IP Adressen Weiterleitungsentscheidungen treffen, muessen die Adressen des Absenders und Emfpaengers im IP Header der Nachricht stehen
-- Der IP Header enthaelt zudem zusaetzliche Informationen, wie Checksums oder die Anzahl an erlaubten Hops; der TTL
+- Der IP Header enthaelt zudem zusaetzliche Informationen, wie die Laenge der Nachricht oder die Anzahl an erlaubten Hops; der TTL
 #### Adressaufloesung
 - Ist nur die IP Adresse und nicht die MAC Adresse eines Geraets bekannt, so kann diese ueber eine ARP-Request im Direktverbindungsnetz in Erfahrung gebracht werden
 - Wird durch die ARP-Request keine MAC gefunden, so wendet sich das Geraet an die MAC des Default Gateway, um die Nachricht in andere Netze zu versenden
@@ -62,8 +62,9 @@
 - Traditionell werden die Groessen des Netz- und Hostanteils von IP Adressen durch Klassen vorgeschrieben 
 - Dies resultiert jedoch in ineffizienter Nutzung des Adressraums und grossen Netzwerken, die unter ueberlastung leiden
 - Ueber CIDR kann anhand einer Subnetzmaske die Groesse des Netz- und Hostanteils dynamisch definiert werden
+###### Zusammenfassen von Subnetzen
+- Um Netze zusammenfassen zu koennen, muessen alle Netze gleich gross, nebeneinander und bis auf das letzte Bit des Netzanteils identisch sein
 ###### Anwendung
-- CIDR wird verwendet, um grosse Netzwerke in kleinere zu unterteilen, sowie um kleine Netzwerke in grossen zusammenzufassen
 - Haeufig wird die Maske nicht angegeben, sondern stattdessen die Anzahl der fuehrenden Einsen der Maske an die IP Adresse angehaengt 
 - Eine resultierende Adresse kann somit beispielsweise 192.160.0.0/23 lauten
 ###### Beispiel
@@ -71,6 +72,7 @@
 ## IPv6
 - Da sich fuer IPv4 die Adressknappheit verbreitet, nimmt die Nutzung von IPv6 zu
 - Durch IPv6 wird der Adressraum auf $2^{128}$ vergroessert und der Header vereinfacht, um ihn effizienter nutzen zu koennen
+- Die Fragmentierung einer Nachricht erfolgt zudem direkt beim Sender und nicht beim Router
 #### Header
 - Der IPv6 Header enthaelt Informationen, wie die Adressen des Senders und Emfpaengers, die Laenge der Payload, sowie das Hop Limit 
 - Ueber das Next Header Feld wird der Typ des Extension Headers, oder des L4 Headers bekannt gegeben
