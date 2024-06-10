@@ -39,9 +39,42 @@ $$\mathbb{E}[X] = \frac{a + b}{2}$$
 $$Var[X] = \frac{(a + b)^2}{12}$$
 #### Normalverteilung
 - Eine Zufallsvariable $X$ ist normalverteilt mit den Parametern $\mu \in \mathbb{R}$ und $\sigma \in \mathbb{R}^+$, falls sie die folgende Dichte und Verteilung besitzt:
-$$f(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \exp \left ( - \frac{(x - \mu)^2}{2\sigma^s}\right ) = \varphi(x; \mu, \sigma)$$
+$$f(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \exp \left ( - \frac{(x - \mu)^2}{2\sigma^2}\right ) = \varphi(x; \mu, \sigma)$$
 $$F(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \int_{- \infty}^x \exp \left ( - \frac{(t - \mu)^2}{2\sigma^2} \right ) \; \mathrm{d}t = \Phi(x, \mu, \sigma)$$
-- Falls $\mu = 0$ und $\sigma = 1$, so handelt es sich bei $X$ um eine standardnormalverteilte Zufallsvariable mit der Dichte $\varphi(x)$
+- Falls $\mu = 0$ und $\sigma = 1$, sodass $X \sim \mathcal{N}(0, 1)$, so handelt es sich bei $X$ um eine standardnormalverteilte Zufallsvariable, wobei gilt:
+- Fuer eine normalverteilte Zufallsvariable $X \sim \mathcal{N}(\mu, \sigma^2)$ gilt:
+$$\mathbb{E}[X] = \mu, \; Var[X] = \sigma^2$$
+###### Lineare Transformation
+- Ist $X \sim \mathcal{N}(\mu, \sigma^2)$ eine normalverteilte Zufallsvariable, so ist $Y = aX + b$, mit $a \in \mathbb{R} \setminus \{0\}$ und $b \in \mathbb{R}$ ebenfalls normalverteilt mit $Y \sim \mathcal{N}(a \mu + b, a^2\sigma^2)$
+#### Exponentialverteilung
+- Eine Zufallsvariable $X$ ist exponentialverteilt, mit dem Parameter $\lambda$, falls sie folgende Dichte und Verteilung besitzt: 
+$$f_X(x) = \begin{cases}
+\lambda \cdot e^{-\lambda x}, \; x \geq 0 \\
+0, \; \text{sonst}
+\end{cases}$$
+$$F_X(x) = \int_0^x \lambda \cdot e^{- \lambda t} \; \mathrm{d}t = 1 - e^{-\lambda x}$$
+- Fuer den Erwartungswert und die Varianz gelten zudem:
+$$\mathbb{E}[X] = \frac{1}{\lambda}$$
+$$Var[X] = \frac{1}{\lambda^2}$$
+- Aehnlich zur geometrischen Verteilung ist die Exponentialverteilung ebenfalls gedaechnislos
+###### Skalierung exponentialverteilter Zufallsvariablen
+- Ist $X$ eine exponentialverteilte Zufallsvariable mit dem Parameter $\lambda$, so ist $Y = aX$, mit $a > 0$ ebenfalls exponentialverteilt mit dem Parameter $\frac{\lambda}{a}$ 
+###### Warteprobleme
+- Sind die Zufallsvariablen $X_1, ..., X_n$ exponentialverteilt mit den Parametern $\lambda_1, ..., \lambda_n$, so ist auch $X = min(X_1, ..., X_n)$ exponentialverteilt mit dem Parameter $\lambda_1 + ... + \lambda_n$
+## Mehrere Zufallsvariablen
+- Fuer zwei kontinuierliche Zufallsvariablen wird die gemeinsame Dichte ueber eine integrierbare Dichtefunktion beschrieben, wobei:
+$$Pr[A] = \int_A f_{X, Y}(x, y) \; \mathrm{d}x \; \mathrm{d} y$$
+$$\int_{- \infty}^{\infty} \int_{- \infty}^{\infty} f_{X, Y}(x, y) \; \mathrm{d} x \; \mathrm{d} y = 1$$
+- Fuer die Verteilungsfunktion gilt zudem:
+$$F_{X, Y}(x, y) = \int_{- \infty}^{y} \int_{- \infty}^{x} f_{X, Y}(u, v) \; \mathrm{d} u \; \mathrm{d} v$$
+#### Randdichte und Randverteilung
+- Die Randdichte von $X$ kann anhand der gemeinsamen Dichtefunktion beschrieben werden: 
+$$f_X(x) = \int_{-\infty}^{\infty} f_{X, Y}(x, v) \; \mathrm{d} v$$
+- Fuer die Randverteilung von $X$ gilt somit:
+$$F_X(x) = \int_{- \infty}^x \left [\int_{-\infty}^{\infty} f_{X, Y}(u, v) \; \mathrm{d} v \right ] \; \mathrm{d} u$$
+#### Unabhaengigkeit
+- Zwei Zufallsvariablen $X$ und $Y$ sind unabhaengig, falls gilt:
+$$f_{X, Y}(x, y) = f_X(x) \cdot f_Y(y)$$
 ## $\sigma$ Algebren
 - Eine Menge $\mathbb{A} \subseteq P(\Omega)$ heisst $\sigma$ Algebra, falls folgende Bedingungen erfuellt sind: 
 	- $\Omega \in \mathbb{A}$
