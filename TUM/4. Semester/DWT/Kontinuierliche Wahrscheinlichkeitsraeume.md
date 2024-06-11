@@ -39,13 +39,16 @@ $$\mathbb{E}[X] = \frac{a + b}{2}$$
 $$Var[X] = \frac{(a + b)^2}{12}$$
 #### Normalverteilung
 - Eine Zufallsvariable $X$ ist normalverteilt mit den Parametern $\mu \in \mathbb{R}$ und $\sigma \in \mathbb{R}^+$, falls sie die folgende Dichte und Verteilung besitzt:
-$$f(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \exp \left ( - \frac{(x - \mu)^2}{2\sigma^2}\right ) = \varphi(x; \mu, \sigma)$$
-$$F(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \int_{- \infty}^x \exp \left ( - \frac{(t - \mu)^2}{2\sigma^2} \right ) \; \mathrm{d}t = \Phi(x, \mu, \sigma)$$
-- Falls $\mu = 0$ und $\sigma = 1$, sodass $X \sim \mathcal{N}(0, 1)$, so handelt es sich bei $X$ um eine standardnormalverteilte Zufallsvariable, wobei gilt:
+$$f_X(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \exp \left ( - \frac{(x - \mu)^2}{2\sigma^2}\right ) = \varphi(x; \mu, \sigma)$$
+$$F_X(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \int_{- \infty}^x \exp \left ( - \frac{(t - \mu)^2}{2\sigma^2} \right ) \; \mathrm{d}t = \Phi(x, \mu, \sigma)$$
 - Fuer eine normalverteilte Zufallsvariable $X \sim \mathcal{N}(\mu, \sigma^2)$ gilt:
 $$\mathbb{E}[X] = \mu, \; Var[X] = \sigma^2$$
-###### Lineare Transformation
-- Ist $X \sim \mathcal{N}(\mu, \sigma^2)$ eine normalverteilte Zufallsvariable, so ist $Y = aX + b$, mit $a \in \mathbb{R} \setminus \{0\}$ und $b \in \mathbb{R}$ ebenfalls normalverteilt mit $Y \sim \mathcal{N}(a \mu + b, a^2\sigma^2)$
+- Falls $\mu = 0$ und $\sigma = 1$, sodass $X \sim \mathcal{N}(0, 1)$, so handelt es sich bei $X$ um eine standardnormalverteilte Zufallsvariable
+- Die Verteilungsfunktion einer standardnormalverteilten Zufallsvariable ist die Gausssche $\Phi$ Funktion
+###### Berechnung der Verteilungsfunktion
+- Das Berechnen der Verteilungsfunktion $F_X(x)$ ist in der Regel nicht moeglich
+- Stattdessen kann $X$ auf die standardnormalverteilte Zufallsvariable $Y = \frac{X - \mu}{\sigma}$ normiert werden
+- Da die Werte der Gaussschen $\Phi$ Funktion tabelliert sind, koennen die entsprechenden Werte von $F_X$ hieraus hergeleitet werden
 #### Exponentialverteilung
 - Eine Zufallsvariable $X$ ist exponentialverteilt, mit dem Parameter $\lambda$, falls sie folgende Dichte und Verteilung besitzt: 
 $$f_X(x) = \begin{cases}
