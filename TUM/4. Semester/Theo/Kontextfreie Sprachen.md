@@ -110,3 +110,18 @@ $$(q_0, w, Z_0) \to_{M}^* (q, \epsilon, \epsilon), \; \; q \in Q$$
 - Um einen PDA $M$, der mit leerem Keller akzeptiert in einen PDA $M'$ umzuwandeln, der mit Endzustaenden akzeptiert, werden folgende Schritte ausgefuehrt:
 	- Der Startzustand von $M'$ besitzt einen $\epsilon$ Uebergang, der ein Zeichen $Z_0'$ auf den Stack legt und in den Startzustand von $M$ uebergeht
 	- Aus jedem Zustand kann in einen Endzustand gewechselt werden, falls $Z_0'$ das einzige Zeichen auf dem Stack ist
+## Deterministischer Kellerautomat
+- Ein Kellerautomat ist deterministisch, falls fuer jede Kombination aus Zustand, eingelesenem Zeichen und obserstem Kellerzeichen hoechstens ein Uebergang definiert ist 
+- Gibt es fuer ein Zustand und ein oberstes Kellerzeichen einen $\epsilon$ Uebergang, so darf dies der einzige Uebergang fuer diese Konfiguration sein
+- Ein Kellerautomat ist somit deterministisch, falls fuer alle $q \in Q$, $a \in \Sigma$ und $Z \in \Gamma$ gilt:
+$$|\delta(q, a, Z)| + |\delta(q, \epsilon, Z)| \leq 1$$
+#### Praefix Bedingung
+- Eine Sprache erfuellt die Praefix Bedingung, genau dann, wenn sie keine zwei Woerter enthaelt, sodass das eine ein echter Praefix des anderen ist
+- Es existiert ein DPDA $M$ fuer $L = L_{\epsilon}(M)$ genau dann, wenn es einen DPDA $M$ fuer $L = L_F(M)$ gibt und $L$ die Praefix Bedingung erfuellt
+- Die Akzeptanz ueber Endzustaende ist somit maechtiger als die Akzeptanz ueber den leeren Stack
+#### Deterministische Kontextfreie Sprachen
+- Die Sprache, die von einem DPDA akzeptiert wird, wird als deterministisch kontextfrei bezeichnet
+- Die Klasse der deterministischen kontextfreien Sprachen ist unter dem Komplement abgeschlossen, jedoch nicht unter Vereinigung oder Schnitt
+###### Eigenschaften
+- DCFL sind nicht inhaerent mehrdeutig
+- Das Wortproblem fuer DCFL ist in linearer Zeit loesbar
