@@ -66,7 +66,7 @@ $$f_p, g_p, g_q < 0, \; \; f_q > 0$$
 	- A differential variable, which is proportional to changes in the deviation from the reference value and serves to counteract oscillations
 ###### Example
 ![[Pasted image 20240531093428.png]]
-#### Fuzzy Logic
+#### Fuzzy Control System
 - When controlling via fuzzy logic, a crisp set of values $X$ is required
 - A fuzzy set $\tilde{A}$ is defined on top of $X$ like so:
 $$\tilde{A} = \left \{ (x, \mu(x, X, \tilde{A}), x \in X\right \}$$
@@ -76,3 +76,17 @@ $$\tilde{A} = \left \{ (x, \mu(x, X, \tilde{A}), x \in X\right \}$$
 $$\tilde{A} \cap \tilde{B} = \left \{ \left(x, \text{min} \left \{ \mu(x, X, \tilde{A}), \mu(x, X, \tilde{B})\right \} \right ), x \in X \right \}$$
 $$\tilde{A} \cup \tilde{B} = \left \{ \left(x, \text{max} \left \{ \mu(x, X, \tilde{A}), \mu(x, X, \tilde{B})\right \} \right ), x \in X \right \}$$
 $$\bar{\tilde{A}} = \left \{ \left(x, \left ( 1 - \mu(x, X, \tilde{A}) \right ) \right ), x \in X \right \}$$
+###### Fuzzification
+- The first step in a fuzzy control system is to describe the measured values with fuzzy sets
+- Here linguistic variables can be used, which describe and group crisp values, like temperatures, using linguistic terms, like "cold" or "lukewarm"
+![[Pasted image 20240611094423.png]]
+###### Rule Base
+- The behavior of the system is defined with if-then statements which use fuzzy sets
+- The if part can include a number of fuzzy sets, which are combined using intersections, unions and complements
+###### Inference
+- The degree of membership of the measured value in the if part of a rule determines the degree of the response in the then part of a rule
+- This degree is described by a cut fuzzy set
+![[Pasted image 20240611101639.png]]
+###### Defuzzification
+- In the defuzzification step, the cut fuzzy sets from the inference step are translated into crisp values
+![[Pasted image 20240611102730.png]]
