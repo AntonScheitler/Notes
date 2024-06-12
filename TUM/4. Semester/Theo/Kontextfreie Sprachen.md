@@ -86,7 +86,7 @@ $$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
 	- Einer Uebergangsfunktion $\delta: Q \times (\Sigma \cup \{\epsilon\}) \times \Gamma \to P(Q \times \Gamma^*)$
 	- Einer Menge von Endzustaenden $F \subseteq Q$
 #### Konfiguration
-- Der Zustand eines Kellerautomaten zu einem gegebenen Zeitpunkt kann durch $(q, w, a)$ dargestellt werden
+- Die Konfiguration eines Kellerautomaten zu einem gegebenen Zeitpunkt kann durch $(q, w, a)$ dargestellt werden
 - $q$ entspricht hierbei dem Zustand des Automaten, $w$ dem verbleibenden, einzulesenden Wort und $a$ dem aktuellen Kellerinhalt
 #### Zustandsuebergang
 - Die Zustandsuebergangsfunktion akzeptiert einen Zustand $q$, ein Eingabezeichen $a$ und das oberste Kellerzeichen $Z$ und lieferet einen neuen Zustand $q'$, sowie ein neues oberstes Kellerzeichen $Z'$
@@ -97,7 +97,7 @@ $$V_{i, j} = \{ A \in V \mid A \rightarrow_G^* a_i, ..., a_j)$$
 - Ein PDA akzeptiert $w \in \Sigma^*$ mit Endzustand, genau dann wenn:
 $$(q_0, w, Z_0) \to_{M}^* (f, \epsilon, \gamma), \; \; f \in F, \gamma \in \Gamma$$
 - Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_F(M)$ beschrieben
-- Ein PDA akzeptiert $w \in \Sigma^*$ mit leerem Keller, genau dann wenn:
+- Ein PDA akzeptiert $w \in \Sigma^*$ mit leerem Stack, genau dann wenn:
 $$(q_0, w, Z_0) \to_{M}^* (q, \epsilon, \epsilon), \; \; q \in Q$$
 - Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_{\epsilon}(M)$ beschrieben
 #### Umwandeln von PDAs

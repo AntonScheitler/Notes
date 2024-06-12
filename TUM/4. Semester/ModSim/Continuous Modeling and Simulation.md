@@ -90,3 +90,45 @@ $$\bar{\tilde{A}} = \left \{ \left(x, \left ( 1 - \mu(x, X, \tilde{A}) \right ) 
 ###### Defuzzification
 - In the defuzzification step, the cut fuzzy sets from the inference step are translated into crisp values
 ![[Pasted image 20240611102730.png]]
+## Heat Transfer
+- The propagation and distribution of heat in a physical space over time can be modeled using differential equations
+- In order to describe changes in temperature across time and space, a PDE is needed
+- To make this PDE unique some initial, or boundary conditions are needed 
+#### Boundaries
+- In a Dirichlet condition, the temperature on the boundary of the domain is given 
+- In a Neumann condition, the normal derivative and therefore the heat flow through the boundary is given
+- These conditions can also be combined with one another
+#### Heat Equation
+- The equation, which describes transfer of heat is:
+$$\kappa \cdot \Delta T = T_t$$
+$$\Delta T = T_{xx} + T_{yy} + T_{zz}$$
+- Here, $T_s$ refers to the derivative of $T$ with respect to a variable $s$
+###### Types of PDEs
+- The heat equation is a linear PDE of second order, because the equation consists of a linear combinations of the function itself, its first and its second derivative
+###### Classification
+- The following holds for the heat equation:
+$$\kappa \cdot T_{xx} + \kappa \cdot T_{yy} + \kappa \cdot T_{zz} - T_t = 0$$
+- The coefficients of the second derivatives $T_{ss}$ can therefore be written as a matrix, those of the first derivative as a vector:
+$$A = \begin{pmatrix}
+\kappa & 0 & 0 & 0 \\
+0 & \kappa & 0 & 0 \\
+0 & 0 & \kappa & 0 \\
+0 & 0 & 0 & 0 \\
+\end{pmatrix}, \; b = \begin{pmatrix}
+0 \\
+0 \\
+0 \\
+-1 \\
+\end{pmatrix}$$
+- Since one of the eigenvalues of $A$ is $0$ and the others have the same sign, this is a parabolic PDE
+- Classifying PDEs is important, since each class requires a different numerical approach
+#### Finite Differences Method
+- The finite differences method is used to approximate all occuring derivatives in a differential equation
+###### Approach
+- A domain is made discrete by defining a set of points on a mesh
+- Each section of the mesh has a number of widths $h = (h_x, h_y, h_z)$
+- The first derivatives of a differential equations can be approximated using difference quotients:
+$$\frac{\delta u}{\delta x}(\xi) = \frac{u(\xi + h_x) - u(\xi)}{h_x}$$
+- The second derivatives can be approximated using a 3-point-stencil:
+$$\frac{\delta^2u}{\delta^2x^2} = \frac{u(\xi + h_x) - 2u(\xi) + u(\xi - h-x)}{h_x^2}$$
+- Since the boundary of the mesh is given by the initial and boundary conditions of a problem, the mesh points can be calculated one by one
