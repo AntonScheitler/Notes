@@ -100,8 +100,11 @@ $$(q_0, w, Z_0) \to_{M}^* (f, \epsilon, \gamma), \; \; f \in F, \gamma \in \Gamm
 - Ein PDA akzeptiert $w \in \Sigma^*$ mit leerem Stack, genau dann wenn:
 $$(q_0, w, Z_0) \to_{M}^* (q, \epsilon, \epsilon), \; \; q \in Q$$
 - Die Menge der Woerter, die diese Bedingung erfuellen, wird mit $L_{\epsilon}(M)$ beschrieben
-#### Umwandeln von PDAs
-- Die Unterschiedlichen Arten von PDAs koennen ineinander umgewandelt werden 
+#### Grammatik zu PDA
+- Eine kontextfreie Grammatik kann folgendermassen in einen PDA umgewandelt werden:
+	- Fuer den PDA wird genau ein Zustand angelegt
+	- Fuer alle Produktionen $A \to \beta$ wird die Transition $\epsilon, A/\beta$ eingefuegt
+	- Fuer alle Terminale $a$ wird die Transition $a, a/\epsilon$ eingefuegt
 ###### Endzustand zu leerem Keller
 - Um einen PDA $M$, der mit Endzustaenden akzeptiert in einen PDA $M'$ umzuwandeln, der mit leerem Keller akzeptiert, werden folgende Schritte ausgefuehrt:
 	- Der Startzustand von $M'$ besitzt einen $\epsilon$ Uebergang, der ein Zeichen $Z_0'$ auf den Stack legt und in den Startzustand von $M$ uebergeht
