@@ -106,7 +106,6 @@ $$a(x) = \sum_{i = 0}^{n - 1} a_ix^i, \; x_i \in \{0, 1\}$$
 	4. Um Uebertragungsfehler der Nachricht $s'(x) = s(x) + e(x)$ zu erkennen, prueft der Empfaenger $s'(x) \mod{r(x)} = m'(x) + c(x) + e(x) \mod{r(x)} = e(x) \mod{r(x)} \stackrel{?}{=} 0$
 - Ist $s'(x) \mod{r(x)} = 0$, so kam es mit hoher Wahrscheinlichkeit zu keinem Bitfehler
 - Ist $e(x)$ jedoch ein Vielfaches des Reduktionspolynoms, so wird der Fehler nicht erkannt
-
 ## Verbindungen
 - Um Knoten zu einem Direkverbindungsnetz zu verbinden, werden unterschiedliche Konstrukte genutzt
 #### Hubs
@@ -137,3 +136,9 @@ $$a(x) = \sum_{i = 0}^{n - 1} a_ix^i, \; x_i \in \{0, 1\}$$
 ###### Beispiel
 ![[Pasted image 20240515134156.png]]
 ![[Pasted image 20240515134351.png]]
+## Nachrichtentypen
+- Durch Setzen bestimmter Bits in der Transmitter oder Receiver Address koennen unterschiedliche Arten von Nachrichten definiert werden
+#### Kategorien
+- Eine Unicast Nachricht wird an genau eine Station gesendet, eine Multicast Nachricht an eine Gruppe von Stationen
+- Ob es sich um eine Unicast oder Multicast Nachricht handelt, wird durch das niedrigste Bit des ersten Oktetts der Transmitter Address bestimmt
+- Eine Broadcast Nachricht wird an alle Stationen eines Netzwerks geschicht und wird durch eine Receiver Address, die nur aus Einsen besteht, umgesetzt

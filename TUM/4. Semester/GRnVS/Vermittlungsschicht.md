@@ -34,14 +34,16 @@
 ![[Pasted image 20240531160806.png]]
 ## IPv4
 - Eine IPv4 Adresse dient dazu, Geraete global zu identifizieren und besteht aus 4 Bytes, welche jeweils durch einen Punkt getrennt sind
-- Unterschiedliche Teile einer IPv4 Adresse dienen dazu das Netz des Hosts, beziehungsweise den Host selbst zu identifizieren
-- Die Fragmentierung einer Nachricht erfolgt hierbei beim Router, das Reassemblieren beim Empfaenger
+- Der vordere Teil einer IPv4 Adresse ist der Netzanteil und dient dazu, das Netz des Hosts zu identifizieren, wobei der hintere Teil, der Hostanteil, den Hosts selbst identifiziert
+- Bei IPv4 erfolgt die Fragmentierung einer Nachricht beim Router, das Reassemblieren beim Empfaenger
 #### Header
 - Da Router anhand der IP Adressen Weiterleitungsentscheidungen treffen, muessen die Adressen des Absenders und Emfpaengers im IP Header der Nachricht stehen
 - Der IP Header enthaelt zudem zusaetzliche Informationen, wie die Laenge der Nachricht oder die Anzahl an erlaubten Hops; der TTL
-#### Adressaufloesung
-- Ist nur die IP Adresse und nicht die MAC Adresse eines Geraets bekannt, so kann diese ueber eine ARP-Request im Direktverbindungsnetz in Erfahrung gebracht werden
-- Wird durch die ARP-Request keine MAC gefunden, so wendet sich das Geraet an die MAC des Default Gateway, um die Nachricht in andere Netze zu versenden
+#### Address Resolution Protocol
+- Ist nur die IP Adresse und nicht die MAC Adresse eines Geraets bekannt, so kann diese ueber eine ARP-Request in Erfahrung gebracht werden
+- Eine ARP Request wird mithilfe von Broadcasts realisiert
+- Wird durch die ARP-Request keine MAC gefunden, so befindet sich der Kommunikationspartner in einem anderen Netz
+- Nachrichten werden in dem Fall direkt an den Default Gateway gesendet, der diese dann an andere Netze weiterleitet
 #### ICMP
 - Ueber das Internet Control Message Protocol dient dazu, den Sender bei auftretenden Routing Fehlern zu informieren
 - Zudem werden Moeglichkeiten bereitgestellt, um die Erreichbarkeit von Hosts zu ueberpruefen und Pakete umzuleiten
@@ -60,21 +62,53 @@
 - Diese Anfrage wird durch den Server angenommen, oder abgelehnt
 #### Subnetting
 - Traditionell werden die Groessen des Netz- und Hostanteils von IP Adressen durch Klassen vorgeschrieben 
-- Dies resultiert jedoch in ineffizienter Nutzung des Adressraums und grossen Netzwerken, die unter ueberlastung leiden
-- Ueber CIDR kann anhand einer Subnetzmaske die Groesse des Netz- und Hostanteils dynamisch definiert werden
+- Dies resultiert jedoch in ineffizienter Nutzung des Adressraums und grossen Netzwerken, die entweder kaum genutzt, oder stark ueberlastet sind
+- Um die Groesse des Netzanteils einer Adresse dynamisch festzulegen, kann CIDR verwendet werden
 ###### Zusammenfassen von Subnetzen
 - Um Netze zusammenfassen zu koennen, muessen alle Netze gleich gross, nebeneinander und bis auf das letzte Bit des Netzanteils identisch sein
-###### Anwendung
+###### Notation
 - Haeufig wird die Maske nicht angegeben, sondern stattdessen die Anzahl der fuehrenden Einsen der Maske an die IP Adresse angehaengt 
 - Eine resultierende Adresse kann somit beispielsweise 192.160.0.0/23 lauten
 ###### Beispiel
 ![[Pasted image 20240605182551.png]]
 ## IPv6
-- Da sich fuer IPv4 die Adressknappheit verbreitet, nimmt die Nutzung von IPv6 zu
-- Durch IPv6 wird der Adressraum auf $2^{128}$ vergroessert und der Header vereinfacht, um ihn effizienter nutzen zu koennen
-- Die Fragmentierung einer Nachricht erfolgt zudem direkt beim Sender und nicht beim Router
+- Da fuer IPv4 Adressknappheit herrscht, wird der verfuegbare Adressraum durch IPv6 vergroessert
+- Jedes Geraet besitzt insbesondere eine lokale Local Link und eine globale Global Unique Adresse
+- Ausserdem erfolgt die Fragmentierung einer Nachricht direkt beim Sender und nicht beim erst Router
+#### Aufbau
+- IPv6 Adressen bestehen aus 8 Abschnitten zu je 2 Byte koennen somit bis zu $2^{128}$ Hosts adressieren
+- Der erste Teil einer Adresse ist der Subnet Identifier und identifiziert ein Subnetz
+- Der zweite Teil ist der Interface Identifier und identifiziert Hosts innerhalb eines Subnetzes
+###### Notation
+- Selbst bei der Nutzung von Hexadezimalzeichen, sind IPv6 Adressen unuebersichtlich lang
+- In den Abschnitten werden fuehrende Nullen somit weggelassen, und die laengste, vorderste Sequenz aus mindestens zwei Abschnitten, die nur aus Nullen bestehen, werden mit :: abgekuerzt
+- 2001:0db8:0000:0000:0001:0000:0000:0001 wird somit zu 2001:db8::1:0:0:1
 #### Header
-- Der IPv6 Header enthaelt Informationen, wie die Adressen des Senders und Emfpaengers, die Laenge der Payload, sowie das Hop Limit 
-- Ueber das Next Header Feld wird der Typ des Extension Headers, oder des L4 Headers bekannt gegeben
+- Der IPv6 Header enthaelt Informationen, wie die Adressen des Senders und Emfpaengers, die Laenge der Payload, sowie das Hop Limit, enthaelt insgesamt jedoch weniger Informationen als der IPv4 Header
 ###### Extension Header
-- Mithilfe von Extension Headers koennen zusaetzliche Informationen angefuegt werden
+- Durch das Next Header Feld koennen Extension Header bekannt gemacht werden, welche Informationen ueber die Fragmentierung oder ueber das Verfahren der vierten Schicht enthalten
+- Der Aufbau eines Extension Headers unterscheidet sich abhaengig von seinem Zweck
+#### Multicasting
+- In IPv6 werden bestimmte Praefixe verwendet, um Multicast Nachrichten zu definieren
+- Diese Nachrichten werden dann in Schicht 2 Multicasts uebersetzt, indem die ersten zwei Oktette auf $33:33$ gesetzt werden und die letzten 4 Oktette entsprechen den letzten 2 Abschnitten der IP-Adresse
+###### Beispiel
+![[Pasted image 20240614135405.png]]
+#### SLAAC
+- Mithilfe der Stateless Address Autoconfiguration kann ein Geraet, ohne DHCP Server, eine IPv6 Adresse generieren
+###### Generieren von Local Link Adressen
+- Der Praefix der IP-Adresse ist fe80, wobei der Rest des Subnet Identifiers auf 0 gesetzt wird
+- Der Interface Identifier setzt sich aus den ersten 3 Oktetten der MAC eines Geraets zusammen, gefolgt von ff:fe und den letzten 3 Oktetten der MAC
+- Das vorletzte Bit des ersten Oktetts im Interface Identifier wird zudem invertiert
+###### Generieren von Gloabal Unique Adressen
+- Die Global Unique Adresse eines Geraets baut auf seiner Local Link Adresse auf
+- Der Subnet Identifier wird hierbei lediglich durch den des lokalen Routers ersetzt
+#### Neighbor Discovery Protocol
+- Anstelle von ARP wird das Neighbor Discovery Protocol verwendet um die MAC zu einer gegebenen IPv6 Adresse zu bestimmen
+- Das Protocol setzt sich allgemein aus einer Neighbor Solicitation und einem Neighbor Advertisement zusammen
+###### Neighbor Solicitation
+- Mithilfe eines Solicited Nodes IPv6 Praefixes wird aus der gegebenen IP Adresse ein IPv6 Multicast generiert, der dann in einen Schicht 2 Multicast uebersetzt wird
+- Ein Extension Header fuer Neighbor Solicitation wird versendet, um die MAC Adresse des Empfaengers zu erfragen 
+###### Neighbor Advertisement
+- In der Antwort des Empfaengers wird ein Extension Header fuer Neighbor Advertisement verwendet, welcher unter anderem die gesuchte MAC Adresse enthaelt
+###### Vorteile
+- Das NDP ist im vergleich zu ARP effizienter, da Multicasts anstelle von Broadcasts verwendet werden 
