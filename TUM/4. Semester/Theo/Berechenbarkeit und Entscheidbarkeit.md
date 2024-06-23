@@ -40,3 +40,18 @@ $$\chi_A(x) = \begin{cases}
 0, \; x \notin A
 \end{cases}$$
 - Eine Eigenschaft $P(x)$ ist zudem entscheidbar, falls $\{x \mid P(x)\}$ entscheidbar ist
+#### Halteproblem
+- Durch Widerspruch kann bewiesen werden, dass nicht entschieden werden kann, ob ein Programm terminiert oder nicht
+- Koennte dies entschieden werden, so koennte man eine Funktion $f$ definieren, sodass:
+$$f(x) = \begin{cases}
+0, \; x(x) \text{ terminiert nicht} \\
+\perp, \; x(x) \text{ terminiert}
+\end{cases}$$
+- $f(f)$ fuehrt somit zu einem Widerspruch
+#### Reduktion
+- Eine Menge $A \subseteq \Sigma^*$ ist reduzierbar auf $B \subseteq \Gamma^*$, sodass $A \leq B$, falls es eine Funktion $f$ gibt mit:
+$$\forall w \in \Sigma^*: w \in A \Leftrightarrow f(w) \in B$$
+- Mithilfe der Reduktion koennen somit unbekannte Probeme auf bekannte reduziert und geloest werden
+###### Regeln
+- Ist $A$ unentscheidbar, so auch $B$
+- Ist $B$ entscheidbar, so auch $A$
