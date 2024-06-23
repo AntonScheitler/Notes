@@ -109,7 +109,7 @@ p, \; \text{falls} \; x = 1 \\
 - $X$ ist somit eine Indikatorvariable
 - Fuer den Erwartungswert und die Varianz von $X$ gilt hierbei:
 $$\mathbb{E}[X] = p, \; Var[X] = p(1-p)$$
-###### Binomial Verteilung
+#### Binomial Verteilung
 - Betrachtet man Summen von Indikatorvariablen, so wird die Binomialverteilung verwendet
 - Ist $X = X_1 + ... + X_n$ eine Summe aus $n$ Indikatorvariablen, welche jeweils die Erfolgswahrscheinlichkeit $p$ besitzten, so ist der Wertebereich $W_X = \{0, ..., n\}$ und fuer die Dichte gilt:
 $$f_X(x) = b(x;n,p) = \binom{n}{x}p^x(1 - p)^{n - x}$$

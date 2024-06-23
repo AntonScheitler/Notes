@@ -127,8 +127,8 @@ $$A = \begin{pmatrix}
 ###### Approach
 - A domain is made discrete by defining a set of points on a mesh
 - Each section of the mesh has a number of widths $h = (h_x, h_y, h_z)$
-- The first derivatives of a differential equations can be approximated using difference quotients:
+- The first derivatives of a differential equation can be approximated using difference quotients:
 $$\frac{\delta u}{\delta x}(\xi) = \frac{u(\xi + h_x) - u(\xi)}{h_x}$$
 - The second derivatives can be approximated using a 3-point-stencil:
-$$\frac{\delta^2u}{\delta^2x^2} = \frac{u(\xi + h_x) - 2u(\xi) + u(\xi - h-x)}{h_x^2}$$
+$$\frac{\delta^2u}{\delta^2x^2} = \frac{u(\xi + h_x) - 2u(\xi) + u(\xi - h_x)}{h_x^2}$$
 - Since the boundary of the mesh is given by the initial and boundary conditions of a problem, the mesh points can be calculated one by one

@@ -62,7 +62,7 @@
 - Diese Anfrage wird durch den Server angenommen, oder abgelehnt
 #### Subnetting
 - Traditionell werden die Groessen des Netz- und Hostanteils von IP Adressen durch Klassen vorgeschrieben 
-- Dies resultiert jedoch in ineffizienter Nutzung des Adressraums und grossen Netzwerken, die entweder kaum genutzt, oder stark ueberlastet sind
+- Dies resultiert jedoch ineffizienter Nutzung des Adressraums und grossen Netzwerken, die entweder kaum genutzt, oder stark ueberlastet sind
 - Um die Groesse des Netzanteils einer Adresse dynamisch festzulegen, kann CIDR verwendet werden
 ###### Zusammenfassen von Subnetzen
 - Um Netze zusammenfassen zu koennen, muessen alle Netze gleich gross, nebeneinander und bis auf das letzte Bit des Netzanteils identisch sein
@@ -81,7 +81,7 @@
 - Der zweite Teil ist der Interface Identifier und identifiziert Hosts innerhalb eines Subnetzes
 ###### Notation
 - Selbst bei der Nutzung von Hexadezimalzeichen, sind IPv6 Adressen unuebersichtlich lang
-- In den Abschnitten werden fuehrende Nullen somit weggelassen, und die laengste, vorderste Sequenz aus mindestens zwei Abschnitten, die nur aus Nullen bestehen, werden mit :: abgekuerzt
+- In den Abschnitten werden fuehrende Nullen somit weggelassen, und die laengste, vorderste Sequenz aus mindestens zwei Abschnitten, die nur aus Nullen bestehen, wird mit :: abgekuerzt
 - 2001:0db8:0000:0000:0001:0000:0000:0001 wird somit zu 2001:db8::1:0:0:1
 #### Header
 - Der IPv6 Header enthaelt Informationen, wie die Adressen des Senders und Emfpaengers, die Laenge der Payload, sowie das Hop Limit, enthaelt insgesamt jedoch weniger Informationen als der IPv4 Header
@@ -90,7 +90,7 @@
 - Der Aufbau eines Extension Headers unterscheidet sich abhaengig von seinem Zweck
 #### Multicasting
 - In IPv6 werden bestimmte Praefixe verwendet, um Multicast Nachrichten zu definieren
-- Diese Nachrichten werden dann in Schicht 2 Multicasts uebersetzt, indem die ersten zwei Oktette auf $33:33$ gesetzt werden und die letzten 4 Oktette entsprechen den letzten 2 Abschnitten der IP-Adresse
+- Diese Nachrichten werden dann in Schicht 2 Multicasts uebersetzt, indem die ersten zwei Oktette auf 33:33 und die letzten 4 Oktette auf die letzten 2 Abschnitte der IP-Adresse gesetzt werden
 ###### Beispiel
 ![[Pasted image 20240614135405.png]]
 #### SLAAC
@@ -112,3 +112,34 @@
 - In der Antwort des Empfaengers wird ein Extension Header fuer Neighbor Advertisement verwendet, welcher unter anderem die gesuchte MAC Adresse enthaelt
 ###### Vorteile
 - Das NDP ist im vergleich zu ARP effizienter, da Multicasts anstelle von Broadcasts verwendet werden 
+## Routing
+- Router verwenden verschiedene Strategien um zu entscheiden, in welches Netz Packte gesendet werden sollen
+#### Statisches Routing
+- Bei statischem Routing legt ein Routing Table fest, fuer welche Adressen, Nachrichten an welche Router gesendet werden sollen
+###### Aufbau
+- Ein Eintrag in einem Routing Table besteht aus Destination, Next Hop und Iface
+	- Die Destination ist die Adresse, an die geroutet werden muss
+	- Der Next Hop ist die Adresse des Routers, an den die Nachricht als Naechstes geschickt werden soll und ist 0.0.0.0, falls die Destination im lokalen Netz liegt
+	- Das Iface ist das Interface, ueber das die Nachricht versendet werden soll 
+###### Praezedenz
+- Fuer eine gegebene Adresse wird der Eintrag im Routing Table gewaehlt, dessen Destination die Adresse am genauesten beschreibt
+- Je groesser die Subnetzmaske einer Destination ist, desto weiter oben liegt der entsprechende Eintrag in der Tabelle
+###### Zusammenfassen von Eintraegen
+- Eintraege koennen zusammengefasst werden, falls ihre Destinations zu einem Subnetz zusammengefasst werden koennen und ihre Next Hops und Ifaces identisch sind
+###### Beispiel
+![[Pasted image 20240623132429.png]]
+#### Dynamisches Routing
+- Um dynamisch, Routinginformationen zu generieren, kann das Distanz Vektor Routing verwendet werden
+###### Ablauf
+- Zu Beginn sind die Routing Tabellen aller Router leer
+- Die Router senden sich, ueber Updates, gegenseitig und zeitgleich ihre Routing Tabellen und erschliessen ueber den Bellman-Ford Algorithmus somit die kuerzesten Pfade zu den anderen Routern
+- Dies dauert potentiell mehrere Runden
+###### Triggered Updates
+- Um das Finden von Pfaden zu beschleunigen, senden Router ein Update, sobald sie ihren Routing Table veraendern
+- Dier fuehrt zu Beginn zu einem Burst von Updates und einer starken Belastung des Netzes
+###### Count to Infinity
+- Faellt ein Link in einem etablierten Netz aus, so erhoeht sich mit jedem Update die Distanz zu allen verlorenen Routern bis ins Unendliche
+- Dies kann auf verschiedene Weisen adressiert werden:
+	- Bei Split Horizon wird Nachbarn von denen die Route zu einem Router X gelernt wurde, keine Route nach X geschickt
+	- Bei Poison Reverse wird der Fehler erkannt, sobald die Distanz zu einem Router eine gewisse Groesse ueberschritten hat
+	- Bei Path Vector besteht das Update nicht nur aus Destination und Next Hop, sondern aus dem gesamten Pfad, wodurch Schleifen erkannt werden koennen

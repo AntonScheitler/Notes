@@ -36,7 +36,7 @@ $$F_X(x) = \begin{cases}
 \end{cases}$$
 - Fuer den Erwartungswert und die Varianz gelten:
 $$\mathbb{E}[X] = \frac{a + b}{2}$$
-$$Var[X] = \frac{(a + b)^2}{12}$$
+$$Var[X] = \frac{(a - b)^2}{12}$$
 #### Normalverteilung
 - Eine Zufallsvariable $X$ ist normalverteilt mit den Parametern $\mu \in \mathbb{R}$ und $\sigma \in \mathbb{R}^+$, falls sie die folgende Dichte und Verteilung besitzt:
 $$f_X(x) = \frac{1}{\sqrt{2 \pi}\sigma} \cdot \exp \left ( - \frac{(x - \mu)^2}{2\sigma^2}\right ) = \varphi(x; \mu, \sigma)$$
@@ -78,6 +78,23 @@ $$F_X(x) = \int_{- \infty}^x \left [\int_{-\infty}^{\infty} f_{X, Y}(u, v) \; \m
 #### Unabhaengigkeit
 - Zwei Zufallsvariablen $X$ und $Y$ sind unabhaengig, falls gilt:
 $$f_{X, Y}(x, y) = f_X(x) \cdot f_Y(y)$$
+#### Summen von Zufallsvariablen
+- Sind $X$ und $Y$ zwei unabhaengige Zufallsvariablen, so gilt fuer die Dichte und die Verteilung von $Z = X + Y$:
+$$f_Z(z) = \int_{- \infty}^{\infty}f_X(x) \cdot f_Y(z - x) \; \mathrm{d}x$$
+$$F_Z(t) = \int_{- \infty}^t \left (\int_{- \infty}^{\infty}f_X(x) \cdot f_Y(z - x) \; \mathrm{d}x \right ) \; \mathrm{d}z$$
+###### Normalverteilung
+- Sind $X_1, ..., X_n$ unabhaengige normalverteile Zufallsvariablen mit den Parametern $\mu_i$ und $\sigma_i$, so ist $Z = a_1X_1 + ... + a_nX_n$ ebenfalls normalverteilt mit den Parametern $\mu = a_1\mu_1 + ... + a_n\mu_n$ und $\sigma^2 = a_1^2 \sigma_1^2 + ... + a_n^2\sigma_n^2$
+#### Zentraler Grenzwertsatz
+- Es seien $X_1, ..., X_n$ beliebige unabhaengige Zufallsvariablen mit derselben Verteilung, dem Erwartungswert $\mu$ und der Varianz $\sigma^2$ 
+- Die Zufallsvariablen $Y_n$ seien definiert durch $Y_n = X_1 + ... + X_n$
+- Fuer $n \to \infty$ naehrt sich die Verteilung die Zufallsvariablen $Z_n = \frac{Y_n - n \mu}{ \sqrt{\sigma^2 n}}$ der Standardnormalverteilung
+- Je groesser die Summe an $X_1, ..., X_n$ ist, desto mehr entspricht somit ihre Verteilung einer Normalverteilung
+###### Grenzwert der Binomialverteilung
+- Ist $H_n$ binomialverteilt, so konvergiert fuer $n \to \infty$ die Verteilung von $\frac{H_n}{n}$ gegen $\mathcal{N}(p, p\frac{(1-p)}{n})$
+## Momenterzeugende Funktion
+- Aehnlich zum diskreten Wahrscheinlichkeitsraum, kann auch im Kontinuierlichen eine momenterzeugende Funktion definiert werden:
+$$M_X(s) = \mathbb{E}[e^{Xs}]$$
+$$M_X(s) = \int_{- \infty}^{\infty} e^{xs} \cdot f_X(x) \; \mathrm{d} x$$
 ## $\sigma$ Algebren
 - Eine Menge $\mathbb{A} \subseteq P(\Omega)$ heisst $\sigma$ Algebra, falls folgende Bedingungen erfuellt sind: 
 	- $\Omega \in \mathbb{A}$
