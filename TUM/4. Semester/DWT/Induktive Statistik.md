@@ -12,6 +12,7 @@ $$MSE(\overline{X}) = \mathbb{E}[(\overline{X} - \theta)^2]$$
 - Ist $\overline{X}$ erwartungstreu, so ist $MSE(\overline{X}) = Var[\overline{X}]$
 - Somit folgt:
 $$MSE(\overline{X}) = Var[\overline{X}] = \frac{1}{n}Var[X]$$
+- Eine Schaetzvariable ist konsistent im quadratischen Mittel, falls $MSE \to 0$, fuer $n \to \infty$
 ###### Stichprobenmittel und -Varianz
 - Die folgenden Zufallszahlen werden als Stichprobenmittel, beziehungsweise Stichprobenvarianz bezeichnet:
 $$\overline{X} = \frac{1}{n} \sum_{i = 1}^n X_i, \; \; S^2 = \frac{1}{n - 1}\sum_{i = 1}^n(X_i - \overline{X})^2$$
@@ -24,7 +25,7 @@ $$L((x_1, ..., x_n), \theta) = L(\vec{x}, \theta)= Pr_{\theta}[X_1 = x_1, ..., X
 - Ein Schaetzwert $\hat{\theta}$ fuer den Parameter $\theta$ heisst Maximum Likelihood Schaetzwert, falls gilt:
 $$L(\vec{x}, \theta) \leq L(\vec{x}, \hat{\theta}), \; \forall \theta$$
 #### Konfidenzintervalle
-- Um die genauigkeit von Schaetzern zu quantisieren, wird nicht nur eine Schaetzvariable verwendet, sondern zwei Schaetzer $U_1$, $U_2$ gewaehlt, sodass gilt:
+- Um die Genauigkeit von Schaetzern zu quantisieren, wird nicht nur eine Schaetzvariable verwendet, sondern zwei Schaetzer $U_1$, $U_2$ gewaehlt, sodass gilt:
 $$Pr[U_1 \leq \theta \leq U_2] = 1 - \alpha$$
 - Hierdurch wird ausgesagt, dass mit einer Wahrscheinlichkeit von $\alpha$ der tatsaechliche Parameter $\theta$ ausserhalb des Intervalls $[U_1, U_2]$ liegt
 - Der Term $1 - \alpha$ wird als Konfidenzniveau bezeichnet, $[U_1, U_2]$ als Konfidenzintervall

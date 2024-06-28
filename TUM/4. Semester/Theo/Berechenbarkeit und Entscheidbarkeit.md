@@ -55,3 +55,19 @@ $$\forall w \in \Sigma^*: w \in A \Leftrightarrow f(w) \in B$$
 ###### Regeln
 - Ist $A$ unentscheidbar, so auch $B$
 - Ist $B$ entscheidbar, so auch $A$
+#### Semientscheidbarkeit
+- Eine Menge $A$ ist semi-entscheidbar, falls folgende Funktion berechenbar ist:
+$$\chi_A'(x) = \begin{cases}
+1, \; \text{falls} \; x \in A \\
+\perp, \; \text{falls} \; x \notin A \\
+\end{cases}$$
+- Falls $A$ somit entscheidbar ist, so ist es auch semi-entscheidbar
+- Zudem kann ein Problem auf ein semi-entscheidbares Problem reduziert werden, um zu zeigen, dass es semi-entscheidbar ist
+###### Rekursive Aufzaehlbarkeit
+- Eine Menge $A$ ist rekursiv aufzaehlbar, falls es eine berechenbare Funktion $f$ gibt, sodass:
+$$A = \{f(0), f(1), f(2), ... \}$$
+- $A$ ist genau dann rekursiv aufzaehlbar, wenn es semi-entscheidbar ist  
+#### Satz von Rice
+- Es sei $F$ eine Menge von berechenbaren Funktionen mit $F \neq \emptyset$ und $F \neq \text{alle berechenbaren Funktionen}$
+- Es ist unentscheidbar, ob die von einer Turing Maschine $M_w$ berechnete Funktion $\varphi_w$ in $F$ enthalten ist
+- Alle nicht-triviale semantische Eigenschaften von Programmen sind somit unentscheidbar

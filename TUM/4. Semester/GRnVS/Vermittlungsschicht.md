@@ -143,3 +143,5 @@
 	- Bei Split Horizon wird Nachbarn von denen die Route zu einem Router X gelernt wurde, keine Route nach X geschickt
 	- Bei Poison Reverse wird der Fehler erkannt, sobald die Distanz zu einem Router eine gewisse Groesse ueberschritten hat
 	- Bei Path Vector besteht das Update nicht nur aus Destination und Next Hop, sondern aus dem gesamten Pfad, wodurch Schleifen erkannt werden koennen
+## TODO
+- NAT
