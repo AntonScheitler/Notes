@@ -70,4 +70,13 @@ $$A = \{f(0), f(1), f(2), ... \}$$
 #### Satz von Rice
 - Es sei $F$ eine Menge von berechenbaren Funktionen mit $F \neq \emptyset$ und $F \neq \text{alle berechenbaren Funktionen}$
 - Es ist unentscheidbar, ob die von einer Turing Maschine $M_w$ berechnete Funktion $\varphi_w$ in $F$ enthalten ist
-- Alle nicht-triviale semantische Eigenschaften von Programmen sind somit unentscheidbar
+- Alle nicht-trivialen semantischen Eigenschaften von Programmen sind somit unentscheidbar
+#### Postsches Korrespondenzproblem
+- Das PCP beschreibt das Problem, ob es eine Folge von festgelegten, beidseitig beschrifteten Karten gibt, sodass das entstandene Wort auf den Ober- und Unterseiten identisch ist
+- Beim modifizierten PCP ist die erste Karte der folge zudem festgelegt, wobei das MPCP auf PCP reduziert werden kann
+- Da zudem das Halteproblem auf MPCP reduziert werden kann, ist PCP somit unentscheidbar
+#### Entscheidbarkeit fuer CFGs
+- Einige Probleme sind auch fuer kontextfreie Grammatiken nicht entscheidbar:
+	- $L(G_1) \cap L(G_2) = \emptyset$
+	- $L(G_1) \subseteq L(G_2)$
+	- $L(G_1) = L(G_2)$
