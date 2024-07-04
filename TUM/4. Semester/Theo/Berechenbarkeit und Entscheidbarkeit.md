@@ -78,5 +78,10 @@ $$A = \{f(0), f(1), f(2), ... \}$$
 #### Entscheidbarkeit fuer CFGs
 - Einige Probleme sind auch fuer kontextfreie Grammatiken nicht entscheidbar:
 	- $L(G_1) \cap L(G_2) = \emptyset$
+	- $|L(G_1) \cap L(G_2)| < \infty$
 	- $L(G_1) \subseteq L(G_2)$
 	- $L(G_1) = L(G_2)$
+
+- Fuer zwei DPDAs $M_1$ und $M_2$ ist $L(M_1) = L(M_2)$ jedoch entscheidbar
+- Zudem unentscheidbar ist, ob eine gegebene kontextfreie Grammatik mehrdeutig, regulaer, oder deterministisch ist
+- Fuer eine kontextfreie Grammatik $G$ und einen regulaeren Ausdruck $\alpha$ ist auch $L(G) = L(\alpha)$ unentscheidbar

@@ -50,3 +50,30 @@ $$c = \Phi^{-1} \left(1 - \frac{\alpha}{2} \right )$$
 ###### Fehlervermeidung
  - Das Reduzieren der Wahrscheinlichkeiten von Fehlern 1. und 2. Art sind gegenlaeufige Ziele, sie gegeneinander balanciert werden muessen
  - Die Wahrscheinlichkeit, dass es zu einem Fehler 1. Art kommt, wird durch das Signifikanzniveau $\alpha$ beschrieben 
+#### Testkonstruktion
+- Es sei $X$ eine bernoulliverteilte Zufallsvariable und die Hypothesen seien
+$$H_0: p \geq p_0, \; H_1: p < p_0$$
+- Die Testgroesse $T$ wird zudem festgelegt durch $T = X_1 + ... + X_n$ 
+- Es wird ein Ablehnungsbereich $K = [0, k]$ definiert, sodass $H_0$ abgeleht werden kann, falls $T \in K$
+- Das Signifikanzniveau kann nun bestimmt werden durch:
+$$\alpha = Pr_{p = p_0}[T \leq k] \approx \Phi \left ( \frac{k - np_0}{\sqrt{np_0(1 - p_0)}}\right )$$
+- Ist $\alpha$ gegeben, so kann das korrekte $k$ bestimmt werden durch:
+$$k = z_{\alpha} \cdot \sqrt{np_0(1 - p_0)} + np_0$$
+###### Guetefunktion
+- Mithilfe einer Guetefunktion $g$ wird die Wahrscheinlichkeit angegeben, dass ein Test die Nullhypothese verwirft:
+$$g(n, p) = Pr[T \leq k] \approx \Phi \left( \frac{k - np}{\sqrt{np(1 - p)}}\right)$$
+#### Testkategorien
+- Abhaengig von der zugrundeliegenden Verteilung der Zufallsvariablen und der verfuegbaren Menge an Informationen eignen sich unterschiedliche Tests 
+###### Approximativer Binomialtest
+- Sind $X_1, ..., X_n$ bernoullivert mit Parameter $p$, so sei $\overline{X} = X_1 + ... + X_n$ die Haeufigkeit, mit der die Ereignisse $X_i = 1$ eingetreten sind
+- Die normalverteilte Testgroesse wird in diesem Fall definiert durch:
+$$Z = \frac{\overline{X} - np_0}{\sqrt{np_0(1-p_0)}}$$
+- Hierdurch kann bestimmt werden, mit welcher Wahrscheinlichkeit $X$ mit dem geschaetzten Parameter $p_0$ im Ablehnungsbereich liegt
+###### Gausstest
+- Sind $X_1, ..., X_n$ normalverteilt mit den Parametern $\mu$ und $\sigma$, so sei $\overline{X} = \frac{1}{n} (X_1 + ... + X_n)$ der Durchschnitt einer Stichprobe 
+- Die normalverteilte Testgroesse wird in diesem Fall definiert durch:
+$$Z = \sqrt{n} \cdot \frac{\overline{X} - \mu_0}{\sigma}$$
+- Hierdurch kann bestimmt werden, mit welcher Wahrscheinlichkeit $X$ mit dem geschaetzten Parameter $\mu_0$ im Ablehnungsbereich liegt
+- Hierfuer muss jedoch die Standardabweichung von $X$ bekannt sein
+###### t-Test
+- Ein t-Test entspricht einem Gausstest, mit dem Unterschied, dass ein Schaetzer fuer die Standardabweichung, anstelle der Standardabweichung selbst verwendet wird 
