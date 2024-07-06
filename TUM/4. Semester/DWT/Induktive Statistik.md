@@ -65,7 +65,7 @@ $$g(n, p) = Pr[T \leq k] \approx \Phi \left( \frac{k - np}{\sqrt{np(1 - p)}}\rig
 #### Testkategorien
 - Abhaengig von der zugrundeliegenden Verteilung der Zufallsvariablen und der verfuegbaren Menge an Informationen eignen sich unterschiedliche Tests 
 ###### Approximativer Binomialtest
-- Sind $X_1, ..., X_n$ bernoullivert mit Parameter $p$, so sei $\overline{X} = X_1 + ... + X_n$ die Haeufigkeit, mit der die Ereignisse $X_i = 1$ eingetreten sind
+- Sind $X_1, ..., X_n$ bernoulliverteilt mit Parameter $p$, so sei $\overline{X} = X_1 + ... + X_n$ die Haeufigkeit, mit der die Ereignisse $X_i = 1$ eingetreten sind
 - Die normalverteilte Testgroesse wird in diesem Fall definiert durch:
 $$Z = \frac{\overline{X} - np_0}{\sqrt{np_0(1-p_0)}}$$
 - Hierdurch kann bestimmt werden, mit welcher Wahrscheinlichkeit $X$ mit dem geschaetzten Parameter $p_0$ im Ablehnungsbereich liegt
