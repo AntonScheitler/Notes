@@ -65,15 +65,18 @@ $$g(n, p) = Pr[T \leq k] \approx \Phi \left( \frac{k - np}{\sqrt{np(1 - p)}}\rig
 #### Testkategorien
 - Abhaengig von der zugrundeliegenden Verteilung der Zufallsvariablen und der verfuegbaren Menge an Informationen eignen sich unterschiedliche Tests 
 ###### Approximativer Binomialtest
-- Sind $X_1, ..., X_n$ bernoulliverteilt mit Parameter $p$, so sei $\overline{X} = X_1 + ... + X_n$ die Haeufigkeit, mit der die Ereignisse $X_i = 1$ eingetreten sind
-- Die normalverteilte Testgroesse wird in diesem Fall definiert durch:
+- Mit einem Binomialtest kann ueberprueft werden, ob die Wahrscheinlichkeit einer bernoulliverteilten Zufallsvariable $X$ ueber einem bestimmten Wert $p_0$ liegt
+- Es sei $\overline{X} = X_1 + ... + X_n$ die Haeufigkeit, mit der die Ereignisse $X_i = 1$ eingetreten sind
+- Die normalverteilte Testgroesse hierbei definiert durch:
 $$Z = \frac{\overline{X} - np_0}{\sqrt{np_0(1-p_0)}}$$
-- Hierdurch kann bestimmt werden, mit welcher Wahrscheinlichkeit $X$ mit dem geschaetzten Parameter $p_0$ im Ablehnungsbereich liegt
 ###### Gausstest
-- Sind $X_1, ..., X_n$ normalverteilt mit den Parametern $\mu$ und $\sigma$, so sei $\overline{X} = \frac{1}{n} (X_1 + ... + X_n)$ der Durchschnitt einer Stichprobe 
-- Die normalverteilte Testgroesse wird in diesem Fall definiert durch:
+- Mit einem Gausstest kann ueberprueft werden, ob der Erwartungswert einer normalverteilten Variable $X$ ueber einem bestimmten Wert $\mu_0$ liegt
+- Die normalverteilte Testgroesse hierbei mithilfe des Stichprobenmittels $\overline{X} = \frac{1}{n}(X_1, + ... + X_n)$ definiert:
 $$Z = \sqrt{n} \cdot \frac{\overline{X} - \mu_0}{\sigma}$$
-- Hierdurch kann bestimmt werden, mit welcher Wahrscheinlichkeit $X$ mit dem geschaetzten Parameter $\mu_0$ im Ablehnungsbereich liegt
 - Hierfuer muss jedoch die Standardabweichung von $X$ bekannt sein
 ###### t-Test
 - Ein t-Test entspricht einem Gausstest, mit dem Unterschied, dass ein Schaetzer fuer die Standardabweichung, anstelle der Standardabweichung selbst verwendet wird 
+###### $\chi^2$ Anpassungstest
+- Mithilfe eines $\chi^2$ Tests kann ueberprueft werden, ob eine gegebene Zufallsvariable $X$ eine bestimmte Verteilung hat
+- Die Testgroesse wird hierbei mithilfe der Haeufigkeit $h_i$ definiert, die angibt, wie oft $X$ einen Wert $i$ annimmt:
+$$T = \sum_{i = 1}^k \frac{(h_i - np_i)^2}{np_i}$$

@@ -15,6 +15,9 @@ $$\vartheta = h_T(t) = \frac{f_T(t)}{1 - F_T(t)}$$
 	- The dwelling time $y$, which is the time a job needs to be serviced by an $SU$ and the service time $b$, which is the dwelling time without potential waiting
 	- The capacity $k$ and the current filling $f$ of a $SU$
 	- The average and maximum throughput $d$ and $c$, as well as the utilization $\frac{d}{c}$ of an $SU
+###### Little's Law
+- Little's Law can be used to describe the average filling of a model, based on it's throughput and dwelling time:
+$$\overline{f}(t_1, t_2) = d(t_1, t_2) \cdot \overline{y}(t_1, t_2)$$
 #### Queuing Systems
 - In a Queuing System, multiple $SU$ with their own queues are introduced 
 - If an $SU$ is occupied, jobs that requrie the $SU$ have to wait in the respective queue
@@ -44,7 +47,5 @@ $$v_i = \frac{\mathbb{E}[d_i]}{\mathbb{E}[d_s]}$$
 - A state is recurrent with a recurring time of $k$, if will be reached with a probability of $1$ within $k$ steps
 - A state is null recurrent, if it will be reached with a probability of $1$, but only as $k \to \infty$
 - A state is transient, if the probability of it's recurrance is $< 1$
-###### Observations
-- In an irreducable network, all states are either recurrent, null recurrent or transient
 ###### Example
 ![[Pasted image 20240707152818.png]]
