@@ -46,6 +46,8 @@ $$K: P_A \times P_A \times ... \times P_A \rightarrow P_A$$
 - One option to construct a schedule, is to start every task, as soon as all preceding tasks have been completed
 - Alternatively, the completion time of $A_E$ can be used to determine the latest possible time, a task needs to finish at, in order to still meet the completion time of $A_E$ 
 - Those approaches are the forward and backward step and they both result in an optimal schedule
+###### Critical Paths
+- A path in a schedule is critical, if
 ###### Example
 ![[Pasted image 20240516155357.png]]
 #### Job Shop
