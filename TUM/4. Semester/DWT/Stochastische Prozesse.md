@@ -11,9 +11,10 @@ $$\sum_{j \in S} p_{ij} = 1$$
 - Sind alle $p_{ij}$ von $t$ unabhaengig, so ist die Markov-Kette homogen
 - Alle $p_{ij}$ koennen somit in einer Matrix $P$ notiert werden
 - Ist $q_t$ ein Vektor, dessen $i$-te Komponente die Wahrscheinlichkeit beschreibt, dass sich die Kette nach $t$ Schritten im Zustand $i$ befindet, so gilt:
-$$q_{t + 1} = P \cdot q_t$$
-$$q_{t + k} = P^k \cdot q_t$$
+$$q_{t + 1} = q_t \cdot P$$
+$$q_{t + k} = q_t \cdot P^k $$
 - Ein Eintrag $p_{ij}$ in $P^k$ beschreiben hierbei die Wahrscheinlichkeit, dass Zustand $j$ von Zustand $i$ in $k$ Schritten erreicht wird
+- Ein Vektor $q_t$ wird hierbei wagrecht notiert
 ###### Veranschaulichung
 - Eine Markovkette kann mithilfe eines Graphen veranschaulicht werden:
 ![[Pasted image 20240708102651.png]]
@@ -35,3 +36,30 @@ $$h_{i} = 1 + \sum_{k \neq i} p_{ik} \cdot h_{ki} $$
 - Die Ankunftswahrscheinlichkeiten sind somit definiert durch:
 $$f_{ij} = p_{ij} + \sum_{k \neq j} p_{ik} \cdot f_{kj}$$
 $$f_{i} = p_{ii} + \sum_{k \neq i} p_{ik} \cdot f_{ki}$$
+#### Stationaere Verteilung
+- Eine Verteilung $\pi$ ist eine stationaere Verteilung mit der Eigenschaft:
+$$\pi \cdot P = \pi$$
+- $\pi$ ist somit ein Eigenvektor von $P^T$ zum Eigenwert $1$  
+- Allgemein kann $\pi$ jedoch auch ueber das Loesen des linearen Gleichungssystems bestimmt werden
+#### Eigenschaften von Markov-Ketten
+- Markov-Ketten koennen unterschiedlich charakterisiert werden
+###### Irreduzibilitaet
+- Eine Markov-Kette ist irreduzibel, falls es fuer alle Zustandspaare $i, j$ ein $n \in \mathbb{N}$ gibt, sodass $p_{ij}^{(n)} > 0$
+- Somit muss jeder Zustand ueber eine beliebige Anzahl an Schritten von jedem anderen Zustand erreicht werden koennen
+- Jede irreduzible Markov-Kette besitzt eine stationaere Verteilung $\pi$
+###### Aperiodizitaet
+- Ein Zustand $i$ ist aperiodisch, falls es ein $n_0 \in \mathbb{N}$ gibt, sodass $\forall n \geq n_0: p_{ii}^{(n)} > 0$
+- Damit $i$ aperiodisch ist, benoetigt der Zustand somit eine reflexive Kante, oder die Laengen der Kreispfade von $i$ sind teilerfremd
+- Eine Markov-Kette ist aperiodisch, falls all ihre Zustaende aperiodisch sind
+###### Ergodizitaet
+- Irreduzible, aperiodische Markov-Ketten bezeichnet man als ergodisch
+- Fuer jede ergodische Markov-Kette gilt:
+$$\lim_{t \to \infty} q_t = \pi$$
+#### Doppeltstochastische Matrizen
+- Eine $P$ ist stochastisch, falls all ihre Eintraege $p_{ij}$ nichtnegativ und ihre Zeilensummen gleich $1$ sind
+- Die Uebergangsmatrix einer Markov-Kette ist somit stets stochastisch
+- $P$ ist doppeltstochastisch, falls zudem all ihre Spaltensummen gleich $1$ sind
+###### Eigenschaften
+- Ist $P$ eine doppeltstochastische $n \times n$ Matrix, so ist $\pi = \left(\frac{1}{n}, ..., \frac{1}{n} \right)$ eine stationaere Verteilung von $P$
+- Fuer jede ergodische Markov-Kette mit einer doppeltstochastischen $n \times n$ Uebergangsmatrix gilt somit:
+$$\lim_{t \to \infty} q_t = \left(\frac{1}{n}, ..., \frac{1}{n} \right)$$
