@@ -14,15 +14,17 @@ $$\vartheta = h_T(t) = \frac{f_T(t)}{1 - F_T(t)}$$
 	- Service units $SU$ which offer functionality and jobs, which require that functionality
 	- The dwelling time $y$, which is the time a job needs to be serviced by an $SU$ and the service time $b$, which is the dwelling time without potential waiting
 	- The capacity $k$ and the current filling $f$ of a $SU$
-	- The average and maximum throughput $d$ and $c$, as well as the utilization $\frac{d}{c}$ of an $SU
+	- The average and maximum throughput $d$ and $c$, as well as the utilization $\frac{d}{c}$ of an $SU$
 ###### Little's Law
 - Little's Law can be used to describe the average filling of a model, based on it's throughput and dwelling time:
 $$\overline{f}(t_1, t_2) = d(t_1, t_2) \cdot \overline{y}(t_1, t_2)$$
 #### Queuing Systems
 - In a Queuing System, multiple $SU$ with their own queues are introduced 
 - If an $SU$ is occupied, jobs that requrie the $SU$ have to wait in the respective queue
+###### Classification
 - Queuing Systems are classified by their distribution of the arrivals and of the service times, as well as their number of $SU$
-- The distribution of the arrivals and of the service times is usually assumed to be the negative exponential distribution
+- Arrivals and service times can be modelled using negative exponential distributions
+- If the number of $SU$ is $1$, the model would then be classified as $M \mid M \mid 1$
 ###### Arrival Rate
 - The arrival rate can be expressed like so:
 $$h_T(t) = \mathbb{E} \left( \frac{\text{No. events in } [t_1, t_2]}{t_2 - t_1} \right )$$
@@ -47,5 +49,18 @@ $$v_i = \frac{\mathbb{E}[d_i]}{\mathbb{E}[d_s]}$$
 - A state is recurrent with a recurring time of $k$, if will be reached with a probability of $1$ within $k$ steps
 - A state is null recurrent, if it will be reached with a probability of $1$, but only as $k \to \infty$
 - A state is transient, if the probability of it's recurrance is $< 1$
+###### Application
+- Using a state graph, a system of equations can be created, which has the following form:
+$$p_0 \cdot \lambda = p_1 \cdot \mu$$
+$$p_1 \cdot \lambda = p_2 \cdot \mu$$
+$$\vdots$$
+- This can be reformed into:
+$$p_i = \left ( \frac{\lambda}{\mu} \right )^i \cdot p_0$$
+- Since $\sum p_i = 1$, $p_0$ can be computed like follows, if $\lambda < \mu$:
+$$p_0 = 1 - \frac{\lambda}{\mu} = 1 - r$$
+###### Properties of $M \mid M \mid 1$
+- The average filling, if $\lambda < \mu$ is:
+$$\mathbb{E}[F] = \frac{r}{1 - r}$$
+- The average throughput $\mathbb{E}[D]$ is $\lambda$, the average service time $\mathbb{E}[B]$ is $\frac{1}{\mu}$
 ###### Example
-![[Pasted image 20240707152818.png]]
+![[Pasted image 20240715144443.png]]
