@@ -73,3 +73,24 @@ $$x_{k + 1} = x_k - J_f(x)^{-1} \cdot f(x_k)$$
 	- If $H_f(x_i)$ is positive definite, then $x_i$ is a local minimum
 	- If $H_f(x_i)$ is indefinite, then $x_i$ is a saddle point
 	- If $H_f(x_i)$ is semi-definite, then nothing can be said about the type of extrema $x_i$ is, based on the Hessian matrix
+## Quadrature
+- In order to integrate in higher dimensions, the concept of a domain needs to be redefined
+#### Standard Domains
+- A normal, rectangular domain can be formally defined like so:
+$$D = \left \{ (x, y) | a \leq x \leq b, c \leq y \leq d \right \}$$
+- Domains with irregular shapes and in multiple dimensions, are modelled like this: 
+$$D = \left \{ (x, y) | a \leq x \leq b, l(x) \leq y \leq u(x) \right \}$$
+$$D = \left \{ (x, y, z) | a \leq x \leq b, l(x) \leq y \leq u(x), \tilde{l}(x, y) \leq z \leq \tilde{u}(x, y) \right \}$$
+###### Illustration
+![[Pasted image 20240719174741.png]]
+#### Integrating over Standard Domains
+- The integral over a standard domain $D$ in $\mathbb{R}^2$ or $\mathbb{R}^3$ can be defined using the intervals and functions, that describe the variables:
+$$\int_D f(x, y) \, \mathrm dy \, \mathrm dx = \int_{x = a}^b \int_{y = l(x)}^{u(x)} f(x, y) \, \mathrm dy \, \mathrm dx$$
+$$\int_D f(x, y, z) \, \mathrm dz \, \mathrm dy \, \mathrm dx = \int_{x = a}^b \int_{y = l(x)}^{u(x)} \int_{z = \tilde{l}(x, y)}^{\tilde{u}(x, y)} f(x, y, z) \, \mathrm dz \, \mathrm dy \, \mathrm dx$$
+- When computing the area, or volume, of a domain $D$ in $\mathbb{R}^2$ or $\mathbb{R}^3$ $f(x, y)$, or $f(x, y, z)$ is set to $1$
+#### Integrating under Coordinate Transformations 
+- Computing an integral over a standard domain $D$ in $\mathbb{R}^2$ may be very difficult
+- In order to still compute the integral, a simpler one, over domain $B$ with different coordinates can be computed and those coordinates can then be transformed into ones from $D$
+- The integral over $B$ is computed using the Jacobian of $\phi: B \to D$, which is the function, which transforms the coordinates $x', y'$ from $B$ to $x, y$ in $D$:
+$$\int_D f(x, y) \; \mathrm d y \; \mathrm dx = \int_B f(\phi(x', y')) \cdot \mid det(J_{\phi}(x', y')) \mid \; \mathrm d x' \; \mathrm d y'$$
+- Again, when computing the area, or volume of a domain, $f(x, y)$ or $f(\phi(x', y')$ can simply be set to $1$
