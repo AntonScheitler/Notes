@@ -10,3 +10,4 @@
 ### [[Directional Fields]]
 ### [[Ordinary Differential Equations]]
 ### [[Fuzzy Control]]
+### [[Heat Conduction]]
