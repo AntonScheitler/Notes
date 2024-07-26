@@ -29,9 +29,12 @@ $$p_i = \left ( \frac{\lambda}{\mu} \right )^i \cdot p_0$$
 ###### Filling
 - The average filling of a system can be described by:
 $$\mathbb{E}[f] = \sum_{i = 0} i \cdot p_i$$
+- If $\lambda < \mu$, the following equation can be used:
+$$\mathbb{E}[f] = \frac{\frac{\lambda}{\mu}}{1 - \frac{\lambda}{\mu}}$$
 ###### Throughput
 - The average throughput $d$ can be calculated like so:
 $$\mathbb{E}[d] = (1 - p_0) \cdot \mu$$
+- If $\lambda < \mu$, then $\mathbb{E}[d] = \lambda$
 ###### Dwelling Time
 - In order to calculate the average dwelling time $y$, Little's law can be used:
 $$\mathbb{E}[y] = \frac{\mathbb{E}[f]}{\mathbb{E}[d]}$$
