@@ -11,3 +11,4 @@
 ### [[Ordinary Differential Equations]]
 ### [[Fuzzy Control]]
 ### [[Heat Conduction]]
+### [[Markov Chains]]
