@@ -2,7 +2,7 @@
 ### [[Discrete Modeling and Simulation]]
 ### [[Continuous Modeling and Simulation]]
 ### [[Data Traffic in Computing Systems]]
-### [[Calculus U]]
+### [[Calculus]]
 ### [[Nash Equilibrium and Banzhaf Power Index]]
 ### [[Zero-Sum Games and Elections]]
 ### [[Job Scheduling]]
