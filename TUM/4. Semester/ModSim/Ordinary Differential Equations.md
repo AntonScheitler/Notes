@@ -24,7 +24,7 @@ $$\Rightarrow y_k = (1 + \delta \lambda)^k$$
 #### Rating of Methods
 - Methods can be ranked based on a few characteristics
 ###### Stability
-- A method is considered stable, if it yields $y_k \to \infty$ as $k \to \infty$ for the following initial value problem:
+- A method is considered stable, if it yields $y_k \to 0$ as $k \to \infty$ for the following initial value problem:
 $$\dot{y}(t) = \lambda y(t), \; \; y(0) = 1, \; \; \lambda < 0$$
 ###### Consistence
 - The local discretization error is the maximum error that can occur in a single step of a method

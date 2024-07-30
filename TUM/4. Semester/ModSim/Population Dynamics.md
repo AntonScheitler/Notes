@@ -22,12 +22,12 @@ $$\dot{v}  = v \cdot g(u, v)$$
 ###### Steady States
 - A steady state is achieved, if $\dot{u} = \dot{v} = 0$
 - The population numbers which lead to a steady state are referred to as $\overline{u}$ and $\overline{v}$
-- In order to determine, whether the steady state is attractive or not, the following Jacobian needs to be computed:
-$$J_{f,g}(u, v) = \begin{pmatrix}
+- In order to determine, whether the steady state is attractive or not, the Jacobian of the following function needs to be computed:
+$$f(u, v) = \begin{pmatrix}
 u \cdot f(u, v) \\
-v \cdot g(u, v) \\
+v \cdot g(u, v)
 \end{pmatrix}$$
 - For $J_{f, g}(\overline{u}, \overline{v})$ the following holds:
 	- If $J_{f, g}(\overline{u}, \overline{v})$ is negative definite, the steady state is attractive
 	- If $J_{f, g}(\overline{u}, \overline{v})$ is positive definite, the steady state is repulsive
-	- If $J_{f, g}(\overline{u}, \overline{v})$ is semi definite, the steady state is a saddle point
+	- If $J_{f, g}(\overline{u}, \overline{v})$ is semi definite, or indefinite, the steady state is a saddle point
