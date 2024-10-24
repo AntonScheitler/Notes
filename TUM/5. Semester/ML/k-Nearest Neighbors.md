@@ -5,12 +5,7 @@
 #### Distance Measuring
 - A number of distance measures can be used, in order to determine the distance between two neighbors 
 #### Hyperparameter $k$
-- The number $k$ of the neighbors the model considers is a hyperparameter, that needs to be tuned
-###### Tuning Hyperparameters
-- To tune hyperparameters, the dataset is split into a training set, a validation set and a test set
-- Using the training set and validation set, the optimal hyperparameters can be determined
-- These hyperparameters can then be tested using the test set
-![[Pasted image 20241015122517.png]]
+- The number $k$ of the neighbors the model considers is a hyperparameter, that needs to be [[Hyperparameters|tuned]]
 ###### Example
 ![[Pasted image 20241015122632.png]]
 ## Classification Pitfalls
@@ -28,5 +23,3 @@ $$x_{i, \text{std}} = \frac{x_i - \mu_i}{\sigma_i}$$
 - For a precise classification, the number of vectors thus needs to grow exponentially with the number of features
 ###### Example
 ![[Pasted image 20241018160305.png]]
-## todo
-- dimensionality
