@@ -56,3 +56,15 @@ $$p(\theta \mid \mathcal{D}) = \mathrm{Beta}(\theta \mid |T| + a, |H| + b)$$
 #### Conjugate Priors
 - The reason why the posterior and prior are in the same family of distributions is because the distribution of the prior is a conjugate prior to that of the likelihood 
 - In this case specifically, the Beta distribution of the prior is a conjugate prior to the Bernoulli distribution of the likelihood, resulting in the posterior followig the Beta distribution
+- If a non-conjugate prior had been chosen, then the posterior and $\theta_{MAP}$ would not have a closed form
+## Predicting Coin Flips
+- When using the maximum likelihood, or the maximum a posteriori approach the likelihood of a coinflip being tails is simply $\theta_{MLE}$, or $\theta_{MAP}$
+- When using the esitmated posterior distribution, the probability of a flip being tails is provided by the posterior predictive distribution:
+$$p(\text{flip is } f \mid \mathcal{D}, a, b)$$
+- Here, $\mathcal{D}$ are the observations and $a$ and $b$ are the parameters of the prior distribution and $f = \{0, 1\}$ represents the possible results
+#### Determining the Posterior Predictive Distribution
+- This posterior predictive distribution is computed like this:
+$$p(f \mid \mathcal{D}, a, b) = \int_0^1 p(f \mid \theta) \cdot p(\theta \mid \mathcal{D}, a, b) \mathrm d \theta$$
+- Inserting the already known forumulae $p(f \mid \theta) = \theta^f (1 - \theta)^{1 - f}$ and $p(\theta \mid \mathcal{D}, a, b) = \text{Beta}(\theta \mid |T| + a, |H| + b)$ yields:
+$$p(f \mid \mathcal{D}, a, b) = \frac{(|T| + a)^f(|H| + b)^{(1 - f)}}{|T| + a + |H| + b} = \text{Ber}\left ( f \, \Bigg | \, \frac{|T| + a}{|T| + a + |H| + b} \right )$$
+- This approach is considered the fully Bayesian analysis
