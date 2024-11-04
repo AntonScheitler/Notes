@@ -1,3 +1,4 @@
 ### [[k-Nearest Neighbors]]
 ### [[Decision Trees]]
 ### [[Probabalistic Inference]]
+### [[Linear Regression]]
