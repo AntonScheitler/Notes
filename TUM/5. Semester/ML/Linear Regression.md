@@ -59,11 +59,40 @@ $$E_{\text{ridge}}(w) = \frac{1}{2} \sum_{i = 1}^N (w^T \phi(x_i) - y_i)^2 + \fr
 ![[Pasted image 20241104122158.png]]
 #### Bias-Variance Tradeoff
 - The error of an estimator can be decomposed into bias and variance
-- Those need to be minimized, which can be tricky, since they are conflicting goals
-###### Bias
+- Those need to be minimized, which can be tricky, since they are conflicting goals ###### Bias
 - A high bias usually indicates a rigid model
 - This can be caused by high regulations strengths, or misspecification
 ###### Variance
 - A high variance indicates a very sensitive model, which captures a lot of noise during training
 - This is often caused by overfitting and the model memorizing the dataset
+## Probabalistic Formulation
+- In a regression, the goal is to approximate the relationship between an observation and it's target like so:
+$$y_i = f(x_i) + \varepsilon_i$$
+- This $\varepsilon_i$ is noise and is normally distributed with a fixed precision $\beta$, so that $\varepsilon_i \sim \mathcal{N}(0, \beta^{-1})$
+- This means, that the target $y_i$ is normally distributed as well with $y_i \sim \mathcal{N}(f(x_i), \beta^{-1})$
+#### Maximum Likelihood
+- Since the distribution of a single sample can be described by $p(y_i \mid f_w(x_i), \beta) = \mathcal{N}(y_i \mid f_w(x_i), \beta^{-1})$, the likelihood function for the dataset can be defined like so:
+$$p(y \mid X, w, \beta) = \prod_{i = 1}^N p(y_i \mid f_w(x_i), \beta)$$
+- Maximizing this likelihood function is equivalent to minimizing the least squares error function
+#### Posterior Distribution
+- Since the MLE approach can lead to overfitting, the posterior distribution is used
+- As described by [[Probabalistic Inference|probabalistic inference]], the postieror is defined like so:
+$$p(w \mid X, y, \beta, \cdot) = \frac{p(y \mid X, w, \beta) \cdot p(w \mid \cdot)}{p(y \mid X, \beta, \cdot)}$$
+- Here, $p(y \mid X, w, \beta)$ is the likelihood function, $\cdot p(w \mid \cdot)$ is the prior and $p(y \mid X, \beta, \cdot)$ is a normalizing constant
+$$p(w \mid X, y, \beta, \cdot) \propto p(y \mid X, w, \beta) \cdot p(w \mid \cdot)$$
+###### Determining the Prior
+- The prior $p(w \mid \alpha)$ is determined to have an isotropic multivariate normal distribution with a mean of zero:
+$$p(w \mid \alpha) = \mathcal{N}(w \mid 0, \alpha^{-1}I)$$
+###### Maximum A Posteriori
+- Using the prior and the likelihood function, the Maximum A Posteriori estimator can be computed
+- Maximizing the MAP estimator is equivalent to a ridge regression, which itself is a regression optimized for the $L2$ Norm
+###### Computing the Posterior
+- Since both the likelihood function and the prior are gaussian, the posterior is a gaussian as well
+- This is because the normal distribution is a conjugate prior to itself
+$$p(w \mid \mathcal{D}) = \mathcal{N}(w \mid \mu, \Sigma)$$
+- Here, $\mu = \beta \Sigma \Phi^T y$ and $\Sigma^{-1} = \alpha I + \beta \Phi^T \Phi$
 
+#### Prediction
+- Predicting the target $y_{\text{new}}$ for a new datapoint $x_{\text{new}}$ can therefore be determined either via a ML estimator, an MAP estimator or the posterior distribution itself
+- When using the posterior distribution, the probability that a new datapoint $x_\text{new}$ has a target $y_\text{new}$ is can be computed like this:
+$$p(y_\text{new} \mid x_\text{new}, \mathcal{D}) = \int p(y_\text{new} \mid x_\text{new}, w) \cdot p(w \mid \mathcal{D}) \mathrm d w$$
