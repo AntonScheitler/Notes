@@ -2,3 +2,4 @@
 ### [[Decision Trees]]
 ### [[Probabalistic Inference]]
 ### [[Linear Regression]]
+### [[Linear Classification]]
