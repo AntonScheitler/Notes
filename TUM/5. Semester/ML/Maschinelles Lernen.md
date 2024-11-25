@@ -3,3 +3,4 @@
 ### [[Probabalistic Inference]]
 ### [[Linear Regression]]
 ### [[Linear Classification]]
+### [[Optimization]]

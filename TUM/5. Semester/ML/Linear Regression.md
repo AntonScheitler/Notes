@@ -55,11 +55,13 @@ $$w^* = (\Phi^T\Phi)^{-1} \Phi^T y = \Phi^{\dagger}y$$
 $$E_{\text{ridge}}(w) = \frac{1}{2} \sum_{i = 1}^N (w^T \phi(x_i) - y_i)^2 + \frac{\lambda}{2} ||w||_2^2$$
 - Here, $||w||_2^2$ is the squared L2 norm of $w$ and $\lambda$ is the regularization strength
 - The larger $\lambda$ is, the smaller the weights $w$ will be
+- This type of regression is called ridge regression and it "punishes" models with steep slopes, in order to regulate them
 ###### Example
 ![[Pasted image 20241104122158.png]]
 #### Bias-Variance Tradeoff
 - The error of an estimator can be decomposed into bias and variance
-- Those need to be minimized, which can be tricky, since they are conflicting goals ###### Bias
+- Those need to be minimized, which can be tricky, since they are conflicting goals
+###### Bias
 - A high bias usually indicates a rigid model
 - This can be caused by high regulations strengths, or misspecification
 ###### Variance
@@ -73,7 +75,9 @@ $$y_i = f(x_i) + \varepsilon_i$$
 #### Maximum Likelihood
 - Since the distribution of a single sample can be described by $p(y_i \mid f_w(x_i), \beta) = \mathcal{N}(y_i \mid f_w(x_i), \beta^{-1})$, the likelihood function for the dataset can be defined like so:
 $$p(y \mid X, w, \beta) = \prod_{i = 1}^N p(y_i \mid f_w(x_i), \beta)$$
-- Maximizing this likelihood function is equivalent to minimizing the least squares error function
+- Applying the negative log-likelihood yields:
+$$\frac{\beta}{2} \sum_{i = 1}^N (\mathbf w^T \phi(\mathbf x_i) - y_i)^2 - \frac{N}{2} \ln(\beta) + \frac{N}{2} \ln(2 \pi)$$
+- This means that maximizing this likelihood of this distribution is equivalent to minimizing the least squares error function
 #### Posterior Distribution
 - Since the MLE approach can lead to overfitting, the posterior distribution is used
 - As described by [[Probabalistic Inference|probabalistic inference]], the postieror is defined like so:
