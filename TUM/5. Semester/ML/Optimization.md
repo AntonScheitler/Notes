@@ -61,3 +61,40 @@ $$h(x) = m(f_1(x)), \text{if} \; m \; \text{is convex and non-decresing}$$
 	- $\tau$ may decrease as the descent continues in order to achieve fine-tuning in the later stages of the iteration
 	- A momentum variable can be used so that the search accelerates as long as the gradients point in the same direction
 	- $\tau$ may be different for different parameters and smaller if the gradient happens to be very large
+## Higher Order Techniques
+- Optimization techniques such as gradient descent are considered first order techniques, since they operate only on the first order derivative
+- Higher order techniques operate on higher order derivatives
+#### Newton Method
+- The Newton Method uses the first order and second order derivative of a function in order find its minimum
+- Given a starting point $\mathbf{\theta_t}$, the following steps are performed, until a stopping criterium is fulfilled:
+	1. The first and second order derivatives of $f(\mathbf{\theta_t})$, i.e. its gradient and Hessian matrix are computed
+	2. The point $\mathbf{\theta_{t + 1}}$ is computed: $\theta_{t + 1} = \theta_t - \frac{\nabla f(\theta_t)}{\nabla^2f(\theta_t)}$
+	3. This $\theta_{t + 1}$ is the starting point for the next iteration
+- Since the Hessian needs to be computed in every iteration, this approach can be quite expensive
+## Stochasitc Optimization
+- In general, higher-order techniques have great convergence rates but are computationally expensive, especially for high dimensional problems
+- This means that first-order techniques are better suited for high dimensional problems
+- However, for large scale real-world datasets even first-order techniques can be too expensive, which is why stochastic optimizations are used
+#### Stochastic Gradient Descent
+ - Given a function $f(\theta) = \sum_{i = 1}^{n} L_i(\theta)$, where $L_i(\theta)$ describes the loss function of a data point given a parameter $\theta$, the expectation of all loss funcations $\mathbb{E}_{j \sim \{1, ..., n\}}[L_j(\theta)]$ can be approximated like this:
+$$\mathbb{E}_{j \sim \{1, ..., n\}}[L_j] \approx \frac{1}{|S|} \sum_{j \in S} L_j(\theta)$$
+- Here $S \subset \{1, ..., n\}$ is sample smaller than the entire dataset which is used for approximation
+- From this, it also follows that $f(\theta)$ can be approximated the same way:
+$$f(\theta) = \sum_{i = 1}^n L_i(\theta) \approx \frac{n}{|S|} \sum_{j \in S} L_j(\theta)$$
+- This means that instead of an exact gradient, a noisier estimate of it is computed
+- Even though the gradient is only estimated, this approach still almost certainly converges to a global minimum
+###### Approach
+- To perform a stochastic gradient descent, the following steps need to be performed starting with a point $\theta_t$:
+	1. A subset $S$  is chosen randomly for every step
+	2. The gradient of the estimate of $f$, based on $S$, is computed
+	3. The next point of the iteration is calculated: $\theta_{t + 1} = \theta_t - \tau \cdot \frac{n}{|S|} \cdot \sum_{j \in S} \nabla L_j(\theta_t)$
+- This is repeated until some stopping criterium is reached
+## Distributed Learning
+- The learning process can be sped up by distributing the computation load of learning between different machines
+- A core challenge in distributed learning is communicating results between machines
+#### Types of Parallelism
+- In data parallelism, the dataset is divided and distributed across different workers, which all collaborate on a shared parameter server
+- In model parallelism, the model is divided and distributed across different workers, which compute their part and merge it into the resulting model
+###### Example
+![[Pasted image 20241227150349.png]]
+![[Pasted image 20241227150402.png]]
