@@ -100,6 +100,7 @@ $$p(x_1,x_2, ..., x_d \mid y = c) = \prod_{i = 1}^d p(x_i \mid y = c)$$
 ###### Logistic Regression
 - The posterior distribution is modelled to have the following form
 $$y \mid \mathbf x \sim \text{Bernoulli}(\sigma(\mathbf w^T \mathbf x))$$
+- Here, $\sigma = \frac{1}{1 + e^{-a}}$ is the sigmoid function, which translates the output of the model into probabilities
 - The parameter $\mathbf w$ needs to chosen so that they maximize the likelihood function
 - Assuming all samples are independent, the likelihood function looks like this:
 $$p(\mathbf y \mid \mathbf w, \mathbf X) = \prod_{i = 1}^N p(y_i \mid \mathbf x_i, \mathbf w) = \prod_{i = 1}^N \sigma(\mathbf w^T \mathbf x_i)^{y_i} (1 - \sigma(\mathbf w^T \mathbf x_i))^{1 - y_i}$$

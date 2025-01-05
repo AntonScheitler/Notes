@@ -4,3 +4,4 @@
 ### [[Linear Regression]]
 ### [[Linear Classification]]
 ### [[Optimization]]
+### [[Deep Learning]]
