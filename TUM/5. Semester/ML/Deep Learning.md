@@ -46,7 +46,45 @@ $$f(x, W, b) = \sigma_2(W_2 \sigma_1(W_1 \sigma_0(W_0x + b_0) + b_1) + b_2)$$
 ## Parameter Learning
 - In practice the loss function of a model is often not convex, meaning that it is often not possible to determine global minima
 - Instead one often computes a few local minima using gradient descent and picks the one that performs best
-#### Gradient Computation
-- The gradient of a loss function can be computed in a number of ways, such as numerically or via symbolic differentiation which automates analytical computation of gradients
-- A popular choice for gradient computation is backpropagation
-###### Backpropagation
+#### Backpropagation
+- Backpropagation is a popular and efficient method for the computation of a gradient of a function
+###### Method
+- Backpropagation can be done via a few steps:
+	1. The function $f$ is divided into a composition of smaller module functions:
+	2. The derivative for every module is formulated symbolically, which means that they will not yet be evaluated for concrete inputs
+	3. In the forward pass, all the module functions are evaluated at a point $x^*$ starting with the inner most module whose value is then propagated to the outer modules
+	4. In the backward pass, the local derivatives, which were computed in step 2, are evaluated with the values computed in the forward pass
+	5. The global derivative, i.e. the derivative of $f$, is achieved by multiplying the evaluated local derivatives
+###### Computational Graph
+- The module functions of a function $f$ can be arranged in a computation graph to visualize the backpropagation:
+![[Pasted image 20250106160351.png]]
+###### Example
+- A function $f = \frac{2}{e^{-x}}$ would be split into $a(x) = -x$, $b(a) = e^a$ and $c(b) = \frac{2}{b}$
+- The derivatives would be $\frac{\mathrm d a}{\mathrm d x} = -1$, $\frac{\mathrm d b}{\mathrm d a} = e^a$ and $\frac{\mathrm dc}{\mathrm db} = -\frac{2}{b^2}$
+- For $x^* = 2$, the foward pass would yield $a = -2$, $b = e^{-2}$ and $c = \frac{2}{e^{-2}}$
+- The backward pass yields $\frac{\mathrm d a}{\mathrm d x} = -1$, $\frac{\mathrm d b}{\mathrm d a} = e^{-2}$ and $\frac{\mathrm d c}{\mathrm d b} = -\frac{2}{e^{-4}}$
+- Continuing the example, the global derivative is $f' = \frac{\mathrm d a}{\mathrm d x} \cdot \frac{\mathrm d b}{\mathrm d a} \cdot \frac{\mathrm d c}{\mathrm d b} = \frac{2e^{-2}}{e^{-4}} = \frac{2}{e^{-2}}$
+###### Multiple Inputs
+- If a function has multiple inputs, the derivative for each input can be computed:
+$$\frac{\mathrm df}{\mathrm dx} = \frac{\mathrm dc}{\mathrm da} \cdot \frac{\mathrm da}{\mathrm dx}$$
+$$\frac{\mathrm df}{\mathrm dy} = \frac{\mathrm dc}{\mathrm db} \cdot \frac{\mathrm db}{\mathrm dy}$$
+![[Pasted image 20250106152241.png]]
+- If it has multiple paths from the inner most module function to the result, the separate paths can be added together:
+$$\frac{\mathrm df}{\mathrm dx} = \frac{\mathrm dc}{\mathrm da} \cdot \frac{\mathrm da}{\mathrm dx} + \frac{\mathrm dc}{\mathrm db} \cdot \frac{\mathrm db}{\mathrm dx}$$
+![[Pasted image 20250106152423.png]]
+###### Jacobian
+- The principles of backpropagation can also be applied to vector fields using the field's Jacobian matrix 
+- Given the vector field $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$, and $a = f(x)$, the Jacobian may have the following form:
+$$\frac{\mathrm d a}{\mathrm dx} = \begin{pmatrix}
+\frac{\mathrm d a_1}{\mathrm dx_1} & ... &  \frac{\mathrm d a_1}{\mathrm dx_n} \\
+\vdots & \ddots & \vdots \\
+\frac{\mathrm d a_m}{\mathrm dx_1} & ... &  \frac{\mathrm d a_m}{\mathrm dx_n} \\
+\end{pmatrix} \in \mathbb{R}^{m \times n}$$
+- Now a new function $g: \mathbb{R}^m \rightarrow \mathbb{R}$ can be defined and chained together with $f$ leading to $c = g(a) = g(f(x))$
+- The gradient $\nabla_a c \in \mathbb{R}^m$ is formed by transposing the derivative of $c$ with respect to $a$
+$$\nabla_a c = \left( \frac{\mathrm dc}{\mathrm da} \right)^T = \begin{pmatrix}
+\frac{\mathrm dc}{\mathrm da_1} & ... & \frac{\mathrm dc}{\mathrm da_m} \\
+\end{pmatrix}^T$$
+- Since $c$ is the result of the chaining of $g$ and $f$, it's derivative can also be formed with respect to $x$:
+$$\frac{\mathrm dc}{\mathrm dx} = \frac{\mathrm dc}{\mathrm da} \cdot \frac{\mathrm da}{\mathrm dx}$$
+- Here, $\frac{\mathrm dc}{\mathrm da}$ is the transposed gradient $\nabla_a c$ and $\frac{\mathrm da}{\mathrm dx}$ is the Jacobian of $f$
