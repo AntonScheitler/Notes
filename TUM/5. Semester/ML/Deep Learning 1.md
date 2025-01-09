@@ -1,8 +1,10 @@
 ## Neural Networks
-- A [[Linear Classification|logistic regression]] problem can be represented by a graph in which nodes are inputs and edges are weights that are applied to them
+- A [[Linear Classification|classification]] problem can be represented by a graph in which nodes are inputs and edges are weights that are applied to them
 - Many classification problems, however, cannot be solved with just one layer of inputs and weights
 - By placing multiple layers of inputs and weights after one another, a neural network can be created
 - Every layer that is neither the input nor the output layer, i.e the first or last layer, is considered a hidden layer
+#### Feed-Forward Network
+- If every layer of a network only connects to the next layer and never itself or previous layers, the network is considered a feed-forward neural network 
 #### Universal Approximation Theorem
 - The universal approximation theorem states that any continuous function over a closed and bounded subset of $\mathbb{R}^D$ can be approximated by a neural network with just one hidden and one output layer
 #### Layer Construction
@@ -48,7 +50,7 @@ $$f(x, W, b) = \sigma_2(W_2 \sigma_1(W_1 \sigma_0(W_0x + b_0) + b_1) + b_2)$$
 - Instead one often computes a few local minima using gradient descent and picks the one that performs best
 #### Backpropagation
 - Backpropagation is a popular and efficient method for the computation of a gradient of a function
-###### Method
+###### Method 
 - Backpropagation can be done via a few steps:
 	1. The function $f$ is divided into a composition of smaller module functions:
 	2. The derivative for every module is formulated symbolically, which means that they will not yet be evaluated for concrete inputs
