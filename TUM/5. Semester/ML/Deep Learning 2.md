@@ -45,3 +45,10 @@ $$\hat{x}(i, j) = \sum_{l = 1}^L\sum_{m = 1}^M x(i + l, j + m) \cdot k(l, m)$$
 $$\hat{x} = \frac{x - \mathbb{E}_B(x)}{\sqrt{\text{Var}_B(x)} + \epsilon}$$
 $$y = \gamma \hat{x} + \beta$$
 - Here $\mathbb{E}_B$ and $\text{Var}_B$ represent the expectation and variance of the output of layer $B$ and $\gamma$ and $\beta$ are scale parameters and offsets which are also tuned during training
+#### Skip Connections
+- Deep neural networks suffer from vanishing gradients as they get larger and larger
+- This issue can be address with skip blocks in which an input $x$ is passed through layers of transformation and activation functions to yield the residual function $F(x)$ to which the original $x$ is then added
+- In a sense, this $F(x)$ captures the new information about or adjustments made on $x$
+- By having $x$ bypass the skip block to add it in the end, the flow of gradients and thereby training stability is improved
+###### Example
+![[Pasted image 20250111130317.png]]

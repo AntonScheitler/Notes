@@ -6,3 +6,4 @@
 ### [[Optimization]]
 ### [[Deep Learning 1]]
 ### [[Deep Learning 2]]
+### [[SVMs and Kernels]]
