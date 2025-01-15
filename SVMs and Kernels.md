@@ -4,14 +4,14 @@
 #### Constructing the margin
 - Two additional and parallel hyperplanes are added to the original one
 - When constructing the parallel hyperplanes there must not be samples between them and the original hyperplane
-- Since a hyperplane is only defined by its normal vector $w$ and its distance from the origin $b$, the parallel hyperplanes can be constructed by adjusting the 
+- Since a hyperplane is only defined by its normal vector $w$ and its distance from the origin $b$, the parallel hyperplanes can be constructed by adjusting the bias
 - If the original hyperplane is defined by $w^Tx + b = 0$, then the parallel ones are defined by:
 $$w^Tx + (b - s) = 0$$
 $$w^Tx + (b + s) = 0$$
 - The size of the margin can be computed like so:
 $$m = \frac{2s}{||w||}$$
 ###### Constraints
-- Let $x_i$ be the $i$th sample, $y \in \{-1, 1\}$ the class it is assigned to and let the constraints for the classification be:
+- Let $x_i$ be the $i$th sample, $y_i \in \{-1, 1\}$ the class it is assigned to and let the constraints for the classification be:
 $$ w^Tx + b \geq 1, \; \text{if} \; y_i = 1$$
 $$ w^Tx + b \leq -1, \; \text{if} \; y_i = -1$$
 - These constraints need to hold for a classification to be correct
@@ -81,3 +81,51 @@ $$y_i(w^Tx_i + b) = 1$$
 - Ultimately, most $a_i$ are $0$ which means that there are only the few support vectors are necessary to determine the solution
 #### Example
 ![[Pasted image 20250114110801.png]]
+## Soft Margin SVMs
+- The above implementation of SVMs only works if the data is linearly separable and there are no noisy samples or outliers 
+- If this is not the case, the constraint functions need to be relaxed
+#### Slack Variables
+- A slack variable $\epsilon_i$ is introduced for every sample $x_i$, which measures how much it violates the margin
+- If $\epsilon_i = 0$, it doesn't violate the margin at all, if $0 < \epsilon_i < 1$, then the sample is within the margin but still on the correct side of the hyperplane and if $\epsilon_i > 1$, it is on the wrong side of the hyperplane
+- The constraints change accordingly:
+$$w^Tx_i + b \geq 1 - \epsilon_i, \; \text{if} \; y_i = 1$$
+$$w^Tx_i + b \leq -1 + \epsilon_i, \; \text{if} \; y_i = -1$$
+- This can be again condensed to $y_i \cdot (w^Tx_i + b) \geq 1 - \epsilon_i$
+- The minimization function for the lagrangian also changes:
+$$f_0(w, b, \epsilon) = \frac{1}{2} w^Tw + C \cdot \sum_{i = 1}^N \epsilon_i$$
+- Here, $C$ determines how much a violation of the margin is punished during training
+###### Solving the Primal Problem with Slack Variables
+- To determine the set of support vecotrs, the same steps that were needed to solve the primal problem for SVNs are performed again, except that the Lagrangian has a different form
+- This difference in the Lagrangian, however, has little effect on each individual step, since the only change is that the constraint $0 \leq a_i \leq C$ is added to the Lagrange dual function
+- As a result, $w$ and $b$ can still be computed by using all samples $x_i$ for which $a_i \neq 0$, i.e. the support vectors: 
+$$w = \sum_{i \in S} a_i y_i x_i$$
+$$b = \frac{1}{y_i} - w^Tx_i$$
+## Kernels
+- In order to construct non-linear classifiers, basis functions $\phi$ need to be applied to each sample, in order to make the data linearly separable
+- The optimization function for the Lagrange dual function has this form:  
+$$g(a) = \sum_{i = 1}^N a_i - \frac{1}{2} \sum_{i = 1}^N \sum_{j = 1}^N a_i a_j y_i y_j x_i^T x_j$$
+- This means the basis function $\phi$ needs to be applied to $x_i^Tx_j$, yielding $\phi(x_i)^T\phi(x_j)$
+- A kernel function $k(x_i, x_j) = \phi(x_i)^T\phi(x_j)$ can be defined and applied to the Lagrange dual function, which is called a kernel trick:
+$$g(a) = \sum_{i = 1}^N a_i - \frac{1}{2} \sum_{i = 1}^N \sum_{j = 1}^N a_i a_j y_i y_j k(x_i, x_j)$$
+- After determining the set of support vectors using the approach above, the bias can be computed like this:
+$$b = y_i - \left( \sum_{j \in S} a_j y_j k(x_i, x_j)\right)$$
+- A new sample can then be classified like this:
+$$h(x) = \text{sign} \left( \sum_{j \in S} a_j y_j k(x_j, x) + b\right)$$
+#### Kernel Validity
+- A kernel is valid, if it produces a symmetric, positive semidefinite kernel matrix $K$ for any input $X$
+- A kernel matrix is constructed like this:
+$$K = \begin{pmatrix}
+k(x_1, x_1) & k(x_1, x_2) & ... & k(x_1, x_N) \\
+k(x_2, x_1) & k(x_2, x_2) & ... & k(x_2, x_N) \\
+\vdots & \vdots & \ddots & \vdots \\
+k(x_N, x_1) & k(x_N, x_2) & ... & k(x_N, x_N) \\
+\end{pmatrix}$$
+- If a non-valid kernel is used, the problem becomes non-convex and its solution may not be globally optimal
+#### Kernel Preserving Operations
+- Given two valid kernels $k_1, k_2$, the following kernels are valid as well:
+$$k = k_1 + k_2$$
+$$k = c \cdot k_1, \; \text{with} \; c > 0$$
+$$k = k_1 \cdot k_2$$
+$$k(x_1, x_2) = k_1(\phi(x_1), \phi(x_2))$$
+$$k(x_1, x_2) = k_1(\phi(x_1), \phi(x_2))$$
+$$k(x_1, x_2) = x_1^T A x_2, \; \text{if $A$ is symmetric and positive semidefinite}$$
