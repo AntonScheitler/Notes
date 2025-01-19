@@ -93,6 +93,8 @@ $$w^Tx_i + b \leq -1 + \epsilon_i, \; \text{if} \; y_i = -1$$
 - This can be again condensed to $y_i \cdot (w^Tx_i + b) \geq 1 - \epsilon_i$
 - The minimization function for the lagrangian also changes:
 $$f_0(w, b, \epsilon) = \frac{1}{2} w^Tw + C \cdot \sum_{i = 1}^N \epsilon_i$$
+- Alternatively, it can be written like so:
+$$f_0(w, b) = \frac{1}{2} w^Tw + C \cdot \sum_{i = 1}^N \max(0, 1 - y_i(w^Tx_i + b))$$
 - Here, $C$ determines how much a violation of the margin is punished during training
 ###### Solving the Primal Problem with Slack Variables
 - To determine the set of support vecotrs, the same steps that were needed to solve the primal problem for SVNs are performed again, except that the Lagrangian has a different form
@@ -107,6 +109,7 @@ $$g(a) = \sum_{i = 1}^N a_i - \frac{1}{2} \sum_{i = 1}^N \sum_{j = 1}^N a_i a_j 
 - This means the basis function $\phi$ needs to be applied to $x_i^Tx_j$, yielding $\phi(x_i)^T\phi(x_j)$
 - A kernel function $k(x_i, x_j) = \phi(x_i)^T\phi(x_j)$ can be defined and applied to the Lagrange dual function, which is called a kernel trick:
 $$g(a) = \sum_{i = 1}^N a_i - \frac{1}{2} \sum_{i = 1}^N \sum_{j = 1}^N a_i a_j y_i y_j k(x_i, x_j)$$
+- This is useful, because often $k(x_i, x_j)$ can easily computed without determining the values for $\phi(x_i)$ and $\phi(x_j)$
 - After determining the set of support vectors using the approach above, the bias can be computed like this:
 $$b = y_i - \left( \sum_{j \in S} a_j y_j k(x_i, x_j)\right)$$
 - A new sample can then be classified like this:
@@ -126,6 +129,5 @@ k(x_N, x_1) & k(x_N, x_2) & ... & k(x_N, x_N) \\
 $$k = k_1 + k_2$$
 $$k = c \cdot k_1, \; \text{with} \; c > 0$$
 $$k = k_1 \cdot k_2$$
-$$k(x_1, x_2) = k_1(\phi(x_1), \phi(x_2))$$
 $$k(x_1, x_2) = k_1(\phi(x_1), \phi(x_2))$$
 $$k(x_1, x_2) = x_1^T A x_2, \; \text{if $A$ is symmetric and positive semidefinite}$$

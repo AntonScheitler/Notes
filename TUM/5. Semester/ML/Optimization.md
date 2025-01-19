@@ -26,6 +26,7 @@ $$f(y) - f(x) \geq (y - x)^T \nabla f(x)$$
 	1. It can be shown that the definition of convex functions holds 
 	2. A fact about convex functions, such as first order convexity, can be exploited
 	3. It can be shown that a given function can be obtained by combining simple convex functions with operations that preserve convexity 
+	4. If the second derivative of the function is positive, it is convex, if it is negative, it is concave
 ###### Convexity Preserving Operations
 - If $f_1$ and $f_2$ are convex functions and $g$ is a concave function, then a convex function $h$ can be created like this:
 $$h(x) = f_1(x) + f_2(x)$$
