@@ -66,4 +66,53 @@ $$Y = \tilde X \cdot \Gamma$$
 - In order to determine such a $B$, singular value decomposition can be used
 ###### Example
 ![[Pasted image 20250122144014.png]]
-#### Approach
+#### Latent Factors
+- Decomposing a data matrix $A$ via a singular value decomposition yields $U \Sigma V^T$
+- Each matrix in this decomposition carries some sort of meaning
+- More specifically, $U$ and $V$ are similarity matricies that map features to some underlying meaning and $\Sigma$ measures the strength of these mappings
+###### Example
+- Given a matrix $A$ that represents user's movie preferences, $U$ is a similarity matrix that maps users to genere preferences, $V$ maps movies to genres and $\Sigma$ measures the strength of each genre
+![[Pasted image 20250201135446.png]]
+#### Reducing Dimensions
+- Given a decomposition $U\Sigma V^T$ we have already determined that $\Sigma$ measures how strong the mapping to some underlying meaning is  
+- If a singular value in $\Sigma$ is very small, it is therefore likely that the underlying meaning that is being mapped to is just noise or irrelevant
+- By eliminating the smallest singular values, the original matrix $A$ can be approximated by a matrix with a lower rank
+- The reduced data $P$ can be obtained in one of two ways:
+$$P = U \Sigma$$
+$$P = AV$$
+###### Example
+- Continuing the above example, the mapping to the sci-fi and romance genere is quite strong as indicated by $\Sigma$
+- However a third genere has been picked up by the decomposition which isn't really prominent in $A$ and has a small corresponding value in $\Sigma$, which means it can be eliminated 
+![[Pasted image 20250201140932.png]]
+## Matrix Factorization
+- In a matrix factorization, a matrix is partially populated with values
+- Missing values are denoted with $0$ and must be predicted
+- A regular singular value decomposition would have the form $R = QP^T$, where $Q = U\Sigma$ and $P = V$ 
+- This would simply yield $0$ for all missing values instead of giving a prediction, which is why a different approach must be used
+#### Latent Factor Model
+- $Q$ and $P$ need to be constructed so that the following minimum is achieved: 
+$$\min_{P, Q} f(P, Q) = \min_{P, Q} \sum_{(u, i) \in S} (r_{ui} - q_u \cdot p_i^T)^2$$
+- Here, $r_{ui}$ denotes a non-zero entry in $R$ and $q_u, p_i^T$ are the $u$th row and $i$th column of $Q$ and $P$ respectively
+- A prediction for an entry in $R$ is therefore given by:
+$$\hat{r}_{ui} = q_u \cdot p_i^T$$
+- There are several approaches to determine this minimum
+###### Block coordinate minimization
+- In a block coordinate minimization, one variable is kept fixed and the other is optimized alternatingly
+- If either $q_u$ or $p_i^T$ is fixed, then $\min_{P, Q} f(P, Q)$ can be reduced to an ordinary least squares regression
+###### Stochastic Gradient Descent
+- A stochastic gradient descent can be performed on $f(P, Q)$ with respect to $P$ and $Q$ until it's minimum is determined
+#### Regularization
+- The Latent Factor Model can be regularized by adding a regularization term yielding:
+$$\min_{P, Q} f(P, Q) = \min_{P, Q} \sum_{(u, i) \in S} (r_{ui} - q_u \cdot p_i^T)^2 + \lambda_1 \sum_{u} ||q_u||^2 + \lambda_2 \sum_i ||p_i||^2$$
+- $\lambda_1$ and $\lambda_2$ are regularization parameters for $P$ and $Q$
+- This produces a model which makes more conservative predictions is data is scarce
+- Where the unregularized model could be reduced to a series of ordinary least squares regression problems, these now become ridge regression problems
+#### Example
+- A naive singular value decomposition would yield no useful result at all, as all predictions would be $0$:
+![[Pasted image 20250201160405.png]]
+## Autoencoders
+- Where PCA and SVD can only capture and reduce linear data relations, Autoencoders can reduce dimensions non-linearly
+- Autoencoders are neural networks which can find a latent representation $z \in \mathbb{R}^L$ of the original $x \in \mathbb{R}^D$, where $L << D$, and reconstruct $x$ from it
+#### Structure
+- Autoencoders consist of an encoder, which determines the latent representation $z$ and a decoder, which reconstructs $x$ from $z$:
+![[Pasted image 20250201173823.png]]
