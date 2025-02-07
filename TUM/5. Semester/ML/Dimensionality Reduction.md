@@ -113,6 +113,7 @@ $$\min_{P, Q} f(P, Q) = \min_{P, Q} \sum_{(u, i) \in S} (r_{ui} - q_u \cdot p_i^
 ## Autoencoders
 - Where PCA and SVD can only capture and reduce linear data relations, Autoencoders can reduce dimensions non-linearly
 - Autoencoders are neural networks which can find a latent representation $z \in \mathbb{R}^L$ of the original $x \in \mathbb{R}^D$, where $L << D$, and reconstruct $x$ from it
+- The reconstruction $\hat{x}$ of $x$ therefore always lies in an $L$-dimensional subspace of $D$
 #### Structure
 - Autoencoders consist of an encoder, which determines the latent representation $z$ and a decoder, which reconstructs $x$ from $z$:
 ![[Pasted image 20250201173823.png]]

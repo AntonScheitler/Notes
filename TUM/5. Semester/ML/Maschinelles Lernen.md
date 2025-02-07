@@ -8,3 +8,4 @@
 ### [[Deep Learning 2]]
 ### [[SVMs and Kernels]]
 ### [[Dimensionality Reduction]]
+### [[Clustering]]
