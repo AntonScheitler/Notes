@@ -17,7 +17,7 @@ $$Z^*, \mu^* = \arg \min_{Z, \mu} J(X, Z, \mu)$$
 	1 \; \text{if} \; k = \arg \min_j ||x_i - \mu_j||_2^2, \\
 	0 \; \text{else}
 	\end{cases}$$
-	1. The cluster centroids are updated by solving $\min_{\mu} J(X, Y, z)$:
+	2. The cluster centroids are updated by solving $\min_{\mu} J(X, Z, \mu)$:
 	$$N_k = \sum_{i = 1}^N z_{ik}$$
 	$$\mu_k = \frac{1}{N_k} \sum_{i = 1}^N z_{ik} x_i$$
 ###### Centroid Initialization
@@ -52,7 +52,7 @@ $$\mathbb{E}_{Z \sim \gamma_t(Z)} [\ln(p(X, Z \mid \pi, \mu, \Sigma))]$$
 - The following two steps are repeated, until the expectation converges:
 	1. In the E-step, the prior, in this case the responsibilities $\gamma_t(z_{ik})$ are evaluated, to determine $Z$:
 $$\gamma(z_{ik}) = \frac{\pi_k^{(t)} \mathcal{N}(x_i \mid \mu_k^{(t)}, \Sigma_k^{(t)})}{\sum_{j = 1}^K \pi_j^{(t)} \mathcal{N}(x_i \mid \mu_j^{(t)}, \Sigma_j^{(t)})}$$
-	1. In the M-step, the parameters $\pi_k^{(t)}, \mu_k^{(t)}, \Sigma_k^{(t)}$ are redetermined:
+	2. In the M-step, the parameters $\pi_k^{(t)}, \mu_k^{(t)}, \Sigma_k^{(t)}$ are redetermined:
 	$$\mu_k^{(t+1)} = \frac{1}{N_k} \sum_{i = 1}^N \gamma_t(z_{ik})x_i$$
 	$$\Sigma_k^{(t + 1)} = \frac 1 N_k \sum_{i = 1}^N \gamma_t(z_{ik}) (x_i - \mu_k^{(t + 1)})(x_i - \mu_k^{(t + 1)})^T$$
 	$$\pi_k^{(t + 1)} = \frac{N_k}{N}$$

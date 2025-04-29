@@ -22,7 +22,7 @@ $$\Delta i(s, t) = i(t) - p_L \cdot i(t_L) - p_R \cdot i(t_R)$$
 $$i_H(t) = - \sum_{c_i \in C} \pi_{c_i} \log_2(\pi_{c_i})$$
 - The Gini index for a node $t$ is described like this:
 $$i_G(t) = 1 - \sum_{c_i \in C} \pi_{c_i}^2$$
-- Here, $\pi_{c_i}$ describes the probability, that an input vector will be categorized as $c_i$ in the node $t$
+- Here, $\pi_{c_i}$ describes the probability, that an input vector has the label $c_i$ in the node $t$
 ###### Visualization
 - The following graph compares entropy, the Gini index and missclassification rate and relates their value to the pureness of the underlying data
 - This shows, that entropy and the Gini index lead to splits, that increase pureness drastically

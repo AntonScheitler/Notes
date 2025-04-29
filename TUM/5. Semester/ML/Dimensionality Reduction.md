@@ -33,7 +33,7 @@ Var(X_1) & Cov(X_1, X_2) & ... & Cov(X_1, X_d) \\
 Cov(X_2, X_1) & Var(X_2) & ... & Cov(X_2, X_d) \\
 \vdots & & \ddots & \vdots \\
 Cov(X_d, X_1) & Cov(X_d, X_2) & ... & Var(X_d) \\
-\end{pmatrix} = \frac1N X^TX - XX^T$$
+\end{pmatrix} = \frac1N X^TX - XX^T = \frac1N \overline{X}^T\overline{X}$$
 ###### Eigenvector Decomposition
 - Since the goal of a PCA is to set the covariances to $0$, the targeted covariance matrix has this form:
 $$\Lambda = \begin{pmatrix}
