@@ -33,5 +33,22 @@ $$\mu: E \rightarrow \mathbb{R}, \; \forall \mu(i) \geq 0, \; \sum_i \mu(i) = 1$
 - If any two Markov chains $(X_n)_{n \in \mathbb{N}_0}$ and $(Y_n)_{n \in \mathbb{N}_0}$ have the same initial distribution $\mu$ and transition matrix $\Pi$, the distributions of $(X_n)$ and $(Y_n)$ are identical
 #### Markov Property
 - Let $(X_n)_{n \in \mathbb{N}_0}$ be a Markov chain with the initial distribution $\mu$ and transition matrix $\Pi$ and let $m \in \mathbb{N}_0$ and $k \in E$, with $P(X_m = k) > 0$
-- We define $\tilde{X}_n = X_{n + m}$$ and $\tilde{P}(A) = P(A \mid X_m = k)$
+- We define $\tilde{X}_n = X_{n + m}$ and $\tilde{P}(A) = P(A \mid X_m = k)$
 - The Markov property states that $(\tilde{X}_n)_{n \in \mathbb{N}_0}$ is now also a Markov chain with the transition matrix $\Pi$ and initial distribution $\delta_k = \begin{cases} 1, \; i_m = k \\ 0, \; i_m \neq k \end{cases}$
+#### Reachability and Communication
+- A state $j \in E$ is considered reachable from $i \in E$, if the following holds: 
+$$\exists n \in \mathbb{N}_0: P(X_n = j \mid X_0 = i) > 0$$
+- This relationship between $j$ and $i$ can also be expressed by $i \rightarrow j$
+- $i$ and $j$ communicate, if both $i \rightarrow j$ and $j \rightarrow i$ hold, resulting in $i \leftrightarrow j$
+###### Proving Reachability
+- $i \rightarrow j$ holds if $\exists n: \Pi^n(i, j) > 0$ which is equivalent to saying $\sum_n \Pi^n(i, j) > 0$
+###### Communication Classses
+- Communication between states is an equivalence relation, meaning that the state space can be divided into communication classes
+- If the entire state space $E$ has only one communication class, the Markov chain is considered irreducible, otherwise it is reducible
+###### Closed Sets
+- A set $I \subseteq E$ is closed if the following holds:
+$$\forall i \in I: \sum_{j \in I} \Pi(i, j) = 1$$
+#### Periodicity
+- For any $i \in E$ we define the following set:
+$$T(i) = \{n \geq 1: \Pi^n(i, i) > 0\}$$
+- The period of $i$ is then defined as the greatest common divider of $T(i)$

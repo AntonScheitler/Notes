@@ -1,2 +1,2 @@
-### [[Introduction]]
-### [[Uniqueness]]
+### [[Definitions]]
+### [[Linear Algebra in Markov Chains]]
