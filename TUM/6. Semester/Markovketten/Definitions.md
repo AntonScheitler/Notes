@@ -51,4 +51,14 @@ $$\forall i \in I: \sum_{j \in I} \Pi(i, j) = 1$$
 #### Periodicity
 - For any $i \in E$ we define the following set:
 $$T(i) = \{n \geq 1: \Pi^n(i, i) > 0\}$$
-- The period of $i$ is then defined as the greatest common divider of $T(i)$
+- The period of $i$ is then defined as the greatest common divider of $T(i)$, where the $gcd = \infty$, if $T(i) = \emptyset$
+###### Periodicity of a Markov Chain
+- For two states $i$ and $j$ with $i \leftrightarrow j$, it holds that these two states have the same period
+- From this it also follows that every state in an irreducible Markov chain has the same period
+- If this is the case, this period is the period of the Markov chain
+- A chain with a period of $1$ is considered aperiodic, one with a period $> 1$ is considered periodic
+###### Consequences
+- Given an irreducible Markov chain with a transition matrix $\Pi$ and a period of $p$, then for any two states $i$ and $j$ there exist an $m$ and $n_0$, so that the following holds:
+$$\forall n \geq n_0: \Pi^{n \cdot d + m}(i, j)$$
+- Additionally, if a Markov chain is irreducible, aperiodic and has a finite state space, then there exists an $n_0$ so that the following holds:
+$$\forall n \geq n_0: \Pi^n(i, j) > 0$$
