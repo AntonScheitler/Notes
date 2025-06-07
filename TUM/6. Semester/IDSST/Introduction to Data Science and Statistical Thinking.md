@@ -1,3 +1,4 @@
 ### [[Data Basics]]
 ### [[Numerical Data]]
 ### [[Probability]]
+### [[Predictive Modeling]]

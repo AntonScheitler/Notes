@@ -62,3 +62,24 @@ $$T(i) = \{n \geq 1: \Pi^n(i, i) > 0\}$$
 $$\forall n \geq n_0: \Pi^{n \cdot d + m}(i, j)$$
 - Additionally, if a Markov chain is irreducible, aperiodic and has a finite state space, then there exists an $n_0$ so that the following holds:
 $$\forall n \geq n_0: \Pi^n(i, j) > 0$$
+- If an irreducible Markov chain has a period of $d$, it can be divided into $d$ groups $C_0, ..., C_{d - 1}$, for which the following holds:
+$$\forall i \in C_k: \sum_{j \in C_{k + 1}} \Pi(i, j) = 1$$
+## Stationary Distributions
+- A probability vector $a$ is a stationary distribution for a Markov chain on a state space $E$ with transition matrix $\Pi$, if for every $i \in E$ the following holds:
+$$\sum_{j \in E} a(j) \cdot Pi(j, i) = a(i)$$
+- Written differently, it means the following holds for $a$:
+$$a\Pi = a$$
+- This means that if the initial distribution of a Markov chain is a stationary distribution $a$, then:
+$$\forall n \in \mathbb{N}, i \in E: P(X_n = i) = a(i)$$
+#### Determining the Distribution
+- In order to determine $a$, the following system of equasions needs to be solved:
+$$\begin{cases}
+a \Pi = a \\
+\sum_{i \in E} a(i) = 1 \\
+\end{cases}$$
+- This means a Markov chain can have one, infinitly many or no stationary distributions
+#### Reversability
+- A Markov chain is reversible, if there is a distribution $a$, so that:
+$$\forall i, j \in E: a(i) \Pi(i, j) = a(j) \Pi(j, i)$$
+- In other words, it is reversible if, given some distribution $a$, it is as likely to go from any state $i$ to a state $j$ as it is to go from $j$ to $i$ in a single step
+- Additionally, any reversable distribution of a Markov chain is also stationary
