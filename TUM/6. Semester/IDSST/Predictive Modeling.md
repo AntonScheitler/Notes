@@ -20,6 +20,8 @@ $$f(X) = \frac1k(x_1, ..., x_k)$$
 ###### Mean Squared Error
 - The mean squared error, or MSE, is a commonly used measure of the quality of a fit and is described like so:
 $$MSE = \frac1n \sum_{i = 1}^n (y_i - f(x_i))^2$$
+- Often, the Root Mean Squared Error is preferred, as it is on the same scale as the original data and therefore easier to interpret: 
+$$RMSE = \sqrt{MSE}$$
 ###### Bias-Variance Tradeoff
 - The bias-variance tradeoff can be best explained with a polynomial regression model 
 - As a model is trained, its MSE usually follows a U-shape, as the degree of the regression polynomial increases 
@@ -57,10 +59,40 @@ $$y \approx X \hat{\beta} = \begin{pmatrix}
 \end{pmatrix}$$
 - Also, there is a closed-form solution that yields the parameters that minimize the error function:
 $$\hat{\beta} = (X^TX)^{-1}X^Ty$$
-#### Linear Regression in R
-- Determining the optimal parameters $\hat{\beta}$ can be done in R via the $\texttt{lm}$ function
-- In order to evaluate how well a linear model fits the actual dataset, a residual plot can be used
+#### Measures of fit
+- Different approaches can be taken in order to evaluate how well a model actually fits the actual dataset
+###### Residual Plot
+- One way to measure the fit of a model is a residual plot, in which the regression line is drawn on top of the datapoints
+![[Pasted image 20250615124316.png]]
+###### RSE
 - Alternatively in order to compute a measure of the quality of the fit, the residual standard error can be used:
 $$RSE = \sqrt{\frac1{n - 2}RSS}$$
 - This measures the standard deviation of $\epsilon_0$ under the assumption that $y = \beta_0 + \beta_1 \cdot X + \epsilon_0$
-- This residual standard error is computed, among many other measures, by the $\texttt{glance}$ function and is denoted by $\texttt{sigma}$
+- This residual standard error is computed, among many other measures, by the $\texttt{glance}$ function in R and is denoted by $\texttt{sigma}$
+###### $\text{R}^2$
+- RSE measures the lack of fit in units of the response variable $Y$
+- In order to obtain a measure that is independent of the scale of $Y$, the $R^2$ measure can be used, which is computed like so:
+$$R^2 = 1 - \frac{\sum_{i = 1}^n (y_i - \hat{y}_i)^2}{\sum_{i = 1}^n (y_i - \overline{y}_n)^2}$$
+- $R^2$ describes what percentage of the variance in the observed data can be explained by the model, which means that with $R^2 = 1$ the model would perfectly explain why the variance in the data is the way it is
+## Multiple Linear Regression
+- In most cases, a response variable cannot be simply predicted with just one explanatory variable
+- The simple linear regression model can be expanded, to include multiple explanatory variables by giving each it's own weight $\beta_i$:
+$$Y_i = \beta_0 + \beta_1 x_{i, 1} + ... + \beta_k x_{i, k} + \epsilon_i$$
+$$Y = X\beta + \epsilon$$
+#### Computing the Weights
+- As with a simple linear regression, the weights for the linear regression involving mulitple variables can also be computed using the least squares method, except that now there are more weights:
+$$\hat{\beta} = \arg \min_{b}RSS(b) = \sum_{i = 1}^n ((b_0 + b_1 x_{i, 1} + ... + b_k x_{i, k}) - y_i)^2$$
+$$\hat{\beta} = (X^TX)^{-1}X^Ty$$
+- Estimats can then be computed like so:
+$$\hat{y} = X \hat{\beta} = X (X^TX)^{-1}X^Ty = Hy$$
+- Here, $H$ is referred to as the hat matrix
+#### Measures of fit
+- When using mulitple variables, $R^2$ will increase as the number of explanatory variables grows, leading to a biased estimate of the percentage of variablility
+- In order to account for this, an adjusted $R^2$ estimator can be computed:
+$$R_{adj}^2 = 1 - \frac{\sum_{i = 1}^n (y_i - \hat{y}_i)^2}{\sum_{i = 1}^n (y_i - \overline{y}_n)^2} \cdot \frac{n - 1}{n - k - 1} = R^2 \cdot \frac{n - 1}{n - k - 1}$$
+#### Multicollinarity
+- Multicollinarity occurs if the explanatory variables are not independent and instead correlate among themselves
+- If two variables are not independent, they are considered collinear
+- If this is the case, the weights for the linear regression model can become hard to interpret
+## Workflows
+- In R, workflows can be used to define how a model needs to be computed in order to easily train and validate different models using cross validation
