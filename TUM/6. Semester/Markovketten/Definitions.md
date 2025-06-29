@@ -81,7 +81,7 @@ X_{\tau},  \; \text{if} \; n \geq \tau \\
 - $(Y_n)$ then has the transition matrix $\Pi$ and the initial distribution $\delta_k$ and is independent of the stopping time $\tau$ and the stopped Markov chain $(X_{n \land \tau})$
 ## Stationary Distributions
 - A probability vector $a$ is a stationary distribution for a Markov chain on a state space $E$ with transition matrix $\Pi$, if for every $i \in E$ the following holds:
-$$\sum_{j \in E} a(j) \cdot Pi(j, i) = a(i)$$
+$$\sum_{j \in E} a(j) \cdot \Pi(j, i) = a(i)$$
 - Written differently, it means the following holds for $a$:
 $$a\Pi = a$$
 - This means that if the initial distribution of a Markov chain is a stationary distribution $a$, then:
@@ -98,3 +98,10 @@ a \Pi = a \\
 $$\forall i, j \in E: a(i) \Pi(i, j) = a(j) \Pi(j, i)$$
 - In other words, it is reversible if, given some distribution $a$, it is as likely to go from any state $i$ to a state $j$ as it is to go from $j$ to $i$ in a single step
 - Additionally, any reversable distribution of a Markov chain is also stationary
+## Transience and Recurrence
+- Let $(X_n)$ be a Markov chain with a transition matrix $\Pi$ and state space $E$, where $i \in E$
+- The state $i$ is called recurrent, if $Pr(T_i < \infty) = 1$ and transient, if $Pr(T_i < \infty) < 1$, where $T_i = \{n > 0: X_n = i\}$
+- In other words, a state is recurrent, if it is guaranteed that the state will be reached again and again in finite time and it is transient, if this is not guaranteed
+- Overall, a state $i$ is recurrent if and only if the following holds:
+$$\sum_{n = 0}^{\infty} \Pi^n(i, i) = \infty$$
+- Also, if $i$ is recurrent then all the states that are in the same communication class as $i$ are recurrent 
