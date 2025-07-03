@@ -2,3 +2,4 @@
 ### [[Numerical Data]]
 ### [[Probability]]
 ### [[Predictive Modeling]]
+### [[Inference]]
