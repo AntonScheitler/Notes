@@ -107,4 +107,17 @@ $$\forall i, j \in E: a(i) \Pi(i, j) = a(j) \Pi(j, i)$$
 - Overall, a state $i$ is recurrent if and only if the following holds:
 $$\sum_{n = 0}^{\infty} \Pi^n(i, i) = \infty$$
 - Also, if $i$ is recurrent then all the states that are in the same communication class as $i$ are recurrent 
+- If all states in a Markov chain are recurrent, then the chain itself is also considered recurrent, otherwise it is considered transient
 - A state $i$ is positive recurrent, if $\mathbb{E}(T_i) < \infty$ and null recurrent, if $\mathbb{E}(T_i) = \infty$
+## Invariant Measures
+- Let $(X_n)$ be a Markov chain with the transition matrix $\Pi$ on the state space $E$
+- A function $\alpha: E \to \mathbb{R}$ is called an invariant measure, if the following holds:
+$$\forall i: \alpha(i) \geq 0$$
+$$\exists i: \alpha(i) > 0$$
+$$\alpha \cdot \Pi = \alpha$$
+- A stationary distribution is therefore an example of an invariant measure, in this case with the additional condition that all it's element need to sum to $1$  
+- If a Markov chain is recurrent, then it always has an invariant measure, and if it is also irreducible, then the the invariant measure is unique up to multiplication with a constant
+- Given an irreducible and recurrent Markov chain, with $0 \in E$ and $T_0 = \inf\{n \geq 1: X_n = 0\}$, an invariant measure can be constructed like so:
+$$\alpha(i) = \mathbb{E}^0\left [ \sum_{n = 1}^{T_0} 1_{X_n = i} \right ]$$
+- Here $\mathbb{E}^0$ is the expectation starting with $X_0 = 0$
+- Furthermore, this means that $\alpha(0) = 1$
