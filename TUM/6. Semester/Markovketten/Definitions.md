@@ -120,4 +120,15 @@ $$\alpha \cdot \Pi = \alpha$$
 - Given an irreducible and recurrent Markov chain, with $0 \in E$ and $T_0 = \inf\{n \geq 1: X_n = 0\}$, an invariant measure can be constructed like so:
 $$\alpha(i) = \mathbb{E}^0\left [ \sum_{n = 1}^{T_0} 1_{X_n = i} \right ]$$
 - Here $\mathbb{E}^0$ is the expectation starting with $X_0 = 0$
-- Furthermore, this means that $\alpha(0) = 1$
+- Furthermore, it holds that that $\alpha(0) = 1$ and $\forall i \neq 0: a(i) > 0$
+- This means that any invariant measure of an irreducible Markov chain is positive for all values
+#### Recurrence and Stationary Distribution
+- If a markov chain is positive recurrent, then it also has a stationary distribution
+#### $\alpha$-reversed Transition Matrix
+- Given a Markov chain $(X_n)$ on a state space $E$ with a transition matrix $\Pi$ and an invariant measure $\alpha$, the $\alpha$-reversed transition matrix is defined like so: 
+$$\Pi^{\alpha}(i, j) = \frac{\alpha(j)}{\alpha(i)} \Pi(j, i)$$
+- This matrix is also a stochastic matrix
+- If $(X_n)$ is a Markov chain with an initial state $\delta_0$, conditioned on $X_N = 0$, then $Y_n = X_{N - n}$ is a Markov chain with initial distribution $Y_0 = 0$ and transition matrix $\Pi^{\alpha}$, conditioned on $Y_n = \delta_0$
+- For such a pair of Markov chains with reversed Transition Matricies, the following holds:
+	- If one is recurrent, the other is too
+	- If they have the same initial distribution and are stopped at $T_0$, then $(Y_n)_{n = 0}^{T_0}$ has the same distribution as $(X_{T_0 - n})_{n = 0}^{T_0}$
