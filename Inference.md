@@ -46,3 +46,45 @@ $$T(X) \underline{+} z_{1 - \alpha/2} \cdot \text{SE}(T(X))$$
 - If the sample distribution is symmetrical, the same procedure as in the asymptotic approach can be used:
 $$\overline{X} \underline{+} z_{1 - \alpha/2} \cdot \text{SE}(T(X^b))$$
 - Here, the $\overline{X}$ denotes the sample mean and $\text{SE}(T(X^b))$ the standard error of the sample distribution
+## Hypothesis Testing
+- A hypothesis is always build around a null-hypothesis $H_0$ which represents the claim that there is no underlying causality or correlation and all observations are essentially random 
+- In a statistical test, a sample $X_1, ..., X_n$ is evaluated using a test statistic $T(X)$ in order to decide of $H_0$ can be rejected
+#### Errors
+- A type 1 error occurs, when rejecting $H_0$, when in reality $H_0$ holds, which happens with the probability of the significance level $\alpha$
+- A type 2 error occurs, when not rejecting $H_0$, when in reality $H_0$ doesn't hold, which happens with probability $\beta$ 
+###### Power of a Test
+- The power of a test is the probability with which it correctly rejects $H_0$, i.e. $1 - \beta$
+- In order to determine the minimum size of a sample so that a given test, like a t test, has a power of at least `pow`, the following R function can be used:
+```
+power.t.test(
+	delta = d, 
+	sd = s,
+	sig.level = 0.05,
+	power = pow,
+	type = "one.sample",
+	alternative = "one.sided"
+)
+```
+- Here, `delta` refers to the effect size, which is a measure of strength of the relationship of two variables
+#### P-Value
+- The p-value quantifies the strength of evidence to reject $H_0$
+- If the p-value falls below some predefined significance level $\alpha$, such as $0.05$ or $0.01$, then $H_0$ can be rejecte
+###### Two-Sided v. One-Sided Alternatives
+- The alternative hypothesis $H_A$ to $H_0$, can be either one-sided or two sided
+- In a one sided hypothesis, the two hypothesis look like so:
+$$H_0: \theta = \theta_0 \; \; H_A: \theta \neq \theta_0 $$
+- In a two sided hypothesis, the two can have either one of the following forms:
+$$H_0: \theta = \theta_0 \; \; H_A: \theta < \theta_0 $$
+$$H_0: \theta = \theta_0 \; \; H_A: \theta > \theta_0 $$
+#### Types of Tests
+- Depending on what needs to be tested, different test statistics must be used
+###### Binomial Test
+- To test if a random variable adheres to a bernoulli distribution with some success probability $q$, a binomial test can be performed:
+```
+binomial.test(x = num_success, n = num_total, p = q, alternative = "two.sided")
+```
+###### T Test
+- To test if the mean of some normally distributed random variable is above or below some value $\theta$, a t test can be used: 
+```
+t.test(data_col, mu = theta, alternative="less")
+```
