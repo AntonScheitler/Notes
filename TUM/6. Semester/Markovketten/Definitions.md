@@ -109,14 +109,16 @@ $$\sum_{n = 0}^{\infty} \Pi^n(i, i) = \infty$$
 - Also, if $i$ is recurrent then all the states that are in the same communication class as $i$ are recurrent 
 - If all states in a Markov chain are recurrent, then the chain itself is also considered recurrent, otherwise it is considered transient
 - A state $i$ is positive recurrent, if $\mathbb{E}(T_i) < \infty$ and null recurrent, if $\mathbb{E}(T_i) = \infty$
+- Additionally, a stationary distribution exists if and only if the given Markov chain is positive recurrent
 ## Invariant Measures
 - Let $(X_n)$ be a Markov chain with the transition matrix $\Pi$ on the state space $E$
 - A function $\alpha: E \to \mathbb{R}$ is called an invariant measure, if the following holds:
 $$\forall i: \alpha(i) \geq 0$$
 $$\exists i: \alpha(i) > 0$$
 $$\alpha \cdot \Pi = \alpha$$
-- A stationary distribution is therefore an example of an invariant measure, in this case with the additional condition that all it's element need to sum to $1$  
-- If a Markov chain is recurrent, then it always has an invariant measure, and if it is also irreducible, then the the invariant measure is unique up to multiplication with a constant
+- A stationary distribution is therefore an example of an invariant measure, in this case with the additional condition that all it's element need to sum to $1$
+- If a Markov chain is recurrent, then it always has an invariant measure, and if it is also irreducible, then the invariant measure $\alpha$ is unique up to multiplication with a constant
+- If $\sum_{i \in E} \alpha(i) < \infty$ holds for that same invariant measure then the chain is positive recurrent
 - Given an irreducible and recurrent Markov chain, with $0 \in E$ and $T_0 = \inf\{n \geq 1: X_n = 0\}$, an invariant measure can be constructed like so:
 $$\alpha(i) = \mathbb{E}^0\left [ \sum_{n = 1}^{T_0} 1_{X_n = i} \right ]$$
 - Here $\mathbb{E}^0$ is the expectation starting with $X_0 = 0$
@@ -128,7 +130,14 @@ $$\alpha(i) = \mathbb{E}^0\left [ \sum_{n = 1}^{T_0} 1_{X_n = i} \right ]$$
 - Given a Markov chain $(X_n)$ on a state space $E$ with a transition matrix $\Pi$ and an invariant measure $\alpha$, the $\alpha$-reversed transition matrix is defined like so: 
 $$\Pi^{\alpha}(i, j) = \frac{\alpha(j)}{\alpha(i)} \Pi(j, i)$$
 - This matrix is also a stochastic matrix
-- If $(X_n)$ is a Markov chain with an initial state $\delta_0$, conditioned on $X_N = 0$, then $Y_n = X_{N - n}$ is a Markov chain with initial distribution $Y_0 = 0$ and transition matrix $\Pi^{\alpha}$, conditioned on $Y_n = \delta_0$
+- If $(X_n)$ is a Markov chain with an initial state $\delta_0$, conditioned on $X_N = 0$, then $Y_n = X_{N - n}$ is a Markov chain with initial distribution $Y_0 = 0$ and transition matrix $\Pi^{\alpha}$, conditioned on $Y_N = \delta_0$
 - For such a pair of Markov chains with reversed Transition Matricies, the following holds:
 	- If one is recurrent, the other is too
 	- If they have the same initial distribution and are stopped at $T_0$, then $(Y_n)_{n = 0}^{T_0}$ has the same distribution as $(X_{T_0 - n})_{n = 0}^{T_0}$
+## Convergence
+- Given a Markov chain $(X_n)$, that is irreducible, aperiodic and positive recurrent, it will have a unique invariant distribution $\alpha$, for which the following holds:
+$$\lim_{n \to \infty} \delta_0 \Pi^n = \alpha$$
+- Importantly, this $\delta_0$ does not have to be $\alpha$, instead the Markov chain converges to it's invariant distribution
+#### Total Variation
+- In order to establish a metric of convergence in the space if distributions on $E$, the total variation is used, which is defined like so:  
+$$||\alpha - \beta||_{TV} = \frac12 \sum_{i \in E} |\alpha(i) - \beta(i)|$$
