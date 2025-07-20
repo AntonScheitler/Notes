@@ -32,6 +32,8 @@ $$\overline{X} = \frac{1}{n} \sum_{i = 1}^n X_i, \; \; S^2 = \frac{1}{n - 1}\sum
 - For computing the confidence intervals, the methods from before can be used
 #### Theoretical Approach
 - If the distribution of the underlying data is given or can be assumed with high probability, the properties of the statistic can be used in order to infer a confidence interval
+- For example, if the data follows a normal distribution with unknown mean $\theta$ and known variance $\sigma^2$, a $100(1 - \alpha)$% confidence interval can be constructed like this:
+$$\overline{X_n} \underline{+} z_{1 - \alpha / 2} \cdot \frac{\sigma}{\sqrt{n}}$$
 #### Asymptotic Approach
 - Given enough samples, it is known that the distribution of the sample mean follows a normal distribution with mean $\theta$ and variance $\frac{\sigma^2}{n}$
 - Using this, a confidence interval of $1 - \alpha$ can be constructed by:
@@ -68,7 +70,7 @@ power.t.test(
 - Here, `delta` refers to the effect size, which is a measure of strength of the relationship of two variables
 #### P-Value
 - The p-value quantifies the strength of evidence to reject $H_0$
-- If the p-value falls below some predefined significance level $\alpha$, such as $0.05$ or $0.01$, then $H_0$ can be rejecte
+- If the p-value falls below some predefined significance level $\alpha$, such as $0.05$ or $0.01$, then $H_0$ can be rejected
 ###### Two-Sided v. One-Sided Alternatives
 - The alternative hypothesis $H_A$ to $H_0$, can be either one-sided or two sided
 - In a one sided hypothesis, the two hypothesis look like so:
@@ -76,8 +78,8 @@ $$H_0: \theta = \theta_0 \; \; H_A: \theta \neq \theta_0 $$
 - In a two sided hypothesis, the two can have either one of the following forms:
 $$H_0: \theta = \theta_0 \; \; H_A: \theta < \theta_0 $$
 $$H_0: \theta = \theta_0 \; \; H_A: \theta > \theta_0 $$
-#### Types of Tests
-- Depending on what needs to be tested, different test statistics must be used
+#### Theoretical Approach
+- If the underlying distribution of the data is known, then tests specific to that distribution can be used
 ###### Binomial Test
 - To test if a random variable adheres to a bernoulli distribution with some success probability $q$, a binomial test can be performed:
 ```
@@ -88,3 +90,42 @@ binomial.test(x = num_success, n = num_total, p = q, alternative = "two.sided")
 ```
 t.test(data_col, mu = theta, alternative="less")
 ```
+#### Asymptotic Approach
+- The asymptotic approach uses the Central Limit theorem in order to create tests
+###### Proportion Test
+- To test if a proportion of successes follows a certain percentage $q$, the following test can be done:
+```{r}
+prop.test(x = num_success, n = num_total, p = q, alternative = "two.sided", correct = FALSE)
+```
+- This is very similar to the binomial test in the theoretical approach, except that we don't expect the sum of successes to follow a binomial distribution and instead only use the CLT
+###### Chi-Squared Test
+- A Chi-Squared Test can be used to determine if two variables are independent of each other
+- $H_0$ for such a test states that the variables are independent 
+- A Chi-Squared Test is computed like this:
+$$\chi^2(X, Y) = \sum_{i = 1}^k \sum_{j = 1}^l \frac{(N_{ij}(X, Y) - E_{ij}(X, Y))^2}{E_{ij}(X, Y)}$$
+- Here, given that $X$ and $Y$ are categorical variables, with lables $u_1, ... u_k$ and $v_1, ... v_j$, $N_{ij}(X, Y)$ is the sum of the $i$th row and $j$th column of the contingency table of $X$ and $Y$
+- $E_{ij}(X, Y)$ on the other hand is defined as:
+$$E_{ij}(X, Y) = \frac{N_i(X, Y) \cdot N_j(X, Y)}{N(X, Y)}$$
+- Here, $N_i$ is the sum of the $i$th row, $N_j$ that of the $j$th column and $N$ that of the entire table
+- A Chi-Squared Test of two variables can be performed like this in R:
+```{r}
+chisq.test(col1, col2)
+```
+#### Simulation-Based Testing
+- In simulation based testing, the observed scenario is simulated a number of times under the assumption of $H_0$, i.e. that some variable follows a certain distribution with a certain parameter
+- The results of the simulations are then compared to the observed scenario in order to see how many of them deviated as much as the observation
+- These simulations can be carried out in R like so:
+```{r}
+df |>
+    specify(response = response, success = "correct") |>
+    hypothesize(null = "point", p = 1/3) |>
+    generate(reps = 1000, type = "draw") |>
+    calculate(stat = "prop")
+```
+- Here, the null parameter of hypothesize can take either "point", in which case an appropriate parameter must be specified, or "independence"
+###### Bootstrap Method
+- Bootstrap samples can also be taken in order to perform a simulation-based test
+- However, bootstrap samples aren't created from just taking samples from the observation with replacement, but instead, the observation is permuted like this:
+$$x_i^* = x_i - \overline{x} + \theta_0$$
+- Where $\theta_0$ is the mean under $H_0$
+- This way, the bootstrap samples adhere to $H_0$, while still preserving their variance 
