@@ -129,3 +129,45 @@ df |>
 $$x_i^* = x_i - \overline{x} + \theta_0$$
 - Where $\theta_0$ is the mean under $H_0$
 - This way, the bootstrap samples adhere to $H_0$, while still preserving their variance 
+## Inference for Linear Regression
+- Hypothesis testing can also be applied to a linear regression
+- More specifically, one can formulate a test problem in which $H_0$ states that the slope of one variable has a certain value, i.e. $\beta_j = \beta_{j, 0}$ and $H_A$ states the opposite, i.e. $\beta_j \neq \beta_{j, 0}$
+- In many scenarios, $H_0$ states there's no relation, meaning that $\beta_{j, 0} = 0$
+#### Theoretical Approach
+- It is assumed that the irreducible errors $\epsilon_0$ are independent and follow a normal distribution with mean $0$ and some variance $\sigma^2$
+- A so-called t-statistic for the $j$th slope can be constructed like this:
+$$T_j(y, X) = \frac{\hat{\beta}_j(y, X) - \beta_{j, 0}}{{\text{SE}_{\hat{\beta}_j}}(y, X)}$$
+- Here, $\hat{\beta}_j$ is the least-squares estimate and $\text{SE}_{\hat{\beta}_j}$ it's estimated standard error
+- This statistic has $n - (k + 1)$ degrees of freedom where $n$ is the number of datapoints and $k$ is the number of explanatory variables
+#### Simulation-Based Approach
+- Since $H_0$ states that there's on relation between an explanatory variable $x_j$ and the response variable, a simulation based approach can be constructed by permuting this $x_j$ and keeping all the other predictors the same
+- The idea is that if the response variable is truely independent of $x_j$, then randomly permuting it won't change the resulting fit of the regression model
+- One can then check if the observed fit is an outlier compared to the fits of the generated data
+- In R this can be done like so:
+```{r}
+observed_fit <- data |>
+  specify(response ~ exp1 + exp2) |>
+  fit()
+
+null_fits <- data |>
+  specify(response ~ exp1 + exp2) |>
+  hypothesize(null = "independence") |>
+  generate(reps = 1000, type = "permute", variables = c(exp1, exp2)) |>
+  fit()
+
+null_fits |>
+  get_p_value(observed_fit, direction = "two-sided")
+```
+#### Residual Analysis
+- In order to perform a proper inference of a linear regression model, the following conditions must hold:
+	- Each variable is linearly related to the outcome
+	- Residuals have constant variability
+	- Residuals follow a normal distribution 
+###### Leverage Score
+- The leverage score of an observation is the $i$th diagonal entry of the hat matrix $H$ which is defined by:
+$$H = X(X^TX)^{-1}X^T$$
+- This score assumes values between $0$ and $1$ and describes the influence that the $i$th observation has on the $i$th fitted value.
+- If there's a sudden jump in the leverage score from some observations to others, then it's likely that those are outliers
+###### Cook's Distance
+- The Cook's distance $D_i$ is a measure based on the leverage score of a variable and indicates how influencial an observation is overall 
+- In general, if $D_i > 0.5$ or $D_i > 1$ then an observation is considered influencial
